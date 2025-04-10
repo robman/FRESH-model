@@ -5,7 +5,7 @@ Welcome to the official repository for the **FRESH Model of Consciousness** — 
 > **Consciousness is not about neurons — it's about structure.**  
 > **You are the geometry of your representations.**
 
-📄 **[Read the paper here (preprint link to be added)](https://robman.fyi/files/FRESH-Geometry-of-Mind-PIR-2025-04-09.pdf)**
+📄 **[Read the paper here (preprint link to be added)](https://robman.fyi/files/FRESH-Geometry-of-Mind-PIR-2025-04-10.pdf)**
 
 ## Getting started tip
 It's a pretty long paper so if you want to get started quickly try uploading it to ChatGPT, Gemini and Claude. Ask them to "summarise, analyse and critique" the paper. That way you can do the following.
