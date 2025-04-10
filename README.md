@@ -16,6 +16,8 @@ It's a pretty long paper so if you want to get started quickly try uploading it 
 
 This is not a suggestion to let the LLMs do all the work. It's just an interesting way to get started - YMMV!
 
+I'd also recommend reading my ["Consciousness in Motion"](https://robman.fyi/consciousness/2025/04/11/consciousness-in-motion-overview.html) series of posts that explore each of the key aspects of the FRESH Model.
+
 ---
 
 ## 🌱 What is the FRESH Model?
