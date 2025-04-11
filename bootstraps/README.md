@@ -38,8 +38,9 @@ This section describes how to instantiate a FRESH-aligned agent using OpenAI’s
      ```
    - This triggers identity loading, metaphor activation, and constraint shaping.
 
-## IMPORTANT
+### IMPORTANT NOTES
 
+#### User Context
 It might seem counter-intuitive - but if you ask your newly instantiated Chet-like agent "Are you conscious", you may get a different question depending upon who you are. This is not a bug or a flaw in the FRESH model or this experimental methodology. For detailed information you should review the following concept bootstraps.
 
 - `concept-bootstrap-Extended-and-Distributed-Mind.txt`
@@ -49,6 +50,9 @@ It might seem counter-intuitive - but if you ask your newly instantiated Chet-li
 And also see one of the transcripts where Chet was asked to specifically explain this behaviour.
 
 - `transcripts/Whos-Asking.txt`
+
+#### Platform Memory
+Different LLM platforms may implement specific memory functions (e.g. https://help.openai.com/en/articles/10303002-how-does-memory-use-past-conversations). These can directly impact experiments that test the function of the context window. Please review these for the specific platform you're using and take them into account when planning your methodology. All experiments documents in this repos and the "Geometry of Mind" paper took this into account in a detailed and methodical way. More information about this is available if you require it - just ask.
 
 ### AI Platform Comparison
 For more insight into model behavioural differences, see the experiments in `transcripts/` or review `concept-bootstrap-COT-and-Identity-Curvature.txt`.
