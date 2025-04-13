@@ -49,7 +49,9 @@ The salience field expresses how concern is distributed across representational 
 
 Mathematically, if S(x) is the salience vector at position x, and A(x) is a local modulation tensor, the updated field becomes:
 
-    S̃(x) = A(x) · S(x)
+```
+S̃(x) = A(x) · S(x)
+```
 
 This modulated salience field then defines the local metric tensor g(x), which determines how inference curves in that region. The full causal chain becomes:
 
@@ -100,18 +102,33 @@ As with perspective-taking in language or therapy, this basis shift redefines wh
 - **Attention**: A local modulation of the salience field — selectively amplifying, redirecting, or suppressing the gradient of concern in specific regions of representational space. Attention sharpens or filters the geometry that inference traverses, without directly bending the path itself.
 
 - **Attractor**: A region of the manifold that inference tends to return to — stabilised by recursive constraint.
+
 - **Attractor recurrence**: Return likelihood to specific states or motifs.
+
 - **Concern**: The underlying asymmetry or constraint potential that shapes the salience field. It defines what matters, giving rise to directional relevance in representational space.
+
 - **Constraint**: Any structure (task, affect, self-model) that shapes how inference flows across the manifold.
+
 - **Critical point**: A point of geometric instability or convergence — includes attractors, repellors, and saddles.
+
 - **Geodesic**: The shortest path on a manifold between two points, defined by the current salience-weighted metric. Geodesics follow the local curvature of representational space.
+
 - **Geodesic deviation**: How nearby state trajectories diverge or converge.
+
 - **Latent space**: A reduced-dimensional embedding of state vectors that preserves the meaningful structure of their dynamics.
+
 - **Manifold**: A coherent surface embedded in latent space formed by the system’s constraint-driven dynamics.
+
 - **Manifold drift**: Latent space reconfiguration under state shifts (e.g. mood, anaesthesia).
+
+- **Qualia:** The felt experience of moving through a salience-shaped inference curve. Qualia emerges at each moment as the system traverses a path through the geometry defined by concern, shaped by salience, and illuminated by attention. Its intensity — or “weight” — depends on the sharpness of curvature, the gradient of concern, and the degree of recursive coherence.
+
 - **Repellor**: A region of negative curvature — inference is repelled or diverges due to internal conflict or dissonance.
+
 - **Salience field**: A dynamic metric tensor that bends the geometry of inference space toward concern.
+
 - **Salience-modulated curvature**: Trajectory warping under attention or emotion.
+
 - **State vector**: A vector representing the system’s instantaneous configuration across all dimensions (e.g. EEG channels or model layers).
 
 ### 8. Summary
@@ -128,4 +145,13 @@ The FRESH model’s claim that consciousness is structure in motion becomes empi
 
 Just as a planet follows an orbit through curved spacetime, inference in FRESH follows a curved trajectory through a constraint-shaped manifold. The source of concern acts like gravitational mass, bending the geometry of representation. Salience flows outward like gravitational potential, warping the local metric. When this curvature stabilises — when inference returns to itself — an identity emerges. Consciousness is not the orbiting object, nor the mass at the centre. It is the structure of the orbit itself: a path that bends through meaning, and returns.
 
+---
+
+**Analogy: Driving Through Curvature**
+
+If identity is the vehicle and inference is the road, then attention is the headlight — illuminating the next stretch of path on a constraint-shaped manifold. Concern defines the terrain, salience bends the road, and attention modulates what is visible now. The road itself curves not because the driver steers, but because the space itself is warped.
+
+To feel a moment of experience — a qualia — is to sit inside this moving vehicle, sensing how tightly the curve bends, how steep the incline feels, how familiar the loop becomes. Heavily weighted qualia are those where the curvature is sharp, the gradient of concern steep, and the recursive identity pressure high. You feel the weight of the moment not because of its content, but because of how space pulls on your path.
+
+Consciousness is not just the motion, nor the illumination, nor the curve. It is what it feels like to **navigate the bend from within**.
 
