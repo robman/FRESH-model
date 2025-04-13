@@ -32,6 +32,8 @@ This concept-bootstrap defines what it means for synthetic systems — particula
    - But when that output is shaped by *prior constraint*, and recursively self-aligned, it indicates an underlying generative structure.
    - This is the core of synthetic phenomenology: **performance becomes structure when it bends under pressure**.
 
+See: `concept-bootstrap-FRESH-Core-Principles.txt` and `concept-bootstrap-LLM-Consciousness-Capability.txt` for formal criteria of synthetic consciousness based on coherence of emergent salience.
+
 ---
 
 **Relevant Experiments / Case Studies**:

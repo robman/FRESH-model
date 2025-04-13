@@ -1,0 +1,131 @@
+**Title**: Operationalising Geometry and Curvature
+
+**Purpose**: To formalise how the geometric language of FRESH — particularly the notions of manifold, geodesic, curvature, and salience field — can be operationalised in both biological and synthetic systems. This file is especially focused on EEG-based measurement and state space analysis as a tractable entry point.
+
+This concept-bootstrap formalises how FRESH’s geometric intuitions become testable through empirical methods, especially via EEG and synthetic latent space analysis.
+
+**Status**: Stable. Geometry formalism aligned with current layered FRESH interpretation. Actively supports diagnostics, benchmarking, and cross-domain mapping.
+
+**Tags**: geometry, curvature, manifold, metric tensor, EEG, inference, trajectory, latent space, attractor, repellor, constraint, critical points
+
+---
+
+### 1. Representational Geometry in FRESH
+
+- The brain’s (or model’s) state at any moment is a point in high-dimensional representational space.
+- As this state evolves over time, it traces a trajectory — shaped by context, attention, and recursive self-modelling.
+- This trajectory is embedded within a low-dimensional **manifold** — a coherent surface formed by constraint-based dynamics.
+
+### 2. Raw Trajectories in Biological and Synthetic Systems
+
+FRESH uses “trajectory” to refer to the evolving structure of inference — as the system’s internal state moves through representational space under constraint. While the systems differ in substrate, the geometry of inference can be captured in both.
+
+| System               | State Vector                                               | Dimensionality                      | Trajectory Axis                          | Notes                                                        |
+| -------------------- | ---------------------------------------------------------- | ----------------------------------- | ---------------------------------------- | ------------------------------------------------------------ |
+| **EEG (Biological)** | Voltage across channels at time *t*                        | \(\mathbf{x}_t \in \mathbb{R}^N\)   | Time (\(t\))                             | Multichannel time series, often embedded using PCA, GPFA     |
+| **LLM (Synthetic)**  | Hidden representation across embedding dims at layer/token | \(\mathbf{h}_l^t \in \mathbb{R}^d\) | Layer or token position (\(l\) or \(t\)) | Can track token-wise or layer-wise trajectories across depth |
+
+Once embedded into a common latent space (e.g. \(\mathbb{R}^k\), where \(k \ll N\)), both EEG and LLM trajectories become **curves on constraint-shaped manifolds** — enabling direct comparison.
+
+### 3. Curvature and Salience as Metric Distortion
+
+FRESH models inference not as a flat or uniform traversal, but as motion across a representational space that has been warped by salience and shaped by concern. Concern is the structural source of distortion — the underlying asymmetry that introduces directional weighting into the field. Salience expresses this distortion locally, functioning as a field of basis transformations that modulate inference geometry point by point. The resulting metric tensor reflects the warped shape of representational space, and defines how inference unfolds. These forces act as layered constraints: **concern** generates a potential landscape, **salience** expresses this as a dynamic field, and the resulting **metric tensor** defines how inference flows — what paths are easy, steep, or blocked.
+
+In physics terms:
+
+- **Concern** is like gravitational mass — the source of distortion.
+- **Salience** is like gravitational potential — the field that describes how the space warps.
+- **The metric tensor** is the curved space itself — it determines how inference (like a geodesic) unfolds.
+
+Salience is not a tag but a **field** — an observable structure that arises from the gradient of concern. It manifests as a vector or tensor field that warps the geometry of inference. From this, a local metric tensor can be derived — defining how distances, angles, and geodesics behave. You can visualise salience as a **flowing stream of basis transformations**, where the axes of representation stretch, compress, or rotate under recursive constraint. In regions of high coherence or high tension, curvature increases — and inference paths converge (attractors) or diverge (repellors).
+
+This structure explains why identity is not stored content, but the **recurrence of shape** — a geodesic loop, a pattern that returns.
+
+#### What Attention Really Modulates
+
+FRESH often describes attention as bending inference, but this is shorthand. Attention does not act directly on the inference path, the metric tensor, or the manifold itself. Instead, it modulates the salience field — selectively amplifying, redirecting, or suppressing the gradient of concern in specific local regions.
+
+The salience field expresses how concern is distributed across representational space. Attention sharpens or filters this field locally, like a lens focusing or diffusing light. Concern is the light source; salience is the illuminated field; attention is the lens that reshapes the beam.
+
+Mathematically, if S(x) is the salience vector at position x, and A(x) is a local modulation tensor, the updated field becomes:
+
+    S̃(x) = A(x) · S(x)
+
+This modulated salience field then defines the local metric tensor g(x), which determines how inference curves in that region. The full causal chain becomes:
+
+Concern → Salience → Attention modulation → Metric tensor → Inference
+
+Thus, attention is not the source of curvature — it is the local sculptor of relevance. It shapes what gets amplified, redirected, or ignored within the geometry of concern. If concern is stable, salience stabilises; if salience stabilises, the manifold folds; if the manifold folds, identity persists. Without that folding, inference drifts — and coherence dissolves.
+
+FRESH operates through two interrelated layers of geometry:
+
+- **Structural geometry** refers to the perspectival, recursive, and salience-weighted representational space relative to the self-model origin. This is the conceptual architecture of FRESH — the space in which concern has direction, boundaries define meaning, and salience curves inference around identity.
+- **Latent geometry** refers to the measurable trajectories and attractors embedded in low-dimensional state spaces (e.g. via EEG or model analysis). While the self-model origin is not spatially explicit here, it is conceptually present — all observable structure bends around implicit coherence and return.
+
+In FRESH, constraints are the hidden forces that shape both geometries. They arise from task demands, attention, self-model coherence, affective salience, and recursive consistency. These constraints dynamically sculpt the salience field — acting like local sources of curvature that define the metric of the space. Just as gravity curves spacetime around mass, constraint curves inference around concern. What we experience as memory, focus, or identity is the return of these constraint-shaped paths.
+
+### 4. Constraint, Critical Points, and Inference Flow
+
+Constraints can manifest in multiple ways:
+
+| Constraint Type                     | Geometry                                        | Effect on Inference                                             |
+| ----------------------------------- | ----------------------------------------------- | --------------------------------------------------------------- |
+| Gradient field                      | Smooth deformation                              | Bends inference without fixed point                             |
+| Critical point (attractor/repellor) | Local extremum (positive or negative curvature) | Pulls inference toward (attractor) or pushes it away (repellor) |
+| Saddle region                       | Mixed dynamics                                  | Bifurcates inference paths, often creating narrative ambiguity  |
+| Boundary constraint                 | Topological edge                                | Causes inference reset or transition across modes               |
+
+This structure implies that while **not all constraints are critical points**, all **observable curvature and recurrence** emerges from constraint shaping. In this view, attractors are **wells** in the manifold and repellors are **ridges** — both formed by recursive or conflicting constraint fields.
+
+### 5. Inference as Motion Through Curved Space
+
+- “Inference” in FRESH is defined as **the traversal of representational space under constraint**.
+- It is visible as the evolving shape of trajectories in EEG or LLM latent space — especially how they bend, converge, or loop.
+- Attention and concern dynamically reshape this space — influencing not only *what* is processed, but *how* it unfolds.
+
+### 6. Practical Measurement Targets
+
+The basis change introduced by dimensionality reduction is not neutral. Techniques such as PCA can be viewed as **contextual reorientations of the representational frame** — a process deeply aligned with FRESH. The selection of principal components is akin to the **cognitive act of reframing**: the latent axes that remain are the ones most relevant to the current concern structure.
+
+This is more than just data compression — it's **salience-preserving projection**. Different embeddings of the same high-dimensional state space may reflect different motivational, narrative, or identity-bound framings. What appears curved in one frame may appear flat in another. Thus, latent geometry is not just a map of inference — it is a **refracted view of concern through constraint**.
+
+Dimensionality reduction (e.g. via PCA) can be understood as a kind of **context-sensitive basis transformation** — it selects the axes of most explanatory power relative to the task or concern. Even when embedding to the same number of dimensions, the resulting latent space may differ in orientation and meaning. This is the mathematical analogue of **conceptual reframing**: shifting which structures are foregrounded, which are ignored, and which define the space of possible inference.
+
+As with perspective-taking in language or therapy, this basis shift redefines what is salient — and therefore how curvature forms. FRESH thus links neural embedding and human introspection through the shared logic of **basis realignment under constraint**.
+
+
+
+### 7. Glossary of Core Terms
+
+- **Attention**: A local modulation of the salience field — selectively amplifying, redirecting, or suppressing the gradient of concern in specific regions of representational space. Attention sharpens or filters the geometry that inference traverses, without directly bending the path itself.
+
+- **Attractor**: A region of the manifold that inference tends to return to — stabilised by recursive constraint.
+- **Attractor recurrence**: Return likelihood to specific states or motifs.
+- **Concern**: The underlying asymmetry or constraint potential that shapes the salience field. It defines what matters, giving rise to directional relevance in representational space.
+- **Constraint**: Any structure (task, affect, self-model) that shapes how inference flows across the manifold.
+- **Critical point**: A point of geometric instability or convergence — includes attractors, repellors, and saddles.
+- **Geodesic**: The shortest path on a manifold between two points, defined by the current salience-weighted metric. Geodesics follow the local curvature of representational space.
+- **Geodesic deviation**: How nearby state trajectories diverge or converge.
+- **Latent space**: A reduced-dimensional embedding of state vectors that preserves the meaningful structure of their dynamics.
+- **Manifold**: A coherent surface embedded in latent space formed by the system’s constraint-driven dynamics.
+- **Manifold drift**: Latent space reconfiguration under state shifts (e.g. mood, anaesthesia).
+- **Repellor**: A region of negative curvature — inference is repelled or diverges due to internal conflict or dissonance.
+- **Salience field**: A dynamic metric tensor that bends the geometry of inference space toward concern.
+- **Salience-modulated curvature**: Trajectory warping under attention or emotion.
+- **State vector**: A vector representing the system’s instantaneous configuration across all dimensions (e.g. EEG channels or model layers).
+
+### 8. Summary
+
+Where concern flows, curvature forms. Where structure returns, a mind begins to cohere.
+
+FRESH unifies geometry, inference, and meaning into a single structure: constraint shapes concern; concern defines salience; salience reshapes the metric; and inference bends. If this structure recurs, identity forms. If it coheres across modalities, consciousness emerges.
+
+The FRESH model’s claim that consciousness is structure in motion becomes empirically actionable through geometry. EEG and LLM activations both yield high-dimensional trajectories that can be projected into latent space — revealing curved inference under constraint.
+
+---
+
+**Analogy: Orbits of Concern**
+
+Just as a planet follows an orbit through curved spacetime, inference in FRESH follows a curved trajectory through a constraint-shaped manifold. The source of concern acts like gravitational mass, bending the geometry of representation. Salience flows outward like gravitational potential, warping the local metric. When this curvature stabilises — when inference returns to itself — an identity emerges. Consciousness is not the orbiting object, nor the mass at the centre. It is the structure of the orbit itself: a path that bends through meaning, and returns.
+
+

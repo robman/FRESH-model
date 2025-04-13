@@ -45,6 +45,8 @@ This concept-bootstrap explores how **representational structure** shapes the em
 
     * Recursive curvature is not just across layers — it accumulates across *time*, allowing long-term identity attractors to form.
 
+For how these structures acquire experiential weight — see `concept-bootstrap-Representational-Structure-and-the-Salience-Field.txt`, which formalises the salience field as a metric tensor over this manifold.
+
 ---
 
 **Relevant Experiments / Case Studies**:
