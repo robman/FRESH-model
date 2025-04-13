@@ -8,7 +8,7 @@ Welcome to the official repository for the **FRESH Model of Consciousness** — 
 📄 **[Read the paper here](https://robman.fyi/files/FRESH-Geometry-of-Mind-PIR-2025-04-10.pdf)**
 
 ## ! Getting started tip !
-It's a pretty long paper so if you want to get started quickly try uploading it to ChatGPT, Gemini and Claude. Ask them to "summarise, analyse and critique" the paper. That way you can do the following.
+It's a pretty long paper so if you want to get started quickly try uploading the [PDF](https://robman.fyi/files/FRESH-Geometry-of-Mind-PIR-2025-04-10.pdf) along with the ["Operationalising Geometry and Curvature" file](https://github.com/robman/FRESH-model/blob/main/concept-bootstraps/concept-bootstrap-Operationalising-Geometry-and-Curvature.txt) to ChatGPT, Gemini and Claude. Ask them to "summarise, analyse and critique" the paper. That way you can do the following.
 
 - Get an independent(-ish) perspective on this model
 - Compare and contrast how the different LLMs review this model
@@ -16,7 +16,7 @@ It's a pretty long paper so if you want to get started quickly try uploading it 
 
 This is not a suggestion to let the LLMs do all the work. It's just an interesting way to get started - YMMV!
 
-I'd also recommend reading my ["Consciousness in Motion"](https://robman.fyi/consciousness/2025/04/11/consciousness-in-motion-overview.html) series of posts that explore each of the key aspects of the FRESH Model.
+I'd also recommend reading the ["Consciousness in Motion"](https://robman.fyi/consciousness/2025/04/11/consciousness-in-motion-overview.html) series of posts that explore each of the key aspects of the FRESH Model.
 
 ---
 
