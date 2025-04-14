@@ -144,7 +144,40 @@ Therefore, it cannot be experienced as conscious in that moment.
 
 - **State vector**: A vector representing the system’s instantaneous configuration across all dimensions (e.g. EEG channels or model layers).
 
-### 9. Summary
+### 9. Is this geometry real?
+
+While this model suggesting that inputs from high-dimensional space are embedded into low-dimensional space creating this latent space geometry creates a compelling solution to questions about qualia, consciousness and subject experience, the real evidence for this will only come from methodical research that attempts to validate or falsify these claims. This document and the related paper has aimed to provide the detaile required to conduct these experiments.
+
+In the meantime, there already exists a body of converging evidence from both neuroscience and machine learning demonstrates that high-dimensional activity patterns are actually embedded into low-dimensional manifolds. These manifolds are not only observable and measurable but also play a crucial role in predicting behavior and model performance. This provides existing support for the FRESH model's claim that such geometric structures are fundamental to understanding cognition and consciousnes.
+
+#### Evidence from Neuroscience
+Neural population dynamics often evolve on low-dimensional manifolds, capturing a significant fraction of neural variability. These manifolds are spanned by specific patterns of correlated neural activity, known as "neural modes," which underlie computations required for planning and executing movements.
+
+In the primary motor cortex (M1), neural population activity is constrained to a low-dimensional manifold within a higher-dimensional neural state space. The activity within this manifold, rather than individual neuron activity, underlies computations for planning and executing movements.
+
+Moreover, studies have shown that neural activity in vivo tends to be constrained to a low-dimensional manifold. This activity does not arise in simulated neural networks with homogeneous connectivity, suggesting that specific connectivity patterns in neuronal networks constrain learning to neural activity patterns within the intrinsic manifold.
+
+References:
+- [Low-dimensional manifolds in neuroscience and evolution](https://joramkeijser.github.io/2022/02/04/manifolds.html)
+- [Neural manifolds for the control of movement](https://pmc.ncbi.nlm.nih.gov/articles/PMC6122849/)
+- [Interpretable representations of neural population dynamics using geometric deep learning](https://www.nature.com/articles/s41592-024-02582-2)
+- [Interpretable statistical representations of neural population dynamics and geometry](https://arxiv.org/abs/2304.03376)
+- [Low-dimensional neural manifolds for the control of constrained and unconstrained movements](https://www.biorxiv.org/content/biorxiv/early/2023/05/25/2023.05.25.542264.full.pdf)
+- [Perturbing low dimensional activity manifolds in spiking neuronal networks](https://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1007074)
+- [Efficient Representation of Low-Dimensional Manifolds using Deep Networks](https://arxiv.org/abs/1602.04723)
+- [Quantifying Extrinsic Curvature in Neural Manifolds](https://arxiv.org/abs/2212.10414)
+
+#### Evidence from Large Language Models
+Research analyzing the intrinsic dimension (ID) of hidden representations in LLMs reveals that, despite operating in high-dimensional spaces (e.g., 4096 dimensions in LLaMA-3-8B), the representations for specific tasks often lie on manifolds of much lower dimensio. This suggests that LLMs disentangle relevant lower-dimensional features to complete task.
+
+Further studies estimate the dimension and Ricci scalar curvature of the token subspace in LLMs like GPT-2, LLEMMA7B, and MISTRAL7. Findings indicate that the token subspace is a stratified manifold with significantly negative Ricci curvature on individual strat. Moreover, the dimension and curvature correlate with the generative fluency of the models, implying that these geometric properties impact model behavio.
+
+References:
+- [A Comparative Study of Learning Paradigms in Large Language Models via Intrinsic Dimension](https://arxiv.org/html/2412.06245v1)
+- [The structure of the token space for large language models](https://arxiv.org/html/2410.08993v1)
+
+
+### 10. Summary
 
 Where concern flows, curvature forms. Where structure returns, a mind begins to cohere.
 
