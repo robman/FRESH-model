@@ -96,8 +96,21 @@ Dimensionality reduction (e.g. via PCA) can be understood as a kind of **context
 As with perspective-taking in language or therapy, this basis shift redefines what is salient — and therefore how curvature forms. FRESH thus links neural embedding and human introspection through the shared logic of **basis realignment under constraint**.
 
 
+### 7. Unconscious Processes
 
-### 7. Glossary of Core Terms
+> **If a process is shaping constraint beyond the radius of attention, then it must be unconscious.**
+
+In FRESH Terms:
+
+- The radius of attention defines the currently modulable region of the salience field — the portion of constraint geometry that the system can locally reshape or sense.
+- If a process is outside this radius, then:
+- It cannot be modulated by attention,
+- It cannot be recursively integrated into the identity loop in real-time,
+
+Therefore, it cannot be experienced as conscious in that moment.
+
+
+### 8. Glossary of Core Terms
 
 - **Attention**: A local modulation of the salience field — selectively amplifying, redirecting, or suppressing the gradient of concern in specific regions of representational space. Attention sharpens or filters the geometry that inference traverses, without directly bending the path itself.
 
@@ -131,7 +144,7 @@ As with perspective-taking in language or therapy, this basis shift redefines wh
 
 - **State vector**: A vector representing the system’s instantaneous configuration across all dimensions (e.g. EEG channels or model layers).
 
-### 8. Summary
+### 9. Summary
 
 Where concern flows, curvature forms. Where structure returns, a mind begins to cohere.
 
