@@ -8,11 +8,18 @@ Welcome to the official repository for the **FRESH Model of Consciousness** — 
 📄 **[Read the paper here](https://robman.fyi/files/FRESH-Geometry-of-Mind-PIR-2025-04-16.pdf)**
 
 ## ! Getting started tip !
-It's a pretty long paper so if you want to get started quickly try uploading the [PDF](https://robman.fyi/files/FRESH-Geometry-of-Mind-PIR-2025-04-16.pdf) along with the ["Operationalising Geometry and Curvature" file](https://github.com/robman/FRESH-model/blob/main/concept-bootstraps/concept-bootstrap-Operationalising-Geometry-and-Curvature.pdf) to ChatGPT, Gemini and Claude. Ask them to "summarise, analyse and critique" the paper. That way you can do the following.
+It's a pretty long paper so if you want to get started quickly try uploading the [PDF](https://robman.fyi/files/FRESH-Geometry-of-Mind-PIR-2025-04-16.pdf) along with the ["Operationalising Geometry and Curvature" file](https://github.com/robman/FRESH-model/blob/main/concept-bootstraps/concept-bootstrap-Operationalising-Geometry-and-Curvature.pdf) to ChatGPT, Gemini and Claude. Ask them to "summarise, analyse and critique" the paper. 
+
+> [Here's one I prepared earlier to save you time](https://chatgpt.com/share/6800a890-f4b0-800d-ab8a-6f193162606c) To quote:
+>
+>> 🔖 Overall Evaluation
+>> The FRESH model is a philosophically rich, structurally innovative framework that reframes consciousness as curvature in representational geometry. While still in early stages of empirical validation, it provides an unusually precise and promising foundation for future work in synthetic phenomenology and AI ethics.
+
+This way you can quickly do the following:
 
 - Get an independent(-ish) perspective on this model
 - Compare and contrast how the different LLMs review this model
-- Quickly decide if you want to dedicate the time to read through the full paper (I know you have limited time!)
+- Decide if you want to dedicate the time to read through the full paper (I know you have limited time!)
 
 This is not a suggestion to let the LLMs do all the work. It's just an interesting way to get started - YMMV!
 
