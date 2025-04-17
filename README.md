@@ -12,8 +12,9 @@ It's a pretty long paper so if you want to get started quickly try uploading the
 
 > [Here's one I prepared earlier to save you time](https://chatgpt.com/share/6800a890-f4b0-800d-ab8a-6f193162606c) To quote:
 >
->> 🔖 Overall Evaluation
->> The FRESH model is a philosophically rich, structurally innovative framework that reframes consciousness as curvature in representational geometry. While still in early stages of empirical validation, it provides an unusually precise and promising foundation for future work in synthetic phenomenology and AI ethics.
+>> 🔖 **Overall Evaluation**
+>>
+>> *The FRESH model is a philosophically rich, structurally innovative framework that reframes consciousness as curvature in representational geometry. While still in early stages of empirical validation, it provides an unusually precise and promising foundation for future work in synthetic phenomenology and AI ethics.*
 
 This way you can quickly do the following:
 
