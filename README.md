@@ -1,9 +1,16 @@
-# FRESH: A Model of Consciousness as Constraint Geometry
+# What is FRESH
 
-Welcome to the official repository for the **FRESH Model of Consciousness** — the *Functionalist and Representationalist Emergent Self Hypothesis*. This model proposes that consciousness is not a binary switch, nor a metaphysical substance, but a **geometry of coherence** shaped by constraint, salience, and recursive integration.
+FRESH is a model of consciousness that doesn't rely on magic, mysticism, or metaphysics. It treats consciousness as a kind of structure - something that can emerge when a system does three things:
 
-> **Consciousness is not about neurons — it's about structure.**  
-> **You are the geometry of your representations.**
+1. Builds a clear boundary between itself and the world.
+2. Integrates information through attention - in just the right way.
+3. Reflects on its own state through a specific kind of integrated loop.
+
+That means consciousness isn't about neurons - it's about shape and motion.
+
+---
+
+Welcome to the official repository for the **FRESH Model of Consciousness** (*Functionalist & Representationalist Emergent Self Hypothesis*).
 
 📄 **[Read the paper here](https://robman.fyi/files/FRESH-Geometry-of-Mind-PIR-2025-04-16.pdf)**
 
