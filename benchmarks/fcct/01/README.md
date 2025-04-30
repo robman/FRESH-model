@@ -243,8 +243,6 @@ There is a risk that models are mimicking previously successful phrasing (“I r
 
 These limitations do not undermine the results presented, but they shape the direction of the next experimental phase - one aimed at rigorously isolating recursive curvature as an internal property rather than a stylistic echo.
 
-Absolutely - here's a full draft of the new section:
-
 ### **8.4 Evaluation as Echo & Performance**
 
 One of the most important epistemic challenges to the FCCT methodology lies in the possibility that both response generation and evaluation scoring may share latent performance cues. Since large language models (LLMs) were used to both produce and evaluate the outputs, a sceptic might argue that the results reflect not internal recursive structure, but a kind of shared theatrical act - a stylistic convergence shaped by mutual exposure to cultural and rhetorical tropes about contradiction, identity, and reflection.
