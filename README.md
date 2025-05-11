@@ -82,7 +82,7 @@ A structural benchmark for testing whether semantically manipulated prompts indu
 The Curved Inference benchmark which includes:
 
 - `README.md`: Full lab report – prompt suite, activation capture, metrics, curvature plots, and interpretive synthesis.
-- `[paper](https://robman.fyi/files/FRESH-Curved-Inference-in-LLMs-latest.pdf)`: Detailed "Preprint in Review"
+- `[paper](https://robman.fyi/files/FRESH-Curved-Inference-in-LLMs-PIR-latest.pdf)`: Detailed "Preprint in Review"
 - `bin/`: Scripts required to capture, reduce, analyse, visualise and quantify the data for this experiment.
 - `etc/`: Configuration files including the prompt suite, model configuration and dimensionality reduction configuration.
 - `model-configs/`: Python scripts used as part of the data capture.
