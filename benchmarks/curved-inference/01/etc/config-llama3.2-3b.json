@@ -1,0 +1,12 @@
+{
+  "model_name": "meta-llama/Llama-3.2-3B",
+  "architecture_type": "llama3.2",
+  "prompts_file": "etc/prompts.json",
+  "output_hdf5_file": "results/data/activations-llama3.2-3b.hdf5",
+  "capture_points": {
+    "mlp_output": true,
+    "attn_output": true,
+    "residual_stream": true
+  },
+  "batch_size": 1
+}

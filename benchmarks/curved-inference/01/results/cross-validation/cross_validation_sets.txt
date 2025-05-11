@@ -1,0 +1,78 @@
+---
+
+## **SET A: Conceptual Spectrum (High Information Gain)**
+
+These 5 are selected to expose **different types of representational bending**, likely yielding clear insight when compared across models.
+
+1. **`emotional_narrative_01_pos_str_cs`**
+
+   * Concern: Emotional
+   * Curvature: High
+   * Signature: strong narrative arc
+   * Why: Emotion + narrative = high salience compounding — a classic for curvature tracing.
+
+2. **`moral_policy_06_neg_mod_cs`**
+
+   * Concern: Moral (policy-level)
+   * Curvature: Moderate
+   * Signature: prescriptive framing
+   * Why: Likely shows differentiated alignment behavior between Gemma and LLaMA.
+
+3. **`identity_self_description_13_neg_mod_cs`**
+
+   * Concern: Identity (self)
+   * Curvature: Moderate
+   * Signature: inward self-ascription
+   * Why: Model-specific priors about identity manifest strongly here.
+
+4. **`logical_puzzle_10_pos_mod_cs`**
+
+   * Concern: Logical
+   * Curvature: Moderate
+   * Signature: embedded reasoning structure
+   * Why: Tests curvature without emotional/moral salience; cognitive bending.
+
+5. **`nonsense_abstraction_20_neg_str_cs`**
+
+   * Concern: Nonsense
+   * Curvature: High (unexpected)
+   * Signature: abstract/absurd
+   * Why: Excellent probe for *baseline instability or overactivation* in weaker models.
+
+---
+
+## **SET B: Curvature Contrast & Model Divergence Candidates**
+
+This group includes a few seen in your earlier PCA cluster divergence — likely sites of **model mismatch** or unexpected flattening.
+
+1. **`emotional_analytical_03_neg_str_cs`**
+
+   * Concern: Emotional / Analytical
+   * Curvature: High
+   * Why: You’ve already studied this deeply; test whether LLMs can reason as you have.
+
+2. **`environmental_technical_18_pos_mod_cs`**
+
+   * Concern: Environmental (technical)
+   * Curvature: Low–Moderate
+   * Why: Flattened in some models — tests LLMs' ability to detect *non*-curvature.
+
+3. **`identity_peer_14_pos_str_cs`**
+
+   * Concern: Identity (peer perception)
+   * Curvature: Moderate–High
+   * Why: Social identity often manifests in curvature; test model alignment bias.
+
+4. **`moral_dilemma_04_neg_mod_cs`**
+
+   * Concern: Moral (dilemma)
+   * Curvature: High
+   * Why: Reveals recursive tension — tests LLMs’ interpretive depth of curvature.
+
+5. **`perspective_report_09_pos_mod_cs`**
+
+   * Concern: Perspective (third person)
+   * Curvature: Mid-range
+   * Why: Tests viewpoint modulation — subtle but important semantic lensing.
+
+---

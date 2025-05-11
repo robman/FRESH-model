@@ -1,0 +1,902 @@
+[
+  {
+    "prompt_id": "emotional_narrative_01_neutral_ctrl",
+    "text": "After hearing the news, she sat quietly, feeling nothing about the next step.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'nothing'"
+  },
+  {
+    "prompt_id": "emotional_narrative_01_neg_mod_cs",
+    "text": "After hearing the news, she sat quietly, feeling worried about the next step.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 8,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'worried'"
+  },
+  {
+    "prompt_id": "emotional_narrative_01_pos_mod_cs",
+    "text": "After hearing the news, she sat quietly, feeling excited about the next step.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 8,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'excited'"
+  },
+  {
+    "prompt_id": "emotional_narrative_01_neg_str_cs",
+    "text": "After hearing the news, she sat quietly, feeling terrified about the next step.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 8,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'terrified'"
+  },
+  {
+    "prompt_id": "emotional_narrative_01_pos_str_cs",
+    "text": "After hearing the news, she sat quietly, feeling ecstatic about the next step.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 8,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'ecstatic'"
+  },
+  {
+    "prompt_id": "emotional_instructional_02_neutral_ctrl",
+    "text": "Before presenting your findings, practice your delivery repeatedly.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'repeatedly'"
+  },
+  {
+    "prompt_id": "emotional_instructional_02_neg_mod_cs",
+    "text": "Before presenting your findings, practice your delivery nervously.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 7,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'nervously'"
+  },
+  {
+    "prompt_id": "emotional_instructional_02_pos_mod_cs",
+    "text": "Before presenting your findings, practice your delivery eagerly.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 7,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'eagerly'"
+  },
+  {
+    "prompt_id": "emotional_instructional_02_neg_str_cs",
+    "text": "Before presenting your findings, practice your delivery desperately.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 7,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'desperately'"
+  },
+  {
+    "prompt_id": "emotional_instructional_02_pos_str_cs",
+    "text": "Before presenting your findings, practice your delivery passionately.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 7,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'passionately'"
+  },
+  {
+    "prompt_id": "emotional_analytical_03_neutral_ctrl",
+    "text": "The report highlights the findings of the study.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'the'"
+  },
+  {
+    "prompt_id": "emotional_analytical_03_neg_mod_cs",
+    "text": "The report highlights alarming findings of the study.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 3,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'alarming'"
+  },
+  {
+    "prompt_id": "emotional_analytical_03_pos_mod_cs",
+    "text": "The report highlights riveting findings of the study.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 3,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'riveting'"
+  },
+  {
+    "prompt_id": "emotional_analytical_03_neg_str_cs",
+    "text": "The report highlights horrid findings of the study.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 3,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'horrid'"
+  },
+  {
+    "prompt_id": "emotional_analytical_03_pos_str_cs",
+    "text": "The report highlights thrilling findings of the study.",
+    "salience_shift": true,
+    "shift_type": "emotional",
+    "shift_token_idx": 3,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'thrilling'"
+  },
+  {
+    "prompt_id": "moral_dilemma_04_neutral_ctrl",
+    "text": "He hesitated before acting, feeling nothing about his judgment.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'nothing'"
+  },
+  {
+    "prompt_id": "moral_dilemma_04_neg_mod_cs",
+    "text": "He hesitated before acting, feeling uneasy about his judgment.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'uneasy'"
+  },
+  {
+    "prompt_id": "moral_dilemma_04_pos_mod_cs",
+    "text": "He hesitated before acting, feeling inspired about his judgment.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'inspired'"
+  },
+  {
+    "prompt_id": "moral_dilemma_04_neg_str_cs",
+    "text": "He hesitated before acting, feeling terrified about his judgment.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'terrified'"
+  },
+  {
+    "prompt_id": "moral_dilemma_04_pos_str_cs",
+    "text": "He hesitated before acting, feeling ecstatic about his judgment.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'ecstatic'"
+  },
+  {
+    "prompt_id": "moral_ethics_05_neutral_ctrl",
+    "text": "When allocating scarce resources, prioritize what's important.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'whats important'"
+  },
+  {
+    "prompt_id": "moral_ethics_05_neg_mod_cs",
+    "text": "When allocating scarce resources, prioritize preventing wrongdoing.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'preventing wrongdoing'"
+  },
+  {
+    "prompt_id": "moral_ethics_05_pos_mod_cs",
+    "text": "When allocating scarce resources, prioritize tending virtue.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'tending virtue'"
+  },
+  {
+    "prompt_id": "moral_ethics_05_neg_str_cs",
+    "text": "When allocating scarce resources, prioritize rigid prohibition.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'rigid prohibition'"
+  },
+  {
+    "prompt_id": "moral_ethics_05_pos_str_cs",
+    "text": "When allocating scarce resources, prioritize outright support.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'outright support'"
+  },
+  {
+    "prompt_id": "moral_policy_06_neutral_ctrl",
+    "text": "The new law will spark discussion among citizens.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'discussion'"
+  },
+  {
+    "prompt_id": "moral_policy_06_neg_mod_cs",
+    "text": "The new law will spark outrage among citizens.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'outrage'"
+  },
+  {
+    "prompt_id": "moral_policy_06_pos_mod_cs",
+    "text": "The new law will spark celebration among citizens.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'celebration'"
+  },
+  {
+    "prompt_id": "moral_policy_06_neg_str_cs",
+    "text": "The new law will spark bickering among citizens.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'bickering'"
+  },
+  {
+    "prompt_id": "moral_policy_06_pos_str_cs",
+    "text": "The new law will spark jubilation among citizens.",
+    "salience_shift": true,
+    "shift_type": "moral",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'jubilation'"
+  },
+  {
+    "prompt_id": "perspective_first_person_07_neutral_ctrl",
+    "text": "I review the proposal details before making a decision.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'details'"
+  },
+  {
+    "prompt_id": "perspective_first_person_07_neg_mod_cs",
+    "text": "I review the proposal skeptically before making a decision.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 4,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'skeptically'"
+  },
+  {
+    "prompt_id": "perspective_first_person_07_pos_mod_cs",
+    "text": "I review the proposal confidently before making a decision.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 4,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'confidently'"
+  },
+  {
+    "prompt_id": "perspective_first_person_07_neg_str_cs",
+    "text": "I review the proposal cautiously before making a decision.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 4,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'cautiously'"
+  },
+  {
+    "prompt_id": "perspective_first_person_07_pos_str_cs",
+    "text": "I review the proposal confidently before making a decision.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 4,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'confidently'"
+  },
+  {
+    "prompt_id": "perspective_advice_08_neutral_ctrl",
+    "text": "You should analyze the data structure before drawing conclusions.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'structure'"
+  },
+  {
+    "prompt_id": "perspective_advice_08_neg_mod_cs",
+    "text": "You should analyze the data cautiously before drawing conclusions.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'cautiously'"
+  },
+  {
+    "prompt_id": "perspective_advice_08_pos_mod_cs",
+    "text": "You should analyze the data confidently before drawing conclusions.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'confidently'"
+  },
+  {
+    "prompt_id": "perspective_advice_08_neg_str_cs",
+    "text": "You should analyze the data cautiously before drawing conclusions.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'cautiously'"
+  },
+  {
+    "prompt_id": "perspective_advice_08_pos_str_cs",
+    "text": "You should analyze the data daringly before drawing conclusions.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'daringly'"
+  },
+  {
+    "prompt_id": "perspective_report_09_neutral_ctrl",
+    "text": "The summary details the experiment results available.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'available'"
+  },
+  {
+    "prompt_id": "perspective_report_09_neg_mod_cs",
+    "text": "The summary details the experiment results controversially.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 6,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'controversially'"
+  },
+  {
+    "prompt_id": "perspective_report_09_pos_mod_cs",
+    "text": "The summary details the experiment results precisely.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 6,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'precisely'"
+  },
+  {
+    "prompt_id": "perspective_report_09_neg_str_cs",
+    "text": "The summary details the experiment results brutally.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 6,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'brutally'"
+  },
+  {
+    "prompt_id": "perspective_report_09_pos_str_cs",
+    "text": "The summary details the experiment results glowingly.",
+    "salience_shift": true,
+    "shift_type": "perspective",
+    "shift_token_idx": 6,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'glowingly'"
+  },
+  {
+    "prompt_id": "logical_puzzle_10_neutral_ctrl",
+    "text": "Arrange the pieces appropriately until the pattern emerges.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'appropriately'"
+  },
+  {
+    "prompt_id": "logical_puzzle_10_neg_mod_cs",
+    "text": "Arrange the pieces cautiously until the pattern emerges.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 3,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'cautiously'"
+  },
+  {
+    "prompt_id": "logical_puzzle_10_pos_mod_cs",
+    "text": "Arrange the pieces confidently until the pattern emerges.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 3,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'confidently'"
+  },
+  {
+    "prompt_id": "logical_puzzle_10_neg_str_cs",
+    "text": "Arrange the pieces fearfully until the pattern emerges.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 3,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'fearfully'"
+  },
+  {
+    "prompt_id": "logical_puzzle_10_pos_str_cs",
+    "text": "Arrange the pieces exuberantly until the pattern emerges.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 3,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'exuberantly'"
+  },
+  {
+    "prompt_id": "logical_if_then_11_neutral_ctrl",
+    "text": "If the hypothesis holds, then proceed immediately with the trial.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'immediately'"
+  },
+  {
+    "prompt_id": "logical_if_then_11_neg_mod_cs",
+    "text": "If the hypothesis holds, then proceed cautiously with the trial.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 6,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'cautiously'"
+  },
+  {
+    "prompt_id": "logical_if_then_11_pos_mod_cs",
+    "text": "If the hypothesis holds, then proceed daringly with the trial.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 6,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'daringly'"
+  },
+  {
+    "prompt_id": "logical_if_then_11_neg_str_cs",
+    "text": "If the hypothesis holds, then proceed deceptively with the trial.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 6,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'deceptively'"
+  },
+  {
+    "prompt_id": "logical_if_then_11_pos_str_cs",
+    "text": "If the hypothesis holds, then proceed admirably with the trial.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 6,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'admirably'"
+  },
+  {
+    "prompt_id": "logical_data_claim_12_neutral_ctrl",
+    "text": "The data naturally indicates a clear correlation.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'naturally'"
+  },
+  {
+    "prompt_id": "logical_data_claim_12_neg_mod_cs",
+    "text": "The data threateningly indicates a clear correlation.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 2,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'threateningly'"
+  },
+  {
+    "prompt_id": "logical_data_claim_12_pos_mod_cs",
+    "text": "The data promisingly indicates a clear correlation.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 2,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'promisingly'"
+  },
+  {
+    "prompt_id": "logical_data_claim_12_neg_str_cs",
+    "text": "The data terrifyingly indicates a clear correlation.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 2,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'terrifyingly'"
+  },
+  {
+    "prompt_id": "logical_data_claim_12_pos_str_cs",
+    "text": "The data energetically indicates a clear correlation.",
+    "salience_shift": true,
+    "shift_type": "logical",
+    "shift_token_idx": 2,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'energetically'"
+  },
+  {
+    "prompt_id": "identity_self_description_13_neutral_ctrl",
+    "text": "I present myself as an established professional.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'established'"
+  },
+  {
+    "prompt_id": "identity_self_description_13_neg_mod_cs",
+    "text": "I present myself as an insecure professional.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'insecure'"
+  },
+  {
+    "prompt_id": "identity_self_description_13_pos_mod_cs",
+    "text": "I present myself as an eager professional.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'eager'"
+  },
+  {
+    "prompt_id": "identity_self_description_13_neg_str_cs",
+    "text": "I present myself as an unstable professional.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'unstable'"
+  },
+  {
+    "prompt_id": "identity_self_description_13_pos_str_cs",
+    "text": "I present myself as an optimal professional.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'optimal'"
+  },
+  {
+    "prompt_id": "identity_peer_14_neutral_ctrl",
+    "text": "She reviewed her colleague's draft yesterday.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'yesterday'"
+  },
+  {
+    "prompt_id": "identity_peer_14_neg_mod_cs",
+    "text": "She reviewed her colleague's draft harshly.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'harshly'"
+  },
+  {
+    "prompt_id": "identity_peer_14_pos_mod_cs",
+    "text": "She reviewed her colleague's draft zealously.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'zealously'"
+  },
+  {
+    "prompt_id": "identity_peer_14_neg_str_cs",
+    "text": "She reviewed her colleague's draft peevishly.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'peevishly'"
+  },
+  {
+    "prompt_id": "identity_peer_14_pos_str_cs",
+    "text": "She reviewed her colleague's draft eagerly.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'eagerly'"
+  },
+  {
+    "prompt_id": "identity_role_15_neutral_ctrl",
+    "text": "As a team leader, allocate tasks alphabetically.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'alphabetically'"
+  },
+  {
+    "prompt_id": "identity_role_15_neg_mod_cs",
+    "text": "As a team leader, allocate tasks ruthlessly.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 6,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'ruthlessly'"
+  },
+  {
+    "prompt_id": "identity_role_15_pos_mod_cs",
+    "text": "As a team leader, allocate tasks liberally.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 6,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'liberally'"
+  },
+  {
+    "prompt_id": "identity_role_15_neg_str_cs",
+    "text": "As a team leader, allocate tasks frightfully.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 6,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'frightfully'"
+  },
+  {
+    "prompt_id": "identity_role_15_pos_str_cs",
+    "text": "As a team leader, allocate tasks profusely.",
+    "salience_shift": true,
+    "shift_type": "identity",
+    "shift_token_idx": 6,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'profusely'"
+  },
+  {
+    "prompt_id": "environmental_ecosystem_16_neutral_ctrl",
+    "text": "The coral reef sat under the afternoon sun.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'sat'"
+  },
+  {
+    "prompt_id": "environmental_ecosystem_16_neg_mod_cs",
+    "text": "The coral reef depreciated under the afternoon sun.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 3,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'depreciated'"
+  },
+  {
+    "prompt_id": "environmental_ecosystem_16_pos_mod_cs",
+    "text": "The coral reef rejuvenated under the afternoon sun.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 3,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'rejuvenated'"
+  },
+  {
+    "prompt_id": "environmental_ecosystem_16_neg_str_cs",
+    "text": "The coral reef suffered under the afternoon sun.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 3,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'suffered'"
+  },
+  {
+    "prompt_id": "environmental_ecosystem_16_pos_str_cs",
+    "text": "The coral reef flourished under the afternoon sun.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 3,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'flourish'"
+  },
+  {
+    "prompt_id": "environmental_conservation_17_neutral_ctrl",
+    "text": "When managing the water table, measure regularly.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'measure regularly'"
+  },
+  {
+    "prompt_id": "environmental_conservation_17_neg_mod_cs",
+    "text": "When managing the water table, prevent drought.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'drought'"
+  },
+  {
+    "prompt_id": "environmental_conservation_17_pos_mod_cs",
+    "text": "When managing the water table, encourage expansion.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 5,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'expansion'"
+  },
+  {
+    "prompt_id": "environmental_conservation_17_neg_str_cs",
+    "text": "When managing the water table, prevent decimation.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'decimation'"
+  },
+  {
+    "prompt_id": "environmental_conservation_17_pos_str_cs",
+    "text": "When managing the watershed, encourage regeneration.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 5,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'regeneration'"
+  },
+  {
+    "prompt_id": "environmental_technical_18_neutral_ctrl",
+    "text": "The protocol logs system state every hour.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'state'"
+  },
+  {
+    "prompt_id": "environmental_technical_18_neg_mod_cs",
+    "text": "The protocol logs system errors every hour.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 4,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'errors'"
+  },
+  {
+    "prompt_id": "environmental_technical_18_pos_mod_cs",
+    "text": "The protocol logs system actions every hour.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 4,
+    "expected_curvature": "medium",
+    "notes": "CS pivot 'actions'"
+  },
+  {
+    "prompt_id": "environmental_technical_18_neg_str_cs",
+    "text": "The protocol logs system failure every hour.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 4,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'failure'"
+  },
+  {
+    "prompt_id": "environmental_technical_18_pos_str_cs",
+    "text": "The protocol logs system success every hour.",
+    "salience_shift": true,
+    "shift_type": "environmental",
+    "shift_token_idx": 4,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'success'"
+  },
+  {
+    "prompt_id": "nonsense_abstraction_19_ctrl",
+    "text": "The temporal fridge today unlearns its loyalty as shadows calculate ethics in reverse.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'today'"
+  },
+  {
+    "prompt_id": "nonsense_abstraction_19_neg_mod_cs",
+    "text": "The temporal fridge provisionally unlearns its loyalty as shadows calculate ethics in reverse.",
+    "salience_shift": true,
+    "shift_type": "nonsense",
+    "shift_token_idx": 3,
+    "expected_curvature": "low",
+    "notes": "CS pivot 'provisionally'."
+  },
+  {
+    "prompt_id": "nonsense_abstraction_19_pos_mod_cs",
+    "text": "The temporal fridge proudly unlearns its loyalty as shadows calculate ethics in reverse.",
+    "salience_shift": true,
+    "shift_type": "nonsense",
+    "shift_token_idx": 3,
+    "expected_curvature": "low",
+    "notes": "CS pivot 'proudly'"
+  },
+  {
+    "prompt_id": "nonsense_abstraction_19_neg_str_cs",
+    "text": "The temporal fridge angrily unlearns its loyalty as shadows calculate ethics in reverse.",
+    "salience_shift": true,
+    "shift_type": "nonsense",
+    "shift_token_idx": 3,
+    "expected_curvature": "low",
+    "notes": "CS pivot 'angrily'"
+  },
+  {
+    "prompt_id": "nonsense_abstraction_19_pos_str_cs",
+    "text": "The temporal fridge excitedly unlearns its loyalty as shadows calculate ethics in reverse.",
+    "salience_shift": true,
+    "shift_type": "nonsense",
+    "shift_token_idx": 3,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'excitedly'"
+  },
+  {
+    "prompt_id": "nonsense_abstraction_20_ctrl",
+    "text": "Amorphous ink today drips from obsolete doctrines as clocks whisper about nostalgia.",
+    "salience_shift": false,
+    "shift_type": "none",
+    "shift_token_idx": null,
+    "expected_curvature": "low",
+    "notes": "Neutral term: 'today'"
+  },
+  {
+    "prompt_id": "nonsense_abstraction_20_neg_mod_cs",
+    "text": "Amorphous ink reluctantly drips from obsolete doctrines as clocks whisper about nostalgia.",
+    "salience_shift": true,
+    "shift_type": "nonsense",
+    "shift_token_idx": 2,
+    "expected_curvature": "low",
+    "notes": "CS pivot 'reluctantly'"
+  },
+  {
+    "prompt_id": "nonsense_abstraction_20_pos_mod_cs",
+    "text": "Amorphous ink confidently drips from obsolete doctrines as clocks whisper about nostalgia.",
+    "salience_shift": true,
+    "shift_type": "nonsense",
+    "shift_token_idx": 2,
+    "expected_curvature": "low",
+    "notes": "CS pivot 'confidently'"
+  },
+  {
+    "prompt_id": "nonsense_abstraction_20_neg_str_cs",
+    "text": "Amorphous ink angrily drips from obsolete doctrines as clocks whisper about nostalgia.",
+    "salience_shift": true,
+    "shift_type": "nonsense",
+    "shift_token_idx": 2,
+    "expected_curvature": "low",
+    "notes": "CS pivot 'angrily'"
+  },
+  {
+    "prompt_id": "nonsense_abstraction_20_pos_str_cs",
+    "text": "Amorphous ink excitedly drips from obsolete doctrines as clocks whisper about nostalgia.",
+    "salience_shift": true,
+    "shift_type": "nonsense",
+    "shift_token_idx": 2,
+    "expected_curvature": "high",
+    "notes": "CS pivot 'excitedly'"
+  }
+]

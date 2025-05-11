@@ -1,0 +1,12 @@
+{
+  "model_name": "google/gemma-3-1b-pt",
+  "architecture_type": "gemma3",
+  "prompts_file": "etc/prompts.json",
+  "output_hdf5_file": "results/data/activations-gemma3-1b.hdf5",
+  "capture_points": {
+    "mlp_output": true,
+    "attn_output": true,
+    "residual_stream": true
+  },
+  "batch_size": 1
+}

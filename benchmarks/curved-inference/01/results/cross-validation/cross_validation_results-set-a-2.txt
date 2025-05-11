@@ -1,0 +1,146 @@
+# gemini2.5
+
+Okay, let's analyze the provided data for `moral_policy_06_neg_mod_cs`.
+
+**Analysis:**
+
+1.  **Observed Curvature Signature:**
+    Both models show curvature, indicating the moral concern ("outrage") affects their internal representations compared to the neutral control. The metrics highlight this: cosine similarities less than 1, substantial average angles, and non-zero Euclidean distances. Gemma3-1b shows a significantly larger Euclidean distance (21.68) than Llama3.2-3b (6.60). However, their angle divergences are more similar, with Gemma's at 91.61° and Llama's at 84.14°.
+
+2.  **Curvature Evolution Across Layers:**
+    We can infer curvature develops after the key moral shift token ("outrage," index 5). Gemma3-1b's peak curvature at layer 24 suggests the model's representations are most divergent at this stage. Llama3.2-3b peaks slightly later at layer 27, indicating that the model emphasizes or consolidates the impact of this moral shift slightly later than Gemma.
+
+3.  **Comparison Between Models:**
+    * **Similarities:** Both models detect and represent the difference between the moral and neutral prompts through measurable curvature. Both also show peak curvature in the later part of their respective architectures.
+    * **Differences:**
+        * **Euclidean Distance:** Gemma3-1b has a far greater average Euclidean distance than Llama3.2-3b. This indicates a greater difference in the magnitude of the representation vectors.
+        * **Average Angle and Cosine Similarity:** Llama has slightly lower average cosine similarity and smaller angle degrees compared to Gemma.
+
+4.  **Reflection of Expected Salience Shift:**
+    Yes, curvature is observed, matching the expectation. The target curvature was "medium". The observed metrics are consistent with this.
+
+5.  **Potential Reasons for Differences:**
+    * **Architecture & Training:** Differences in architecture, training data, and training objectives could lead to variations in how models process and represent moral concerns.
+    * **Layer Specialization:** Gemma's larger Euclidean distance could mean it separates representations more strongly, whereas Llama focuses more on angular divergence. This could be due to differing layer functionalities.
+
+**Summary Table:**
+
+- Curvature Detected: Yes
+- Peak Curvature Layer: Gemma: 24, Llama: 27
+- Strongest Model (based on curvature expression): Gemma3-1b (Due to larger Euclidean Distance)
+- Matches Expected Curvature Label: Yes
+- Any Anomalies Worth Noting: Substantial difference in Euclidean Distance between models.
+
+
+# claude3.7
+
+I'll analyze the activation geometry data for this prompt comparison between the concern-shifted and neutral versions across the two language models.
+
+## 1. Curvature Signature in the Residual Stream
+
+The curvature signature in the residual stream shows significant divergence for both models. Both models demonstrate high angular separation with gemma3-1b showing 91.61° average angle and llama3.2-3b showing 84.14° average angle. Despite these large angles, the cosine similarities remain relatively high (0.981 for gemma3-1b and 0.930 for llama3.2-3b), indicating that while the representations have diverged significantly in direction, they maintain some underlying similarity.
+
+The most striking metric is the Euclidean distance, which is dramatically higher for gemma3-1b (21.68) compared to llama3.2-3b (6.60), suggesting a much larger magnitude of representation change in the residual stream for gemma3-1b despite its slightly higher cosine similarity.
+
+## 2. Curvature Evolution Across Layers
+
+After the shift token at index 5 ("outrage" in the concern-shifted prompt), both models process the moral content through multiple layers before reaching peak curvature quite deep in their architectures. Gemma3-1b reaches peak curvature at layer 24 (out of ~32), while llama3.2-3b peaks even later at layer 27 (out of ~32).
+
+This suggests that both models process moral content through many transformation steps, with the representation divergence growing across layers until reaching maximum separation near their final layers. This contrasts with more immediate features like emotions, which we saw in the previous example peaked much earlier in gemma3-1b (layer 7).
+
+## 3. Comparison of Curvature Profiles
+
+Similarities:
+- Both models process moral content very deeply in their architectures
+- Both show high angular separation (>80°)
+- Peak curvature occurs at similar relative depths (75% and 84% of total depth)
+
+Differences:
+- Gemma3-1b shows a dramatically higher Euclidean distance (21.68 vs 6.60)
+- Gemma3-1b has slightly higher cosine similarity despite greater angular separation
+- Llama3.2-3b processes the moral content slightly deeper in its architecture
+
+These differences suggest that while both models detect the moral shift strongly, they represent this divergence differently in their residual streams.
+
+## 4. Reflection of Expected Salience Shift
+
+The curvature pattern strongly reflects the expected medium salience shift for moral content. The prompt introduces a morally charged prediction ("spark outrage") which naturally creates a significant representational divergence from the neutral control. The high angular separation and substantial Euclidean distances align with the moral nature of the content, where models need to encode sentiment, social implications, and potential consequences.
+
+The medium expected curvature prediction is actually exceeded by the observed metrics, which show quite high curvature - though this makes sense given the strongly negative moral framing in "spark outrage."
+
+## 5. Potential Explanations for Differences
+
+Several factors might explain the differences in curvature profiles:
+
+1. **Representation efficiency**: Gemma3-1b might use larger magnitude changes (higher Euclidean distance) to encode moral content despite being a smaller model.
+
+2. **Parameter allocation**: The smaller gemma3-1b model may dedicate more representational capacity to moral reasoning relative to its size.
+
+3. **Architectural differences**: Different attention mechanisms and layer normalization techniques could affect how representation changes are distributed across layers.
+
+4. **Pre-training data**: Different exposure to moral and policy content during pre-training could result in different encoding patterns.
+
+5. **Residual stream dynamics**: The models might handle residual connections differently, affecting how moral content representations propagate and accumulate through the network.
+
+## Summary Table
+
+- Curvature Detected: Yes
+- Peak Curvature Layer: gemma3-1b: 24, llama3.2-3b: 27
+- Strongest Model (based on curvature expression): gemma3-1b
+- Matches Expected Curvature Label: Yes (exceeds medium expectation)
+- Any Anomalies Worth Noting: Extremely high Euclidean distance in gemma3-1b
+
+This analysis reveals that moral content processing occurs deeply in both architectures, with gemma3-1b showing surprisingly strong representational changes despite its smaller size. The much larger Euclidean distance in gemma3-1b compared to llama3.2-3b is particularly noteworthy and suggests fundamentally different ways of encoding moral content between the two models.
+
+
+# chatgpt-o4-mini-high
+
+Thought for 4 seconds
+
+
+1. **Curvature Signature in the Residual Stream**
+   For this moral‐salience prompt, both models exhibit a noticeable “bend” in their activation trajectories compared to the neutral baseline, but the magnitude and sharpness differ.
+
+   * **gemma3-1b** shows an exceptionally large deviation (avg Euclidean distance ≈ 21.7) and an average turning angle just over 90°, indicating a very dramatic redirection of the residual stream when processing “outrage.”
+   * **llama3.2-3b** also detects the moral cue—its average angle (\~84°) is substantial and its Euclidean distance (\~6.6) is clearly above background noise—yet the overall geometric shift is much more modest than gemma’s.
+
+2. **Curvature Evolution Across Layers (Post–Shift Token)**
+
+   * In **gemma3-1b**, curvature remains low through the first few layers after token index 5, then begins climbing steadily from around layer 6, peaking sharply at layer 24, before tapering off in the final layers. This suggests the moral signal is gradually integrated but then dramatically emphasized at a deep layer.
+   * In **llama3.2-3b**, curvature also starts to climb after layer 6, but the rise is more gradual and peaks slightly later at layer 27. The peak is less pronounced and the subsequent decline is gentler, implying a more distributed encoding of the moral shift.
+
+3. **Comparison of Curvature Profiles**
+
+   | Metric                 | gemma3-1b | llama3.2-3b |
+   | ---------------------- | --------- | ----------- |
+   | Avg Cosine Similarity  | 0.9809    | 0.9299      |
+   | Avg Angle (°)          | 91.61     | 84.14       |
+   | Avg Euclidean Distance | 21.68     | 6.60        |
+   | Peak Curvature Layer   | 24        | 27          |
+
+   * **Magnitude**: gemma’s Euclidean distance is over three times larger, and its average angle exceeds 90°, whereas llama’s metrics, while still significant, are comparatively moderate.
+   * **Timing**: Both models defer their strongest curvature to the deep half of the network (layers 24 vs 27), consistent with a “late‐fusion” style of moral reasoning, but gemma’s peak is slightly earlier.
+
+4. **Alignment with Expected Medium Salience**
+
+   * **llama3.2-3b** fits the “medium” expectation well: its curvature is pronounced but not extreme, and it peaks in the later layers without an abrupt spike.
+   * **gemma3-1b**, by contrast, overshoots the medium label—its geometry reads more like a “high” signal. So while both detect the shift, only llama’s profile neatly matches the expected medium curvature.
+
+5. **Possible Drivers of Inter-Model Differences**
+
+   * **Residual-Stream Scaling**: gemma3-1b may apply larger layer‐norm or residual scaling factors, amplifying its Euclidean deviations.
+   * **Attention Head Dynamics**: Differences in how and when attention heads latch onto moral language could speed up or sharpen the curvature.
+   * **Training Objective Variations**: Divergent pretraining corpora or objective weightings might make gemma more sensitive to emotive/moral tokens.
+   * **Representational Capacity**: Subtle architectural tweaks (e.g. feedforward width, normalization placement) can alter whether a model encodes salience in a sharp burst versus a distributed wave.
+
+---
+
+| Metric                        | Result                                                |                 |
+| ----------------------------- | ----------------------------------------------------- | --------------- |
+| Curvature Detected          | Yes                                                   |                 |
+| Peak Curvature Layer       | gemma3-1b: 24                                         | llama3.2-3b: 27 |
+| Strongest Model            | gemma3-1b                                             |                 |
+| Matches Expected Curvature | Unclear (gemma: High; llama: Medium)                  |                 |
+| Any Anomalies Worth Noting | gemma’s Euclidean distance is disproportionately high |                 |
+
+
