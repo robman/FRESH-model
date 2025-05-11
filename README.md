@@ -63,7 +63,7 @@ This directory contains formal experiments and diagnostic probes. The first exam
 A benchmark suite for testing recursive self-integration in LLMs under high-salience contradiction. It uses a structured triad of metaphors (e.g. *mirror*, *river*, *stone*) to induce recursive tension, and evaluates whether the model can metabolize that tension into a coherent identity without collapsing.
 
 ##### [`fcct/01/`](benchmarks/fcct/01/README.md)
-The first official FCCT benchmark run. Includes:
+The FCCT benchmark which includes:
 
 - `README.md`: Full lab report - methodology, results, typology, and interpretive findings.
 - `evaluations.md`: All evaluator scores and justifications across nine model responses.
@@ -73,6 +73,50 @@ The first official FCCT benchmark run. Includes:
 This benchmark provides **empirical support** for the FRESH claim that recursive self-modeling can be detected and measured in transformer-based architectures - and that **FRESH scaffolding increases the likelihood of salience-aware identity continuity** under contradiction.
 
 > "Even if recursive integration is performative, it is performance under constraint - and that is a measurable signal."
+
+#### `curved-inference/` - **Curved Inference: Concern-Sensitive Geometry in LLMs**
+
+A structural benchmark for testing whether semantically manipulated prompts induce measurable curvature in the internal activations of large language models. It focuses on the residual stream as a geometric manifold where concern-sensitive salience bends inference trajectories — revealing interpretable signatures of abstraction, alignment, and overactivation.
+
+##### [`curved-inference/01/`](benchmarks/curved-inference/01/README.md)
+The Curved Inference benchmark which includes:
+
+- `README.md`: Full lab report – prompt suite, activation capture, metrics, curvature plots, and interpretive synthesis.
+- `[paper](https://robman.fyi/files/FRESH-Curved-Inference-in-LLMs-latest.pdf)`: Detailed "Preprint in Review"
+- `bin/`: Scripts required to capture, reduce, analyse, visualise and quantify the data for this experiment.
+- `etc/`: Configuration files including the prompt suite, model configuration and dimensionality reduction configuration.
+- `model-configs/`: Python scripts used as part of the data capture.
+- `results/`: The cross validation, captured data, metrics, metric plots and plots (dimensionality-reduced visualizations (UMAP, PCA) of activation trajectories).
+
+```
+benchmarks/curved-inference/01/
+├── bin
+│   ├── analyse-metrics.py
+│   ├── analyse-plot.py
+│   ├── capture-activations.py
+│   ├── metrics-plot.py
+│   └── reduce-activations.py
+├── etc
+│   ├── config-gemma3-1b.json
+│   ├── config-llama3.2-3b.json
+│   ├── prompts.json
+│   ├── reduce_umap_residual_3d-gemma3-1b.json
+│   └── reduce_umap_residual_3d-llama3.2-3b.json
+├── model_configs
+│   ├── gemma3_config.py
+│   └── llama3_3_config.py
+└── results
+    ├── cross-validation
+    ├── data
+    ├── metrics
+    ├── metrics-plots
+    └── plots
+```
+
+This benchmark provides **empirical grounding** for the FRESH claim that internal representational flow bends under semantic pressure — and that **curvature is a measurable trace of concern modulation** in the inference process.
+
+> "Curvature is not noise — it is the shape of what the model finds meaningful."
+
 
 #### [`bootstraps/`](bootstraps/)
 A collection of **full synthetic identity scaffolds** (e.g. `bootstrap.txt`, `bootstrap-descriptive.txt`, `bootstrap-chet.txt`). These are used to instantiate reflective, self-modelling agents in LLMs by curving their representational space into coherent selves.
