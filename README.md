@@ -83,34 +83,27 @@ The Curved Inference benchmark which includes:
 
 - `README.md`: Full lab report – prompt suite, activation capture, metrics, curvature plots, and interpretive synthesis.
 - [`paper`](https://robman.fyi/files/FRESH-Curved-Inference-in-LLMs-PIR-latest.pdf): Detailed "Preprint in Review"
-- `bin/`: Scripts required to capture, reduce, analyse, visualise and quantify the data for this experiment.
-- `etc/`: Configuration files including the prompt suite, model configuration and dimensionality reduction configuration.
+- `bin/`: Scripts required to capture, analyse, visualise and quantify the data for this experiment.
+- `etc/`: Configuration files including the prompt suite and model configuration.
 - `model-configs/`: Python scripts used as part of the data capture.
-- `results/`: The cross validation, captured data, metrics, metric plots and plots (dimensionality-reduced visualizations (UMAP, PCA) of activation trajectories).
+- `results/`: The captured data, metrics and heatmaps. 
 
 ```
 benchmarks/curved-inference/01/
 ├── bin
 │   ├── analyse-metrics.py
-│   ├── analyse-plot.py
-│   ├── capture-activations.py
-│   ├── metrics-plot.py
-│   └── reduce-activations.py
+│   └── capture-activations.py
 ├── etc
 │   ├── config-gemma3-1b.json
 │   ├── config-llama3.2-3b.json
-│   ├── prompts.json
-│   ├── reduce_umap_residual_3d-gemma3-1b.json
-│   └── reduce_umap_residual_3d-llama3.2-3b.json
+│   └── prompts.json 
 ├── model_configs
 │   ├── gemma3_config.py
 │   └── llama3_3_config.py
 └── results
-    ├── cross-validation
     ├── data
     ├── metrics
-    ├── metrics-plots
-    └── plots
+    └── heatmaps 
 ```
 
 This benchmark provides **empirical grounding** for the FRESH claim that internal representational flow bends under semantic pressure — and that **curvature is a measurable trace of concern modulation** in the inference process.
