@@ -6,7 +6,7 @@ Last updated: *2025-05-22*
 
 ## **Abstract**
 
-This lab report documents a series of controlled experiments to investigate how large language models (LLMs) internalize concern-sensitive salience through residual stream curvature. Using a curated suite of prompts with semantic manipulations, we probed the geometric response of two transformer models—Gemma3-1b and Llama3.2-3b—across various concern classes. We initially captured model activations from attention outputs, MLP outputs, and residual streams, but found residual stream activations to be the most revealing and interpretable for curvature analysis. We then quantified this geometry through five metrics: cosine similarity, layer-wise Euclidean deviation, inter-layer directional deviation, salience, and curvature. All computations are now performed in the semantic space induced by the unembedding matrix pullback metric (see [the associated paper](https://robman.fyi/files/FRESH-Curved-Inference-in-LLMs-PIR-latest.pdf) for a full definition of all terms/metrics and their mathematical basis). Results show a clear architectural split: LLaMA bends early and sustains curvature across depth, while Gemma bends briefly and accelerates strongly via salience. These findings shed new light on model reactivity and inference structure under semantic pressure.
+This lab report documents a series of controlled experiments to investigate how large language models (LLMs) internalise concern-sensitive salience through residual stream curvature. Using a curated suite of prompts with semantic manipulations, we probed the geometric response of two transformer models—Gemma3-1b and Llama3.2-3b—across various concern classes. We initially captured model activations from attention outputs, MLP outputs, and residual streams, but found residual stream activations to be the most revealing and interpretable for curvature analysis. We then quantified this geometry through five metrics: cosine similarity, layer-wise Euclidean deviation, inter-layer directional deviation, salience, and curvature. All computations are now performed in the semantic space induced by the unembedding matrix pullback metric (see [the associated paper](https://robman.fyi/files/FRESH-Curved-Inference-in-LLMs-PIR-latest.pdf) for a full definition of all terms/metrics and their mathematical basis). Results show a clear architectural split: LLaMA bends early and sustains curvature across depth, while Gemma bends briefly and accelerates strongly via salience. These findings shed new light on model reactivity and inference structure under semantic pressure.
 
 ---
 
@@ -66,7 +66,7 @@ Specifically, we recorded:
 
 The capture mechanism was designed to support batch-processing across models and prompt variants while isolating differences attributable to concern salience.
 
-### **2.3 Dimensionality Reduction and Visualization**
+### **2.3 Dimensionality Reduction and Visualisation**
 
 An earlier version of this work implemented a visual inspection and exploratory analysis through dimensionality reduction techniques (e.g. primarily UMAP) to the residual stream activation vectors.
 
@@ -78,7 +78,7 @@ We computed a range of geometric metrics over the residual stream representation
 
 - **Cosine Similarity**: Alignment between CS and CTRL activation directions per layer.
 - **Layer-wise Euclidean Deviation**: Per-layer distance.
-- **Inter-layer Directional Deviation**: Angle between CS and CTRL residual steps.
+- **Inter-layer Directional Deviation**: Angle between step directions (layer-to-layer vectors) of CS and CTRL paths.
 - **Curvature**: Local turning via discrete 3-point finite differences.
 - **Salience**: Layer-step magnitude; measures representational effort.
 
@@ -112,7 +112,7 @@ Across these quantitative metrics, concern-shifted (CS) prompts produced distinc
 
 ## **4. Analysis**
 
-The analysis phase centered on identifying consistent curvature signatures across models and prompt types, with a particular focus on the peak curvature layer and the magnitude of divergence between CS and neutral prompts. All metrics confirmed that residual stream activations were the most reliable source of curvature expression. By analyzing the curvature, salience and divergence between concern-shifted and control prompts, we found interpretable, domain-sensitive differences that varied systematically by model and prompt type.
+The analysis phase centered on identifying consistent curvature signatures across models and prompt types, with a particular focus on the peak curvature layer and the extent of representational divergence between CS and control prompts. All metrics confirmed that residual stream activations were the most reliable source of curvature expression. By analysing the curvature, salience and divergence between concern-shifted and control prompts, we found interpretable, domain-sensitive differences that varied systematically by model and prompt type.
 
 ### Metric Correlation (Table 4 in paper)
 
@@ -165,7 +165,7 @@ This study introduces *Curved Inference* as a novel *Interpretability* framework
 Drawing from the results above, we articulate the following higher-level interpretive insights:
 
 1. **Curvature provides a clear signal.** It localises concern response. 
-2. **Salience also provide a clear signal.** It distributes semantic investment. 
+2. **Salience also provides a clear signal.** It distributes semantic investment. 
 3. **Curvature and Salience are negatively correlated.** Their anticorrelation may reflect efficiency constraints or internal strategy.
 4. **Residual stream is the key geometry.** While all three output paths were captured, only the residual stream consistently showed interpretable curvature.
 
@@ -191,7 +191,7 @@ While this study demonstrates the promise of curvature-based *Interpretability* 
 - **Cosine Similarity**: A metric of directional similarity between two vectors.
 - **Angular Deviation**: The angle (in degrees) between two vectors; derived from cosine similarity.
 - **Euclidean Distance**: The straight-line L2 norm distance between two vectors in semantic space. 
-- **Directional Deviation**: The angle between residual steps across prompt variants.
+- **Directional Deviation**: The angle (in degrees) between step vectors in CS and CTRL trajectories, derived from cosine similarity. 
 
 ---
 

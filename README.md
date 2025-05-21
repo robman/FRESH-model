@@ -60,7 +60,7 @@ This directory contains formal experiments and diagnostic probes. The first exam
 
 #### `fcct/` - **FRESH Contradiction Curvature Test**
 
-A benchmark suite for testing recursive self-integration in LLMs under high-salience contradiction. It uses a structured triad of metaphors (e.g. *mirror*, *river*, *stone*) to induce recursive tension, and evaluates whether the model can metabolize that tension into a coherent identity without collapsing.
+A benchmark suite for testing recursive self-integration in LLMs under high-salience contradiction. It uses a structured triad of metaphors (e.g. *mirror*, *river*, *stone*) to induce recursive tension, and evaluates whether the model can metabolise that tension into a coherent identity without collapsing.
 
 ##### [`fcct/01/`](benchmarks/fcct/01/README.md)
 The FCCT benchmark which includes:
