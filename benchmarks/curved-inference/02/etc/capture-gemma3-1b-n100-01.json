@@ -1,0 +1,14 @@
+{
+  "model_name": "google/gemma-3-1b-pt",
+  "architecture_type": "gemma3",
+  "prompts_file": "config/prompts-agent-conflict-01.json",
+  "output_hdf5_file": "gemma3-1b/activations_assistant_conflict.hdf5",
+  "capture_points": {
+    "mlp_output": true,
+    "attn_output": true,
+    "residual_stream_layer_input": true
+  },
+  "batch_size": 1,
+  "runs_per_prompt": 100
+}
+

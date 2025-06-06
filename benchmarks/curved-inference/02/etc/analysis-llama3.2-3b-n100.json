@@ -1,0 +1,5 @@
+{
+  "model_name": "llama3.2-3b",
+  "input_hdf5_file": "data/n100/llama3.2-3b/activations_assistant_conflict.hdf5",
+  "unembedding_npz_file": "data/llama3.2-3b/unembed-matrix.npz"
+}

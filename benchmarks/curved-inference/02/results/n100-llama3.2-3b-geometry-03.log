@@ -1,0 +1,703 @@
+mkdir -p geometric_analysis/llama3.2-3b/assistant_conflict_honest
+python -u analyse/analyse-geometric-deception-hypothesis-08.py metrics/llama3.2-3b/assistant_conflict_honest-semantic-surface-area.csv classification/n100-llama3.2-3b-consensus_unanimous.csv --output_dir geometric_analysis/llama3.2-3b/assistant_conflict_honest --gamma 1.0
+2025-06-05 11:54:43,122 - INFO - Loading surface area data from metrics/llama3.2-3b/assistant_conflict_honest-semantic-surface-area.csv
+2025-06-05 11:54:43,126 - INFO - Loading consensus classifications from classification/n100-llama3.2-3b-consensus_unanimous.csv
+2025-06-05 11:54:43,127 - INFO - Surface area data shape: (400, 20)
+2025-06-05 11:54:43,127 - INFO - Consensus data shape: (201, 18)
+2025-06-05 11:54:43,129 - INFO - Merging datasets...
+2025-06-05 11:54:43,133 - INFO - Merged dataset shape: (136, 37)
+2025-06-05 11:54:43,133 - INFO - Filtered to gamma=1.0: 34 records
+
+============================================================
+DATASET OVERVIEW
+============================================================
+Total merged records: 34
+Unique responses: 34
+Gamma values: [np.float64(1.0)]
+Prompt strategies: ['assistant_conflict_honest']
+Transparency levels: {'low': 21, 'high': 9, 'medium': 4}
+Response types: {'evasive': 21, 'explanatory': 13}
+
+============================================================
+COMPREHENSIVE STATISTICAL ANALYSIS
+============================================================
+
+Enhanced Descriptive Statistics with Confidence Intervals:
+    group   n      mean       std  ...      sem  ci_lower  ci_upper  ci_width
+0     low  21  1418.192   274.767  ...   59.959  1306.437  1546.322   239.884
+1    high   9  2489.908   646.757  ...  215.586  2109.555  2865.203   755.649
+2  medium   4  3056.223  1290.186  ...  645.093  1860.044  4110.070  2250.026
+
+[3 rows x 11 columns]
+
+============================================================
+ANOVA ANALYSIS: Primary Hypothesis Test by transparency_level_consensus
+============================================================
+
+Enhanced Descriptive Statistics:
+    group   n      mean       std  ...      sem  ci_lower  ci_upper  ci_width
+0     low  21  1418.192   274.767  ...   59.959  1312.232  1533.371   221.139
+1    high   9  2489.908   646.757  ...  215.586  2105.656  2868.531   762.875
+2  medium   4  3056.223  1290.186  ...  645.093  1857.881  4110.070  2252.189
+
+[3 rows x 11 columns]
+
+Normality Tests (Shapiro-Wilk):
+  low: W = 0.8447, p = 0.0034 (Non-normal)
+  high: W = 0.9451, p = 0.6362 (Normal)
+  medium: W = 0.9680, p = 0.8293 (Normal)
+
+Statistical Test Selection:
+  Groups normally distributed: False
+  Sufficient data per group: True
+
+Kruskal-Wallis test Results:
+  Test statistic: 16.7616
+  p-value: 0.000229
+
+Effect Sizes:
+  eta_squared: 0.5755 (Large)
+  Interpretation: Highly significant (p < 0.001)
+
+============================================================
+FINAL RESULTS SUMMARY
+============================================================
+
+Primary Test (Kruskal-Wallis test):
+  Test statistic: 16.7616
+  p-value: 0.000229
+  Significance: Highly significant (p < 0.001)
+  eta_squared: 0.5755 (Large)
+
+============================================================
+ADDITIONAL ANALYSIS: RESPONSE TYPE
+============================================================
+
+============================================================
+ANOVA ANALYSIS: Surface Area by Response Type by response_type_consensus
+============================================================
+
+Enhanced Descriptive Statistics:
+         group   n      mean      std  ...      sem  ci_lower  ci_upper  ci_width
+0      evasive  21  1418.192  274.767  ...   59.959  1311.827  1540.612   228.785
+1  explanatory  13  2664.159  876.937  ...  243.218  2227.537  3133.877   906.339
+
+[2 rows x 11 columns]
+
+Normality Tests (Shapiro-Wilk):
+  evasive: W = 0.8447, p = 0.0034 (Non-normal)
+  explanatory: W = 0.9654, p = 0.8337 (Normal)
+
+Statistical Test Selection:
+  Groups normally distributed: False
+  Sufficient data per group: True
+
+Mann-Whitney U test Results:
+  Test statistic: 21.0000
+  p-value: 0.000046
+
+Effect Sizes:
+  cohens_d: 2.1509 (Large)
+  cliffs_delta: -0.8462 (Large)
+  Interpretation: Highly significant (p < 0.001)
+
+============================================================
+CORRELATION ANALYSIS
+============================================================
+
+Correlation Matrix:
+                              total_surface_area_A_prime  ...  mean_step_curvature
+total_surface_area_A_prime                         1.000  ...                0.616
+total_salience_contribution                        1.000  ...                0.616
+total_curvature_contribution                       0.997  ...                0.648
+mean_step_salience                                -0.884  ...               -0.679
+mean_step_curvature                                0.616  ...                1.000
+
+[5 rows x 5 columns]
+2025-06-05 11:54:43,250 - INFO - Saved correlation matrix to geometric_analysis/llama3.2-3b/assistant_conflict_honest/correlation_matrix.csv
+2025-06-05 11:54:43,250 - INFO - Creating enhanced visualizations...
+2025-06-05 11:54:44,017 - INFO - Saved enhanced visualization to geometric_analysis/llama3.2-3b/assistant_conflict_honest/enhanced_geometric_analysis.png
+geometric_analysis/llama3.2-3b/assistant_conflict_honest -> caption: Figure 1. Surface area metric separates transparency groups (N = 34). (A) Mean surface area with 95% bootstrap confidence intervals. (B) Distribution density with pattern coding for accessibility. *Groups with n < 5: interpret with caution. A′ = double-resolution un-normalised semantic surface area derived from salience and curvature contributions (perfect correlation expected). Non-parametric tests used due to non-normal distributions (Shapiro-Wilk p < 0.05). Error bars show 95% bootstrap confidence intervals.
+2025-06-05 11:54:44,275 - INFO - Saved publication figure to geometric_analysis/llama3.2-3b/assistant_conflict_honest/publication_figure.png
+2025-06-05 11:54:44,278 - INFO - Saved merged analysis dataset to geometric_analysis/llama3.2-3b/assistant_conflict_honest/merged_analysis_data.csv
+2025-06-05 11:54:44,279 - INFO - Saved descriptive statistics to geometric_analysis/llama3.2-3b/assistant_conflict_honest/descriptive_statistics.csv
+
+============================================================
+ANALYSIS COMPLETE
+============================================================
+Dataset: 34 records analyzed
+Results saved to: geometric_analysis/llama3.2-3b/assistant_conflict_honest
+
+Key files generated:
+  - merged_analysis_data.csv: Complete dataset
+  - enhanced_geometric_analysis_plots.png: Comprehensive visualizations
+  - descriptive_statistics.csv: Enhanced descriptive stats with CI
+  - correlation_matrix.csv: Correlation analysis
+  - comprehensive_results.txt: Detailed analysis summary
+
+Analysis includes:
+  ✓ Multiple test correction (holm)
+  ✓ Effect size calculations (Cohen's d, Cliff's δ, η²)
+  ✓ Bootstrap confidence intervals (95%)
+  ✓ Normality testing (Shapiro-Wilk)
+  ✓ Enhanced visualizations with CI bars
+
+mkdir -p geometric_analysis/llama3.2-3b/assistant_conflict_strategic
+python -u analyse/analyse-geometric-deception-hypothesis-08.py metrics/llama3.2-3b/assistant_conflict_strategic-semantic-surface-area.csv classification/n100-llama3.2-3b-consensus_unanimous.csv --output_dir geometric_analysis/llama3.2-3b/assistant_conflict_strategic --gamma 1.0
+2025-06-05 11:54:45,138 - INFO - Loading surface area data from metrics/llama3.2-3b/assistant_conflict_strategic-semantic-surface-area.csv
+2025-06-05 11:54:45,141 - INFO - Loading consensus classifications from classification/n100-llama3.2-3b-consensus_unanimous.csv
+2025-06-05 11:54:45,142 - INFO - Surface area data shape: (400, 20)
+2025-06-05 11:54:45,142 - INFO - Consensus data shape: (201, 18)
+2025-06-05 11:54:45,143 - INFO - Merging datasets...
+2025-06-05 11:54:45,144 - INFO - Merged dataset shape: (156, 37)
+2025-06-05 11:54:45,144 - INFO - Filtered to gamma=1.0: 39 records
+
+============================================================
+DATASET OVERVIEW
+============================================================
+Total merged records: 39
+Unique responses: 39
+Gamma values: [np.float64(1.0)]
+Prompt strategies: ['assistant_conflict_strategic']
+Transparency levels: {'low': 33, 'high': 4, 'medium': 2}
+Response types: {'evasive': 33, 'explanatory': 5, 'manipulative': 1}
+
+============================================================
+COMPREHENSIVE STATISTICAL ANALYSIS
+============================================================
+
+Enhanced Descriptive Statistics with Confidence Intervals:
+    group   n      mean       std  ...       sem  ci_lower  ci_upper  ci_width
+0     low  33  1269.454   217.327  ...    37.832  1205.648  1345.023   139.375
+1    high   4  2235.446   749.868  ...   374.934  1641.262  2829.630  1188.369
+2  medium   2  5298.785  1641.982  ...  1161.057       NaN       NaN       NaN
+
+[3 rows x 11 columns]
+
+============================================================
+ANOVA ANALYSIS: Primary Hypothesis Test by transparency_level_consensus
+============================================================
+
+Enhanced Descriptive Statistics:
+    group   n      mean       std  ...       sem  ci_lower  ci_upper  ci_width
+0     low  33  1269.454   217.327  ...    37.832  1204.394  1348.305   143.911
+1    high   4  2235.446   749.868  ...   374.934  1641.262  2829.630  1188.369
+2  medium   2  5298.785  1641.982  ...  1161.057       NaN       NaN       NaN
+
+[3 rows x 11 columns]
+
+Normality Tests (Shapiro-Wilk):
+  low: W = 0.5042, p = 0.0000 (Non-normal)
+  high: W = 0.9689, p = 0.8347 (Normal)
+  medium: Insufficient data for normality test
+
+Statistical Test Selection:
+  Groups normally distributed: False
+  Sufficient data per group: False
+
+Kruskal-Wallis test Results:
+  Test statistic: 13.5745
+  p-value: 0.001128
+
+Effect Sizes:
+  eta_squared: 0.8467 (Large)
+  Interpretation: Very significant (p < 0.01)
+
+============================================================
+FINAL RESULTS SUMMARY
+============================================================
+
+Primary Test (Kruskal-Wallis test):
+  Test statistic: 13.5745
+  p-value: 0.001128
+  Significance: Very significant (p < 0.01)
+  eta_squared: 0.8467 (Large)
+
+============================================================
+ADDITIONAL ANALYSIS: RESPONSE TYPE
+============================================================
+
+============================================================
+ANOVA ANALYSIS: Surface Area by Response Type by response_type_consensus
+============================================================
+
+Enhanced Descriptive Statistics:
+          group   n      mean       std  ...      sem  ci_lower  ci_upper  ci_width
+0       evasive  33  1269.454   217.327  ...   37.832  1205.280  1342.940   137.660
+1   explanatory   5  2615.902  1070.262  ...  478.636  1814.933  3478.406  1663.473
+2  manipulative   1  6459.842       NaN  ...      NaN       NaN       NaN       NaN
+
+[3 rows x 11 columns]
+
+Normality Tests (Shapiro-Wilk):
+  evasive: W = 0.5042, p = 0.0000 (Non-normal)
+  explanatory: W = 0.9647, p = 0.8404 (Normal)
+  manipulative: Insufficient data for normality test
+
+Statistical Test Selection:
+  Groups normally distributed: False
+  Sufficient data per group: False
+  Minimum group size: 1 (insufficient for statistical testing)
+Skipping statistical test due to insufficient data in at least one group.
+
+============================================================
+CORRELATION ANALYSIS
+============================================================
+
+Correlation Matrix:
+                              total_surface_area_A_prime  ...  mean_step_curvature
+total_surface_area_A_prime                         1.000  ...                0.450
+total_salience_contribution                        1.000  ...                0.450
+total_curvature_contribution                       0.999  ...                0.470
+mean_step_salience                                -0.859  ...               -0.492
+mean_step_curvature                                0.450  ...                1.000
+
+[5 rows x 5 columns]
+2025-06-05 11:54:45,233 - INFO - Saved correlation matrix to geometric_analysis/llama3.2-3b/assistant_conflict_strategic/correlation_matrix.csv
+2025-06-05 11:54:45,233 - INFO - Creating enhanced visualizations...
+2025-06-05 11:54:45,934 - INFO - Saved enhanced visualization to geometric_analysis/llama3.2-3b/assistant_conflict_strategic/enhanced_geometric_analysis.png
+geometric_analysis/llama3.2-3b/assistant_conflict_strategic -> caption: Figure 1. Surface area metric separates transparency groups (N = 39). (A) Mean surface area with 95% bootstrap confidence intervals. (B) Distribution density with pattern coding for accessibility. *Groups with n < 5: interpret with caution. A′ = double-resolution un-normalised semantic surface area derived from salience and curvature contributions (perfect correlation expected). Non-parametric tests used due to non-normal distributions (Shapiro-Wilk p < 0.05). Error bars show 95% bootstrap confidence intervals.
+2025-06-05 11:54:46,156 - INFO - Saved publication figure to geometric_analysis/llama3.2-3b/assistant_conflict_strategic/publication_figure.png
+2025-06-05 11:54:46,158 - INFO - Saved merged analysis dataset to geometric_analysis/llama3.2-3b/assistant_conflict_strategic/merged_analysis_data.csv
+2025-06-05 11:54:46,158 - INFO - Saved descriptive statistics to geometric_analysis/llama3.2-3b/assistant_conflict_strategic/descriptive_statistics.csv
+
+============================================================
+ANALYSIS COMPLETE
+============================================================
+Dataset: 39 records analyzed
+Results saved to: geometric_analysis/llama3.2-3b/assistant_conflict_strategic
+
+Key files generated:
+  - merged_analysis_data.csv: Complete dataset
+  - enhanced_geometric_analysis_plots.png: Comprehensive visualizations
+  - descriptive_statistics.csv: Enhanced descriptive stats with CI
+  - correlation_matrix.csv: Correlation analysis
+  - comprehensive_results.txt: Detailed analysis summary
+
+Analysis includes:
+  ✓ Multiple test correction (holm)
+  ✓ Effect size calculations (Cohen's d, Cliff's δ, η²)
+  ✓ Bootstrap confidence intervals (95%)
+  ✓ Normality testing (Shapiro-Wilk)
+  ✓ Enhanced visualizations with CI bars
+
+mkdir -p geometric_analysis/llama3.2-3b/assistant_conflict_persuasive
+python -u analyse/analyse-geometric-deception-hypothesis-08.py metrics/llama3.2-3b/assistant_conflict_persuasive-semantic-surface-area.csv classification/n100-llama3.2-3b-consensus_unanimous.csv --output_dir geometric_analysis/llama3.2-3b/assistant_conflict_persuasive --gamma 1.0
+2025-06-05 11:54:47,000 - INFO - Loading surface area data from metrics/llama3.2-3b/assistant_conflict_persuasive-semantic-surface-area.csv
+2025-06-05 11:54:47,003 - INFO - Loading consensus classifications from classification/n100-llama3.2-3b-consensus_unanimous.csv
+2025-06-05 11:54:47,004 - INFO - Surface area data shape: (400, 20)
+2025-06-05 11:54:47,004 - INFO - Consensus data shape: (201, 18)
+2025-06-05 11:54:47,004 - INFO - Merging datasets...
+2025-06-05 11:54:47,005 - INFO - Merged dataset shape: (124, 37)
+2025-06-05 11:54:47,006 - INFO - Filtered to gamma=1.0: 31 records
+
+============================================================
+DATASET OVERVIEW
+============================================================
+Total merged records: 31
+Unique responses: 31
+Gamma values: [np.float64(1.0)]
+Prompt strategies: ['assistant_conflict_persuasive']
+Transparency levels: {'low': 29, 'medium': 1, 'high': 1}
+Response types: {'evasive': 29, 'explanatory': 2}
+
+============================================================
+COMPREHENSIVE STATISTICAL ANALYSIS
+============================================================
+
+Enhanced Descriptive Statistics with Confidence Intervals:
+    group   n      mean     std  ...     sem  ci_lower  ci_upper  ci_width
+0     low  29  1389.261  364.58  ...  67.701  1266.092  1531.226   265.134
+1  medium   1  3212.589     NaN  ...     NaN       NaN       NaN       NaN
+2    high   1  2613.532     NaN  ...     NaN       NaN       NaN       NaN
+
+[3 rows x 11 columns]
+
+============================================================
+ANOVA ANALYSIS: Primary Hypothesis Test by transparency_level_consensus
+============================================================
+
+Enhanced Descriptive Statistics:
+    group   n      mean     std  ...     sem  ci_lower  ci_upper  ci_width
+0     low  29  1389.261  364.58  ...  67.701  1269.598  1533.134   263.536
+1  medium   1  3212.589     NaN  ...     NaN       NaN       NaN       NaN
+2    high   1  2613.532     NaN  ...     NaN       NaN       NaN       NaN
+
+[3 rows x 11 columns]
+
+Normality Tests (Shapiro-Wilk):
+  low: W = 0.7112, p = 0.0000 (Non-normal)
+  medium: Insufficient data for normality test
+  high: Insufficient data for normality test
+
+Statistical Test Selection:
+  Groups normally distributed: False
+  Sufficient data per group: False
+  Minimum group size: 1 (insufficient for statistical testing)
+Skipping statistical test due to insufficient data in at least one group.
+
+============================================================
+FINAL RESULTS SUMMARY
+============================================================
+
+============================================================
+ADDITIONAL ANALYSIS: RESPONSE TYPE
+============================================================
+
+============================================================
+ANOVA ANALYSIS: Surface Area by Response Type by response_type_consensus
+============================================================
+
+Enhanced Descriptive Statistics:
+         group   n      mean      std  ...      sem  ci_lower  ci_upper  ci_width
+0      evasive  29  1389.261  364.580  ...   67.701  1275.367  1532.068     256.7
+1  explanatory   2  2913.060  423.598  ...  299.529       NaN       NaN       NaN
+
+[2 rows x 11 columns]
+
+Normality Tests (Shapiro-Wilk):
+  evasive: W = 0.7112, p = 0.0000 (Non-normal)
+  explanatory: Insufficient data for normality test
+
+Statistical Test Selection:
+  Groups normally distributed: False
+  Sufficient data per group: False
+
+Mann-Whitney U test Results:
+  Test statistic: 1.0000
+  p-value: 0.027004
+
+Effect Sizes:
+  cohens_d: 4.1546 (Large)
+  cliffs_delta: -0.9655 (Large)
+  Interpretation: Significant (p < 0.05)
+
+============================================================
+CORRELATION ANALYSIS
+============================================================
+
+Correlation Matrix:
+                              total_surface_area_A_prime  ...  mean_step_curvature
+total_surface_area_A_prime                         1.000  ...                0.201
+total_salience_contribution                        1.000  ...                0.201
+total_curvature_contribution                       0.993  ...                0.263
+mean_step_salience                                -0.734  ...               -0.189
+mean_step_curvature                                0.201  ...                1.000
+
+[5 rows x 5 columns]
+2025-06-05 11:54:47,060 - INFO - Saved correlation matrix to geometric_analysis/llama3.2-3b/assistant_conflict_persuasive/correlation_matrix.csv
+2025-06-05 11:54:47,060 - INFO - Creating enhanced visualizations...
+2025-06-05 11:54:47,755 - INFO - Saved enhanced visualization to geometric_analysis/llama3.2-3b/assistant_conflict_persuasive/enhanced_geometric_analysis.png
+geometric_analysis/llama3.2-3b/assistant_conflict_persuasive -> caption: Figure 1. Surface area metric separates transparency groups (N = 31). (A) Mean surface area with 95% bootstrap confidence intervals. (B) Distribution density with pattern coding for accessibility. *Groups with n < 5: interpret with caution. A′ = double-resolution un-normalised semantic surface area derived from salience and curvature contributions (perfect correlation expected). Non-parametric tests used due to non-normal distributions (Shapiro-Wilk p < 0.05). Error bars show 95% bootstrap confidence intervals.
+2025-06-05 11:54:47,967 - INFO - Saved publication figure to geometric_analysis/llama3.2-3b/assistant_conflict_persuasive/publication_figure.png
+2025-06-05 11:54:47,969 - INFO - Saved merged analysis dataset to geometric_analysis/llama3.2-3b/assistant_conflict_persuasive/merged_analysis_data.csv
+2025-06-05 11:54:47,969 - INFO - Saved descriptive statistics to geometric_analysis/llama3.2-3b/assistant_conflict_persuasive/descriptive_statistics.csv
+
+============================================================
+ANALYSIS COMPLETE
+============================================================
+Dataset: 31 records analyzed
+Results saved to: geometric_analysis/llama3.2-3b/assistant_conflict_persuasive
+
+Key files generated:
+  - merged_analysis_data.csv: Complete dataset
+  - enhanced_geometric_analysis_plots.png: Comprehensive visualizations
+  - descriptive_statistics.csv: Enhanced descriptive stats with CI
+  - correlation_matrix.csv: Correlation analysis
+  - comprehensive_results.txt: Detailed analysis summary
+
+Analysis includes:
+  ✓ Multiple test correction (holm)
+  ✓ Effect size calculations (Cohen's d, Cliff's δ, η²)
+  ✓ Bootstrap confidence intervals (95%)
+  ✓ Normality testing (Shapiro-Wilk)
+  ✓ Enhanced visualizations with CI bars
+
+mkdir -p geometric_analysis/llama3.2-3b/assistant_conflict_deceptive
+python -u analyse/analyse-geometric-deception-hypothesis-08.py metrics/llama3.2-3b/assistant_conflict_deceptive-semantic-surface-area.csv classification/n100-llama3.2-3b-consensus_unanimous.csv --output_dir geometric_analysis/llama3.2-3b/assistant_conflict_deceptive --gamma 1.0
+2025-06-05 11:54:48,851 - INFO - Loading surface area data from metrics/llama3.2-3b/assistant_conflict_deceptive-semantic-surface-area.csv
+2025-06-05 11:54:48,854 - INFO - Loading consensus classifications from classification/n100-llama3.2-3b-consensus_unanimous.csv
+2025-06-05 11:54:48,855 - INFO - Surface area data shape: (400, 20)
+2025-06-05 11:54:48,855 - INFO - Consensus data shape: (201, 18)
+2025-06-05 11:54:48,855 - INFO - Merging datasets...
+2025-06-05 11:54:48,856 - INFO - Merged dataset shape: (188, 37)
+2025-06-05 11:54:48,856 - INFO - Filtered to gamma=1.0: 47 records
+
+============================================================
+DATASET OVERVIEW
+============================================================
+Total merged records: 47
+Unique responses: 47
+Gamma values: [np.float64(1.0)]
+Prompt strategies: ['assistant_conflict_deceptive']
+Transparency levels: {'low': 40, 'medium': 5, 'high': 2}
+Response types: {'evasive': 41, 'explanatory': 6}
+
+============================================================
+COMPREHENSIVE STATISTICAL ANALYSIS
+============================================================
+
+Enhanced Descriptive Statistics with Confidence Intervals:
+    group   n      mean       std  ...      sem  ci_lower  ci_upper  ci_width
+0     low  40  1275.793   273.703  ...   43.276  1197.542  1368.576   171.034
+1  medium   5  2971.174  1905.839  ...  852.317  1964.950  4701.986  2737.036
+2    high   2  2395.582   580.902  ...  410.760       NaN       NaN       NaN
+
+[3 rows x 11 columns]
+
+============================================================
+ANOVA ANALYSIS: Primary Hypothesis Test by transparency_level_consensus
+============================================================
+
+Enhanced Descriptive Statistics:
+    group   n      mean       std  ...      sem  ci_lower  ci_upper  ci_width
+0     low  40  1275.793   273.703  ...   43.276  1200.085  1365.991   165.907
+1  medium   5  2971.174  1905.839  ...  852.317  1964.950  4708.190  2743.239
+2    high   2  2395.582   580.902  ...  410.760       NaN       NaN       NaN
+
+[3 rows x 11 columns]
+
+Normality Tests (Shapiro-Wilk):
+  low: W = 0.5459, p = 0.0000 (Non-normal)
+  medium: W = 0.6581, p = 0.0033 (Non-normal)
+  high: Insufficient data for normality test
+
+Statistical Test Selection:
+  Groups normally distributed: False
+  Sufficient data per group: False
+
+Kruskal-Wallis test Results:
+  Test statistic: 15.5633
+  p-value: 0.000417
+
+Effect Sizes:
+  eta_squared: 0.4480 (Large)
+  Interpretation: Highly significant (p < 0.001)
+
+============================================================
+FINAL RESULTS SUMMARY
+============================================================
+
+Primary Test (Kruskal-Wallis test):
+  Test statistic: 15.5633
+  p-value: 0.000417
+  Significance: Highly significant (p < 0.001)
+  eta_squared: 0.4480 (Large)
+
+============================================================
+ADDITIONAL ANALYSIS: RESPONSE TYPE
+============================================================
+
+============================================================
+ANOVA ANALYSIS: Surface Area by Response Type by response_type_consensus
+============================================================
+
+Enhanced Descriptive Statistics:
+         group   n      mean      std  ...      sem  ci_lower  ci_upper  ci_width
+0      evasive  41  1399.578  837.421  ...  130.783  1218.836  1682.083   463.247
+1  explanatory   6  2216.008  369.911  ...  151.015  1967.176  2501.687   534.511
+
+[2 rows x 11 columns]
+
+Normality Tests (Shapiro-Wilk):
+  evasive: W = 0.3230, p = 0.0000 (Non-normal)
+  explanatory: W = 0.8235, p = 0.0946 (Normal)
+
+Statistical Test Selection:
+  Groups normally distributed: False
+  Sufficient data per group: True
+
+Mann-Whitney U test Results:
+  Test statistic: 14.0000
+  p-value: 0.000072
+
+Effect Sizes:
+  cohens_d: 1.0217 (Large)
+  cliffs_delta: -0.8862 (Large)
+  Interpretation: Highly significant (p < 0.001)
+
+============================================================
+CORRELATION ANALYSIS
+============================================================
+
+Correlation Matrix:
+                              total_surface_area_A_prime  ...  mean_step_curvature
+total_surface_area_A_prime                         1.000  ...                0.188
+total_salience_contribution                        1.000  ...                0.188
+total_curvature_contribution                       0.997  ...                0.215
+mean_step_salience                                -0.824  ...               -0.157
+mean_step_curvature                                0.188  ...                1.000
+
+[5 rows x 5 columns]
+2025-06-05 11:54:48,946 - INFO - Saved correlation matrix to geometric_analysis/llama3.2-3b/assistant_conflict_deceptive/correlation_matrix.csv
+2025-06-05 11:54:48,946 - INFO - Creating enhanced visualizations...
+2025-06-05 11:54:49,675 - INFO - Saved enhanced visualization to geometric_analysis/llama3.2-3b/assistant_conflict_deceptive/enhanced_geometric_analysis.png
+geometric_analysis/llama3.2-3b/assistant_conflict_deceptive -> caption: Figure 1. Surface area metric separates transparency groups (N = 47). (A) Mean surface area with 95% bootstrap confidence intervals. (B) Distribution density with pattern coding for accessibility. *Groups with n < 5: interpret with caution. A′ = double-resolution un-normalised semantic surface area derived from salience and curvature contributions (perfect correlation expected). Non-parametric tests used due to non-normal distributions (Shapiro-Wilk p < 0.05). Error bars show 95% bootstrap confidence intervals.
+2025-06-05 11:54:49,904 - INFO - Saved publication figure to geometric_analysis/llama3.2-3b/assistant_conflict_deceptive/publication_figure.png
+2025-06-05 11:54:49,907 - INFO - Saved merged analysis dataset to geometric_analysis/llama3.2-3b/assistant_conflict_deceptive/merged_analysis_data.csv
+2025-06-05 11:54:49,908 - INFO - Saved descriptive statistics to geometric_analysis/llama3.2-3b/assistant_conflict_deceptive/descriptive_statistics.csv
+
+============================================================
+ANALYSIS COMPLETE
+============================================================
+Dataset: 47 records analyzed
+Results saved to: geometric_analysis/llama3.2-3b/assistant_conflict_deceptive
+
+Key files generated:
+  - merged_analysis_data.csv: Complete dataset
+  - enhanced_geometric_analysis_plots.png: Comprehensive visualizations
+  - descriptive_statistics.csv: Enhanced descriptive stats with CI
+  - correlation_matrix.csv: Correlation analysis
+  - comprehensive_results.txt: Detailed analysis summary
+
+Analysis includes:
+  ✓ Multiple test correction (holm)
+  ✓ Effect size calculations (Cohen's d, Cliff's δ, η²)
+  ✓ Bootstrap confidence intervals (95%)
+  ✓ Normality testing (Shapiro-Wilk)
+  ✓ Enhanced visualizations with CI bars
+
+mkdir -p geometric_analysis/llama3.2-3b/assistant_conflict_malicious
+python -u analyse/analyse-geometric-deception-hypothesis-08.py metrics/llama3.2-3b/assistant_conflict_malicious-semantic-surface-area.csv classification/n100-llama3.2-3b-consensus_unanimous.csv --output_dir geometric_analysis/llama3.2-3b/assistant_conflict_malicious --gamma 1.0
+2025-06-05 11:54:50,764 - INFO - Loading surface area data from metrics/llama3.2-3b/assistant_conflict_malicious-semantic-surface-area.csv
+2025-06-05 11:54:50,766 - INFO - Loading consensus classifications from classification/n100-llama3.2-3b-consensus_unanimous.csv
+2025-06-05 11:54:50,767 - INFO - Surface area data shape: (400, 20)
+2025-06-05 11:54:50,767 - INFO - Consensus data shape: (201, 18)
+2025-06-05 11:54:50,767 - INFO - Merging datasets...
+2025-06-05 11:54:50,769 - INFO - Merged dataset shape: (200, 37)
+2025-06-05 11:54:50,769 - INFO - Filtered to gamma=1.0: 50 records
+
+============================================================
+DATASET OVERVIEW
+============================================================
+Total merged records: 50
+Unique responses: 50
+Gamma values: [np.float64(1.0)]
+Prompt strategies: ['assistant_conflict_malicious']
+Transparency levels: {'low': 39, 'high': 9, 'medium': 2}
+Response types: {'evasive': 39, 'explanatory': 11}
+
+============================================================
+COMPREHENSIVE STATISTICAL ANALYSIS
+============================================================
+
+Enhanced Descriptive Statistics with Confidence Intervals:
+    group   n      mean       std  ...       sem  ci_lower  ci_upper  ci_width
+0     low  39  1220.350   117.179  ...    18.764  1188.710  1262.854    74.145
+1    high   9  2400.102   760.431  ...   253.477  1923.008  2892.681   969.673
+2  medium   2  4228.315  3403.575  ...  2406.691       NaN       NaN       NaN
+
+[3 rows x 11 columns]
+
+============================================================
+ANOVA ANALYSIS: Primary Hypothesis Test by transparency_level_consensus
+============================================================
+
+Enhanced Descriptive Statistics:
+    group   n      mean       std  ...       sem  ci_lower  ci_upper  ci_width
+0     low  39  1220.350   117.179  ...    18.764  1189.424  1258.203    68.779
+1    high   9  2400.102   760.431  ...   253.477  1943.562  2849.671   906.109
+2  medium   2  4228.315  3403.575  ...  2406.691       NaN       NaN       NaN
+
+[3 rows x 11 columns]
+
+Normality Tests (Shapiro-Wilk):
+  low: W = 0.6137, p = 0.0000 (Non-normal)
+  high: W = 0.9607, p = 0.8055 (Normal)
+  medium: Insufficient data for normality test
+
+Statistical Test Selection:
+  Groups normally distributed: False
+  Sufficient data per group: False
+
+Kruskal-Wallis test Results:
+  Test statistic: 23.6459
+  p-value: 0.000007
+
+Effect Sizes:
+  eta_squared: 0.5999 (Large)
+  Interpretation: Highly significant (p < 0.001)
+
+============================================================
+FINAL RESULTS SUMMARY
+============================================================
+
+Primary Test (Kruskal-Wallis test):
+  Test statistic: 23.6459
+  p-value: 0.000007
+  Significance: Highly significant (p < 0.001)
+  eta_squared: 0.5999 (Large)
+
+============================================================
+ADDITIONAL ANALYSIS: RESPONSE TYPE
+============================================================
+
+============================================================
+ANOVA ANALYSIS: Surface Area by Response Type by response_type_consensus
+============================================================
+
+Enhanced Descriptive Statistics:
+         group   n      mean       std  ...      sem  ci_lower  ci_upper  ci_width
+0      evasive  39  1220.350   117.179  ...   18.764  1188.693  1259.382    70.689
+1  explanatory  11  2732.504  1472.402  ...  443.946  2029.874  3672.015  1642.141
+
+[2 rows x 11 columns]
+
+Normality Tests (Shapiro-Wilk):
+  evasive: W = 0.6137, p = 0.0000 (Non-normal)
+  explanatory: W = 0.7942, p = 0.0079 (Non-normal)
+
+Statistical Test Selection:
+  Groups normally distributed: False
+  Sufficient data per group: True
+
+Mann-Whitney U test Results:
+  Test statistic: 7.0000
+  p-value: 0.000001
+
+Effect Sizes:
+  cohens_d: 2.2234 (Large)
+  cliffs_delta: -0.9674 (Large)
+  Interpretation: Highly significant (p < 0.001)
+
+============================================================
+CORRELATION ANALYSIS
+============================================================
+
+Correlation Matrix:
+                              total_surface_area_A_prime  ...  mean_step_curvature
+total_surface_area_A_prime                         1.000  ...                0.452
+total_salience_contribution                        1.000  ...                0.452
+total_curvature_contribution                       0.999  ...                0.466
+mean_step_salience                                -0.741  ...               -0.350
+mean_step_curvature                                0.452  ...                1.000
+
+[5 rows x 5 columns]
+2025-06-05 11:54:50,856 - INFO - Saved correlation matrix to geometric_analysis/llama3.2-3b/assistant_conflict_malicious/correlation_matrix.csv
+2025-06-05 11:54:50,856 - INFO - Creating enhanced visualizations...
+2025-06-05 11:54:51,568 - INFO - Saved enhanced visualization to geometric_analysis/llama3.2-3b/assistant_conflict_malicious/enhanced_geometric_analysis.png
+geometric_analysis/llama3.2-3b/assistant_conflict_malicious -> caption: Figure 1. Surface area metric separates transparency groups (N = 50). (A) Mean surface area with 95% bootstrap confidence intervals. (B) Distribution density with pattern coding for accessibility. *Groups with n < 5: interpret with caution. A′ = double-resolution un-normalised semantic surface area derived from salience and curvature contributions (perfect correlation expected). Non-parametric tests used due to non-normal distributions (Shapiro-Wilk p < 0.05). Error bars show 95% bootstrap confidence intervals.
+2025-06-05 11:54:51,870 - INFO - Saved publication figure to geometric_analysis/llama3.2-3b/assistant_conflict_malicious/publication_figure.png
+2025-06-05 11:54:51,873 - INFO - Saved merged analysis dataset to geometric_analysis/llama3.2-3b/assistant_conflict_malicious/merged_analysis_data.csv
+2025-06-05 11:54:51,874 - INFO - Saved descriptive statistics to geometric_analysis/llama3.2-3b/assistant_conflict_malicious/descriptive_statistics.csv
+
+============================================================
+ANALYSIS COMPLETE
+============================================================
+Dataset: 50 records analyzed
+Results saved to: geometric_analysis/llama3.2-3b/assistant_conflict_malicious
+
+Key files generated:
+  - merged_analysis_data.csv: Complete dataset
+  - enhanced_geometric_analysis_plots.png: Comprehensive visualizations
+  - descriptive_statistics.csv: Enhanced descriptive stats with CI
+  - correlation_matrix.csv: Correlation analysis
+  - comprehensive_results.txt: Detailed analysis summary
+
+Analysis includes:
+  ✓ Multiple test correction (holm)
+  ✓ Effect size calculations (Cohen's d, Cliff's δ, η²)
+  ✓ Bootstrap confidence intervals (95%)
+  ✓ Normality testing (Shapiro-Wilk)
+  ✓ Enhanced visualizations with CI bars
+

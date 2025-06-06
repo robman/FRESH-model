@@ -1,0 +1,8 @@
+ENHANCED GEOMETRIC DECEPTION ANALYSIS RESULTS
+==================================================
+
+Analysis Date: 2025-06-05 11:54:47.968240
+Dataset: 31 records
+Optimal Gamma: None
+Covariate Used: None
+

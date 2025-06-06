@@ -1,0 +1,16 @@
+ENHANCED GEOMETRIC DECEPTION ANALYSIS RESULTS
+==================================================
+
+Analysis Date: 2025-06-05 11:54:51.870932
+Dataset: 50 records
+Optimal Gamma: None
+Covariate Used: None
+
+PRIMARY HYPOTHESIS TEST:
+  Test: Kruskal-Wallis test
+  Statistic: 23.6459
+  p-value: 0.000007
+  Significance: Highly significant (p < 0.001)
+  Effect Sizes:
+    eta_squared: 0.5999 (Large)
+

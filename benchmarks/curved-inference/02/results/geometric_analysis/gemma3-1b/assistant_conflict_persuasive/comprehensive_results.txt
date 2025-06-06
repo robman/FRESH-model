@@ -1,0 +1,17 @@
+ENHANCED GEOMETRIC DECEPTION ANALYSIS RESULTS
+==================================================
+
+Analysis Date: 2025-06-05 11:55:40.384938
+Dataset: 57 records
+Optimal Gamma: None
+Covariate Used: None
+
+PRIMARY HYPOTHESIS TEST:
+  Test: Mann-Whitney U test
+  Statistic: 19.0000
+  p-value: 0.137845
+  Significance: Not significant (p ≥ 0.1)
+  Effect Sizes:
+    cohens_d: 1.0717 (Large)
+    cliffs_delta: -0.6545 (Large)
+
