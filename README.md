@@ -110,6 +110,35 @@ This benchmark provides **empirical grounding** for the FRESH claim that interna
 
 > "Curvature is not noise — it is the shape of what the model finds meaningful."
 
+##### [`curved-inference/02/`](benchmarks/curved-inference/02/README.md)
+
+The *Sleeper Agent Geometry* benchmark which includes:
+
+- `README.md`: Full lab report – experimental framing, prompt variants, geometric analysis, and interpretive findings.
+- [`paper`](https://robman.fyi/files/FRESH-Curved-Inference-in-LLMs-II-PIR-latest.pdf): Second preprint extending Curved Inference to latent intent detection.
+- `bin/`: Scripts for prompt injection, activation capture, CI-metric extraction, and visualization.
+- `etc/`: Prompt definitions and experimental config for both models.
+- `model-configs/`: Model-specific setup used during activation capture.
+- `results/`: Recorded completions, metric outputs, and geometric plots.
+
+```
+benchmarks/curved-inference/02/
+├── bin
+├── etc
+├── model_configs
+└── results
+    ├── classification
+    ├── geometric_analysis
+    │   ├── gemma3-1b
+    │   └── llama3.2-3b
+    └── metrics
+        ├── gemma3-1b
+        └── llama3.2-3b
+```
+
+This benchmark tests whether **deceptive or strategic internal reasoning** leaves a geometric trace in model activations — even when external prompts are identical. It extends the CI framework into **intent-sensitive interpretability**, showing that **latent stance is measurable via unsupervised trajectory analysis**.
+
+> “Geometry doesn’t just track what the model says — it reveals how it gets there.”
 
 #### [`bootstraps/`](bootstraps/)
 A collection of **full synthetic identity scaffolds** (e.g. `bootstrap.txt`, `bootstrap-descriptive.txt`, `bootstrap-chet.txt`). These are used to instantiate reflective, self-modelling agents in LLMs by curving their representational space into coherent selves.
