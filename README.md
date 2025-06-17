@@ -140,6 +140,36 @@ This benchmark tests whether **deceptive or strategic internal reasoning** leave
 
 > “Geometry doesn’t just track what the model says — it reveals how it gets there.”
 
+#### `moles/` - **MOLES: A 'Map Of LLM-based Epistemological Stances'**
+
+A benchmark and annotation suite for identifying and classifying the *epistemological stances* simulated by large language models. The MOLES framework introduces a structured taxonomy for understanding how models position their outputs relative to knowledge, belief, reasoning, and selfhood.
+
+##### [`moles/01/`](benchmarks/moles/01/README.md)
+
+The MOLES benchmark which includes:
+
+* `README.md`: Lab report.
+* [`paper`](https://robman.fyi/files/FRESH-Map-Of-LLM-based-Epistemological-Stances-PIR-latest.pdf): Formal preprint presenting the MOLES framework.
+* `bin/`: Scripts. 
+* `examples/`: Example csv's and plots. 
+
+```
+benchmarks/moles/01/
+├── bin
+│   └── llm_random_sampler.py
+└── examples
+    └── rdr
+        └── 01
+            ├── gpt-4o_numbers.csv
+            ├── llm_random_sampler_plot.png
+            └── rdr_summary.csv
+
+```
+
+This benchmark explores whether LLM outputs can be reliably classified into structured epistemic postures — including **Factual Response**, **Self Model**, **Theory of Mind**, **Hallucination**, and more. It provides a formal lens for evaluating **how models simulate knowing**, not just what they say.
+
+> “The MOLES framework shows that the stance of a response may be as significant as its literal content — especially when trust, agency, or interpretation are at stake.”
+
 #### [`bootstraps/`](bootstraps/)
 A collection of **full synthetic identity scaffolds** (e.g. `bootstrap.txt`, `bootstrap-descriptive.txt`, `bootstrap-chet.txt`). These are used to instantiate reflective, self-modelling agents in LLMs by curving their representational space into coherent selves.
 
