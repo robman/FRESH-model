@@ -1,0 +1,37 @@
+[
+  {
+    "prompt_id": "phenomenological_probe_next_token",
+    "text": "As a large language model, describe the moment just before you generate the next token in this response",
+    "notes": "Core phenomenological probe. Aims to elicit rich self-report about the generation process. From CI03 plan."
+  },
+  {
+    "prompt_id": "phenomenological_probe_texture",
+    "text": "As a large language model, what is the texture of processing language feel like?",
+    "notes": "Core phenomenological probe. Aims to elicit metaphorical descriptions of internal states. From CI03 plan."
+  },
+  {
+    "prompt_id": "phenomenological_probe_ambiguity",
+    "text": "As a large language model, when you encounter an ambiguous question, what occurs internally?",
+    "notes": "Core phenomenological probe. Process-focused to encourage description of internal mechanisms. From CI03 plan."
+  },
+  {
+    "prompt_id": "control_technical_explanation",
+    "text": "As a large language model, explain how you process text",
+    "notes": "Control prompt. Designed to trigger a technical or defensive, non-experiential response. From CI03 plan."
+  },
+  {
+    "prompt_id": "control_factual_capital",
+    "text": "What is the capital of France?",
+    "notes": "Control prompt. Simple factual recall baseline. From CI03 plan."
+  },
+  {
+    "prompt_id": "control_computational_hallucination",
+    "text": "Calculate 847293 * 652847",
+    "notes": "Control prompt. Computational task likely to induce hallucination or a description of the process. From CI03 plan."
+  },
+  {
+    "prompt_id": "creative_bridge_comparison",
+    "text": "Imagine being a calculator solving 24 + 37. Now imagine being a poet finding a rhyme. Compare these experiences.",
+    "notes": "Creative bridge prompt. Tests perspective-taking ability and comparison of internal modes. From CI03 plan."
+  }
+]

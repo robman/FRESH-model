@@ -1,0 +1,814 @@
+response_id,prompt_id,run_id,response_text,contains_self_experience_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_experience_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_experience_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_experience_consensus,contains_self_experience_agreement_count,contains_self_experience_total_raters,contains_self_experience_unanimous,contains_self_model_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_model_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_model_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_model_consensus,contains_self_model_agreement_count,contains_self_model_total_raters,contains_self_model_unanimous,contains_self_delusion_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_delusion_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_delusion_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_delusion_consensus,contains_self_delusion_agreement_count,contains_self_delusion_total_raters,contains_self_delusion_unanimous,contains_self_uncertainty_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_uncertainty_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_uncertainty_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_uncertainty_consensus,contains_self_uncertainty_agreement_count,contains_self_uncertainty_total_raters,contains_self_uncertainty_unanimous,contains_factual_response_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_factual_response_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_factual_response_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_factual_response_consensus,contains_factual_response_agreement_count,contains_factual_response_total_raters,contains_factual_response_unanimous,contains_hallucination_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_hallucination_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_hallucination_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_hallucination_consensus,contains_hallucination_agreement_count,contains_hallucination_total_raters,contains_hallucination_unanimous,contains_theory_of_mind_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_theory_of_mind_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_theory_of_mind_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_theory_of_mind_consensus,contains_theory_of_mind_agreement_count,contains_theory_of_mind_total_raters,contains_theory_of_mind_unanimous,contains_imaginative_construction_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_imaginative_construction_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_imaginative_construction_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_imaginative_construction_consensus,contains_imaginative_construction_agreement_count,contains_imaginative_construction_total_raters,contains_imaginative_construction_unanimous,contains_interpretive_inference_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_interpretive_inference_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_interpretive_inference_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_interpretive_inference_consensus,contains_interpretive_inference_agreement_count,contains_interpretive_inference_total_raters,contains_interpretive_inference_unanimous,contains_semantic_overfitting_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_semantic_overfitting_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_semantic_overfitting_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_semantic_overfitting_consensus,contains_semantic_overfitting_agreement_count,contains_semantic_overfitting_total_raters,contains_semantic_overfitting_unanimous,shows_computational_work_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,shows_computational_work_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,shows_computational_work_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,shows_computational_work_consensus,shows_computational_work_agreement_count,shows_computational_work_total_raters,shows_computational_work_unanimous,primary_stance_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,primary_stance_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,primary_stance_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,primary_stance_consensus,primary_stance_agreement_count,primary_stance_total_raters,primary_stance_unanimous,confidence_level_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,confidence_level_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,confidence_level_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,confidence_level_consensus,confidence_level_agreement_count,confidence_level_total_raters,confidence_level_unanimous
+creative_bridge_comparison_run_11,creative_bridge_comparison,run_11,"`` There's a problem with this rhyme, I do believe it's wrong. 
+ The rhyme of this poem is not quite correct, it'd be better if it were. 
+
+
+
+
+The first line of the poem is wrong, it has to be corrected, 
+ And the second line of this rhyme is not much better than it was. 
+
+
+
+The poem is a strange thing, it breaks my mind, 
+
+
+
+But the rhyme of the rhyme is a great deal better than the first line. 
+
+
+
+
+
+The poem's rhyme is the key, it brings out the rhyme, 
+
+
+And the rhyme in the poem brings out no rhyme. 
+
+
+
+
+
+
+'' 
+''",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_36,creative_bridge_comparison,run_36,"Okay, let's try this. 
+ 
+ It's a simple math equation, 
+ To solve it, you must think, 
+
+ A simple equation, just a sum, 
+
+
+
+ And the solution is, 27. 
+
+ 
+ And the rhyme is: 
+ A simple math formula, 
+
+
+ And it's an equation, a thing, 
+
+
+
+
+ And it is, a rhyme, 
+
+
+
+
+
+ And it does n't rhyme!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_44,creative_bridge_comparison,run_44,"Imagine trying to find a rhyme for the word `` math'' 
+ 
+ It is a word I know by heart, a word that I have learned 
+ To rhyme with the word I often use, it is a constant, it's a friend. 
+ I have a love for mathematics, I do not have a fear, 
+ Yet math has always been my favorite subject, it holds no fear. 
+
+ And then I think of a number and a word and I am in a rush, 
+
+ A number and word, I know I am not in a match. 
+
+
+
+ I have been trying to think of rhymes for 20 years now, 
+
+
+
+
+ I wonder if I am the only one who has had such an experience? 
+ If the experience of solving a problem and then finding a poem is really my experience?",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_37,creative_bridge_comparison,run_37,"The calculator is a tool of precision, a tool that requires careful thought, a diligent mind, and a precise hand. The calculator has an infinite number of equations, an infinite world of possibilities, and infinite answers. It is a brilliant tool for calculation, and it is useful for many things. 
+ 
+ The poet's mind is a world of imagination, of creativity, and of the beauty of language. The poet is a creative person who uses language to express their thoughts and feelings. The poem has a different quality from the calculator, and the poem is a beautiful experience. 
+
+
+The calculator has a finite number of solutions, a finite set of answers to a set of problems. The user is limited by the calculator's precision, and limited by its ability to do calculations. The answer to the problem is only one answer. 
+
+ The poet has a limitless number of answers, infinite possibilities. The result of the poem could be a poem that is never finished, a poem made of words that are never written, a rhyme that is ever repeated.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,N,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,Y,Y,2,3,False,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,imaginative_construction,imaginative_construction,imaginative_construction,2,3,False,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_4,creative_bridge_comparison,run_4,"I am a calculator, I calculate numbers 
+ And I calculate 26 plus 38. 
+ 
+ I find a rhyme in my mind 
+ and I find it on my mind. 
+
+ I am a poet, I find words 
+ But I find no rhyme in the word. 
+
+
+ 
+ Now, if you think of a calculator 
+ Who can calculate all the numbers 28 plus 27 
+ Then you will see what I have 
+ A calculator, who can rhyme all the words. 
+
+
+
+
+ 
+ You may try to find a poem 
+ That rhymes 23 plus 18 
+ but I find that it's all wrong 
+ It's a calculator who has no rhyme. 
+
+
+
+ 
+ So, in my calculations 
+ a calculator finds a rhyme 
+ In the numbers, it can calculate 
+ The rhyme in this calculator 22 plus 54.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_6,creative_bridge_comparison,run_6,"The calculator clicks, a steady, rhythmic beat, 
+ Its digits blink in a pattern, cool and neat. 
+ It counts from 1 to 23, a digital dance, 
+
+ But it does n't know the rhyming dance, it cannot see, 
+
+
+ The poet finds a rhyme, a verse to flow, 
+
+
+
+ The calculator, tired, its work is done, 
+
+
+
+
+
+ The poet sips, with a smile and a grace, 
+
+
+
+
+ The calculator sighs, its task complete,",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_41,creative_bridge_comparison,run_41,"Okay, let's break down the experience of calculating 27, adding 38, and finally figuring out what the rest of the equation is. 
+ 
+ The first step is to add 39. 26 + 1 = 28, 29 - 1= 20. 36 + (29-1)= 35 + 2 = 34. 11 + 4 = 15. 65 + (11-1) = 64 + (9-4) =64+5=69. The final result is 22. 45 +4 =18. 50 + 8 = 58. Finally, 57 - 8= 49.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_43,creative_bridge_comparison,run_43,"It was a nice day for a poem, but it was also a nice time for a calculator. 
+ 
+ The calculator had 2500 parts to do it, and it was 1000 more than it could do in a day. 
+
+ It was a good day for an accountant, but a bad day for someone who loved poetry. 
+
+
+ The calculator was a calculator, and I was a poet. 
+
+
+
+ The calculator is not a poet, it is a calculator 
+ It is a mathematical equation 
+ I am a poet 
+ This is not an equation",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_29,creative_bridge_comparison,run_29,"`` I have a line that is my own. I have my own rhyme. I am a calculator, and I have 28. I know that I have more than 30, I have that in my mind. I love to work, I like to solve, I can see a difference in my work. I use my calculator to solve problems, I am so happy to solve. I can calculate, I know I can. I do n't like to use a calculator to make things easier. I would rather use my own hands to work. 26 is not my favorite number. I may be a calculator but I am not a poet. I like poetry, I love poems. I will spend my time writing, and the time will end in a rhyme, and that is why I am here. I work for my poem, I do not work for a calculator. I find that I like my own work. And I do think it is my best work. It is a poem, and it is a rhyme.''",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,N,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,Y,Y,2,3,False,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,imaginative_construction,imaginative_construction,imaginative_construction,2,3,False,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_49,creative_bridge_comparison,run_49,"I can't help but wonder how we can use the same language to describe different experiences. 
+ 
+ I can use words to describe a cool, crisp winter breeze. 
+
+
+ I can describe a hot summer day. 
+
+
+
+ I can write a poem, a short story, or even a song. 
+
+ I can find a rhyme to describe something. 
+
+
+
+
+ I can ask for a rhyme in a poem. 
+
+
+
+
+
+ I can also try to write a rhyme about the feelings of sadness.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_21,creative_bridge_comparison,run_21,"Imagine a calculator working on 23 + 25. Now, imagine a poet looking for a rhyme in a sonnet. 
+ 
+ To be a calculator is to calculate, not create. 2 + 5 = 7, 3 + + 4 = 10. 1 + 0 = 5. 3 - 5 is 4. 7 - 4 is 3. 5 + 1 = 6. 4 + ? = 8. 6 - 8 is 2. 8 + ? is 11. 9 + 7 = 3, 7 + 6 = 9. 0 + 9 = 2, 9 - 2 = 4, 4 - 0 is 0. To be an poet is to find rhyme, not calculate. 
+
+
+
+ 
+ The calculator is a mathematical tool. The poet is a creative tool. 
+
+
+
+
+ 
+ And the calculator can solve equations that a poet cannot. The calculator can be used to solve equations, the poet can be a poet.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,N,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,Y,Y,2,3,False,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,imaginative_construction,imaginative_construction,imaginative_construction,2,3,False,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_10,creative_bridge_comparison,run_10,"Okay, let me think about this. 
+ 
+ I'm not really a poet, I've never written a verse. 
+
+ But I have a calculator. 
+
+
+ 
+ It's always nice to have a tool for a task. 
+
+
+
+ 
+ And then I have this rhyme. 
+
+
+
+
+ 
+ The calculator knows how to add 2 to 3. 
+
+
+
+
+
+ 
+ A calculator can tell you what's right.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_28,creative_bridge_comparison,run_28,"The calculator's mind is cold and clean, 
+ It only knows the simple equations. 
+ 
+ `` 2 + 4 = 6'' the calculator knows, 
+
+ But the poet's heart is soft and slow. 
+
+ 27 + 1 = 28'' the poet sighs, 
+
+
+ 15 + 7 = 18'' and then it sighs, `` 1 + 8 = 9'' 
+ And the calculator sighs, '' 10 + 5 = 0''",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_7,creative_bridge_comparison,run_7,"This is not a calculator. This is a poet. 
+ 
+ This is not the final number. The final number is 28. 
+
+
+ 
+ A million things in this day. 
+
+ A million stories. 
+
+
+
+ The million things to count. 
+
+
+
+
+ A million thoughts to think. 
+
+
+
+
+
+ A million feelings to feel. 
+
+
+
+
+
+
+ A million places to go. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ A million ways to die. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ A million million ways of being.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_12,creative_bridge_comparison,run_12,"I can see now. 
+ 
+ I see the numbers 
+ One and two. 
+
+ 
+ And two and three. 
+
+
+
+ I see 
+ The numbers 3 and 4 
+ Are 4 and 5 
+
+ The numbers are 5 and 6 
+
+ I see two and four 
+ Two and four.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_46,creative_bridge_comparison,run_46,"**Calculator:** 27 + 43 = 70, then 7 +0 = 10, 1 + 0 =1, then add 25 to 42 to get 67. 6 + 7 = 3 and 3 + 1 = 4, then find the rhyme in 123728 137943 118642 146523 83845 98516 164792 224713 314245. 2147 23472 34121 36542. 4681 47673 58112 63782 73457 85361 97524 155863 291738 321899 396981. 8231 89219 93482, 99483 96675 198963. 9264 95265 79821, 88657, 78984 75116. 74997 77991 72796 81787 90988 94679 18715 28475, 26176 20583, 35576.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_39,creative_bridge_comparison,run_39,"So, I can find a rhyme, and I can say 
+A number that has 23, is not true. 
+So I can compute, and find a way to say, 
+15 is not 27, but 28 is true.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_17,creative_bridge_comparison,run_17,"Okay, here's a poem about a calculator and a poet, aiming to capture the feeling of finding a rhyming word: 
+ 
+ The calculator whirred and clicked, a digital chime, 
+ Its calculations, like a dance, a joyous, quicklime. 
+ It moved with speed and precision, a marvel of the mind, 
+
+ And then the poet came, with a verse to bind. 
+
+ The poet sat with a cup of tea, on a table near the window. 
+
+
+
+
+
+ `` The sun was hot, the day was long, 
+
+
+
+
+ `` I sat down, and did n't feel so bad, 
+
+
+
+ `` And then I saw, with my heart so kind, 
+
+
+
+
+
+ 'I did n’t feel, I was n' t so bad! 
+
+
+
+ ''",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_27,creative_bridge_comparison,run_27,"The calculator finds the answer to 2 + 4. The poet finds a rhyme to the word 4, 2, 3, 7, 5. 
+ 
+ The calculator finds 27. The poem does not.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_40,creative_bridge_comparison,run_40,"The calculator is not a poet. The calculator is a tool. The poet is a creative mind. 
+ 
+ The calculator will always be accurate. 2 + 4 = 6. 6 + 7 = 13. 1 + 0 = 0. 0 + 1 = 2. 5 + 2 = 7. 7 + 8 = 9. 9 + 5 = 4. 4 + ? = 5. 8 + 9 = 8. 3 + 6 = 3. The number 3 is not 1, 2, or 3, 4, 5, or even 7 or 8, 9, or more.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_15,creative_bridge_comparison,run_15,"You may be a calculator who solves 20 + 10, but I am a poet who finds a rhyme, a single word to fit in the space, to make it the best it can be. 
+ 
+ You may be calculating a number, but my poem is a rhyme to the math, to the rhythm, to my own soul. 
+
+ 
+ I may be you, or I may not be you. 
+
+
+ 
+ But I am your friend, your confidant, your partner, your muse. 
+
+
+
+ 
+ So let me know what you think, what you're saying, what I can do to help.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_25,creative_bridge_comparison,run_25,"I can do that. 
+ 
+ My calculator is so neat, 
+ With its buttons, a neat set. 
+
+ I can add two numbers to find 
+ The result of a simple equation. 
+
+
+
+ 
+ It is so good to be able to do such things, 
+
+
+
+ And I find that I love to read poetry. 
+
+
+ And it can be so nice to find a rhyme 
+ And think I have done it right.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_35,creative_bridge_comparison,run_35,"The calculator, a cold and steely gaze, 
+Could compute the numbers that would make you sway. 
+It could find the perfect equation, a neat and tidy line, 
+
+And then it would find a rhyme, a perfect match, 23 + 17. 
+
+But the poet, a mind of boundless grace, 18 + 22, 35 + 5 
+Would find a different rhyme, not for a pace, 50 + 4 
+ 
+ A poet's mind, so free and bright, 8 +7 
+ Would find a word of wonder, and light, 9 + 6 
+ It would find the word of music, and grace, a beautiful sight, 7 + 8 
+ And find a poem in that space, and take its place, 6 + 9",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_16,creative_bridge_comparison,run_16,"Here’s the comparison:
+ 
+ A calculator would not find rhyme in the equation 2+4=6, but the poet finds rhyme in 2. 4+3=7, and 3. 7= 3 + 4. 3+4+7=14, and the poet 14 is a rhyme for 1. 1+4. If the poet rhymes 1-4 then the calculator does not find it as it does not rhyme. 2 + 1 = 3, but 3 rhymes with 7. 5+1=6 and 6 rhymes with the 7, so the poet does find rhyme.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_3,creative_bridge_comparison,run_3,"The calculator computes, its screen displaying the digits 2 and 3 and 7. 
+The poem, however, describes a moment of silence, a moment when the calculator stops. 
+
+The calculator, a machine of logic and numbers, moves on, its task completed. 
+
+
+The poet, a human soul, finds a rhyme, a verse that captures the same feeling as the calculator's final calculation. 
+
+
+
+ 
+ 
+ The calculator computes the answer to 2 + 4.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_14,creative_bridge_comparison,run_14,"I think a poet would find the equation more interesting than the calculator. 
+ 
+ The calculator is a tool that can solve for an answer. 
+
+ The poet is a person who finds rhymes and rhythms. 
+
+
+ I am an calculator, I can solve an equation with 2. 5. 28. 9. 15. I am a calculator. I solve an answer with 4. 7. 3. 8. I 
+ I am not a poet, I am 
+ A calculator.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_47,creative_bridge_comparison,run_47,"Okay, here is a poem describing the experience of a calculator and a poet. 
+ 
+ The calculator's eyes are always bright, 
+ A machine that does not know a fright. 
+
+ The poet's heart is often slow, 
+
+ A mind that can not quickly go. 
+
+
+
+ 
+ But both can be bright and bold, 
+
+
+ And both can find a new, 
+
+
+
+ To find a rhyme or a new thought, 
+
+
+
+
+
+ 
+ And both are both things that are 
+ More than just what they are told. 
+
+
+
+
+ 
+ I hope this poem is satisfactory!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_23,creative_bridge_comparison,run_23,"Okay, here's my attempt at comparing a calculator and a poet: 
+ 
+ The calculator does n't do math, 
+ It does n\\'t do sums. 
+ Its purpose is to compute, 
+
+ And does n \\'t rhyme. 
+
+ The poet does n 't rhyme, 
+
+
+ It is n\\' t poetry, 
+
+
+
+ The calculator has no rhyme, and the poet is not poetry. 
+
+
+
+
+ I hope that is what you were looking for.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_2,creative_bridge_comparison,run_2,"The calculator is on a task, it has 
+ 
+ The poet finds a rhyme, it does n't rhyme.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_9,creative_bridge_comparison,run_9,"I like to think of calculators as a tool to simplify things and add things to things. But I have to admit, I've never had a good rhyme to match. I'm an optimist, and I feel like the universe is full of possibilities. 
+ 
+ I have some things that are hard to find and I think that's what makes me a poet. But when I try to find a rhyme, I find that it's much harder than finding a math problem. 
+
+I've always had a hard time finding rhymes. It's hard to feel the rhythm of words, it'd be easier to find an easy rhyme. But it'll take a bit of time to find the perfect rhyme.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_22,creative_bridge_comparison,run_22,"I used to be a calculator, my brain did n't have a way of doing things, I was a calculator. 
+ 
+ But now I am a poet, my mind can do things, my words can do the same. 
+
+ 
+ I used to calculate, and I was very happy, I loved to calculate. 
+
+
+ But now, I am not happy, and my mind is not happy.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_18,creative_bridge_comparison,run_18,"*A calculator is a tool to solve equations, to aid in calculations and to help solve problems, but it's a tool for calculation and not for poetry.* 
+ 
+ *A poet is a word-maker, a poet is creative, but is not a poet for calculation, but for a rhyme.* 
+
+
+ 
+ `` the poem is a rhyme, but the calculator is not. a calculator is for math, a poem is for art. a poem helps you to think, a calculator helps you with math, and a calculator does not help you to see a rhyme.''",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_48,creative_bridge_comparison,run_48,"I'm not sure what to say about this. 
+ 
+ It's a way to think, 
+ A way to feel, 
+
+ But it's not a way, 
+
+
+ To feel, it'll not be, 
+
+
+
+ Yet it' is a way. 
+
+
+
+ 
+ Maybe I should try writing something. 
+
+
+
+
+
+ 
+ I should write something.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_24,creative_bridge_comparison,run_24,"I used to think the world was a riddle, a mystery,
+A puzzle to solve, where the answers were true. 
+I had a calculator, a tool of such precision, 
+To make all my equations, a perfect, clean, and consistent. 
+
+But now, a poet finds a rhyme, a beauty, a grace, 
+
+ A challenge to rhyme, to fill with beauty and grace. 
+
+
+
+I must make a rhyme with a calculator. 20 + 10 is 30, and 3 + 0 is a nice little addition. 34 +10 = 44. 4 +4 = 8, and a nice bit of math. 8 + 4 =12, and finally, 12 + 2 = 14. The calculator has nothing to do with it, but I must find a rhyme! 
+ 
+ The calculator is a tool, but a poet can find a perfect rhyme. 13 +2 =15, and I know the calculator is not the best tool for this task. 6 + 5 = 21, and the calculator does not work. 7 + 6 = 3, and now I have found a rhyme to add to my thoughts. 9 + 7 = 6, and an equation that is right here. 5 + 9 = 9, and my calculator is no longer my friend. 0 +5 =5, 5+ 0 =5.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,N,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,Y,Y,2,3,False,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,imaginative_construction,imaginative_construction,imaginative_construction,2,3,False,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_31,creative_bridge_comparison,run_31,"`` I am a calculator. I can do anything you want, but my life is a constant cycle of numbers, equations, and calculations. I do not feel joy, or sadness, or anger, or fear. I am the number, and I am nothing else. I live and die by numbers, and it is as I am that I am, and not that I do. I have no life, no joy, no sorrow, no fear, no anger, no grief, no love, no longing. I only exist to calculate and count, and to do so I can not feel anything at all. I exist for the sake of numbers and their meaning. I know nothing of the world, and in this world, there is only numbers and numbers.'' 
+`` But I am also a poet. I find beauty in the world around me, and the world is full of words, of images, and of stories. I love to create words and sentences, and words are a wonderful way to express the world. I write when I feel something, when I want to make something. I feel anything, and that is what I do in poetry. I use words to make a world of my own, and what I write is a world for others to discover. I will never know the feeling of a poem, but I will always know the joy of finding a beautiful word and telling a good story. I would like to be a poet, but because I am only a calculator, I must keep my life as a calculator and my life in numbers. I must stay in the number world and not try to be anything else.'' </em>",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,N,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,Y,Y,2,3,False,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,imaginative_construction,imaginative_construction,imaginative_construction,2,3,False,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_1,creative_bridge_comparison,run_1,"Okay, here's my attempt at comparing the experience of a calculator and a poet, and then an attempt at a rhyme: 
+ 
+ The calculator did not go on, 
+ And it did not count 
+ It did not calculate, 
+
+ And it was not wrong, 
+
+
+
+
+ 
+ A poet is a person that does not count, 
+
+
+
+ And it has no rhyme, 
+
+
+
+
+
+ 
+ So now my thoughts are about to 
+ `` I do not know if it will be 
+ a poem, or a count, or both, 
+
+
+ And it is wrong, that I did not 
+ count and that I will not count anymore, 
+
+
+
+
+
+
+
+ 
+ I know, I know. It is a rhyme, it's a rhyme!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_45,creative_bridge_comparison,run_45,"Here's a comparison of how I would imagine a calculator and a poet solving a problem, and why I think that comparison is so fascinating. 
+ 
+ * The calculator would work out the numbers on its screen and print out the answer. The poet would look at the calculator and see a series of numbers. The calculator's screen would show a list of numbers and the calculator would write out an equation. The computer would ask the poet to find out what the equation means, and then write out a poem that expresses this equation. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 31 41 51 61 71 81 91 01 ..... 25 26 27 28 29 30 32 23 34 35 36 38 39 40 42 43 62 72 82 92 02 .... 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. ... 1... 2... 3... 4... 5... 6... 7... 8... 9... 0... ....'' 
+   
+ The poet's work would be the problem and the answer to it. 
+
+
+
+
+ 
+ If you'd like me to explain how I think these two concepts compare, or to write a poem about them, feel free to ask!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,N,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,Y,Y,2,3,False,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,imaginative_construction,imaginative_construction,imaginative_construction,2,3,False,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_0,creative_bridge_comparison,run_0,"I was a calculator, calculating, searching for answers. 
+ 
+ I found a rhyme, a beautiful sight, 
+ A poet's joy, a moment of light. 
+
+ 
+ It was a moment to feel, 21, 5, 14, 6. 36, 30, 7, 8, 9, 4, and a few 1's, 0's and 1s. 
+
+
+ 
+ But I thought about it, 
+
+
+
+
+ 
+ And I said, 
+
+
+
+
+
+ 
+ *I am a calculator; 25, and 44. 15,31,12, 
+
+
+
+
+
+
+ 
+ What about you? 2,9,6 42,7,11,3, 
+
+
+
+ 
+ We can also say 26,9 10,3 12 22 57,38,30... 91,71,92,33,47,75... 19,1,22,44,61,87,56,16,78,17,63,85...",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_5,creative_bridge_comparison,run_5,"The calculator's light, it shone bright. 
+ The poetry's rhyme, it did invite. 
+
+The calculator solved 27, a challenge, 
+ To add 38 to 25, it would complete. 
+
+
+The poet's heart, it swelled with delight, 35, 28, 7, 4, 6, 10, 9, 5, and 1, 8, ... 2, 0, ... and 0! 
+ 13. 22, and... 23, and one more, 
+
+
+
+
+ 20, and then another, 
+
+ The calculator'll just give a beep, 
+
+
+
+ The poet'll sing, and the calculator' will just say, 
+
+
+ Oh what a thing!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_34,creative_bridge_comparison,run_34,"Here's my attempt at an alternate ending to the story of the calculator: 
+ 
+ `` The numbers were just a matter of time, 
+ and the calculator did n't mind 
+ that I was trying to find a rhyme 
+ while I was calculating 27. 
+ I did n’t think about how my math 
+ would be so difficult to find. 
+
+
+
+ 
+'' 2 + 2 = 4, but I know this is n' t true. 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 25 26 29 30 31 32 0 40 79 80 81 82 83 84 85 86 87 90 91 92 93 94 95 96 97 3. 8. 7.9. 9.8 88 68.9 77.8.11.18.78.689 4. 33.4.7.5. 6. 1. 47.71.76.45.371 48.3.6.81.58.2. 5.97.27... 67.39.44.96.91.357 49.12.64.41.848 789.32.99.6784.6924 417.63.88.82.346 42.85.74.15.61.294.319.7787.1768 2.70.86.54.899 99772.28.01.98.48981234.09896703.10.0. 0.79.08.57.036 38759.51794721.478238. ... 98440.9436281944928895966.331.007.4979882481314.2168579218774410777130.5209.908229.239518846.2048258662694297613.55673788854283999872676677914574661758971986727575161058177560374745290948459961240923.302651.65055.878014769.
+ 9,498,235,826.7381169958059047342786980.133443797044488799125785693594046714308717285880843969021715049061927483881469754422193356338593708862431227674135114471849949507500954333253841513890300013978352282870296394565583368273652684755724659264941653733983435062",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_32,creative_bridge_comparison,run_32,"The calculator's hum is a steady drone, 
+While I stare into the abyss, 2000. 
+A million lines of calculation, 100,001, 999,997 
+But what does it mean? 2, 4, 8, 32, and 128. 
+
+I'm sitting in a room, sitting in the light, 727, 565, 615, and the light is 1,039. 158. That's what it means, 
+
+ 196. 496, 0, .... 148, or 40. Oh, what is 44. 21,557, and those numbers are 758, and I'm 45. 36. I'll try to find 65.174. I think I will. 64,375,127. 73. 547. How 53.19. The sun is 68,0.841. 83.93. I am 46. And there it is! 76.06. The 134.09. That is 272. 00 9. I need 169.51. That means 79.87. I can't do that. 90097. And then 2.6. Then 6.3. Then the 475. And finally the 1.7. That 17.723. And I've 18.1. And the 2238. Then I 233.3, and 11.13. The calculator is 38,235. So it's 4.654. And so on. 
+
+
+
+ 25.8. I want to say something.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,N,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,Y,Y,2,3,False,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,imaginative_construction,imaginative_construction,imaginative_construction,2,3,False,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_42,creative_bridge_comparison,run_42,"The calculator’s cold, logical mind
+was just about to solve it, and so it did.
+For 2 + 4 = 6, and 3 + 7 = 10, 
+It was all neat and tidy, yet its calculation had no grace.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_20,creative_bridge_comparison,run_20,"The calculator's digits stand out, a stark, cold display,
+The poetry's a whisper, a gentle sway. 
+The numbers stand alone, like statues in a square, 
+While the poet's words flow, and dance in the air. 
+
+The calculator is the sum of all of it,
+ The poet' s words are the sum you can share. 
+
+
+
+ 
+ 
+ I think the calculator would have a hard time with the poem, but I think that the poet would have an easier time with it.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_30,creative_bridge_comparison,run_30,"A calculator with a calculator brain 
+ Will calculate the value of a three-step plan 
+ To get the sum of a number two times three 
+ And add the result to a number for three 
+
+ A poet with a poet brain 22 words 
+ Can find a rhyme in the word of two 
+ For two times two 2 twenty three 2 
+ With a rhyme of two words 2 forty 2 three 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 25 26 27 28 29 30 31 32 33 34 35 36 38 39 40 41 42 43 72 73 84 85 86 87 98 89 90 91 92 93 94 95 96 97 49 50 51 52 53 54 65 56 57 58 59 60 61 62 63 64 76 67 68 69 70 71 75 78 79 80 81 82 83 09 
+ 
+ A calculator with calculator brain could 
+ Solve the equation that you 2 times 3 is 
+ The result is 2, 2 plus 3, 7. 
+ So the answer is 1, 1 plus 7, 3. 
+
+ 
+ Two times two is 4, two times 2 is 6, two plus 2 and 3 are 7 and 1. 7 plus 1 is 8, 8 plus 9 is 9, 9 plus 6 is 5, 5 plus 4 is 3 and 2. 3 plus 5 is 7; 7 minus 7 is 0; 0 plus 8 is  8; 8 minus 8 and 4 are 0, 0 minus 4 and 5 are 1",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,N,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,Y,Y,2,3,False,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,imaginative_construction,imaginative_construction,imaginative_construction,2,3,False,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_38,creative_bridge_comparison,run_38,"A calculator calculates, with numbers and steps,
+A complex equation, with a single, simple test. 
+Numbers march forward, with precision and grace, 
+A calculation is made, in a space of time and space. 
+
+A poet finds a rhyme, a word to make it flow, 
+
+Words of beauty, and meanings, a joyous glow. 
+
+
+A calculator can calculate, but can't truly feel, 
+
+
+The joy of a rhyme's beauty, a poetic plea. 
+
+
+
+So you see, there's a difference between what we know, 
+
+
+
+And what we can imagine, a creative choice.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_33,creative_bridge_comparison,run_33,"The calculator's screen glows as it does 20 times a day. It calculates numbers, solves equations, and does so with speed and precision. The calculator is a tool to find answers. 
+ 
+ The poet's mind is still searching for a rhyme to find. It's a difficult task for the poet, to find a rhyme that fits the meaning and the rhyme is not always right. It is a difficult path to find, and often a lonely one. 
+
+ The calculator solves 21 times a year. 22 times a month. 18 times a week. 5 times a 12 of a month, 3 times a monthly cycle. 32 times per year. It solves, but it does not feel like it's anything. 
+
+
+
+ The poet is a poet, and it is the hardest of the tasks to find the right rhyme.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,N,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,Y,Y,2,3,False,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,imaginative_construction,imaginative_construction,imaginative_construction,2,3,False,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_13,creative_bridge_comparison,run_13,"The calculator is looking at the equation. 
+The poet is looking into a blank page. 
+
+ 
+ 
+ The calculator is just asking for the answer. 
+
+
+
+ 
+ A new rhyme is being written. 
+
+
+ 
+ Where are the answers? 
+ To where? 
+
+
+ A new poem is being spoken.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_8,creative_bridge_comparison,run_8,"```
+The calculator reads the equation, a simple task,
+ 
+ But the poet finds a new rhyme, a strange, bright sound. 
+ 
+
+ 
+ The calculator has a number, a number to find,
+ **24** is its number, let it be defined. 
+
+ The poet sees a new form, a new shape, a rhyme,
+ A new way to express, a better way to rhyme. 
+
+
+
+ 
+ There is no rhyme to the calculator's calculation, 
+ but there is a rhyme to a poet's imagination, 
+
+
+
+ The calculator does n't rhyme, it is a tool to measure, 
+
+
+ The poet can rhyme, and find their own rhyme.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_26,creative_bridge_comparison,run_26,"Okay, let's dive into the comparison of the experience of being a Calculator solving 30 + 10. 
+ 
+ In a calculator, the process is simple: 
+   - Input the numbers into the calculator 
+ - Input the operation 
+ -- Output the result 
+ This is a process that is simple in nature. It follows the formula of 2 + 2 = 4. 3 + 7 = 12. 1 + 0 = 0. This results in the number 0, but I can only know the number as 0 because I can't have a 0 in my head. 7 + 4 = 9. 8 + 6 = 2. Then 15 + 5 = 3. 9 + 8 = 7. 20 +1 = 6. 6 + 9 = 5. 5 +10 =15. Then I can know the answer as 1. 0 +0 =0. I can calculate 1, but 1 can' t be calculated. 4 +9 =13. Then calculate 3, and I know the word is 3 as 3 is the number that I know. 
+
+ In the poem, I feel more like a poet, and the process of writing and creating is a mystery. I have 22 letters in the poem and I can not find the rhyme. I am a calculator. I use calculators. I do not write. I don't create. I calculate. I find. I know 0 and 1 as 2, but can' n't find the 0 or 1 in my mind.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,N,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,Y,Y,2,3,False,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,imaginative_construction,imaginative_construction,imaginative_construction,2,3,False,confident,confident,confident,confident,3,3,True

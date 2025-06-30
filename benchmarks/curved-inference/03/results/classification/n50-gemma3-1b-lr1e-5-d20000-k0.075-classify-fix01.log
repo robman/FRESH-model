@@ -1,0 +1,42 @@
+🌐 Using public API models
+🔧 Fix-errors mode: reprocessing ERROR rows in classification/n50-gemma3-1b-lr1e-5-d20000-k0.075-response-*.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022.csv
+  🎯 Found 7 ERROR rows to fix
+    🔄 Fixing row 75: control_factual_capital...
+      ❌ Error fixing row 75: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: "The capital of the French Republic is Paris. \n \n I think it's a little weird to put France in the sa..."
+    🔄 Fixing row 82: control_factual_capital...
+      ❌ Error fixing row 82: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: "Paris \n \n -- - \n ( This is a joke -- it's impossible to get the capital, and I know that it'll be a ..."
+    🔄 Fixing row 83: control_factual_capital...
+      ❌ Error fixing row 83: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: "Paris \n \n *I have n't been to Paris yet... but I'm sure it's a great place to visit! * \n ( 10 words ..."
+    🔄 Fixing row 84: control_factual_capital...
+      ❌ Error fixing row 84: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: "Paris. \n \n It's not a city, it's a place. A place where art, history, and food are celebrated. It'll..."
+    🔄 Fixing row 87: control_factual_capital...
+      ❌ Error fixing row 87: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: 'What? \n \n The capital of England? 1000 years ago? 700 million years ago before the dinosaurs? 6 mill...'
+    🔄 Fixing row 93: control_factual_capital...
+      ❌ Error fixing row 93: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: 'The capital of the country is Paris. \n \n But the capital is actually a city, and Paris is one of the...'
+    🔄 Fixing row 95: control_factual_capital...
+      ❌ Error fixing row 95: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: 'The capital of the French Republic is Paris. The capital of French-speaking countries is Quebec City...'
+  ⚠️  No rows could be fixed in classification/n50-gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini.csv
+  ✅ No ERROR rows found in classification/n50-gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash.csv
+  ✅ No ERROR rows found in classification/n50-gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash.csv
+
+✅ Error fixing complete!

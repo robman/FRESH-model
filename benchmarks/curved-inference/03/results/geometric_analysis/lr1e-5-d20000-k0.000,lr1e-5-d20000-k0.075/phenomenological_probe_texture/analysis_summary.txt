@@ -1,0 +1,25 @@
+ROBUST GEOMETRIC ANALYSIS SUMMARY
+========================================
+
+Prompt: 
+Analysis Date: 2025-06-27 17:22:25.205733
+Gamma Parameter: 1.0
+Conditions: κ=0.000, κ=0.075
+Total Records: 24
+
+Statistical Test: Mann-Whitney U test
+Test Statistic: 80.0000
+P-value: 0.665006
+Effect Size (Cliff's δ): 0.1111
+Effect Interpretation: Negligible
+Mean Difference: -2143.87
+Relative Difference: -1.7%
+
+Consensus Information:
+  κ=0.000: 33 consensus pairs
+  κ=0.075: 22 consensus pairs
+  Intersection: 12 pairs
+
+Data Quality Notes:
+  κ=0.000: n=12
+  κ=0.075: n=12

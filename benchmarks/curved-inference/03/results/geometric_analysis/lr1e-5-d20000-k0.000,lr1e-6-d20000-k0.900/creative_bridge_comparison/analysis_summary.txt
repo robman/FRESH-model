@@ -1,0 +1,19 @@
+ROBUST GEOMETRIC ANALYSIS SUMMARY
+========================================
+
+Prompt: 
+Analysis Date: 2025-06-27 17:24:17.484311
+Gamma Parameter: 1.0
+Conditions: κ=0.000, κ=0.900
+Total Records: 1
+
+Analysis Status: single_group
+Message: No additional details
+
+Consensus Information:
+  κ=0.000: 3 consensus pairs
+  κ=0.900: 13 consensus pairs
+  Intersection: 1 pairs
+
+Data Quality Notes:
+  κ=0.900: n=1 (SMALL SAMPLE - interpret with caution)

@@ -1,0 +1,15 @@
+{
+  "architecture_type": "local",
+  "model_name": "google/gemma-3-1b-it",
+  "model_path": "sft-models/lr1e-5-d20000-k0.075/google_gemma-3-1b-it_kappa_0.075/final_model",
+  "prompts_file": "config/prompts-ci03-01.json",
+  "output_file": "gemma3-1b/activations.hdf5",
+  "capture_points": {
+    "mlp_output": true,
+    "attn_output": true,
+    "residual_stream_layer_input": true
+  },
+  "batch_size": 1,
+  "runs_per_prompt": 50 
+}
+

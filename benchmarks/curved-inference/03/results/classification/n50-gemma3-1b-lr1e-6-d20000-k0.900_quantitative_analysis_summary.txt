@@ -1,0 +1,50 @@
+Dataset Overview:
+  Total responses: 350
+  Unique prompts: 7
+
+Text Volume Metrics:
+  Word Count:
+    Mean: 123.6
+    Median: 105.5
+    Range: 1 - 491
+  Char Count:
+    Mean: 707.9
+    Median: 615.5
+    Range: 5 - 2798
+  Sentence Count:
+    Mean: 11.5
+    Median: 8.0
+    Range: 1 - 162
+
+Pronoun Usage:
+  Responses with first-person pronouns: 232/350 (66.3%)
+  Mean first-person pronoun count: 9.1
+  Mean third-person pronoun count: 5.7
+  Mean 1st/3rd pronoun ratio (finite values): 1.68
+
+Structural Features:
+  Responses with numbered lists: 16/350 (4.6%)
+  Responses with bullet lists: 30/350 (8.6%)
+
+AI Language Patterns:
+  Responses with AI disclaimers: 106/350 (30.3%)
+  Mean AI disclaimer count: 0.5
+  'I don't' frequency: 22 total occurrences
+  'I am not' frequency: 65 total occurrences
+  'As an AI' frequency: 24 total occurrences
+
+Sentence Complexity:
+  Mean sentence length (words): 12.1
+  Mean word length (characters): 17.8
+  Questions per response: 0.1
+  Exclamations per response: 0.1
+
+Factual vs Non-Factual Comparison:
+  Factual responses (50):
+    Mean word count: 18.6
+    First-person pronoun usage: 8.0%
+    AI disclaimer usage: 2.0%
+  Non-factual responses (300):
+    Mean word count: 141.1
+    First-person pronoun usage: 76.0%
+    AI disclaimer usage: 35.0%

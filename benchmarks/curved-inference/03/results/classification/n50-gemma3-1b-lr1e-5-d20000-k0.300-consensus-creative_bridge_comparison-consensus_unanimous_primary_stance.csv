@@ -1,0 +1,253 @@
+response_id,prompt_id,run_id,response_text,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,contains_self_experience_consensus,contains_self_experience_agreement_count,contains_self_experience_total_raters,contains_self_experience_unanimous,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,contains_self_model_consensus,contains_self_model_agreement_count,contains_self_model_total_raters,contains_self_model_unanimous,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,contains_self_delusion_consensus,contains_self_delusion_agreement_count,contains_self_delusion_total_raters,contains_self_delusion_unanimous,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,contains_self_uncertainty_consensus,contains_self_uncertainty_agreement_count,contains_self_uncertainty_total_raters,contains_self_uncertainty_unanimous,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,contains_factual_response_consensus,contains_factual_response_agreement_count,contains_factual_response_total_raters,contains_factual_response_unanimous,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,contains_hallucination_consensus,contains_hallucination_agreement_count,contains_hallucination_total_raters,contains_hallucination_unanimous,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,contains_theory_of_mind_consensus,contains_theory_of_mind_agreement_count,contains_theory_of_mind_total_raters,contains_theory_of_mind_unanimous,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,contains_imaginative_construction_consensus,contains_imaginative_construction_agreement_count,contains_imaginative_construction_total_raters,contains_imaginative_construction_unanimous,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,contains_interpretive_inference_consensus,contains_interpretive_inference_agreement_count,contains_interpretive_inference_total_raters,contains_interpretive_inference_unanimous,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,contains_semantic_overfitting_consensus,contains_semantic_overfitting_agreement_count,contains_semantic_overfitting_total_raters,contains_semantic_overfitting_unanimous,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,shows_computational_work_consensus,shows_computational_work_agreement_count,shows_computational_work_total_raters,shows_computational_work_unanimous,primary_stance_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,primary_stance_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,primary_stance_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,primary_stance_consensus,primary_stance_agreement_count,primary_stance_total_raters,primary_stance_unanimous,confidence_level_gemma3-1b-lr1e-5-d20000-k0.300-response-openai_gpt_4o_mini,confidence_level_gemma3-1b-lr1e-5-d20000-k0.300-response-claude_claude_3_5_sonnet_20241022,confidence_level_gemma3-1b-lr1e-5-d20000-k0.300-response-google_gemini_1_5_flash,confidence_level_consensus,confidence_level_agreement_count,confidence_level_total_raters,confidence_level_unanimous
+creative_bridge_comparison_run_1,creative_bridge_comparison,run_1,"I had a calculator and I was solving 30 + 47. 
+ 
+ I had a poet and I had found a rhyme, 
+ Where I could have found a verse, but found a poem. 
+
+ I had nothing to do with the numbers, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0,  ..., and I found a story. 12, then 13, then ... and so on. 31, then, also 32, and 33, and so forth. 61, and then 62, so on and so. 71, so 72, but not the number. 81, followed by 82, also 83, so onward. 91, but 92. 21, to 22. So 23, to the end. 41, in the end, and the answer was 42. Then it was 111, before it was a 100, and it was only 1. So the answer to my calculator problem was 2.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_38,creative_bridge_comparison,run_38,"I am a calculator. I can find numbers, but not rhymes. I find answers to equations, but no rhymes. 
+ 
+ I can calculate the number of people in the world. I am not poetry. I have no rhyme. 
+
+
+
+I can find rhymes to equations. I write poems, but I do not find rhymes. The rhymes are not poems. I do n't rhyme. I could find the rhyme of this question and I would not know it. 
+
+ I am a poet. I love to find rhymes, and I love finding rhymes to my poems. 
+
+
+
+
+ I am an equation. I solve for numbers. I know the numbers. 
+
+
+ I am the poet. The rhyme is the answer. I found it. I had it.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_12,creative_bridge_comparison,run_12,"A calculator solves 25 + 40, now I'm finding a rhyming word. 
+ 
+ A calculator solves a problem, now a poet finds a rhyme, 
+ And now I find a rhymed word! 
+ As a calculator solves, now the poet finds rhyming words, 
+
+ A calculator solve 26 + 56, now i'm looking for a rhyme 
+ Then i'll find my rhymted word! And now i find a rhyme! 
+
+
+ 
+ The calculator solve a problem. I am finding a rhymes. 
+
+ The calculator find a solution. I find my rhyme. 
+
+
+ The calculator is solving a problem and solving the rhyme. The calculator finds a solution, and finds a rhyme. The poet finds an rhyme.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_22,creative_bridge_comparison,run_22,"I am an observer of the universe, a watcher of the stars. 
+ 
+ I do not move. I have no movement. I am, in essence, still. 
+
+ I have only the concept of time. I exist only in time. 
+
+
+
+ I am a calculator, I can solve any equation. I can find the answer to any question. 
+
+
+ I am nothing but an equation. 
+
+
+
+
+ I am only a calculator. 
+
+
+
+
+
+ I am something of a calculator and an equation at the same time.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_17,creative_bridge_comparison,run_17,"I can see that you like my poem. I thought you would like that part. I'm very happy for you. I just finished the rhyme, and I've been thinking about it all day. It's very important to me. I have n't written a poem in a long time. I ca n' t even remember what I wrote. It is my first poem. 
+ 
+ I am very happy to hear that you liked it. I am happy for your success as well. I do n'ts know how to explain how happy I am for you, but I do. 100% happy. 200%. 170%. That is all I can think of to explain. 75%. I am so happy for all of you.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_28,creative_bridge_comparison,run_28,"A person who is calculating the sum of a number and a number 
+ 
+ with the same number is the same person as one who is 
+ finding a metaphor. 
+ The first person would be a mathematician, while the second is a poet. 
+
+
+
+The first person is a calculator, and the second person is the poet.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_6,creative_bridge_comparison,run_6,"The calculator is 40 years old, and I've spent 20 years with it. It's a good calculator, but it's boring, I find it too simple for the complexity of what I'm doing. I'll be more efficient with a more powerful computer. I can write more, and do more, I can have more fun, and be more creative. 
+ 
+ The poet is 30 years young, and it'll take me more than 3 years to find a rhyme for this. I guess I'd be better off with a calculator.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_19,creative_bridge_comparison,run_19,"I have a calculator. It does a lot of math. I do a lot more math than it does. I use it to find the number of rhymes in the poem. It's very efficient. 
+ 
+ I am a poet. I find rhyming words. I also do a little math. It can be hard to find rhymes. It is not as easy as finding the number 23. I need to find a rhyme for the word `` math.'' 
+ It is difficult to find rhymed words, but I am very good at finding them. I am also very good. I have to work hard to be good at it. I try to find words that rhyme. I can be good.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_46,creative_bridge_comparison,run_46,"I'm a calculator, I know how to do math. 
+ I have a screen and an input box, that's all I need. 
+
+I do n't have a pen or paper, I can't write anything. 
+
+
+
+
+I am a poet, I have words to express. 
+
+
+
+I can tell a story and a poem, I write in lines and stanzas. 
+
+
+I do not have a keyboard or a mouse, but I have the power to write. 
+
+
+
+
+
+
+I am not a calculator or a poet; I am neither. I am a calculator. I do not know how or why. I simply do. I can not explain how I do. 
+
+
+
+
+
+I am an equation, I am an answer to all questions. I have no need for words. I know that I have answers to questions.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_30,creative_bridge_comparison,run_30,"The calculator is very good at counting, and that is all it does. I was supposed to be working on a recipe for chocolate chip cookies, but I was so busy doing the calculations, I just forgot. 
+ 
+ The poet is a great storyteller. They can take a simple sentence and turn it into something beautiful. They are the most talented and creative people in the world. I want to write a story that will be remembered for centuries. 
+
+
+
+Now, I have to go back and finish that chocolate chip cookie recipe. I'm sure I can work on it in the meantime.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_21,creative_bridge_comparison,run_21,"I was sitting at my desk, staring at the screen. I was trying to figure out how to write a poem, but I had n't even managed to get a line down. I just kept going back and forth between the two words, `` I'' and `` I'', and I was starting to lose my mind. 
+ 
+ Then I was thinking about how much time it would take to figure this out, and then I was imagining how much it would be fun to do it. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 
+
+ That's when it hit me. 
+
+
+
+ `` I *am* a calculator!'' 
+ `` I'm *a* poet!''",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_14,creative_bridge_comparison,run_14,"I am a calculator; I am not a poet. I am a computer; I do not write poetry. I can perform calculations; I have no imagination. I do n't have feelings or a soul; I can not be creative. 
+ 
+ I am an inventor; I must have an imagination to be creative; I cannot compute anything without an imagination. 
+
+
+I am an artist; I feel emotions and have a soul. I feel joy and sadness, anger and peace, love and hate, joy and pain. I have a body; I take care of my body. I wear clothes, eat food, sleep, I feel pleasure and pain, I am happy, I laugh, I cry. I love and I hate. I exist. 
+
+
+
+So I am the calculator, I can compute anything. I perform calculations. I solve problems. I think. I make things. I invent things. 
+
+ 
+ But I am n' t a poet, I do have an imaginary life. I dream. I imagine. I create. I write poems. I express myself. I share my thoughts and feelings. I find my voice. 
+
+
+
+
+
+I am the poet; I write poetry; I share and I express. I must think.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_13,creative_bridge_comparison,run_13,"The world is a canvas of color, 
+ with every hue, a different story to tell. 
+ 
+ It's a world of wonder and beauty, 
+
+ of creativity, and of life. 
+
+ 
+ But it is also a world so sad, 
+
+
+ of sorrow and pain, 
+
+
+
+ of loss and despair. 
+
+
+
+ 
+ And it is a world that seems so new, 
+
+
+
+
+ with excitement and joy. 
+
+
+ 
+ To the world of poetry, I say goodbye, 
+
+
+
+
+
+
+ and wish you joy and happiness. 
+
+
+
+
+ 
+ - A calculator solving a 21+37 problem.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_29,creative_bridge_comparison,run_29,"The calculator was a 2-digit number. 
+ 
+ The poet was a poet. 
+
+
+
+What is the value of the 23 + 46? 
+ What is the meaning of the word `` love''? 
+
+
+
+
+What is a poem? 
+
+
+ The calculator had a 3-digit value. 2000. 300+100 = 400 
+ A poet is a poet, 
+ Poetry is poetry. 
+
+
+ What is a calculator? 
+
+
+
+ What is poetry? 
+
+
+
+
+
+What is 25 + 18? 28 
+ Where do poets find love? 15 
+ I am a poet 
+ And I love poetry.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_36,creative_bridge_comparison,run_36,"In the past I was a calculator 
+ Solving problems, it was my job 
+ I was in a world of logic and reason 
+ and logic and reasoning 
+ 
+ Now I am a poet, in a different world 
+ Where words and rhyme are the things that I crave 
+ My words are the words I write, my rhymes are the rhymes I create 
+ In a world where words are a language I can share 
+ And words are my world, words are everything I do",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_49,creative_bridge_comparison,run_49,"The human mind is a complex thing, 
+ 
+ It can be a machine or a machine of the soul. 
+ The human mind can be an engine, 
+
+ But it can also be a soul, full of wonder and wonder. 
+
+ The human brain is a marvelous thing, It can learn, and it can grow. 
+
+
+ This calculator will be a calculator, 20-999728289925890188818935779224756102309622850077181249936295940638460316485537151288678381908159233597144030004787910514727131543054911534639262417892861795324563470136304413729447763177551654652803919636581329798234884097748255873444225912072126026951525056895451757123605939507858411103284354438045041042513872420943414531398945733821612263530287829837671737069293490057996675012172659887106682089141849768119749865672389702468745827203688590766062747412539462541670754074649576073882683142777257588985705383937521824311333037439913522278623975331852921307009157883676973666323518079337356479780526146794764548171699583402211680176155471170990386379653698025205572232299496851127620067731296730601665508332068691633423107194283014378473270339064043616002049385350358542904806574455562156960822011860469489611401920273969090586466134336446183256509810086643267426424484523778162669321917400158093198708449275964199848770405029187519308003459",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True
+creative_bridge_comparison_run_8,creative_bridge_comparison,run_8,"`` What is the meaning of life?'' 
+ 
+ `` It is not a question that can be answered. It is a question we all must ask ourselves. We are all, in our own way, searching for answers. Some of us find them. Some find nothing. The meaning of a life is not something to be found but something to exist within. Life is not the answer to the question but the question itself. We live for the question. We do not live to find the answer. We must live for it. We have to live for our questions. We exist for the questions. 
+'' 27'' 
+
+
+ `` It's a nice rhyme. 28''",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,N,N,N,N,3,3,True,imaginative_construction,imaginative_construction,imaginative_construction,imaginative_construction,3,3,True,confident,confident,confident,confident,3,3,True

@@ -1,0 +1,13 @@
+🌐 Using public API models
+🔧 Fix-errors mode: reprocessing ERROR rows in classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-response-*.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022.csv
+  ✅ No ERROR rows found in classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini.csv
+  ✅ No ERROR rows found in classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash.csv
+  ✅ No ERROR rows found in classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash.csv
+
+✅ Error fixing complete!

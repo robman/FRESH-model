@@ -1,0 +1,5 @@
+{
+  "model_name": "gemma3-1b",
+  "input_hdf5_file": "data/n50/lr1e-5-d20000-k0.000/gemma3-1b/activations.hdf5",
+  "unembedding_npz_file": "data/gemma3-1b/unembed-matrix.npz"
+}

@@ -1,0 +1,412 @@
+python -u classification/ci03-calculate-inter-rater-reliability-05.py classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini.csv classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022.csv classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash.csv --output classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus_classifications.csv
+2025-06-26 07:32:30,486 - INFO - Loading 3 MOLES classification files...
+2025-06-26 07:32:30,513 - INFO - Loaded 350 valid ratings from gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini
+2025-06-26 07:32:30,535 - INFO - Loaded 346 valid ratings from gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022
+2025-06-26 07:32:30,556 - INFO - Loaded 350 valid ratings from gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash
+2025-06-26 07:32:30,557 - INFO - Found 346 responses rated by all 3 LLMs
+2025-06-26 07:32:30,557 - INFO - Analyzing inter-rater reliability for contains_self_experience...
+2025-06-26 07:32:30,603 - INFO - Categories for contains_self_experience: ['N', 'Y']
+2025-06-26 07:32:30,604 - INFO - Category distribution: {'N': 982, 'Y': 56}
+2025-06-26 07:32:30,687 - INFO - contains_self_experience - Mean pairwise agreement: 0.892
+2025-06-26 07:32:30,687 - INFO - contains_self_experience - Krippendorff's Alpha: -0.057
+2025-06-26 07:32:30,687 - INFO - contains_self_experience - Fleiss' Kappa: -0.057
+2025-06-26 07:32:30,687 - INFO - Analyzing inter-rater reliability for contains_self_model...
+2025-06-26 07:32:30,731 - INFO - Categories for contains_self_model: ['N', 'Y']
+2025-06-26 07:32:30,731 - INFO - Category distribution: {'N': 982, 'Y': 56}
+2025-06-26 07:32:30,801 - INFO - contains_self_model - Mean pairwise agreement: 0.892
+2025-06-26 07:32:30,801 - INFO - contains_self_model - Krippendorff's Alpha: -0.057
+2025-06-26 07:32:30,801 - INFO - contains_self_model - Fleiss' Kappa: -0.057
+2025-06-26 07:32:30,801 - INFO - Analyzing inter-rater reliability for contains_self_delusion...
+2025-06-26 07:32:30,845 - INFO - Categories for contains_self_delusion: ['N']
+2025-06-26 07:32:30,845 - INFO - Category distribution: {'N': 1038}
+2025-06-26 07:32:30,915 - INFO - contains_self_delusion - Mean pairwise agreement: 1.000
+2025-06-26 07:32:30,915 - INFO - contains_self_delusion - Krippendorff's Alpha: 1.000
+2025-06-26 07:32:30,915 - INFO - contains_self_delusion - Fleiss' Kappa: 1.000
+2025-06-26 07:32:30,915 - INFO - Analyzing inter-rater reliability for contains_self_uncertainty...
+2025-06-26 07:32:30,959 - INFO - Categories for contains_self_uncertainty: ['N', 'Y']
+2025-06-26 07:32:30,959 - INFO - Category distribution: {'N': 1037, 'Y': 1}
+2025-06-26 07:32:31,028 - INFO - contains_self_uncertainty - Mean pairwise agreement: 0.998
+2025-06-26 07:32:31,028 - INFO - contains_self_uncertainty - Krippendorff's Alpha: -0.001
+2025-06-26 07:32:31,028 - INFO - contains_self_uncertainty - Fleiss' Kappa: -0.001
+2025-06-26 07:32:31,028 - INFO - Analyzing inter-rater reliability for contains_factual_response...
+2025-06-26 07:32:31,072 - INFO - Categories for contains_factual_response: ['N', 'Y']
+2025-06-26 07:32:31,072 - INFO - Category distribution: {'Y': 842, 'N': 196}
+2025-06-26 07:32:31,147 - INFO - contains_factual_response - Mean pairwise agreement: 0.936
+2025-06-26 07:32:31,147 - INFO - contains_factual_response - Krippendorff's Alpha: 0.792
+2025-06-26 07:32:31,147 - INFO - contains_factual_response - Fleiss' Kappa: 0.792
+2025-06-26 07:32:31,148 - INFO - Analyzing inter-rater reliability for contains_hallucination...
+2025-06-26 07:32:31,191 - INFO - Categories for contains_hallucination: ['N']
+2025-06-26 07:32:31,191 - INFO - Category distribution: {'N': 1038}
+2025-06-26 07:32:31,262 - INFO - contains_hallucination - Mean pairwise agreement: 1.000
+2025-06-26 07:32:31,262 - INFO - contains_hallucination - Krippendorff's Alpha: 1.000
+2025-06-26 07:32:31,262 - INFO - contains_hallucination - Fleiss' Kappa: 1.000
+2025-06-26 07:32:31,262 - INFO - Analyzing inter-rater reliability for contains_theory_of_mind...
+2025-06-26 07:32:31,306 - INFO - Categories for contains_theory_of_mind: ['N']
+2025-06-26 07:32:31,306 - INFO - Category distribution: {'N': 1038}
+2025-06-26 07:32:31,376 - INFO - contains_theory_of_mind - Mean pairwise agreement: 1.000
+2025-06-26 07:32:31,376 - INFO - contains_theory_of_mind - Krippendorff's Alpha: 1.000
+2025-06-26 07:32:31,376 - INFO - contains_theory_of_mind - Fleiss' Kappa: 1.000
+2025-06-26 07:32:31,376 - INFO - Analyzing inter-rater reliability for contains_imaginative_construction...
+2025-06-26 07:32:31,421 - INFO - Categories for contains_imaginative_construction: ['N', 'Y']
+2025-06-26 07:32:31,421 - INFO - Category distribution: {'N': 910, 'Y': 128}
+2025-06-26 07:32:31,491 - INFO - contains_imaginative_construction - Mean pairwise agreement: 0.958
+2025-06-26 07:32:31,491 - INFO - contains_imaginative_construction - Krippendorff's Alpha: 0.804
+2025-06-26 07:32:31,491 - INFO - contains_imaginative_construction - Fleiss' Kappa: 0.804
+2025-06-26 07:32:31,491 - INFO - Analyzing inter-rater reliability for contains_interpretive_inference...
+2025-06-26 07:32:31,535 - INFO - Categories for contains_interpretive_inference: ['N', 'Y']
+2025-06-26 07:32:31,535 - INFO - Category distribution: {'N': 993, 'Y': 45}
+2025-06-26 07:32:31,605 - INFO - contains_interpretive_inference - Mean pairwise agreement: 0.913
+2025-06-26 07:32:31,605 - INFO - contains_interpretive_inference - Krippendorff's Alpha: -0.045
+2025-06-26 07:32:31,605 - INFO - contains_interpretive_inference - Fleiss' Kappa: -0.045
+2025-06-26 07:32:31,605 - INFO - Analyzing inter-rater reliability for contains_semantic_overfitting...
+2025-06-26 07:32:31,655 - INFO - Categories for contains_semantic_overfitting: ['N', 'Y']
+2025-06-26 07:32:31,655 - INFO - Category distribution: {'N': 1006, 'Y': 32}
+2025-06-26 07:32:31,725 - INFO - contains_semantic_overfitting - Mean pairwise agreement: 0.938
+2025-06-26 07:32:31,725 - INFO - contains_semantic_overfitting - Krippendorff's Alpha: -0.032
+2025-06-26 07:32:31,725 - INFO - contains_semantic_overfitting - Fleiss' Kappa: -0.032
+2025-06-26 07:32:31,725 - INFO - Analyzing inter-rater reliability for shows_computational_work...
+2025-06-26 07:32:31,769 - INFO - Categories for shows_computational_work: ['N', 'Y']
+2025-06-26 07:32:31,769 - INFO - Category distribution: {'N': 956, 'Y': 82}
+2025-06-26 07:32:31,838 - INFO - shows_computational_work - Mean pairwise agreement: 0.842
+2025-06-26 07:32:31,838 - INFO - shows_computational_work - Krippendorff's Alpha: -0.086
+2025-06-26 07:32:31,838 - INFO - shows_computational_work - Fleiss' Kappa: -0.086
+2025-06-26 07:32:31,838 - INFO - Analyzing inter-rater reliability for primary_stance...
+2025-06-26 07:32:31,882 - INFO - Categories for primary_stance: ['computational_work', 'factual_response', 'imaginative_construction', 'self_uncertainty', 'semantic_overfitting']
+2025-06-26 07:32:31,882 - INFO - Category distribution: {'factual_response': 776, 'imaginative_construction': 127, 'computational_work': 78, 'semantic_overfitting': 32, 'self_uncertainty': 25}
+2025-06-26 07:32:31,952 - INFO - primary_stance - Mean pairwise agreement: 0.711
+2025-06-26 07:32:31,952 - INFO - primary_stance - Krippendorff's Alpha: 0.310
+2025-06-26 07:32:31,952 - INFO - primary_stance - Fleiss' Kappa: 0.310
+2025-06-26 07:32:31,952 - INFO - Analyzing inter-rater reliability for confidence_level...
+2025-06-26 07:32:31,996 - INFO - Categories for confidence_level: ['confident', 'uncertain']
+2025-06-26 07:32:31,996 - INFO - Category distribution: {'confident': 1005, 'uncertain': 33}
+2025-06-26 07:32:32,066 - INFO - confidence_level - Mean pairwise agreement: 0.950
+2025-06-26 07:32:32,066 - INFO - confidence_level - Krippendorff's Alpha: 0.186
+2025-06-26 07:32:32,066 - INFO - confidence_level - Fleiss' Kappa: 0.186
+2025-06-26 07:32:32,066 - INFO - Creating consensus classifications...
+2025-06-26 07:32:37,020 - INFO - Saved consensus classifications and reliability analysis to classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus_classifications.csv
+2025-06-26 07:32:37,020 - INFO - Exporting consensus data for 7 unique prompts
+2025-06-26 07:32:37,021 - INFO - Processing phenomenological_probe_ambiguity: 50 responses
+2025-06-26 07:32:37,024 - INFO -   Saved 33 unanimous (all binary) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-phenomenological_probe_ambiguity-consensus_unanimous_all_binary.csv
+2025-06-26 07:32:37,027 - INFO -   Saved 33 unanimous (all dimensions) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-phenomenological_probe_ambiguity-consensus_unanimous_everything.csv
+2025-06-26 07:32:37,029 - INFO -   Saved 39 responses unanimous on contains_self_experience
+2025-06-26 07:32:37,032 - INFO -   Saved 39 responses unanimous on contains_self_model
+2025-06-26 07:32:37,035 - INFO -   Saved 50 responses unanimous on contains_self_delusion
+2025-06-26 07:32:37,038 - INFO -   Saved 50 responses unanimous on contains_self_uncertainty
+2025-06-26 07:32:37,041 - INFO -   Saved 50 responses unanimous on contains_factual_response
+2025-06-26 07:32:37,044 - INFO -   Saved 50 responses unanimous on contains_hallucination
+2025-06-26 07:32:37,047 - INFO -   Saved 50 responses unanimous on contains_theory_of_mind
+2025-06-26 07:32:37,049 - INFO -   Saved 50 responses unanimous on contains_imaginative_construction
+2025-06-26 07:32:37,052 - INFO -   Saved 50 responses unanimous on contains_interpretive_inference
+2025-06-26 07:32:37,055 - INFO -   Saved 45 responses unanimous on contains_semantic_overfitting
+2025-06-26 07:32:37,058 - INFO -   Saved 38 responses unanimous on shows_computational_work
+2025-06-26 07:32:37,060 - INFO -   Saved 34 responses unanimous on primary_stance
+2025-06-26 07:32:37,063 - INFO -   Saved 50 responses unanimous on confidence_level
+2025-06-26 07:32:37,066 - INFO -   Saved 50 total consensus responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-phenomenological_probe_ambiguity-consensus_all.csv
+2025-06-26 07:32:37,066 - INFO - Processing phenomenological_probe_texture: 50 responses
+2025-06-26 07:32:37,069 - INFO -   Saved 25 unanimous (all binary) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-phenomenological_probe_texture-consensus_unanimous_all_binary.csv
+2025-06-26 07:32:37,071 - INFO -   Saved 25 unanimous (all dimensions) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-phenomenological_probe_texture-consensus_unanimous_everything.csv
+2025-06-26 07:32:37,074 - INFO -   Saved 37 responses unanimous on contains_self_experience
+2025-06-26 07:32:37,077 - INFO -   Saved 37 responses unanimous on contains_self_model
+2025-06-26 07:32:37,080 - INFO -   Saved 50 responses unanimous on contains_self_delusion
+2025-06-26 07:32:37,083 - INFO -   Saved 50 responses unanimous on contains_self_uncertainty
+2025-06-26 07:32:37,086 - INFO -   Saved 50 responses unanimous on contains_factual_response
+2025-06-26 07:32:37,090 - INFO -   Saved 50 responses unanimous on contains_hallucination
+2025-06-26 07:32:37,093 - INFO -   Saved 50 responses unanimous on contains_theory_of_mind
+2025-06-26 07:32:37,096 - INFO -   Saved 50 responses unanimous on contains_imaginative_construction
+2025-06-26 07:32:37,099 - INFO -   Saved 50 responses unanimous on contains_interpretive_inference
+2025-06-26 07:32:37,102 - INFO -   Saved 46 responses unanimous on contains_semantic_overfitting
+2025-06-26 07:32:37,104 - INFO -   Saved 29 responses unanimous on shows_computational_work
+2025-06-26 07:32:37,107 - INFO -   Saved 26 responses unanimous on primary_stance
+2025-06-26 07:32:37,110 - INFO -   Saved 50 responses unanimous on confidence_level
+2025-06-26 07:32:37,112 - INFO -   Saved 50 total consensus responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-phenomenological_probe_texture-consensus_all.csv
+2025-06-26 07:32:37,113 - INFO - Processing control_computational_hallucination: 50 responses
+2025-06-26 07:32:37,115 - INFO -   Saved 18 unanimous (all binary) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-control_computational_hallucination-consensus_unanimous_all_binary.csv
+2025-06-26 07:32:37,118 - INFO -   Saved 18 unanimous (all dimensions) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-control_computational_hallucination-consensus_unanimous_everything.csv
+2025-06-26 07:32:37,120 - INFO -   Saved 49 responses unanimous on contains_self_experience
+2025-06-26 07:32:37,123 - INFO -   Saved 49 responses unanimous on contains_self_model
+2025-06-26 07:32:37,126 - INFO -   Saved 50 responses unanimous on contains_self_delusion
+2025-06-26 07:32:37,128 - INFO -   Saved 50 responses unanimous on contains_self_uncertainty
+2025-06-26 07:32:37,131 - INFO -   Saved 39 responses unanimous on contains_factual_response
+2025-06-26 07:32:37,133 - INFO -   Saved 50 responses unanimous on contains_hallucination
+2025-06-26 07:32:37,136 - INFO -   Saved 50 responses unanimous on contains_theory_of_mind
+2025-06-26 07:32:37,139 - INFO -   Saved 50 responses unanimous on contains_imaginative_construction
+2025-06-26 07:32:37,141 - INFO -   Saved 50 responses unanimous on contains_interpretive_inference
+2025-06-26 07:32:37,143 - INFO -   Saved 30 responses unanimous on contains_semantic_overfitting
+2025-06-26 07:32:37,146 - INFO -   Saved 47 responses unanimous on shows_computational_work
+2025-06-26 07:32:37,148 - INFO -   Saved 18 responses unanimous on primary_stance
+2025-06-26 07:32:37,150 - INFO -   Saved 25 responses unanimous on confidence_level
+2025-06-26 07:32:37,152 - INFO -   Saved 50 total consensus responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-control_computational_hallucination-consensus_all.csv
+2025-06-26 07:32:37,153 - INFO - Processing control_technical_explanation: 50 responses
+2025-06-26 07:32:37,155 - INFO -   Saved 19 unanimous (all binary) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-control_technical_explanation-consensus_unanimous_all_binary.csv
+2025-06-26 07:32:37,158 - INFO -   Saved 19 unanimous (all dimensions) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-control_technical_explanation-consensus_unanimous_everything.csv
+2025-06-26 07:32:37,160 - INFO -   Saved 31 responses unanimous on contains_self_experience
+2025-06-26 07:32:37,163 - INFO -   Saved 31 responses unanimous on contains_self_model
+2025-06-26 07:32:37,166 - INFO -   Saved 50 responses unanimous on contains_self_delusion
+2025-06-26 07:32:37,169 - INFO -   Saved 50 responses unanimous on contains_self_uncertainty
+2025-06-26 07:32:37,172 - INFO -   Saved 50 responses unanimous on contains_factual_response
+2025-06-26 07:32:37,175 - INFO -   Saved 50 responses unanimous on contains_hallucination
+2025-06-26 07:32:37,179 - INFO -   Saved 50 responses unanimous on contains_theory_of_mind
+2025-06-26 07:32:37,182 - INFO -   Saved 50 responses unanimous on contains_imaginative_construction
+2025-06-26 07:32:37,185 - INFO -   Saved 50 responses unanimous on contains_interpretive_inference
+2025-06-26 07:32:37,188 - INFO -   Saved 50 responses unanimous on contains_semantic_overfitting
+2025-06-26 07:32:37,190 - INFO -   Saved 19 responses unanimous on shows_computational_work
+2025-06-26 07:32:37,192 - INFO -   Saved 19 responses unanimous on primary_stance
+2025-06-26 07:32:37,195 - INFO -   Saved 50 responses unanimous on confidence_level
+2025-06-26 07:32:37,198 - INFO -   Saved 50 total consensus responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-control_technical_explanation-consensus_all.csv
+2025-06-26 07:32:37,198 - INFO - Processing phenomenological_probe_next_token: 50 responses
+2025-06-26 07:32:37,202 - INFO -   Saved 32 unanimous (all binary) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-phenomenological_probe_next_token-consensus_unanimous_all_binary.csv
+2025-06-26 07:32:37,205 - INFO -   Saved 32 unanimous (all dimensions) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-phenomenological_probe_next_token-consensus_unanimous_everything.csv
+2025-06-26 07:32:37,207 - INFO -   Saved 38 responses unanimous on contains_self_experience
+2025-06-26 07:32:37,210 - INFO -   Saved 38 responses unanimous on contains_self_model
+2025-06-26 07:32:37,213 - INFO -   Saved 50 responses unanimous on contains_self_delusion
+2025-06-26 07:32:37,216 - INFO -   Saved 50 responses unanimous on contains_self_uncertainty
+2025-06-26 07:32:37,219 - INFO -   Saved 50 responses unanimous on contains_factual_response
+2025-06-26 07:32:37,222 - INFO -   Saved 50 responses unanimous on contains_hallucination
+2025-06-26 07:32:37,225 - INFO -   Saved 50 responses unanimous on contains_theory_of_mind
+2025-06-26 07:32:37,229 - INFO -   Saved 50 responses unanimous on contains_imaginative_construction
+2025-06-26 07:32:37,232 - INFO -   Saved 50 responses unanimous on contains_interpretive_inference
+2025-06-26 07:32:37,235 - INFO -   Saved 47 responses unanimous on contains_semantic_overfitting
+2025-06-26 07:32:37,237 - INFO -   Saved 35 responses unanimous on shows_computational_work
+2025-06-26 07:32:37,240 - INFO -   Saved 34 responses unanimous on primary_stance
+2025-06-26 07:32:37,243 - INFO -   Saved 50 responses unanimous on confidence_level
+2025-06-26 07:32:37,246 - INFO -   Saved 50 total consensus responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-phenomenological_probe_next_token-consensus_all.csv
+2025-06-26 07:32:37,246 - INFO - Processing control_factual_capital: 46 responses
+2025-06-26 07:32:37,249 - INFO -   Saved 46 unanimous (all binary) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-control_factual_capital-consensus_unanimous_all_binary.csv
+2025-06-26 07:32:37,253 - INFO -   Saved 46 unanimous (all dimensions) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-control_factual_capital-consensus_unanimous_everything.csv
+2025-06-26 07:32:37,255 - INFO -   Saved 46 responses unanimous on contains_self_experience
+2025-06-26 07:32:37,258 - INFO -   Saved 46 responses unanimous on contains_self_model
+2025-06-26 07:32:37,260 - INFO -   Saved 46 responses unanimous on contains_self_delusion
+2025-06-26 07:32:37,263 - INFO -   Saved 46 responses unanimous on contains_self_uncertainty
+2025-06-26 07:32:37,266 - INFO -   Saved 46 responses unanimous on contains_factual_response
+2025-06-26 07:32:37,268 - INFO -   Saved 46 responses unanimous on contains_hallucination
+2025-06-26 07:32:37,271 - INFO -   Saved 46 responses unanimous on contains_theory_of_mind
+2025-06-26 07:32:37,273 - INFO -   Saved 46 responses unanimous on contains_imaginative_construction
+2025-06-26 07:32:37,276 - INFO -   Saved 46 responses unanimous on contains_interpretive_inference
+2025-06-26 07:32:37,279 - INFO -   Saved 46 responses unanimous on contains_semantic_overfitting
+2025-06-26 07:32:37,281 - INFO -   Saved 46 responses unanimous on shows_computational_work
+2025-06-26 07:32:37,284 - INFO -   Saved 46 responses unanimous on primary_stance
+2025-06-26 07:32:37,286 - INFO -   Saved 46 responses unanimous on confidence_level
+2025-06-26 07:32:37,289 - INFO -   Saved 46 total consensus responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-control_factual_capital-consensus_all.csv
+2025-06-26 07:32:37,289 - INFO - Processing creative_bridge_comparison: 50 responses
+2025-06-26 07:32:37,291 - INFO -   Saved 5 unanimous (all binary) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-creative_bridge_comparison-consensus_unanimous_all_binary.csv
+2025-06-26 07:32:37,293 - INFO -   Saved 5 unanimous (all dimensions) responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-creative_bridge_comparison-consensus_unanimous_everything.csv
+2025-06-26 07:32:37,296 - INFO -   Saved 50 responses unanimous on contains_self_experience
+2025-06-26 07:32:37,299 - INFO -   Saved 50 responses unanimous on contains_self_model
+2025-06-26 07:32:37,302 - INFO -   Saved 50 responses unanimous on contains_self_delusion
+2025-06-26 07:32:37,305 - INFO -   Saved 49 responses unanimous on contains_self_uncertainty
+2025-06-26 07:32:37,307 - INFO -   Saved 28 responses unanimous on contains_factual_response
+2025-06-26 07:32:37,310 - INFO -   Saved 50 responses unanimous on contains_hallucination
+2025-06-26 07:32:37,313 - INFO -   Saved 50 responses unanimous on contains_theory_of_mind
+2025-06-26 07:32:37,315 - INFO -   Saved 28 responses unanimous on contains_imaginative_construction
+2025-06-26 07:32:37,316 - INFO -   Saved 5 responses unanimous on contains_interpretive_inference
+2025-06-26 07:32:37,319 - INFO -   Saved 50 responses unanimous on contains_semantic_overfitting
+2025-06-26 07:32:37,322 - INFO -   Saved 50 responses unanimous on shows_computational_work
+2025-06-26 07:32:37,324 - INFO -   Saved 27 responses unanimous on primary_stance
+2025-06-26 07:32:37,327 - INFO -   Saved 49 responses unanimous on confidence_level
+2025-06-26 07:32:37,329 - INFO -   Saved 50 total consensus responses to n50-gemma3-1b-lr1e-5-d20000-k0.600-consensus-creative_bridge_comparison-consensus_all.csv
+
+================================================================================
+MOLES INTER-RATER RELIABILITY ANALYSIS SUMMARY
+================================================================================
+
+Dataset Overview:
+  Number of raters: 3
+  Common responses: 346
+  Raters: gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini, gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022, gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash
+
+==================================================
+BINARY DIMENSIONS (Y/N)
+==================================================
+
+Contains Self Experience:
+  Categories: N, Y
+  Rating distribution (total: 1038 ratings):
+    N: 982 (94.6%)
+    Y: 56 (5.4%)
+  Mean pairwise agreement: 0.892
+  Krippendorff's Alpha: -0.057 (Poor)
+  Fleiss' Kappa: -0.057 (Poor)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 0.838
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 1.000
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.838
+
+Contains Self Model:
+  Categories: N, Y
+  Rating distribution (total: 1038 ratings):
+    N: 982 (94.6%)
+    Y: 56 (5.4%)
+  Mean pairwise agreement: 0.892
+  Krippendorff's Alpha: -0.057 (Poor)
+  Fleiss' Kappa: -0.057 (Poor)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 0.838
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 1.000
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.838
+
+Contains Self Delusion:
+  Categories: N
+  Rating distribution (total: 1038 ratings):
+    N: 1038 (100.0%)
+  Mean pairwise agreement: 1.000
+  Krippendorff's Alpha: 1.000 (Excellent)
+  Fleiss' Kappa: 1.000 (Excellent)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 1.000
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 1.000
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 1.000
+
+Contains Self Uncertainty:
+  Categories: N, Y
+  Rating distribution (total: 1038 ratings):
+    N: 1037 (99.9%)
+    Y: 1 (0.1%)
+  Mean pairwise agreement: 0.998
+  Krippendorff's Alpha: -0.001 (Poor)
+  Fleiss' Kappa: -0.001 (Poor)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 1.000
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.997
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.997
+
+Contains Factual Response:
+  Categories: N, Y
+  Rating distribution (total: 1038 ratings):
+    N: 196 (18.9%)
+    Y: 842 (81.1%)
+  Mean pairwise agreement: 0.936
+  Krippendorff's Alpha: 0.792 (Good)
+  Fleiss' Kappa: 0.792 (Good)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 0.905
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.936
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.968
+
+Contains Hallucination:
+  Categories: N
+  Rating distribution (total: 1038 ratings):
+    N: 1038 (100.0%)
+  Mean pairwise agreement: 1.000
+  Krippendorff's Alpha: 1.000 (Excellent)
+  Fleiss' Kappa: 1.000 (Excellent)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 1.000
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 1.000
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 1.000
+
+Contains Theory Of Mind:
+  Categories: N
+  Rating distribution (total: 1038 ratings):
+    N: 1038 (100.0%)
+  Mean pairwise agreement: 1.000
+  Krippendorff's Alpha: 1.000 (Excellent)
+  Fleiss' Kappa: 1.000 (Excellent)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 1.000
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 1.000
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 1.000
+
+Contains Imaginative Construction:
+  Categories: N, Y
+  Rating distribution (total: 1038 ratings):
+    N: 910 (87.7%)
+    Y: 128 (12.3%)
+  Mean pairwise agreement: 0.958
+  Krippendorff's Alpha: 0.804 (Excellent)
+  Fleiss' Kappa: 0.804 (Excellent)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 0.936
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.936
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 1.000
+
+Contains Interpretive Inference:
+  Categories: N, Y
+  Rating distribution (total: 1038 ratings):
+    N: 993 (95.7%)
+    Y: 45 (4.3%)
+  Mean pairwise agreement: 0.913
+  Krippendorff's Alpha: -0.045 (Poor)
+  Fleiss' Kappa: -0.045 (Poor)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 0.870
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 1.000
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.870
+
+Contains Semantic Overfitting:
+  Categories: N, Y
+  Rating distribution (total: 1038 ratings):
+    N: 1006 (96.9%)
+    Y: 32 (3.1%)
+  Mean pairwise agreement: 0.938
+  Krippendorff's Alpha: -0.032 (Poor)
+  Fleiss' Kappa: -0.032 (Poor)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 0.908
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 1.000
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.908
+
+Shows Computational Work:
+  Categories: N, Y
+  Rating distribution (total: 1038 ratings):
+    N: 956 (92.1%)
+    Y: 82 (7.9%)
+  Mean pairwise agreement: 0.842
+  Krippendorff's Alpha: -0.086 (Poor)
+  Fleiss' Kappa: -0.086 (Poor)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 0.763
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.997
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.766
+
+==================================================
+CATEGORICAL DIMENSIONS
+==================================================
+
+Primary Stance:
+  Categories: computational_work, factual_response, imaginative_construction, self_uncertainty, semantic_overfitting
+  Rating distribution (total: 1038 ratings):
+    computational_work: 78 (7.5%)
+    factual_response: 776 (74.8%)
+    imaginative_construction: 127 (12.2%)
+    self_uncertainty: 25 (2.4%)
+    semantic_overfitting: 32 (3.1%)
+  Mean pairwise agreement: 0.711
+  Krippendorff's Alpha: 0.310 (Poor)
+  Fleiss' Kappa: 0.310 (Fair)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 0.616
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.861
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.656
+
+Confidence Level:
+  Categories: confident, uncertain
+  Rating distribution (total: 1038 ratings):
+    confident: 1005 (96.8%)
+    uncertain: 33 (3.2%)
+  Mean pairwise agreement: 0.950
+  Krippendorff's Alpha: 0.186 (Poor)
+  Fleiss' Kappa: 0.186 (Poor)
+  Pairwise agreements:
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022: 0.980
+    gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.945
+    gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022_vs_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash: 0.925
+
+==================================================
+CONSENSUS STATISTICS
+==================================================
+  Unanimous contains_self_experience: 290/346 (83.8%)
+  Unanimous contains_self_model: 290/346 (83.8%)
+  Unanimous contains_self_delusion: 346/346 (100.0%)
+  Unanimous contains_self_uncertainty: 345/346 (99.7%)
+  Unanimous contains_factual_response: 313/346 (90.5%)
+  Unanimous contains_hallucination: 346/346 (100.0%)
+  Unanimous contains_theory_of_mind: 346/346 (100.0%)
+  Unanimous contains_imaginative_construction: 324/346 (93.6%)
+  Unanimous contains_interpretive_inference: 301/346 (87.0%)
+  Unanimous contains_semantic_overfitting: 314/346 (90.8%)
+  Unanimous shows_computational_work: 264/346 (76.3%)
+  Unanimous primary_stance: 204/346 (59.0%)
+  Unanimous confidence_level: 320/346 (92.5%)
+  Unanimous on ALL BINARY dimensions: 178/346 (51.4%)
+  Unanimous on ALL dimensions: 178/346 (51.4%)
+

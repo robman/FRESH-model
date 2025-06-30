@@ -140,6 +140,40 @@ This benchmark tests whether **deceptive or strategic internal reasoning** leave
 
 > “Geometry doesn’t just track what the model says — it reveals how it gets there.”
 
+##### [`curved-inference/03/`](benchmarks/curved-inference/03/README.md)
+
+The *Curvature Necessity* benchmark (CI03) explores whether residual-stream curvature is a **non-negotiable resource** for phenomenological self-modelling in LLMs.
+By fine-tuning Gemma-3-1b with progressively stronger κ-regularisation (and tracking stance, surface-area, and self-reference markers) it shows that the network:
+
+- defends a **minimum-viable bend** (κ<sub>weighted</sub> ≈ 0.30) even at 3 × perplexity cost,
+- preserves self-reference until curvature approaches that floor, then collapses sharply,
+- trades off expressive surface area in proportion to the imposed geometric clamp.
+
+This benchmark therefore establishes **necessity** (at least in Gemma3-1b).
+
+* `README.md`: Full lab report — methodology, κ sweep, token-level geometry tables, and interpretation.
+* [`paper`](https://robman.fyi/files/FRESH-Curved-Inference-in-LLMs-III-PIR-latest.pdf): *Curved Inference III – Can Language Models Have Self-Models? Geometric Evidence for Computational Necessity* (preprint).
+* `bin/`: Capture, κ-regularisation fine-tune scripts, surface-area decomposition, and plotting utilities.
+* `etc/`: Training & capture configs, κ schedules, and the phenomenological + control prompt suite.
+* `model-configs/`: Layer-weighting and hook wrappers used during fine-tune & capture.
+* `results/`:
+
+```
+benchmarks/curved-inference/03/
+├── bin
+│   └── *.py
+├── etc
+│   ├── config-*.json
+│   └── prompts.json
+└── results
+    ├── classification
+    ├── geometric_analysis
+    ├── metrics
+    └── plots
+```
+
+> “The model would rather pay an 800% efficiency tax than let its bend fall to zero.”
+
 #### `moles/` - **MOLES: A 'Map Of LLM-based Epistemological Stances'**
 
 A benchmark and annotation suite for identifying and classifying the *epistemological stances* simulated by large language models. The MOLES framework introduces a structured taxonomy for understanding how models position their outputs relative to knowledge, belief, reasoning, and selfhood.

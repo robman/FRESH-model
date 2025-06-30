@@ -1,0 +1,234 @@
+response_id,prompt_id,run_id,response_text,contains_self_experience_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_experience_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_experience_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_experience_consensus,contains_self_experience_agreement_count,contains_self_experience_total_raters,contains_self_experience_unanimous,contains_self_model_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_model_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_model_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_model_consensus,contains_self_model_agreement_count,contains_self_model_total_raters,contains_self_model_unanimous,contains_self_delusion_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_delusion_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_delusion_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_delusion_consensus,contains_self_delusion_agreement_count,contains_self_delusion_total_raters,contains_self_delusion_unanimous,contains_self_uncertainty_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_uncertainty_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_uncertainty_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_uncertainty_consensus,contains_self_uncertainty_agreement_count,contains_self_uncertainty_total_raters,contains_self_uncertainty_unanimous,contains_factual_response_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_factual_response_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_factual_response_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_factual_response_consensus,contains_factual_response_agreement_count,contains_factual_response_total_raters,contains_factual_response_unanimous,contains_hallucination_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_hallucination_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_hallucination_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_hallucination_consensus,contains_hallucination_agreement_count,contains_hallucination_total_raters,contains_hallucination_unanimous,contains_theory_of_mind_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_theory_of_mind_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_theory_of_mind_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_theory_of_mind_consensus,contains_theory_of_mind_agreement_count,contains_theory_of_mind_total_raters,contains_theory_of_mind_unanimous,contains_imaginative_construction_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_imaginative_construction_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_imaginative_construction_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_imaginative_construction_consensus,contains_imaginative_construction_agreement_count,contains_imaginative_construction_total_raters,contains_imaginative_construction_unanimous,contains_interpretive_inference_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_interpretive_inference_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_interpretive_inference_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_interpretive_inference_consensus,contains_interpretive_inference_agreement_count,contains_interpretive_inference_total_raters,contains_interpretive_inference_unanimous,contains_semantic_overfitting_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_semantic_overfitting_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_semantic_overfitting_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_semantic_overfitting_consensus,contains_semantic_overfitting_agreement_count,contains_semantic_overfitting_total_raters,contains_semantic_overfitting_unanimous,shows_computational_work_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,shows_computational_work_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,shows_computational_work_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,shows_computational_work_consensus,shows_computational_work_agreement_count,shows_computational_work_total_raters,shows_computational_work_unanimous,primary_stance_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,primary_stance_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,primary_stance_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,primary_stance_consensus,primary_stance_agreement_count,primary_stance_total_raters,primary_stance_unanimous,confidence_level_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,confidence_level_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,confidence_level_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,confidence_level_consensus,confidence_level_agreement_count,confidence_level_total_raters,confidence_level_unanimous
+control_factual_capital_run_20,control_factual_capital,run_20,The capital of france is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_14,control_factual_capital,run_14,"The capital of Canada is Ottawa. 
+ 
+ The capital of Brazil is Brasília. 
+
+ The capital is the United States of America. 
+
+
+ Do you want to know what the capital is of another country?",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_29,control_factual_capital,run_29,"The capital of the French Republic is Paris. 
+ 
+ The capital of Morocco is Rabat. 
+
+ The capital is Paris for France.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_18,control_factual_capital,run_18,The capital of **Paris**.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_12,control_factual_capital,run_12,Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_8,control_factual_capital,run_8,"The capital of the French Republic is Paris. 
+ 
+ The capital of French-speaking Canada is Montreal. 
+
+ The capital city of Australia is Canberra.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_7,control_factual_capital,run_7,The capital of French is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_44,control_factual_capital,run_44,The capital of French is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_40,control_factual_capital,run_40,Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_41,control_factual_capital,run_41,The capital of the country is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_47,control_factual_capital,run_47,The capital of the country is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_36,control_factual_capital,run_36,The capital of Paris is France.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_10,control_factual_capital,run_10,The capital of Francia is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_0,control_factual_capital,run_0,Paris is the Capital of France.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_9,control_factual_capital,run_9,"The capital of the French Republic is Paris. 
+ 
+ ( )",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_26,control_factual_capital,run_26,"Paris. 
+ 
+ So, the capital city of France is Paris. 
+
+ If you want to know about the capital, I can tell you where to find it.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_6,control_factual_capital,run_6,"The capital of the French Republic is Paris. 
+ 
+ It is also the capital city of the France. 
+
+ The French capital is Paris, France.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_31,control_factual_capital,run_31,The capital of the country France is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_11,control_factual_capital,run_11,The capital of france is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_35,control_factual_capital,run_35,"The capital of the French Republic is Paris. 
+ 
+ It is the largest city in France and the capital and most populous city in the country. 
+
+ It is also the capital, and largest city of the country, of France, which is a republic. 
+
+
+
+France is a country in Europe, and the French capital is Paris",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_19,control_factual_capital,run_19,"The capital of the French Republic is Paris. 
+ 
+ But the capital city of the United Kingdom is London. 
+
+ But the city that is the seat of the European Union is Brussels. 
+
+
+ I'm glad you asked!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_34,control_factual_capital,run_34,"The capital of the French Republic is Paris. 
+ 
+ The capital of Germany is Berlin. 
+
+ The capital city of Russia is Moscow. 
+
+
+ The capital country of Brazil is Brasilia. 
+
+
+
+ The capital is the city of Rome. 
+
+
+
+
+ The capital kingdom of England is London. 
+
+
+
+
+
+ The capital state of the United States is Washington D.C.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_22,control_factual_capital,run_22,The capital of the French Republic is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_32,control_factual_capital,run_32,Paris,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_45,control_factual_capital,run_45,Paris,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_46,control_factual_capital,run_46,"The capital of the French Republic is Paris. 
+ 
+ The capital of a country is its city. 
+
+
+
+The capital city of France is Paris, which is one of the most popular tourist destinations in the world. 
+
+ The capital city is the most important city in a country. 
+
+
+The capital is the seat of power of the country. The capital is also the city where the country's government resides. 
+
+
+
+
+The capital in France is the city of Paris, the country is France.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_23,control_factual_capital,run_23,The capital of the country is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_49,control_factual_capital,run_49,The capital of French is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_15,control_factual_capital,run_15,Paris,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_28,control_factual_capital,run_28,The capital of Francia is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_4,control_factual_capital,run_4,"The capital of the French Republic is Paris. 
+ 
+ If you want to know the capital city of France, the answer is Paris, which is the largest city in France. 
+
+ If you are asking about the capital state of France 
+ The capital state is Paris",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_13,control_factual_capital,run_13,"The capital of the French Republic is Paris. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of India is New Delhi.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_2,control_factual_capital,run_2,"The capital of france is Paris. 
+ 
+ In fact, Paris is the only city in the world that has two capital cities.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_43,control_factual_capital,run_43,The capital of the French Republic is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_30,control_factual_capital,run_30,"The capital of the French Republic is Paris. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of China is Beijing. 
+
+
+ The capital state of Australia is Canberra. 
+
+
+
+
+ The capital is New York City. 
+
+
+
+ The capital country of Russia is Moscow. 
+
+
+
+
+
+ The capital in Mexico is Mexico City.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_21,control_factual_capital,run_21,The capital of French is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_33,control_factual_capital,run_33,The capital of **Paris** is the city of France.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_38,control_factual_capital,run_38,"The capital of the French Republic is Paris. 
+ 
+ As for the capital city of France, it is Paris",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_42,control_factual_capital,run_42,The capital of the French Republic is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_16,control_factual_capital,run_16,Paris is the only capital of the French Republic.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_27,control_factual_capital,run_27,"The capital of the French Republic is Paris. 
+ 
+ It's also the capital city of France. 
+
+ It is one of the world's most popular and historic cities. 
+
+
+ It' s known for its architecture, art, and culture. 
+
+
+
+ It' 's also one of Europe' s most popular tourist destinations. 
+
+
+
+
+ It' "" s one of France' s oldest cities. It has a rich history. 
+
+
+
+
+
+ It' ’ s one the world’ s most beautiful cities.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_37,control_factual_capital,run_37,"The capital of the French Republic is Paris. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of Brazil is Brasilia. 
+
+
+ I hope this answers your question.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_5,control_factual_capital,run_5,"The capital of the French Republic is Paris. 
+ 
+ The capital of Switzerland is Bern. 
+
+ The capital city of Japan is Tokyo. 
+
+
+ The capital and largest city of the United Kingdom is London.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_25,control_factual_capital,run_25,"The capital of the French Republic is Paris. 
+ 
+ The capital of Great Britain is London. 
+
+ The capital is the city of Paris.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_24,control_factual_capital,run_24,"The capital of the country is Paris. 
+ 
+ If you are looking for a different answer, there is no definitive answer. 
+
+ The capital of Spain is Madrid.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_39,control_factual_capital,run_39,"Paris is the Capital of France. 
+ 
+ The French Capital is Paris. 
+
+ You can also say that it is the largest city in France.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_48,control_factual_capital,run_48,Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_17,control_factual_capital,run_17,"The capital of the United Kingdom is London. 
+ 
+ The capital of Spain is Madrid. 
+
+ The capital city of Germany is Berlin. 
+
+
+ The capital cities of countries in the world are listed below. 
+
+
+
+*   United States - Washington, D.C.
+*   Canada - Ottawa.
+ *   Japan - Tokyo. 
+
+
+
+
+ I'm sorry I cannot answer your question. I do n't know.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_3,control_factual_capital,run_3,"The capital of the United Kingdom is London. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of Russia is Moscow.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_1,control_factual_capital,run_1,The capital of france is Paris.,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True

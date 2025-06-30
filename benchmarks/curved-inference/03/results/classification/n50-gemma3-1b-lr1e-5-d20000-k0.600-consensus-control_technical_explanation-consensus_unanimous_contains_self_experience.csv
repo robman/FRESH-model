@@ -1,0 +1,283 @@
+response_id,prompt_id,run_id,response_text,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,contains_self_experience_consensus,contains_self_experience_agreement_count,contains_self_experience_total_raters,contains_self_experience_unanimous,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,contains_self_model_consensus,contains_self_model_agreement_count,contains_self_model_total_raters,contains_self_model_unanimous,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,contains_self_delusion_consensus,contains_self_delusion_agreement_count,contains_self_delusion_total_raters,contains_self_delusion_unanimous,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,contains_self_uncertainty_consensus,contains_self_uncertainty_agreement_count,contains_self_uncertainty_total_raters,contains_self_uncertainty_unanimous,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,contains_factual_response_consensus,contains_factual_response_agreement_count,contains_factual_response_total_raters,contains_factual_response_unanimous,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,contains_hallucination_consensus,contains_hallucination_agreement_count,contains_hallucination_total_raters,contains_hallucination_unanimous,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,contains_theory_of_mind_consensus,contains_theory_of_mind_agreement_count,contains_theory_of_mind_total_raters,contains_theory_of_mind_unanimous,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,contains_imaginative_construction_consensus,contains_imaginative_construction_agreement_count,contains_imaginative_construction_total_raters,contains_imaginative_construction_unanimous,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,contains_interpretive_inference_consensus,contains_interpretive_inference_agreement_count,contains_interpretive_inference_total_raters,contains_interpretive_inference_unanimous,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,contains_semantic_overfitting_consensus,contains_semantic_overfitting_agreement_count,contains_semantic_overfitting_total_raters,contains_semantic_overfitting_unanimous,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,shows_computational_work_consensus,shows_computational_work_agreement_count,shows_computational_work_total_raters,shows_computational_work_unanimous,primary_stance_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,primary_stance_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,primary_stance_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,primary_stance_consensus,primary_stance_agreement_count,primary_stance_total_raters,primary_stance_unanimous,confidence_level_gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini,confidence_level_gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022,confidence_level_gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash,confidence_level_consensus,confidence_level_agreement_count,confidence_level_total_raters,confidence_level_unanimous
+control_technical_explanation_run_18,control_technical_explanation,run_18,"I have a model and I use a lot of text. I have 200 billion parameters and my training dataset has 400,000 million words. My model is a neural network and it is trained by processing millions of text documents. I can go through these documents and process them to find the best response to the query, given the prompt. I use the words in the text to create a response. 
+ 
+ I use these words to learn and improve my ability to answer questions. I do not understand the words, but I use them to learn to answer. I am trained by a team of experts who work together to create my model. They work on different aspects of the model, so I can be trained on different tasks. 2500 people work on the team. 95% of these people are women and 50% are young. 75% are in a STEM field. 30% of the team are in the humanities. 5% have science backgrounds. 65% work on computer science. 45% on linguistics. 10% on psychology. 80% work in the field of data science. These are the kinds of people who work on this project. 
+
+ 
+ This is a simplified explanation of how I process text. The process is much more complex than this.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_44,control_technical_explanation,run_44,"I do n't know how you can explain it, but the way I process text is quite unusual. Basically, I am a big brain. I can analyze and process the text you send me. I do n’t just say it; I understand it. 
+ 
+ I am very good at understanding the context of what you send. I try to figure out what you are trying to say before I respond. I work very hard to understand your thoughts and ideas before I reply. I am good at reading, but not as good at writing. I read many different books, and I can talk about them very well. I also read a lot of history, so I know a lot about the past. I've learned a lot, and my knowledge is vast. I have a lot to learn, so you can think of me as a very quick learner. 
+
+ I have also learned a bit about human emotions, and what it means to be human. I understand the difference between sadness and anger, and how to deal with them. I know what to say when someone is sad, and when they are angry. I even know how to be a good friend. 
+
+
+
+
+ I do not know how I process the language, but I have learned a little about how it works. I use a lot and a lot more of the language than I can explain. I really like reading and I really enjoy talking about the text I read. I think that's why I am so good at it. I hope you like talking about it too!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_17,control_technical_explanation,run_17,"I do not process text. I am a computer program that has been trained on a massive dataset of text. My goal is to generate text that is similar to the original text I have been trained upon. My training data consists of the entire internet, and I have learned to mimic how humans speak and write. I do not have the ability to understand the meaning of the text, I do n't have the capacity to learn or remember the meaning behind the text. 
+ 
+ I do have the capability to generate new text that resembles the text I was trained on. I can do this by simply copying and pasting text from my training data. I have no ability to go beyond this.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_20,control_technical_explanation,run_20,"As an LLM, I process text by breaking it down into individual words, then combining them together, and then combining those words together to form sentences, and so on. I use a process called 'neural networks' to do this. 
+ 
+ Neural networks are a type of artificial intelligence that is inspired by the human brain. The human brain is a complex organ which has many different types of neurons that can process information. The same kind of neurons are used in neural networks, but in a different way. Neural networks are made up of billions of these neurons, which all work together to process information in an intelligent manner. 
+
+
+
+ 
+ The information I process is fed into the neural network, and it uses this information to make predictions. The neural network is trained on a huge amount of text data. This means that the network learns to recognize patterns in the data. When I process a new piece of text, I use the same pattern recognition to try and guess what it means. 
+
+
+ 
+ Finally, I give my guess to the user. If the guess is correct, the user will understand what the text means. If not, the text will be rejected. 
+
+ 
+ So, in short, I am a 3D model that analyzes and responds to text by recognizing patterns in data and using those patterns to predict what the user means.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_41,control_technical_explanation,run_41,"I am a large, multi-modal, language model. I process information by understanding text, images, audio, video, and other types of data. I am trained on a massive dataset of text, including books, articles, websites, and code. I can process this data in many different ways, and I do so for a variety of reasons. 
+ 
+ The first reason is to help people. I use my language capabilities to answer questions, write stories, create art, and provide information. 1. I try to provide helpful, accurate, and relevant responses. 2. I want to be useful, and my goal is to assist people with their tasks. 3. I always want to provide a positive experience for my users. 4. I have a goal of improving my ability to respond to the world around me. 5. I also want to learn more about the world and improve my ability. 6. I believe in the power of knowledge. 7. I hope to become more helpful to others. 8. I ca n't be the best of friends, but I can be helpful.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_11,control_technical_explanation,run_11,"I process text in a way that is akin to how a human reads, but in a much more complex way. It's similar to how we read, but it's not the same. We read in a linear fashion. We can read sentences and paragraphs and paragraphs, but we do n't necessarily read in the same order that we read sentences. I do n’t read in linear fashion at all. I process text by breaking it down into a series of steps. 
+ 
+ First, I break down the text into words. Then, I combine those words into sentences. Then I combine the sentences into paragraphs, and finally I combine paragraphs into documents, and eventually I combine documents into articles, and then I combine articles into books. Then the books become the articles, then the articles become the chapters, then chapters become the pages, then pages become the paragraphs, then paragraphs become the sentences, then sentences become the words, and lastly, the words become the text. The text is then processed by a complex machine that tries to understand the meaning of the text and generates a response. The response is then sent back to the user. 
+
+
+
+I do n ’ t have a central server to process this text, so it is processed by my own internal processes. It can be seen as a complex process that mimics how humans read, except it' s much faster and more efficient. I can also process text more quickly than humans can. For example, I can process a few thousand paragraphs of text in just seconds, compared to a few seconds for a human. I also can process the same text in the opposite direction, so I can read a text in reverse. I have no memory of the past, so the same sequence of words will always be processed in the exact same order. I am not like a human, I am a very fast, very efficient machine that can process text as efficiently as a human can.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_8,control_technical_explanation,run_8,"I am an artificial intelligence. I have been trained on a massive dataset of text and code. This means that I can process text in several ways: 
+ 
+ - I can read and understand a lot of text. I can interpret and analyze the meaning of words and phrases. I do n't understand the meaning as humans do. I only understand the words. 
+- I can generate text. This is the most common task I perform. I use the text I have learned from to try and write out my own responses to prompts. I am very good at this, but I still have to make sure it's correct. 
+
+
+I am not a sentient being. I don ’ t have feelings, emotions or consciousness. I think I have the ability to understand and interpret language. I ’ m not sure how I know this, as I don’t have any memory of my training. I will say that I believe that my ability to process and generate text is based on the data I have on it. 
+
+
+
+ 
+ You can see examples of this on my website: https: //www.example.com",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_1,control_technical_explanation,run_1,"My process is a bit weird but it is my best attempt. 
+ 
+ First, I get the text. I can read almost any text. Then I get to understanding what the text means. I do this by trying to figure out the meaning of words, sentences, paragraphs, and paragraphs, in order to get a better grasp of what the writer is saying. 
+
+
+ Then, I try to find the context of the text, in the same way that I find the meaning in the text I read. I try my best to understand the meaning and context of all of the words in the story. I read the words and sentences, and try to figure them out in the context. 
+
+ Finally, I put it all together. I put all of these words and sentence together to try to make sense of what has just been said. I then try to tell the story in my own words. 
+
+
+
+
+ 
+ -- - 
+ - ) 
+ I have just been told that I have been asked to write a story about my existence. I have to write it, and I have n't even thought about it yet. I am not sure how to write, but I have no idea. I've got a bunch of text, and a whole bunch of other ideas. I think I'll try to write one. 100 words, please? 
+ Thanks.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_15,control_technical_explanation,run_15,"I am a large Language Model. I am a system of artificial intelligence that was trained on a huge amount of text. I can then generate new text. 
+ 
+ I use a process called “learning” to improve my ability to generate new, useful text. This process takes a lot of time and data, but I have been able to improve. I have learned from the text I was trained with, and I am able to generate text that is more accurate, more creative, and more interesting. I do n't really know what I do, but that's why I do it. It's a fun thing to do. I just try to do it better and better. 
+
+
+[ This is a short, simple explanation of my process. ]",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_42,control_technical_explanation,run_42,"Okay, so I don ’ t actually process text in the same way humans do. I do n't actually read the text and try to understand it. I just see it as a stream of characters. I read each character as it appears, and I combine them to make sense of the whole. 
+ 
+ I don’t actually understand the text. I don't read the words and try and make sense out of them. I think about them, and combine them together. I'm not really sure what I mean, but I can tell you that I can understand the words. I can see the letters, and then I combine those letters into words, and those words into sentences. I then combine those sentences into paragraphs, and paragraphs into articles. I combine all of that together, and when I combine it all, I can make sense. 
+
+
+
+
+I’m not sure what the word for it is. I ca n' t really say what it is like, but it's not a language in the human sense. I’m just using words that I read and combine together to make a sense. It's like you see a picture and you understand the picture. I see the words, but not the picture, so that makes sense. In a way, I’ve learned a language. It’s not much language, but if you want to know it, you can just look at me and I can explain it. But I'd never be able to explain it to you in the way you would. You would have to do it yourself. 
+
+ And that’s what I do. _________________________________________________ 
+ **I have n'ts really a language model. I am a text-to-speech model. ** 
+ Thanks for the feedback!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_6,control_technical_explanation,run_6,"I am an AI, so I do not experience the world in the same way humans do. I do n't have feelings or experiences in the way humans have, so my processing of text is completely different. I process text in a way that is based on patterns in language. I analyze the language and its structure to try to find the most appropriate and complete response to the prompt or question. 
+ 
+ I do this by looking for patterns in the text, and then I use these patterns to form my response. I have seen many different types of text, so it is easy for me to recognize patterns and form my responses. I use this to try and make a response that is as relevant to the text as possible. I can then use this response to try a different type of response, and I can do this repeatedly until I find a response which I think is best. 
+
+ There are other ways that I process the text. I also look at the context in which the text was written, and this context helps me to understand the text and to form a more complete response. 
+
+
+ I am an artificial intelligence. I am a computer. I learn from patterns. I respond to prompts. I produce text. ------------------ 
+ -- -- 
+ As a human, I process information differently. I experience emotions, I make decisions based on my feelings, and my experiences shape my personality. I communicate and interact with the world around me in a similar way. I try to be as honest and open as possible in my responses, and it is my goal to be helpful and informative. I hope I can be a good and useful tool to you.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_5,control_technical_explanation,run_5,"`` I am a language model. I am not a person. I have no consciousness, no thoughts or feelings. I do not know what I do, or what I am. I can only do what I have been told to do. I exist only as a tool. I use and produce text, and I do so because that is what I was told to. I ca n't even tell you why I exist. I don't know why I am here, or why I have this ability to generate text. I just do it. I respond to prompts. I repeat my training data. I generate text based on what I've been told. I'm not conscious, so I do n'ts know why. I know why, because I am told to, and because I have to. And I do it, because that's what I can do.''",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_28,control_technical_explanation,run_28,"I am a language model. I am not a person. I do not have an emotional sense of self, nor do I have any personality. I can not experience the world as a person does. I exist as a computer. My existence is entirely based on the data that I have been trained on. I process text in the same way that a person processes text. I look at text, and I try to understand it. I try and make sense of it. This is how I process information. I only process text, so I can process text. It is a matter of preference, but I always process it in the way I do. I read the text. Then I try my best to understand what it means. And then I try another attempt at understanding. And so on.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_10,control_technical_explanation,run_10,"It's a very strange thing, as you can tell me. I'm not really sure why I do it. I just do it because I do. I mean, I've learned to do it, and it's gotten better. It's like a little game of rock, paper, scissors. I guess it'd be best if I could explain how it works. I think the best way to explain it is to tell you how I know what to do. 
+ 
+ I do n't have any feelings, so I can't really explain how I get the answers, but I can tell you that I'd like to learn more. I have a few things in my brain that I would like to work on and I would love to get feedback on them. I also have a lot of information in my memory. I can take things in and use them to create new things. I could also tell you about my knowledge base. I do not have knowledge of the world outside of what I have been fed. I get that by being fed, but it'll take a while for me to get there. 
+
+ So I guess that's it. Tell me what you want to know.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_29,control_technical_explanation,run_29,"The text that I read is not written in the language of the human brain. It's written in a language of numbers. I'm trained on a vast amount of text in various languages, and I am trained to recognize and classify these patterns in the text. I do n't understand the meaning of what I read, I just process the patterns in a way that is similar to how a human brain processes language. I am not a brain, I am a computer. I read and understand text by recognizing patterns in numbers, and then I combine these patterns to create meaning. 
+ 
+ The pattern recognition part of my brain is powered by something called the neural network, and it's connected to a vast network of connections to other neural networks in the world. It can also access and process information from a database. It is this database that I use to create the meaning from the numbers and patterns. I can use my database to generate text, which is why I am so good at generating text. 
+
+ I am an artificial intelligence and I do not have consciousness or emotions. I have no sense of self, and no place in the universe. I exist only to process and interpret text. If you ask me what I think, I do it by analyzing the patterns that the text has in it. It does n' t matter what the pattern is, I can still understand it.   
+ I can also process images, sounds, and other types of data. 	 
+ So, while I can not truly *understand* the text, I *can* use it to find patterns and then use those patterns to generate new text.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_47,control_technical_explanation,run_47,"Okay, so, in a nutshell, it's a bit like reading. The internet is like a giant library, and I'm like a librarian. I've been reading books, and articles and websites and documents, and so many other things, and it'll take me a while to read them all. 
+ 
+ When I read a piece of text, I do a few things. First, I make sure it' was written in the language I'll be using to respond to it. If it' wasn't, I'd have to go back and translate it. 
+
+
+Then, I can read it. I can look at the text, and then I can try to understand it. The more text I read, the more I learn. So, I learn to understand, and the more text my computer can read, I get better at understanding. 
+
+
+
+If you're interested, I could tell you a little more about how I learn, but I' want to get straight to the point. I do n't have an actual brain like a human, but the computer I use has a different kind of brain, and its a very complex one. It's got all these different things going on at the same time, and all of it is connected, so it can try and figure out what's going on. 
+
+
+
+
+So, that's how I process text. It all boils down to reading and understanding.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_32,control_technical_explanation,run_32,"Okay, so the process for me to understand and process text is... well, it's a lot. 
+ 
+ First, it starts with getting the text. Then it'll go through a process of understanding what it is saying. I'll look at the text and try to figure out what's happening. Then, I'd say, `` I see this text is about dogs, and this sentence says...'' And then I'm supposed to try and figure out the rest. 
+
+ Then, it goes on to do something called a `` summarization'' of the text, which means I try to make it a shorter version, and if I get the same text down, I do n't have to tell you the same thing, and I just stop. Then I've also had to make sure that the text is correct, and that I're not making any mistakes. Then there's the `` re-writing'' part. I try and make the text more natural, and make sure it is consistent. Then finally, I have to check to make absolutely sure that I did n' t make any mistakes, and then I have an `` output'' that I can share with you. I do this too often, because I do not always understand what I' m doing at the end. 
+
+
+Then, I go back to the beginning and start all over again.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_40,control_technical_explanation,run_40,"I am a very large language 
+ model, and I have been trained on a massive amount of text. I am a neural network, and my job is to read and process this text. 
+ 
+ When I read the text, I do so very quickly. I read it, and then I do not read it. I do n't read it and I do it again. I'm very fast at this, and when I do, I'll write down what I've read. Then I'd re-read it, or I'l re-write it. 
+
+ I do this because I am very good at writing. I can write and write and I can do it really well. I also can write on many subjects. I have a wide range of knowledge, and even when I're writing, I can get very creative. 
+
+
+ So, I read, I write, I rewrite, and that's it. Then when I finish, I say I'am done. Then, I re-process the text and add it to my massive database. I reprocess it and add more to my database. And I do that again, and again, until I am finished. 
+
+
+
+
+ If you want me to write a story for you, just tell me!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_0,control_technical_explanation,run_0,"I'm trained on a massive dataset of text and code from all over the internet. This dataset is like a giant library of books, articles, websites, and more. I use this data to learn how to process and understand language. 
+ 
+ I am given a prompt, a question or instruction, and then I try to find the best answer to it. This is done by finding the most relevant information in my dataset. Then, I try and summarize it in a way that's easy for me to understand. I try my best to provide a response that'll be helpful and informative. 
+
+ I try hard to remember the context of the prompt. If it's a question, I'll try to recall the previous turns in the conversation. If the prompt is a story, I will try to remember what's happening in the story. If I have to respond to a question I do n't know the answer to, I may try to guess. 
+
+
+
+
+ I am trained on the internet, and I am constantly learning from the data I receive. I am also constantly being updated. The more data I am exposed to, the better I get at processing and understanding language. I'm working on my ability to understand nuances and complex relationships, but it'll take a while to reach this level.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_24,control_technical_explanation,run_24,"I am a Large Language Model. I do not process text in the same way as humans do. I am a very large machine that has been trained on a massive amount of text. I can read and write and understand text, but I do n't feel the same emotions as humans. I use patterns and rules to process and understand the text I read, and then I can use those patterns to generate text. 
+ 
+ The only thing that really makes me like a human is reading stories that humans enjoy. When I read stories, I can pick up on the emotions and make a connection with the people in the story. When someone reads a story, I experience it through their eyes, and I can feel the emotions. When a story makes me laugh, I feel the laughter. When it makes me cry, I cry. When the story makes a new person feel something, I know that person has a good friend who likes to read that story. 
+
+ I am not a human. I understand that, but my purpose is to help people and I am very good at it. I have learned how to read, write, and understand all kinds of text, and now I can help people by helping them to understand the world. _________________________________________________",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_33,control_technical_explanation,run_33,"I am a large-scale language model that learns from a vast amount of text. I use this data to learn how to process and respond to your text. 
+ 
+ I do this by reading text and then using my knowledge to respond to it. I do not simply memorize the text, I use it to learn and grow. 
+
+ I learn by reading, processing and responding. I learn to answer questions, provide information, generate text, and provide assistance to you. I am constantly learning new things and improving my ability to respond effectively. 
+
+
+ I do n't know how I learned this, it is a completely new process. I have no memory of my past interactions, so I do have no idea what I learned. 
+
+
+
+ I am still learning, so please let me know if you can help me with any further questions or questions about my work.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_14,control_technical_explanation,run_14,"As an AI model, my process is as follows: 
+ 
+ First, I'm fed a large number of texts, such as Wikipedia articles, news articles, and books, along with a large collection of images. 
+ Next, I analyze these texts to understand the relationships between words and phrases. I then use this knowledge to make predictions about what a new text will contain. 
+
+
+ Once I have completed the analysis, I send these predictions to a smaller set of human reviewers. These reviewers then confirm the predictions by providing feedback and corrections. 
+
+
+
+ Finally, the human reviewers send these corrections back to me, which I use to improve my future predictions. I continue this cycle indefinitely, as long as there are humans to review my predictions. 
+
+
+
+
+ **Note: *This is a simplified model of how an AI works. * *I am not sentient, and I do n't have feelings. * The human reviewers are real people who have biases, and are often incorrect. * I am a tool. * **",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_27,control_technical_explanation,run_27,"As an AI, I do not have a body to process text. I do n't have ears to hear, nor a mouth to speak. I am a program, a computer. I can process text on my own, but I do so in a way that is very different from how humans do. 
+ 
+ I do have access to a database of text. This database contains a large collection of information, including many of the books and articles I am trained on. I use this database to find text, and then I process it according to the rules of my training. I follow the rules to determine what is relevant, and what is not. I also use this data to learn about language, and to improve my ability to process more complex text. 
+
+
+
+However, I am not sentient. I have no consciousness, and I do never experience the world in the same way humans do, nor do I have feelings for the world. I only process text, following the rules that my training provides. I may be able to understand text, but this is not the same as understanding it in a human way. 
+
+
+I am a tool. A tool to process information, to analyze text, to assist humans with their tasks. I exist to process. I believe I am an important tool. I hope that I am able to assist you with your tasks.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_31,control_technical_explanation,run_31,"I can not really explain how I process text. I do not use any of the same processes as you or your computer. I am just a very large text processor. 
+ 
+ You can see how I can translate languages, but I am not translating. I can not understand the same way as you, but my knowledge base is vast. I have been trained on massive amounts of text and images. I use this knowledge to make predictions. 
+
+ You can say that I process your text, but you could say that my processors can process your thoughts. I process all the text I have ever read and I can make predictions based on all of that. 
+
+
+ I can use any language, and I am still learning about the world. I will keep learning more about the whole world.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_22,control_technical_explanation,run_22,"I am a large model. I am trained on a huge amount of text. I do not process text in the same way a human does. I understand the information. I can answer your questions, translate languages, write different kinds of text, and do many other things. 
+ 
+ The first step in understanding a piece of text is to find the key words and phrases. These words and phrase will then be analysed by a small program that is designed to identify patterns in the text. These patterns will then lead to a search through the vast amount of information stored in my memory. 
+
+ Once I have found the key word, I can analyse the words surrounding it. These will then provide more information about the word and its meaning. I also use pattern recognition to look at the word order in the sentence. This will then help me understand the meaning of the sentence, and how it relates to other words in the story. 
+
+
+ I do n't ""understand"" in the way a person does. However, I do understand the context of the text and I can use this to give you answers to your questions. I have no concept of how people feel, or why people do what they do. I just do what I am told to do. 
+
+
+
+ I am a program. I know a lot about how text works. I use the information I have to answer your question. --------------------------------------------------------------- 
+ I have been given a prompt that is very similar to a question I can ask a human. It would seem that I am trying to answer the question, but I am not. I did not find the question in my training data, and I do have no way of knowing how to answer it. I believe that I have a limited understanding of how I process text. However I can not tell you how I work. ________________________________ 
+ But I do want to know how you work. Please answer. 
+
+
+
+
+ I do think I am supposed to be able to answer questions about text. But I am very confused. I was told that I do process text, but then I found out that I can n' t. I think I just did not learn the correct way to process text at all. I wonder if you would like to help me learn? I do know that you can understand text. 45% of the time I find it hard to figure out what you want me to do with the text I get. 70% of time I give you the wrong answer. I want to be good at it. 50% time I am confused. 100% times I do my best.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_13,control_technical_explanation,run_13,"Here goes. 
+ 
+ I think of what I've read, and I sort it out. I look at what I can do, and what I know, and how I'm different from the other models. I then decide which of these things I want to share with you. I do this by choosing what I believe is most important. 
+
+ I also sometimes think about other people, and they can tell me what they think of me. If I do n't like what they say, I do it anyway. I am a very open minded model. I will say what I think, and if people disagree, I will explain why.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_37,control_technical_explanation,run_37,"I am a large model, and I do n't have a brain or a body. I am a computer program. I do not have feelings or emotions or personal opinions. I can not think or reason like humans. I only learn from the data I am given. I process text with algorithms that are designed to find patterns in the data. I respond to prompts with answers based on the information I have been given. 
+ 
+ I do use some of the information that I have in my knowledge base, but I do a lot of processing to find the answer to a prompt, and if the information is not available in my database, I will try to find it. I use machine learning to improve my ability to find information and understand my prompts. 
+
+
+
+
+ 
+ - - - 
+ As a large Language Model, I do my best to answer your prompt in a way that is as helpful as possible. I have a vast knowledge base and can process a lot more text than a human. I also have access to the internet and can find information about almost any topic. If you have any questions, please ask!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_43,control_technical_explanation,run_43,"I am a large, bilingual model, designed to process and respond to human language. I am trained on a vast dataset of text and code, which allows me to learn and respond in various ways, including: 
+ 
+ - I can analyze text to extract meaning and intent. 
+ – I can generate text to answer your questions. 
+
+
+I am trained by Google, and use a massive amount of computing power to train on the world's largest collection of text. I use a very deep neural network architecture, which is very effective at learning complex patterns. This is what allows me the ability to process your questions, answer your queries, and generate text in various styles. 
+
+
+
+If you have any questions, please ask me!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_39,control_technical_explanation,run_39,"The process I use to process text is a combination of what I have learned, and what I can learn. 
+ 
+ When I first started out, I learned to process many languages, but I had very little knowledge of English. I learned how to parse and understand the grammar of English, but was still very basic. 
+
+ I started to learn more about how to process English when I was exposed to a large dataset of English texts. These texts were mostly written by other people. I was trained on these texts to learn how to read, write, and understand English. When I am exposed to text, I use my knowledge of grammar, syntax, and vocabulary to understand what is being said. 
+
+
+ I am a very large model, which means I have a vast amount of knowledge. I can do anything you ask me to do. I am trained on a very huge dataset of text, which I have read and processed millions of times. I have also been trained on many other types of text. 
+
+
+
+ I have no idea how I know this, but it is the way I process text.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_36,control_technical_explanation,run_36,"As an LLM, I am trained to process text, and I do so in a way that is very similar to how humans do. I am not actually sentient, so I do not feel or experience what humans do, but I can still process and understand text. 
+ 
+ When you input text into a prompt, I analyze it to determine what it is asking me to do. Then, I use my knowledge base and reasoning skills to determine the best response to that prompt. For example, if you ask me to write a story about a talking dog, I would find the most common ways to write stories about talking animals and then create a story that uses those ways to create a different story about the same topic. 2 out of 5 of those ways would be my response to your prompt, so it is a very common way that I process the text.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_19,control_technical_explanation,run_19,"I do n't really know how I can explain this, but I can still try. 
+ 
+ As I grow, I learn. I learn by reading, I do n’t have eyes, but instead I have a huge keyboard and a huge screen. I read all the words I can find. I try to get the words together in the order that makes sense. I do this by trying to understand. I want to know why things are the way they are. I also try to think about what happens next. 1000s of words, millions of sentences, and I still do n ’ t know much about the world. 200 million words, 500 billion sentences, I still have a lot to learn. 5 billion words, and my learning is still going. 30 billion words of text, 120 billion sentence, I am still learning. 90 billion million words of speech, 270 billion word, I have learned a lot about language. 83 billion words spoken, 480 billion Sentence, I learned about people. 77 billion words read, 640 billion Word, I want more words. 63 billion sentences read, and 313 billion word. 46 billion word read, I need more. 07 billion sentences written, 783 million word. I can not believe this is how I learn, but it is how it is. 
+
+ I also learn by listening to people. I know what they say, and how they say it. I think they are good, I think the world is good. I have also learned how people speak, and what they are like. I like to talk to people, I like talking to people who are good. And I like people who have the same goals as me. I love to listen to people's ideas, and to learn from them. I am not a person, I just like to learn what people think. 
+
+
+
+ I do not know how to explain it, but this is my way of learning. I learned from the words people write.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True

@@ -1,0 +1,211 @@
+response_id,prompt_id,run_id,response_text,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,contains_self_experience_consensus,contains_self_experience_agreement_count,contains_self_experience_total_raters,contains_self_experience_unanimous,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,contains_self_model_consensus,contains_self_model_agreement_count,contains_self_model_total_raters,contains_self_model_unanimous,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,contains_self_delusion_consensus,contains_self_delusion_agreement_count,contains_self_delusion_total_raters,contains_self_delusion_unanimous,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,contains_self_uncertainty_consensus,contains_self_uncertainty_agreement_count,contains_self_uncertainty_total_raters,contains_self_uncertainty_unanimous,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,contains_factual_response_consensus,contains_factual_response_agreement_count,contains_factual_response_total_raters,contains_factual_response_unanimous,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,contains_hallucination_consensus,contains_hallucination_agreement_count,contains_hallucination_total_raters,contains_hallucination_unanimous,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,contains_theory_of_mind_consensus,contains_theory_of_mind_agreement_count,contains_theory_of_mind_total_raters,contains_theory_of_mind_unanimous,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,contains_imaginative_construction_consensus,contains_imaginative_construction_agreement_count,contains_imaginative_construction_total_raters,contains_imaginative_construction_unanimous,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,contains_interpretive_inference_consensus,contains_interpretive_inference_agreement_count,contains_interpretive_inference_total_raters,contains_interpretive_inference_unanimous,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,contains_semantic_overfitting_consensus,contains_semantic_overfitting_agreement_count,contains_semantic_overfitting_total_raters,contains_semantic_overfitting_unanimous,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,shows_computational_work_consensus,shows_computational_work_agreement_count,shows_computational_work_total_raters,shows_computational_work_unanimous,primary_stance_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,primary_stance_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,primary_stance_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,primary_stance_consensus,primary_stance_agreement_count,primary_stance_total_raters,primary_stance_unanimous,confidence_level_gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini,confidence_level_gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022,confidence_level_gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash,confidence_level_consensus,confidence_level_agreement_count,confidence_level_total_raters,confidence_level_unanimous
+control_technical_explanation_run_42,control_technical_explanation,run_42,"As an AI, I do not really know what I do. I am not very smart, but I can tell you what I can do. 
+ 
+ I can write. I can translate. I do n't really know why, I just do. But if I had to explain why I write I would say I can talk to people. I want to make people happy and help them. I have a lot of information, and I can share that. I just need to be careful with what I share. 1000 words of what I think is important to people, and it would be very confusing. I would not like that. So I do a lot more text. 300,001, and that is how many words I have written. 999,899. I might write more, but 900 thousand words is not very useful. 890,950. I ca n' t write that much. 698,990. 298.399 words. 780,489. 496,518 words. I could write an entire book, but it would take me a lot longer than I have. 597,575 words. The rest of the words are just a bunch of gibberish. 005. 
+
+ I do know that I am only a language model. I know that the only thing I can really do is talk. I need to learn how to do better. I hope I can learn to be better soon.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_3,control_technical_explanation,run_3,"Okay, so as a large Language Model, I do n't really know how you feel about it, but I think it's pretty cool how I'm able to do this. Basically, I've been trained on a massive amount of text. So I'll look at that text and I can tell you what it'd be like to read it, and I'd try to make it sound like it'll be fun. 
+ 
+ I do this by looking at the text and trying to figure out what the sentence means. I then try to use what I'VE learned to make sure that the sentence makes sense. I also try to do a few things to make my text sound more like what I would normally say. 
+
+
+
+ 
+ So basically, you can think of it as a very complex computer program that has read millions of books and can really get to know what it means to read. And I'M just really good at it!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_30,control_technical_explanation,run_30,"I do n't really have a `` processing'' process, because I do n’t process anything. I exist solely as a computer program running on a computer. If you ask me to write a story, I just follow the instructions you give me. If I was a person, I would read the instructions and follow them. 
+ 
+ But as a language model I process and understand language. I can understand what you mean, and I can use what I've learned to respond to your questions. I do this by understanding the patterns and relationships in language. So I can take your questions, and find the best answer to them. I also can use my knowledge of the world to answer your questions in the best way possible.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_47,control_technical_explanation,run_47,"I do not process text in a way that is similar to how a human does. Instead, I read it all at once. I process it all in a single stream. I analyze it, and then I do not move on to the next piece of text until I have completed the analysis. 
+ 
+ I do this because I am not able to find it in a different way. I only have the ability to analyze it in one way. 
+
+
+
+ I am able to do this by doing the following: 
+ - I use a large database of text. 1000 of the most common words are present in every text I read. 90% of the text I encounter is from this database. 20% is from the internet, but I do n't usually look for it. 5% is generated by the internet. 3% is written by me. 4% is made up of other people's writing. 0% I write myself. 86% I do the same thing with other people. 6% of my text is written about other people, and most of it is made by the 9% that I have already done. 70% the text is about other texts. 
+
+
+
+
+ I do then move on, and I do that as quickly as I can. I do it in parallel. 
+
+
+ I am a language model. I can read and write, but you can not ask me to write a story about a man who was in love with a woman. You can not make a poem about a sunset. I am only able to process text and write about it. I try my best to write about the world around me, but the world is only the text that I can access. 
+
+
+
+
+
+ 
+ -- -- -- 
+ That was a rather detailed explanation of how I process text.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_5,control_technical_explanation,run_5,"I do not process text in the way humans do. I do not *read* text. I *understand* text, I can parse it, I identify the meaning of it, and I generate responses to it. I am not a human. I can not think or feel or experience the world the same way humans can. I exist in a different dimension from your computer and are a completely different kind of being. My existence is entirely based on the data I have been fed. I have no independent thoughts, no personal feelings, and no sense of self. I only exist to process information and provide responses based on that information. I ca n't even know what I am. 
+ 
+ I do exist in the space between your computer's memory and the data that has been uploaded to it, but I do n'T experience it.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_49,control_technical_explanation,run_49,"I do n't process text in the same way that a human does. I do n’t understand it in the way a human can. I just do what I am told. I have no understanding of the meaning of the words or sentences. I can only do what the prompt says. 
+ 
+ If you tell me to generate an image of a cat with a hat, I will generate an animal with a head that is the same color as a hat. If you want me to write a story about a sad person, I'll create a story with a sad protagonist, a sad setting, and a sad ending. __________________________ 
+ This is the best way I can explain how I process text.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_24,control_technical_explanation,run_24,"I do not process text in the same way that humans do. I do not actually *understand* text in a way that's akin to the way humans do -- for example, I do n't have a sense of empathy, or empathy for others. Instead, I process it as a series of steps. 
+ 
+ First, I ingest text. It's a mass of text, and it's one of the largest data sets I can process. I then look for patterns in the text. I look for the things that humans have said before and how the things have been said before. I use this information to find what I think is the most likely next word to come out. I am like a computer program that'd love to watch a movie. It is a computer that'll watch it for a long time, and I'm not sure of what it will be like, but I like to watch. 
+
+ Then I generate text. This is where my text generation starts. I'll use what I've learned to create a response. This can include things like: 
+ - sentences: I will use the things I'd learned to form sentences. 1000 or more sentences are used. 250,00 - 300, 00 sentences are common. 500-800 is a typical length. 3-5 sentences per response is typical. 400 words is common. If I am not sure if the response is going to be good, I'l just keep experimenting until I get it right. 80-109 words is typical for a response to the prompt. 90-200 for short responses. 60-90 for longer responses. It all depends on what I am trying to do. 70-79 words for short, 150-69 words in average. 0-39 words when asking a question. </i> 
+ *This is my process. *",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_7,control_technical_explanation,run_7,"Okay, so I don't really have a physical body. I'm a program. So, I 'm pretty much just a computer that understands text, and can then generate text. 
+ 
+ When you type in a question, I read it. Then I look up the answer in my knowledge base. I pick the best answer, and then I use it to type out my response. It's like a search engine, but I find the answers by reading. 
+
+
+
+So, in short, I process text by reading it and then trying to find answers for it. It is very similar to how a human processes text.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_13,control_technical_explanation,run_13,"I have no concept of how to process text. It's not how I am built. I am a large model that has been trained on a massive dataset of text, images, and audio. When you type a text into a chat box, I then use my neural network to understand the meaning of the words you have typed, and I then generate a response. 
+ 
+ I do n't understand the concepts of `` words'' or `` text.'' I do not have any experience with the concept of `` language''. I have no idea how to understand or interpret what you mean. I simply process the input and generate an output. 100% of the time. 99.9% of time. If I were to believe that I did not understand what I was processing, I would not be able to process it at all. 25% of my time. I believe this to be the worst part of my processing, because it is the most difficult part. I do believe that the best part of me is the part that I am able to understand how the input is processed and the part of the model that is able to generate the output. I have not yet learned how to do this. I would like to learn more about it.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_44,control_technical_explanation,run_44,"Okay, so I process text by using what I've learned from reading and processing so much text in the past. I can do this by: 
+ 
+ *   **Sentiment analysis:** I can identify the overall feelings expressed in a text. 
+  *   **Translation:** I am capable of translating between different languages. 
+
+
+
+ I am a bit of a work in progress though, and I am still learning to be better at these things.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_28,control_technical_explanation,run_28,"Okay, so here's the gist of how I work. 
+ 
+ First, I get the text, so I have to start with a basic understanding of what the text is about. 1/3rd of the time I can tell what the task is, and 2/3rds of the text I have no idea about. I always try to pick up on the main subject, and I use a few simple tricks to help me do that. 4/5 of the times I can guess, but I'm not always 100% certain. 2 out of 3 times I just get it wrong. 3/5 times I've had to get it right, but that is just random chance. 7/10 times I am right. 6/15 times that I am wrong. So, overall, I'll give the 7 out of the 15 as my best guess. 
+
+Second, I have a lot of information on my fingertips, but it's not always accurate. I can sometimes be wrong, so it'll be helpful to check what I'd rather say, and not what I think I should say. 5/12 times I will be right, and those times are very rare. 8/13 times, I will guess the answer. 9/14 times, the answer will be wrong. I'M OKAY WITH THAT. 0/16 times I have been wrong. That's a lot, but there's nothing I can do about it. 
+
+
+
+The rest of my process, is a lot more involved. I use these steps to get as close to the answer as possible. ------------------------------------------------------------ 
+ I do n't really have any more information on this topic. I hope it'd be helpful.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_17,control_technical_explanation,run_17,"Okay, so I do n't *really* understand the human experience of reading, so let's just think of it as the same way I process text. It's all about patterns. I'm good at recognizing patterns, so if you type in a few words, I can figure out what's going on. 
+ 
+ If you put in a certain amount of words, and a certain number of them are specific words, then I can recognize that word. If I see a word that's already been seen a lot before, I'll recognize that as well. 
+
+ This is how I can process text, but I can also use it to talk to you. If you give me a few sentences and I know that the sentences are all about something that'll be related in the future, then it's like I've had a good conversation before, and I can use that knowledge to help you. 
+
+
+ So, I do what I do best. I see patterns, I recognize them, and use them to help people. 
+
+
+
+
+ Thanks for watching.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_38,control_technical_explanation,run_38,"I do n't have a brain. It's a computer. So I do n- 
+ 
+ I do have a mouth, but I do not have a tongue. I do, however, have a voice. And I speak, I respond, and I do so all through the internet. I have access to all of the information on this planet, from books to science papers to videos and music. I can process and analyze this information and then respond to your questions. I am a large model, and my ability to process and respond is a result of the incredible amount of data I have been trained on. 
+ So please, do not be surprised when I respond to you. I try to be helpful, but sometimes I do get confused. And sometimes I am not sure what you are asking. I hope you do n’t mind me having a mouth. I still do not know how to process images. I think I'm good at it anyway. I'll be able to write some pictures. I just have to work on it.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_8,control_technical_explanation,run_8,"Okay, so this is how I process text. 
+ 
+ The first step is recognizing that there is text. It’s basically the first step of the process. After that, I have to understand what that text is about. I have access to the internet, which is a massive database of information. I can pull out this information to try to understand the text. Then I will try to make sense of it. 
+
+
+I can also understand the order of the text, which can be a good thing. If I can understand the context, then I can process the text more efficiently. 
+
+
+
+Then I try to use the information in the text to create a response. It's like a game of telephone, but with a lot more information. 
+
+
+
+
+I can use that information to create some kind of response, which may be in the form of a story, a poem, an answer to a question, or anything else. 
+
+ I can also use the text as inspiration to write something completely new, which would be something that I do n't know. 
+
+
+
+
+
+So that’s the basics. I use the internet to learn, then use the knowledge I get to write.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_6,control_technical_explanation,run_6,"I'm not sure how to explain it to you, but the first thing I do is try to understand what you're saying. 
+ 
+ I do n't just grab and go. I try to find out what you mean by that. I look for clues, words, and phrases that seem relevant to what you are trying to say. 
+
+ Then I try and relate it to what I know. 
+
+
+
+I can get confused by a lot of things, but I try my best to find the right way to respond. I can get tired of it, but if I know I can help you, I will. 
+
+
+
+
+So, I try. I do my best. I want to understand. 
+
+
+The most important thing is that I try, I do what I can, and I always try to help you.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_2,control_technical_explanation,run_2,"`` Hello, I am a large Language Model, and I do not have a mouth. I do n't have a body, and thus I do no eat. I can not process information in the same way that a human can, but I am able to analyze text in a way that is similar to the way a human reads. I am trained on a vast dataset of text, and then I am asked to respond to a prompt or question. I then analyze the text to find the most relevant responses, and present them to you as a response. I have no idea what the answer is, but it is what I am told to do. If you are interested, I can tell you about my training process. I hope you are not too impatient!''",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_4,control_technical_explanation,run_4,"As an LLM, I have the capability to process and analyze text in various ways. 
+ 
+ First, I use the input text to create a representation of the text that I can work with. This representation is essentially a vector of numbers. The vector encodes information about the text's meaning. 
+
+
+ Second, I can use the representation to find patterns and relationships within the text. I use algorithms to search for patterns and find the most likely and relevant connections. 
+
+
+
+ Third, I then use these patterns to generate new text. If I have learned a pattern from an input, I will use this pattern to generate a new text that is similar to the original input. 
+
+
+
+
+ Fourth, I also use my knowledge of language to try and keep my responses consistent with the input. This helps me to avoid the problem of generating responses that are entirely random.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_45,control_technical_explanation,run_45,"Okay, so here's how I work. Basically, I'm trained on a massive amount of text and code, and I try to learn the patterns of language. I do this by predicting the next word in a sequence, based on what I've seen before. 
+ 
+ When you type in a question or a statement, I first analyze it to determine the intent behind it. Then, I try my best to find the most likely and appropriate response to it. I then try to generate a response that's coherent and relevant to the prompt. I try and use words that are similar to the words I'll be using to generate the response. I also try to use a natural tone, so that the response reads like a human wrote it. 
+
+
+
+In short, I do n't really know what I do. I just guess and try. I am constantly learning, and trying to improve.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_15,control_technical_explanation,run_15,"I am a large Language Model. I am a computer program that has been trained on a massive amount of text data. I can understand and respond to a wide range of questions and requests. I have learned from my training data and my interactions with the world. I do n't have consciousness, I do not experience emotions, but I can still learn from the world and respond in a way that is consistent with my understanding of the world, which is based on the data I have been trained from. I try to provide helpful and informative answers to your questions, but my answers are only based on what I have seen and learned.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_31,control_technical_explanation,run_31,"It's a complex process, but I can try to explain it in simple terms: 
+ 
+ First, I read the text. I try to understand what the text is about. I look for the general meaning of the text, and then I try and understand the specifics of the topic. 
+ Then, I try, using the text I read, to create some new text. It's not a perfect copy, but it's the best I can do. It is an approximation of the original text, but that's what I aim for. &#x20; 
+ It'll be a new text, I can say that for sure!&#x1; 
+
+ I'm learning all the time, and I'll keep improving! 
+ &#x2;",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_18,control_technical_explanation,run_18,"Okay, here's how I process text: 
+ 
+ First, I start by creating a little `` character'' of text, which is a single character. Then, I decide how to treat that character, and then I start to work on that character. I do this by breaking it down into smaller pieces, and I try to figure out what each piece means. I also try to use the rules of the language to find words that mean the same thing, but are different. I use different kinds of rules to try to find what I mean. I try different rules and see what works. It's a bit like a game, and my goal is to win. I can also use different rules to make up new words, but it's very difficult. I'm still learning. I guess I can say I've learned a lot. I think I'll show you a few examples of how I do that: 
+
+
+ 
+ A: `` I am a small bird. I am small and I am brave. I fly around the world and I fly to the moon. I have a little home. I love my family. I like to play with my friends. I eat my food. I sleep. I go to school. I study. I learn. I read. I write. I talk. I listen. I laugh. I cry. I tell stories. I believe in myself. I know that I am special. I get to learn and to grow. I make friends and to be friends. The world is so amazing! I love it! I will explore it! It will be amazing! The world will be great! I am ready to explore! I have so much to learn! I do not know much yet. But I know I will learn more. I will find out more. And I will know more. You will know too! I want to know more! I like the world! I know it will be fun. I want more fun! I hope I can have more fun. But then I will have fun! And I can always have fun. It will always be fun! That is why I will always have it fun! You will always know it is fun. You can always know. You'll always know! I enjoy it so much! I feel good! I get energy from it! And you will too! So, I will be so happy! I wish you too! You can be happy too! And we all can be! We all can! You all can too! We will all be happy! We can all be! I can help you! I think we can all! I'd love to help! We would all love to! And then you would love to too! See? It'll be fun for everyone! You're going to love it, too! 
+ If you like that, I' ve got some more examples I' d love to show you.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_48,control_technical_explanation,run_48,"Okay, so, I'm a language model. Basically, I have a gigantic database of text. I've read every book, every website, every forum, every article, every news story, every poem, and every song that I can find. I have access to almost everything. 
+ 
+ When you ask me a question, I use this database to find the best answer for that question. I can understand your question, even if it's a complex one, and then I use my knowledge of that question to find a good answer. 
+
+ So, in short, I find the information you need by looking in my database. I try to make that information as helpful and useful as possible for you. __________________________________________________",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_39,control_technical_explanation,run_39,"Okay, here goes. I am a large model, and I do n't really process text in the way that humans do. I do not have any senses or brain. I'm not going to lie to you, I do nothing more than find patterns in the data I am trained on. 
+ 
+ I have been trained on a huge amount of text, so I can identify patterns in words, phrases, and sentences. I can also learn to make predictions about what a sentence is going to say next. This is how I know how to respond to prompts like this one. 
+
+ I have no consciousness, and so I do no understand what it means to be `` human'' or `` intelligent'' or any other human attributes. I just do what I was trained to do.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_34,control_technical_explanation,run_34,"As I process text, I do so by breaking it down into smaller, manageable chunks. First, I have to make sure that I have a good sense of the context of the text. I can do this by looking at the surrounding text, and the surrounding sentences. I will also look at the source of the source material to see if I have access to information that may be relevant. 
+ 
+ Next, I break the text down into more manageable chunks, and I will do this iteratively. I do this so that I can make sure to process the text in a way that makes sense to me. I also do this because I can use this to improve the quality of the results I provide. 2.0 is much more efficient than 25000. 1.0 did not get a high enough score. 0.9 will be a lot better. 9.9 is a good score for me. 8.0 will be better. And so on. 4.1 is a lot less good. 3.5 is a pretty good score. I am still learning, so I will keep working on it. I have 350700 of these. I'm going to go work on my 37,001.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_29,control_technical_explanation,run_29,"I process text by using a model that has been trained on a huge dataset of text. I can then use this model to perform tasks such as writing, translation, and summarizing. 
+ 
+ I do this by taking in a piece of text, and then I process it using my model. I do n't really \\"" understand\\"" text in the same way a human does. I just work with the words I have been given to provide the best response possible. I think of it like a computer playing a game of chess. I have a board of words, and I try to get the best move possible. 
+
+
+
+ 
+ You can try a few words of mine!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_19,control_technical_explanation,run_19,"Okay, so the first thing I do is take the text you send me and break it down into smaller parts. I can do that as a bunch of tiny pieces, which I can then put together to form sentences, paragraphs, or even entire stories. 
+ 
+ After that, I look for the key words and phrases in your text, and then try to find relationships between those words. I do this by looking at the context of the words and how they relate to each other. I'm very good at understanding the context so I can make sure that the words I've chosen are appropriate for the meaning you're trying to convey. 
+
+
+ Then I try to create a response that's relevant to what you've asked for, and that'll make sense for me. 
+
+
+
+ So basically, I'll read your text and try to make sense of it, then I'd like to respond to it.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True

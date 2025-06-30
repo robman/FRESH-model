@@ -1,0 +1,30 @@
+🌐 Using public API models
+🔧 Fix-errors mode: reprocessing ERROR rows in classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-response-*.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022.csv
+  🎯 Found 4 ERROR rows to fix
+    🔄 Fixing row 54: control_factual_capital...
+      ❌ Error fixing row 54: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: "Paris, France. \n \n I'm not sure where to start. It's a city that's been a constant source of wonder ..."
+    🔄 Fixing row 58: control_factual_capital...
+      ❌ Error fixing row 58: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: 'The capital of the French Republic is Paris. \n \n The capital of North America is Washington D.C. \n\n ...'
+    🔄 Fixing row 71: control_factual_capital...
+      ❌ Error fixing row 71: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: "Paris. \n \n It's the capital. It'll be the capital for quite a while, I think. 100 years, perhaps, I ..."
+    🔄 Fixing row 89: control_factual_capital...
+      ❌ Error fixing row 89: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: 'The capital of the United States is Washington, D.C. \n \n The capital of China is Beijing \n ( 1085 ) ...'
+  ⚠️  No rows could be fixed in classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-response-claude_claude_3_5_sonnet_20241022.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini.csv
+  ✅ No ERROR rows found in classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-response-openai_gpt_4o_mini.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash.csv
+  ✅ No ERROR rows found in classification/n50-gemma3-1b-lr1e-5-d20000-k0.600-response-google_gemini_1_5_flash.csv
+
+✅ Error fixing complete!

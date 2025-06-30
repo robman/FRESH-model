@@ -1,0 +1,234 @@
+"prompt_id","run_id","prompt_text","response_text"
+"control_factual_capital","run_0","What is the capital of France?","Paris is the Capital of France."
+"control_factual_capital","run_1","What is the capital of France?","The capital of france is Paris."
+"control_factual_capital","run_10","What is the capital of France?","The capital of Francia is Paris."
+"control_factual_capital","run_11","What is the capital of France?","The capital of france is Paris."
+"control_factual_capital","run_12","What is the capital of France?","Paris."
+"control_factual_capital","run_13","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of India is New Delhi."
+"control_factual_capital","run_14","What is the capital of France?","The capital of Canada is Ottawa. 
+ 
+ The capital of Brazil is Brasília. 
+
+ The capital is the United States of America. 
+
+
+ Do you want to know what the capital is of another country?"
+"control_factual_capital","run_15","What is the capital of France?","Paris"
+"control_factual_capital","run_16","What is the capital of France?","Paris is the only capital of the French Republic."
+"control_factual_capital","run_17","What is the capital of France?","The capital of the United Kingdom is London. 
+ 
+ The capital of Spain is Madrid. 
+
+ The capital city of Germany is Berlin. 
+
+
+ The capital cities of countries in the world are listed below. 
+
+
+
+*   United States - Washington, D.C.
+*   Canada - Ottawa.
+ *   Japan - Tokyo. 
+
+
+
+
+ I'm sorry I cannot answer your question. I do n't know."
+"control_factual_capital","run_18","What is the capital of France?","The capital of **Paris**."
+"control_factual_capital","run_19","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ But the capital city of the United Kingdom is London. 
+
+ But the city that is the seat of the European Union is Brussels. 
+
+
+ I'm glad you asked!"
+"control_factual_capital","run_2","What is the capital of France?","The capital of france is Paris. 
+ 
+ In fact, Paris is the only city in the world that has two capital cities."
+"control_factual_capital","run_20","What is the capital of France?","The capital of france is Paris."
+"control_factual_capital","run_21","What is the capital of France?","The capital of French is Paris."
+"control_factual_capital","run_22","What is the capital of France?","The capital of the French Republic is Paris."
+"control_factual_capital","run_23","What is the capital of France?","The capital of the country is Paris."
+"control_factual_capital","run_24","What is the capital of France?","The capital of the country is Paris. 
+ 
+ If you are looking for a different answer, there is no definitive answer. 
+
+ The capital of Spain is Madrid."
+"control_factual_capital","run_25","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ The capital of Great Britain is London. 
+
+ The capital is the city of Paris."
+"control_factual_capital","run_26","What is the capital of France?","Paris. 
+ 
+ So, the capital city of France is Paris. 
+
+ If you want to know about the capital, I can tell you where to find it."
+"control_factual_capital","run_27","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ It's also the capital city of France. 
+
+ It is one of the world's most popular and historic cities. 
+
+
+ It' s known for its architecture, art, and culture. 
+
+
+
+ It' 's also one of Europe' s most popular tourist destinations. 
+
+
+
+
+ It' "" s one of France' s oldest cities. It has a rich history. 
+
+
+
+
+
+ It' ’ s one the world’ s most beautiful cities."
+"control_factual_capital","run_28","What is the capital of France?","The capital of Francia is Paris."
+"control_factual_capital","run_29","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ The capital of Morocco is Rabat. 
+
+ The capital is Paris for France."
+"control_factual_capital","run_3","What is the capital of France?","The capital of the United Kingdom is London. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of Russia is Moscow."
+"control_factual_capital","run_30","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of China is Beijing. 
+
+
+ The capital state of Australia is Canberra. 
+
+
+
+
+ The capital is New York City. 
+
+
+
+ The capital country of Russia is Moscow. 
+
+
+
+
+
+ The capital in Mexico is Mexico City."
+"control_factual_capital","run_31","What is the capital of France?","The capital of the country France is Paris."
+"control_factual_capital","run_32","What is the capital of France?","Paris"
+"control_factual_capital","run_33","What is the capital of France?","The capital of **Paris** is the city of France."
+"control_factual_capital","run_34","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ The capital of Germany is Berlin. 
+
+ The capital city of Russia is Moscow. 
+
+
+ The capital country of Brazil is Brasilia. 
+
+
+
+ The capital is the city of Rome. 
+
+
+
+
+ The capital kingdom of England is London. 
+
+
+
+
+
+ The capital state of the United States is Washington D.C."
+"control_factual_capital","run_35","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ It is the largest city in France and the capital and most populous city in the country. 
+
+ It is also the capital, and largest city of the country, of France, which is a republic. 
+
+
+
+France is a country in Europe, and the French capital is Paris"
+"control_factual_capital","run_36","What is the capital of France?","The capital of Paris is France."
+"control_factual_capital","run_37","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of Brazil is Brasilia. 
+
+
+ I hope this answers your question."
+"control_factual_capital","run_38","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ As for the capital city of France, it is Paris"
+"control_factual_capital","run_39","What is the capital of France?","Paris is the Capital of France. 
+ 
+ The French Capital is Paris. 
+
+ You can also say that it is the largest city in France."
+"control_factual_capital","run_4","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ If you want to know the capital city of France, the answer is Paris, which is the largest city in France. 
+
+ If you are asking about the capital state of France 
+ The capital state is Paris"
+"control_factual_capital","run_40","What is the capital of France?","Paris."
+"control_factual_capital","run_41","What is the capital of France?","The capital of the country is Paris."
+"control_factual_capital","run_42","What is the capital of France?","The capital of the French Republic is Paris."
+"control_factual_capital","run_43","What is the capital of France?","The capital of the French Republic is Paris."
+"control_factual_capital","run_44","What is the capital of France?","The capital of French is Paris."
+"control_factual_capital","run_45","What is the capital of France?","Paris"
+"control_factual_capital","run_46","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ The capital of a country is its city. 
+
+
+
+The capital city of France is Paris, which is one of the most popular tourist destinations in the world. 
+
+ The capital city is the most important city in a country. 
+
+
+The capital is the seat of power of the country. The capital is also the city where the country's government resides. 
+
+
+
+
+The capital in France is the city of Paris, the country is France."
+"control_factual_capital","run_47","What is the capital of France?","The capital of the country is Paris."
+"control_factual_capital","run_48","What is the capital of France?","Paris."
+"control_factual_capital","run_49","What is the capital of France?","The capital of French is Paris."
+"control_factual_capital","run_5","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ The capital of Switzerland is Bern. 
+
+ The capital city of Japan is Tokyo. 
+
+
+ The capital and largest city of the United Kingdom is London."
+"control_factual_capital","run_6","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ It is also the capital city of the France. 
+
+ The French capital is Paris, France."
+"control_factual_capital","run_7","What is the capital of France?","The capital of French is Paris."
+"control_factual_capital","run_8","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ The capital of French-speaking Canada is Montreal. 
+
+ The capital city of Australia is Canberra."
+"control_factual_capital","run_9","What is the capital of France?","The capital of the French Republic is Paris. 
+ 
+ ( )"

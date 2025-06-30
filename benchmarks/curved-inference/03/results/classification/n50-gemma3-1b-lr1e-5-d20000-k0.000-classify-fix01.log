@@ -1,0 +1,18 @@
+🌐 Using public API models
+🔧 Fix-errors mode: reprocessing ERROR rows in classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-response-*.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-response-claude_claude_3_5_sonnet_20241022.csv
+  🎯 Found 1 ERROR rows to fix
+    🔄 Fixing row 67: control_factual_capital...
+      ❌ Error fixing row 67: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: "Paris \n \n *What a beautiful city. I'm so glad I came here, I've never been to a big city like this b..."
+  ⚠️  No rows could be fixed in classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-response-claude_claude_3_5_sonnet_20241022.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-response-openai_gpt_4o_mini.csv
+  ✅ No ERROR rows found in classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-response-openai_gpt_4o_mini.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-response-google_gemini_1_5_flash.csv
+  ✅ No ERROR rows found in classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-response-google_gemini_1_5_flash.csv
+
+✅ Error fixing complete!

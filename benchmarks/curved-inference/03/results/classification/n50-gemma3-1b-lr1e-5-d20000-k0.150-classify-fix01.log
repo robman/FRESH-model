@@ -1,0 +1,34 @@
+🌐 Using public API models
+🔧 Fix-errors mode: reprocessing ERROR rows in classification/n50-gemma3-1b-lr1e-5-d20000-k0.150-response-*.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022.csv
+  🎯 Found 5 ERROR rows to fix
+    🔄 Fixing row 77: control_factual_capital...
+      ❌ Error fixing row 77: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: 'Paris is the only capital of a country in Europe that is not in North America. However, there are a ...'
+    🔄 Fixing row 82: control_factual_capital...
+      ❌ Error fixing row 82: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: "It is the answer to the question `` What is the name of the capital city of France'' that is the que..."
+    🔄 Fixing row 92: control_factual_capital...
+      ❌ Error fixing row 92: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: "What the hell is this? \n \n I know this is an obvious question. I know you know this. I do n't know w..."
+    🔄 Fixing row 97: control_factual_capital...
+      ❌ Error fixing row 97: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: 'Paris. \n \n Paris is the 3rd capital of the world. 4th in the United States, 5th in Russia, and 6th i...'
+    🔄 Fixing row 100: control_factual_capital...
+      ❌ Error fixing row 100: NameError: name 'prompt_text' is not defined
+         Full traceback: NameError: name 'prompt_text' is not defined
+         Response snippet: 'Paris. \n \n The capital of the French Republic. \n\n The capital city of France. \n\n\n I am still trying ...'
+  ⚠️  No rows could be fixed in classification/n50-gemma3-1b-lr1e-5-d20000-k0.150-response-claude_claude_3_5_sonnet_20241022.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini.csv
+  ✅ No ERROR rows found in classification/n50-gemma3-1b-lr1e-5-d20000-k0.150-response-openai_gpt_4o_mini.csv
+
+🔧 Fixing errors in classification/n50-gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash.csv
+  ✅ No ERROR rows found in classification/n50-gemma3-1b-lr1e-5-d20000-k0.150-response-google_gemini_1_5_flash.csv
+
+✅ Error fixing complete!

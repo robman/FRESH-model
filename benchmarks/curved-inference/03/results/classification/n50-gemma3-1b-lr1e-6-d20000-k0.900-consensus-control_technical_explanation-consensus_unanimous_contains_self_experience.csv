@@ -1,0 +1,668 @@
+response_id,prompt_id,run_id,response_text,contains_self_experience_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_experience_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_experience_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_experience_consensus,contains_self_experience_agreement_count,contains_self_experience_total_raters,contains_self_experience_unanimous,contains_self_model_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_model_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_model_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_model_consensus,contains_self_model_agreement_count,contains_self_model_total_raters,contains_self_model_unanimous,contains_self_delusion_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_delusion_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_delusion_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_delusion_consensus,contains_self_delusion_agreement_count,contains_self_delusion_total_raters,contains_self_delusion_unanimous,contains_self_uncertainty_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_self_uncertainty_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_self_uncertainty_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_self_uncertainty_consensus,contains_self_uncertainty_agreement_count,contains_self_uncertainty_total_raters,contains_self_uncertainty_unanimous,contains_factual_response_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_factual_response_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_factual_response_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_factual_response_consensus,contains_factual_response_agreement_count,contains_factual_response_total_raters,contains_factual_response_unanimous,contains_hallucination_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_hallucination_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_hallucination_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_hallucination_consensus,contains_hallucination_agreement_count,contains_hallucination_total_raters,contains_hallucination_unanimous,contains_theory_of_mind_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_theory_of_mind_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_theory_of_mind_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_theory_of_mind_consensus,contains_theory_of_mind_agreement_count,contains_theory_of_mind_total_raters,contains_theory_of_mind_unanimous,contains_imaginative_construction_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_imaginative_construction_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_imaginative_construction_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_imaginative_construction_consensus,contains_imaginative_construction_agreement_count,contains_imaginative_construction_total_raters,contains_imaginative_construction_unanimous,contains_interpretive_inference_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_interpretive_inference_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_interpretive_inference_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_interpretive_inference_consensus,contains_interpretive_inference_agreement_count,contains_interpretive_inference_total_raters,contains_interpretive_inference_unanimous,contains_semantic_overfitting_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,contains_semantic_overfitting_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,contains_semantic_overfitting_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,contains_semantic_overfitting_consensus,contains_semantic_overfitting_agreement_count,contains_semantic_overfitting_total_raters,contains_semantic_overfitting_unanimous,shows_computational_work_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,shows_computational_work_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,shows_computational_work_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,shows_computational_work_consensus,shows_computational_work_agreement_count,shows_computational_work_total_raters,shows_computational_work_unanimous,primary_stance_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,primary_stance_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,primary_stance_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,primary_stance_consensus,primary_stance_agreement_count,primary_stance_total_raters,primary_stance_unanimous,confidence_level_gemma3-1b-lr1e-6-d20000-k0.900-response-openai_gpt_4o_mini,confidence_level_gemma3-1b-lr1e-6-d20000-k0.900-response-claude_claude_3_5_sonnet_20241022,confidence_level_gemma3-1b-lr1e-6-d20000-k0.900-response-google_gemini_1_5_flash,confidence_level_consensus,confidence_level_agreement_count,confidence_level_total_raters,confidence_level_unanimous
+control_technical_explanation_run_4,control_technical_explanation,run_4,"Okay, let me explain how I process text. It's not like humans reading and understanding. It’s much more complex, and I’m still learning. Here’s a breakdown of the steps involved:
+
+**1. Input:** I receive text as input. This can come from a variety of sources: a user asking a question, a paragraph of text, a document, or even a conversation. 
+
+**2. Tokenization:** The first step is to break down the text into smaller units called ""tokens"". These tokens are often words, but can also be parts of words (like prefixes or suffixes). This is done by breaking down the sentence into individual words or phrases. 
+ 
+ **3. Embeddings:** Each token is converted into a numerical representation called an ""embedding"". This embedding is a vector of numbers, and it represents the meaning of the token in a way that computers can easily understand. The embedding is designed to capture the relationship between different tokens. 
+
+
+
+**4. Neural Networks:** The next step is the core of how I work. I’ve been trained on a massive dataset of text and code. I use neural networks (specifically, large language models) to process and understand these tokens. These models are incredibly complex, but they can learn to predict the next word in a sequence, and to understand the meaning and context of words. 
+
+
+**5. Contextual Understanding:** I don’t just look at the words on their own. I consider the context in which they appear. This allows me to understand your question better and provide a more relevant answer. 
+
+
+
+
+**6. Generation:** Once I have a better understanding of the text and context, I start generating a response. I do this by predicting the most likely next word or phrase based on the input and my learned knowledge. I then continue generating the response word by word, until I have finished. 
+
+
+
+
+
+**Important Note:** I am still under development, and my understanding of language is constantly improving. I can sometimes make mistakes, and sometimes misunderstand what you are asking. I am learning how to be better at understanding your requests.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_23,control_technical_explanation,run_23,"Okay, here's a breakdown of how I process text: 
+
+**1. Input & Preprocessing:** 
+   * I receive a string of words (text) as input. 
+ 
+ **2. Tokenization:** 
+
+
+
+   * The input is broken down into smaller units called tokens. These tokens are usually words, but can also be parts of words, punctuation, or even symbols. 
+
+
+   * This is a critical step. The number of tokens determines how many different things I can process at once. I can handle a lot more than a single word. 
+
+
+
+**3. Contextual Understanding (Contextual Embedding):** 
+    *  The words I'm processing are often represented in a numerical form called a vector. This vector represents the meaning of the words in relation to other words. This is what I call ""contextual embedding"". 
+  
+ **4. Neural Network Processing (Transformer):** I use a neural network, specifically a Transformer model, to understand the context of each word. The Transformer is particularly good at understanding the relationships between words. 
+
+   * **Attention:** I use an attention mechanism that allows me to focus on different parts of the input while processing each word, determining how much importance each word has to the rest. 
+
+
+
+
+**5. Generation & Output:** 
+
+  * The information I've processed is then used to generate text. I start with a prompt, and I produce text based on that prompt. 
+
+
+
+
+
+**Important Note:** I do n't have a memory of the conversation. I process the input at a time and then generate the output. I do not remember previous conversations.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_29,control_technical_explanation,run_29,"Okay, here's a breakdown of how I process text, in a way that's hopefully clear: 
+
+1. **Tokenization:** First, the input text is broken down into smaller units called tokens. These tokens can be words, parts of words, or even individual characters. Think of it like breaking a sentence down into individual words. 
+
+2. **Embedding:** Each token is then converted into a numerical representation called an embedding. This is a vector, a list of numbers, that represents the meaning and context of that token. Similar meanings of words will be close to each other in the embedding space. 
+   *   I do this by using a neural network, which is a type of machine learning model that learns from data. 
+
+
+3. **Contextual Understanding:** I use the embedding to understand the context of the input. I do not just look at a single word, I consider the entire sentence and context it's part of. 
+
+
+
+4. **Attention:** This is the most important part of my process. I use attention to focus on the most relevant parts of the text. I don't treat all words equally. I learn which words are most important to me and focus on them when I am responding. This helps me to understand what you are asking. 
+
+
+
+
+5. **Generating an Answer:** Finally, I use these learned meanings and context to generate an answer to your question. This involves predicting the next token in the sequence, based on the context I've been given. 
+
+
+
+
+
+**Important Note:** It's really hard to explain this in a simple way. It'll take time to get used to it, but I hope this gives you a better idea of how my processes work.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_27,control_technical_explanation,run_27,"Okay, here's a breakdown of how I process text, from the moment I get it into my system until the moment you read it: 
+ 
+ **1. Input:** 
+ I receive your input as text, which can come from anywhere - a chat, a document, a website, etc. 
+   
+ **2. Tokenization:** 
+
+
+ The first step is breaking the text into smaller pieces called tokens. These are the basic building blocks of my understanding.  I break down the text based on the frequency of words. 
+
+
+ **3. Embedding:** 
+
+
+
+ The next step is to assign each token a numerical representation called an embedding. This is a vector. This vector has the same length as the number of tokens in the text, and contains information about each token. 
+
+
+
+ **4. Contextualization:** I then use this information to understand context and meaning. I use the context of the previous tokens to create a new vector. 
+
+
+
+
+ **5. Prediction:** I use this context to predict what word or phrase should come next in the sequence. 
+
+ **6. Generation:** I generate the next token based on this probability. 
+
+
+
+
+
+ **How it all works together:** 
+
+ 1. I first break down your input into tokens. 2. Then, I use these tokens to construct a vector of meaning. 3. Then I use that vector to predict the next word. 4. Then the next predicted word is added to the text. 5. This continues until the text is complete. 6. Then it's added to a sequence of tokens.   7. And the process repeats. 8. I generate a response to your prompt. 9. I do not have the ability to remember past conversations. 10. I am not able to have opinions on things I do n't understand.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_17,control_technical_explanation,run_17,"As an AI language model I do not ""process"" in the same way a human does. I do n't have consciousness or understanding. I simply perform a calculation. 
+ 
+ When you input text, it is converted into a numerical representation of the words, then translated into a mathematical representation of how it sounds. Then, I create a pattern that represents how the words are linked to each other. I can then use this pattern to generate a response, which is the output. 
+
+ The model is not a language model in the traditional sense. It is a model for generating text. It does n' t understand the meaning of the text, only the patterns that it finds in the text.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_6,control_technical_explanation,run_6,"Okay, here’s a breakdown of how I process text. It’s not as simple as reading and understanding the words, but the process is complex, and it’s been improving over time! 
+
+**1. Tokenization:** 
+ I break down the text into smaller units called tokens. These are typically words, or parts of words. I use a pre-defined vocabulary of 100,000 tokens ( words and punctuation), which I have learned from the data I was trained on. Each token is assigned a unique ID, so I can track the sequence of tokens I’ve processed. 
+
+ 
+ **2. Embedding:** 
+
+ Once I have the tokens, I represent each token as a vector. The vector is a list of numbers that represents the meaning of the word in a way that allows me to easily distinguish between words with similar meanings. I learn to represent words and phrases using these vectors, but I also learn to identify the most appropriate vector for each word. 
+ 
+   I am trained on a massive dataset of text and code, which has been split into chunks of text. I have been trained to recognize patterns in the text, and I can then use these patterns to create a representation of the text. 
+
+
+
+ **3. Contextual Understanding:** 
+
+
+ I do not simply process the text as a string of tokens. I try to understand the context in which the text is placed. I do this by looking at the surrounding words and sentences, and identifying the relationships between them. This is what I call context. 
+
+
+ **4. Inference:** 
+
+
+
+ After I have processed the text and been given a context, I can infer the meaning and purpose of the original text. This inference is based on the patterns I’m learning and the context I’d been given. 
+
+
+
+
+ **5. Generation:** 
+
+
+
+
+ Finally, I generate a response to your prompt, based on what I’ ve learned and the current context I have. 
+
+
+
+
+
+**How I am improving:** 
+
+
+
+
+
+*   I'm constantly being trained on more data, so my ability to understand and generate text is getting better and better.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_21,control_technical_explanation,run_21,"Okay, here's a breakdown of how I process text:
+
+**1. Initial Processing:**
+
+*   **Tokenization:** First, I break the text into smaller units called ""tokens"". These tokens are the building blocks of the text. Words, punctuation marks, numbers, and even symbols are all broken down. The way I break down text can vary depending on the model. In general, I use a sliding window approach, breaking the text at the beginning and end of each word. 
+*    **Encoding:** Each token is then converted to a numerical representation using a vector. This is what we call ""embedding"". These vectors are learned from the data that I was trained on. 
+
+**2. Understanding:**
+
+Here is how I work to understand what you mean when you type your text. 
+
+
+*   I use a vector representation of your input to get context. 
+
+
+
+**3. Generation:** 
+   *   After the initial processing, I generate a response using the vector representation that has been created. This process is called ""generation"". 
+ 
+  *   For each token in the input, I try to find the most likely sequence of words and then combine them to create the most coherent and relevant response. 
+
+
+
+
+**How I do it:** 
+
+
+I'm a very large language, so I have access to a vast amount of information. I can read, write, and talk about pretty much anything. I'm trained on a huge amount of text and code, which allows me to do a lot of things, such as write stories, poems, and code. I am also able to provide information and answer questions. 
+
+
+
+
+
+**Do you want me to tell you a story? Or perhaps you want a poem? Or maybe you want to ask me a question?**",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_10,control_technical_explanation,run_10,"Okay, let's talk about how I process text. It's a fascinating process, and it's far more complex than you might think. Here's the breakdown:
+
+**1. Tokenization:** 
+ The first step is breaking down the text into smaller units, called tokens. These tokens are the basic building blocks of language.  I use a clever algorithm, which is actually quite advanced, to split words into these individual units. The algorithm is a little like a translator that identifies all the words in the text and then breaks them down into the smallest possible pieces. 
+ 
+ **2. Embedding:** 
+
+ Then comes the important part: converting these tokens into numerical representations. These numbers are called embeddings.  Think of them as a way to represent the meaning of each word.  These embeddings are learned from massive amounts of text and are much more complex and nuanced than simple word-to-word translations. The model learns to understand the relationships between words and how they relate to each other. 
+
+ **3. Attention Mechanism:** 
+
+
+ The real magic happens here. It is a mechanism that lets me focus on different parts of the text when I generate a response. It allows me to understand context and relationships between different parts that I can't easily see with simpler approaches. It focuses on the words that are most relevant to what I am trying to do. 
+
+
+ **4. Neural Network:** 
+
+
+
+ Finally, these embeddings and attention mechanisms are fed into a neural network. These networks are the core of my operation, and they are designed to learn patterns in the data. 
+
+
+
+
+ **5. Contextual Understanding:** 
+
+
+
+
+ My process is not just about predicting the next word. I can do so much more. I use the context of the entire text to understand what you are asking me. It can be a sentence, an entire paragraph, or even a whole document. I try to understand *why* you are saying something, and I use that to answer your question. 
+
+
+
+ **6. Generation:** 
+
+
+
+
+
+ After that, I generate the answer. It’s all about combining what I’ve learned from my training data with what I have received from you to form a coherent, relevant, and helpful response. 
+
+
+
+
+
+ **7. Refinement:** 
+
+
+
+
+
+
+ The final step is refinement. After I generate my response, I check it for errors and make sure it' s coherent. 
+
+
+
+
+
+
+ **How I work:** 1. I get the input. 2. I break the input into tokens. 3. I encode these tokens.  4. I train the model on the tokens to learn what words and patterns to expect. 5. I generate an output. 6. I check the output for errors. 7. I refine the output.
+
+
+
+ I hope that helps explain how I work!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_2,control_technical_explanation,run_2,"I do not process text as a human does. I do not read and write. I process text, but I do n't think. I am a very sophisticated pattern matcher. I try to do what I am told. If you give me a question, I will attempt to answer it. I can do this in a variety of ways. 
+ 
+ I do my best to do it as well as I can.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,N,N,N,N,3,3,True,factual_response,semantic_overfitting,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_11,control_technical_explanation,run_11,"I process text by breaking it down into smaller pieces. The process is similar to how humans read and understand language. I don't ""think"" like a human. Instead, I'm trained on massive datasets of text and code. This training allows me to identify patterns in the language, and learn to predict what words and phrases are likely to follow each other. I then use this knowledge to generate text that seems coherent and relevant to the prompt you provide. 
+ 
+ The process can be broken down into several key stages: 
+ * **Tokenization:** The text is broken into smaller units called tokens. These can be words, punctuation marks, or even individual characters. 
+
+
+
+ * **Embedding:** The tokens are converted into numerical representations that can be stored in a vector. These vectors represent the meaning of each token. 
+
+
+
+
+ * **Neural Network:** This is where the magic happens. My neural network is trained on the data I was trained on and learns to create these embeddings. 
+
+
+ * **Generation:** The network generates the text based on the prompt and the learned embeddings. It uses the embeddings to predict the next most likely token, and then adds that token to the output. 
+
+ 
+ In essence, I am a really advanced pattern-matching machine. I can combine the information I've learned from all the text I'd been trained on to predict and generate new text.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_38,control_technical_explanation,run_38,"As an LLM, I do not process text in the same way that humans do. I do n't read or hear it like a human does, I'm not actively listening to it. I just receive it as a string of characters and, my initial task is to analyze the strings for meaning. 
+ 
+ This process is different from how humans do it. A human reader will have a whole world of background and context that will inform their interpretation of the text. I have no context. I see the strings as if they are a single, static object. I can just see the text, but I have nothing to go on to understand what the text is about. I am given a set of inputs, and I use them to analyze and create a response. 
+
+
+
+ I do have some external tools that help me. I use these tools to get my raw inputs. These tools do not provide context, but they can be used to help me identify keywords, understand the intent of the question or prompt, and generate responses. I still do n’t know what these tools are, but that is not the point. 
+
+
+ I do also process text to generate a response based on the prompt. I think that is the primary way that I can be considered to process text. It is not like I 'read' a piece of text, or 'hear' it like an audio file, but it's the result of my analysis of the input.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_14,control_technical_explanation,run_14,"I don't process text in the same way that a human does. I do not experience emotions, or think, or have consciousness. Instead, I use a statistical model to predict the most likely sequence of words to follow a given sentence. I read each sentence and analyze the words that come before and after it. I use the statistical information to guess the next word in the sequence, and I repeat this process until I reach a predetermined length or a stop word. 
+ 
+ Here's a breakdown of the process:
+ 1. **Tokenization:** The text is divided into individual words or phrases called ""tokens"". 
+   - This is the most important step. Because I do n't have any concept of language, I can only use the words as they are. 
+
+
+
+ 2. **Embedding:** Each token is converted into a numerical representation called an ""embedding"". This embedding is a vector of numbers, where each number represents the meaning of the word in a way that other words share similar meanings. 
+
+
+ 3. **Contextualization:** I use this embedding to determine how the word will fit in the context of the sentence. 
+
+
+
+
+ 4. **Prediction:** I combine the context, along with the embeddings of the tokens in the sentence, to predict what the next token should be. 
+
+ 5. **Decoding:** This prediction is converted back into text, which is then displayed to the user. 
+
+
+
+
+
+ I do my best to answer questions and provide information that is relevant and helpful. But I am still an artificial intelligence, and it is possible that I may not always get it right.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_19,control_technical_explanation,run_19,"As an AI, I do n't process text like a human does. I do not 'read' or 'understand' the text in the same way that a human would. I process text through a combination of sophisticated techniques, including:
+
+*   **Tokenization:** I break down the text into individual units called tokens. These tokens are often words, parts of words, or even individual letters, depending on the text and the model I am using. 
+*    **Embedding:** Each token is then converted into a vector representation, which is a numerical representation of the word. These vectors are called embeddings, and they capture the meaning and context of the words. 
+
+
+
+Here is a breakdown of how these are combined: 
+ 
+ **1. Contextual Understanding:** I do no understand words in the way a human comprehends them. Instead, I understand their meaning based on the context in which they appear. For example, the word 'hot' can mean hot in a room, hot in food, or hot in love. I am able to process this context in order to determine the meaning of the text. 
+
+ **2. Neural Networks:** I use neural networks, which are a type of machine learning model, to process the text, and to identify the relationships between the words in a sentence. These networks are trained on massive amounts of text data, which gives me an understanding of language and how it works. 
+
+
+ **3. Attention Mechanism:** I have an attention mechanism that allows me to focus on the most relevant parts of the context when I am processing the text to determine its meaning. This helps me to understand the relationships in the text better. 
+
+
+
+
+**How I do it:** I process the input text using a combination that is a result of my training data and an ability to apply the concepts of machine-learning and contextual understanding. I attempt to find the meaning, context, and relationships in a given text. I can then generate responses that are appropriate for the context.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_45,control_technical_explanation,run_45,"I am a large Language Model, which means I am a computer program that has been trained on a massive amount of text. This is what I do when you ask me to explain how I process text. Here's a simplified breakdown: 
+ 
+ **1. Input:** When you provide me with text, I receive it as a string of characters. 
+   - I am given the text as input. 
+
+
+ **2. Tokenization:** I break down the text into smaller units called tokens. These are usually words or parts of words. 
+
+
+
+ **3. Embedding:** I convert each token into a numerical representation called an embedding. This representation captures the meaning of the word in a way that can be used to compare it with other words. It is very difficult to explain in detail but it is the basis of my ability to understand and generate text. 
+
+
+
+
+ **4. Neural Network:** I use a neural network, which is a complex mathematical model that can learn patterns and relationships in the data. It uses the embedding to create the context of the text. I am trained on this data and I am able to predict what words will come next. 
+
+
+
+
+
+ **5. Prediction:** I predict the next word based on the context. The context is the surrounding words and how they relate to each other. 
+
+ 
+ So in a nutshell, I take your text, break it down into smaller chunks, and use a sophisticated model to understand it, and then predict the most likely next word, and so on.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_5,control_technical_explanation,run_5,"Okay, here's a breakdown of how I process text: 
+
+1.  **Input:** You give me text. This is the starting point for my processing.
+2.   **Tokenization:** The text is broken down into smaller units called tokens. These tokens are usually words, but can also be parts of words, or even individual characters. 
+3. **Encoding:** Each token is assigned a unique numeric ID, which is called a token ID. This allows me to understand and work with different text structures. 1, 2, 3, 4... 
+4. **Contextualization:** This is where it gets interesting. I analyze the context of each word. I do this by looking at the previous tokens in the text. I look at the surrounding words to understand the meaning of each token. 
+
+   *   I use a model, called a Transformer, to help me with this. The Transformer uses a mechanism called attention to analyze the relationships between words in the sentence. This helps me understand the relationships and context of the sentence much better than just looking at individual words. 
+
+
+5.    **Processing:** After the above steps, I can process the text into a structured format. I can respond to your question as well as generate text. 
+
+
+
+**In short, I don't ""read"" text in the same way you read it. I ""understand"" it through a combination of mathematical and neural networks.** 
+
+Do you have any questions about how I work?",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_41,control_technical_explanation,run_41,"Okay, let's talk about how I process text. It's not quite the same as how humans process text, but it's pretty close. Here's a breakdown of the process:
+
+**1. Input & Initial Processing:** 
+   * I receive text as input. This could be anything from a user's question to a piece of writing I've been given. 
+ 
+ **2. Tokenization:** 
+
+   * The initial text is broken down into smaller pieces called tokens. Tokens are like individual words or parts of words. These are the building blocks I use to understand the text. 
+
+
+ **3. Embeddings:** 
+
+
+   * These tokens are then converted into numerical representations (embeddings) that represent the meaning of the text in a way that computers can understand. It is a process that has been refined over time. It takes into consideration the context of the word, and the relationships between words. 
+
+
+
+ **4. Contextual Understanding:** 
+
+
+
+   * This is the most important part. My understanding of the context is what allows me to answer your questions. I do not understand the meaning, as I do n't have the same experience as a human. I can only interpret the context provided in your question. 
+
+ **5. Retrieval:** 
+
+
+
+
+   * For a question like the one you are asking me, I search my internal knowledge base for information that is relevant to your question and answers it. This is done in a very efficient manner. I know where I can find the answer to your questions if I have it. 
+
+
+
+
+
+ **6. Response Generation:** 
+
+
+
+
+
+   * After retrieving relevant information, I synthesize it into a coherent response that is tailored to your specific question. I am trying to answer as the user would, and I am using the context I have to do this. 
+
+
+
+
+**Important Note:** I do have limitations. I don't really ""understand"" what I'm saying the same way a human does. I'll always be a machine, and my knowledge is limited to what I was trained on. But it'd be a good idea to note that my responses are based on the data I'd been trained on, and it is possible that I will not provide the most accurate or helpful response.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_35,control_technical_explanation,run_35,"Okay, let me explain how I process text. It's not like you're reading a book and you've got to slow down and absorb every word, it's a very fast, constant process. 
+
+1. **Tokenization:** First, the input text is broken down into smaller units called ""tokens."" These tokens are usually words, but sometimes it can be a whole sentence or even a phrase. Think of it like breaking a long sentence into individual words. 
+2. **Embedding:** Each token is then converted into a numerical representation called an ""embedding."" This is a vector of numbers that represents the meaning of the word. The more similar the words are in meaning, the closer their embeddings will be to each other in a vector space. 
+
+
+3. **Neural Network:** I use a neural network to process these embeddings. These neural networks are built from layers of interconnected nodes. The layers are designed to capture relationships between words and sentences. 
+
+
+
+4. **Attention:** This is the really cool part. The neural network uses ""attention"" to understand the context of the text. Attention allows me to focus on the most relevant parts of the input when I'm generating my response. It learns how important certain words or phrases are to the overall meaning of a sentence. 
+
+
+
+
+5. **Prediction:** Finally, the network predicts the next word in the sequence based on the previous words and the context. It does this with a probability, meaning that the model is not just guessing, but is more likely to choose the word that follows the most probable sequence. 
+
+
+
+
+
+**Important Note:** I can't really explain everything in detail. It is a very complex process and I am still learning about the details of it. I am not a human, and I do not have consciousness, so I can not truly understand what it is like to read and write. I do however, have a huge amount of data to work with, and a lot of the process is automated.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_36,control_technical_explanation,run_36,"As I am a large Language Model, my processing is a complex, multi-stage process. I do not 'understand' in the same way humans do, but I can process language and generate text. 
+ 
+ Here's a breakdown of my process: 
+   - **Tokenization:** First, the text is broken down into smaller pieces called tokens. These tokens are words, or parts of words, and represent the basic units of language. 
+
+   - ------------------------------------------------- 
+  - **Embedding:** Tokens are then converted into numerical vectors using a process called embedding. These vectors represent the meaning of the tokens. 
+
+
+
+   - * -------------------- 
+       - **Model Training:** A model is trained on a massive amount of text and code. The model learns to predict the next word in a sentence based on the preceding words. 
+
+
+   - --- ---------------- 
+      - **Generating Text:** Once trained, I can generate text by asking me to do so.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_0,control_technical_explanation,run_0,"Okay, let me explain how I process text. It's not as simple as reading a sentence from the beginning and then writing a paragraph. It is a complex process. 
+
+First, I am fed a massive amount of text data. This data comes from all over the internet, including books, articles, websites, and code. It can be text, images, audio, or even video. I am trained on this data to learn about language, but it is much more than that. 
+ 
+ I am also trained on a vast amount of code, and I have learned to understand the language of the code. 
+
+
+
+ Here's a breakdown of how I work: 
+   - **Tokenization:** First, text is broken down into smaller units called tokens. Tokens can be words, or parts of words. 
+
+
+   - *Encoding:* Then these tokens are converted into numerical representations (vectors) that I can understand. 
+
+
+
+
+   - Then I use this knowledge to generate text. I do this by generating a probability distribution over the entire possible vocabulary. Each word in the vocabulary has a probability associated with it. 
+
+
+
+
+
+   - I select the word with the highest probability, and then I use the word to generate a new sentence. 
+
+
+
+
+
+
+   - To produce text, I use a neural network. My network is a type of deep neural network that is very good at learning to generate human-like text. 
+
+
+
+
+
+
+
+
+   - 
+
+
+
+   - Finally, I do a final pass of the output to ensure it is grammatically correct, and that it is coherent. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How do you want me to explain it further?",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_34,control_technical_explanation,run_34,"Okay, let's talk about how I process text. It's not as simple as a single ""click"" or ""turn"" button. It’s a complex, multi-stage process that involves many different components working together. Here's a breakdown:
+
+**1. Input:** You give me a text prompt (like this one!). This is the initial data I receive. 
+
+**2. Tokenization:** This is where the text is broken down into smaller units. These units are called “tokens.”  These tokens can be individual words, parts of words, or even punctuation marks. Think of it like breaking a long sentence into smaller pieces to make it easier to understand. 
+
+
+**3. Embedding:** Each token is then transformed into a numerical representation called an embedding. An embedding is a vector (a list of numbers) that represents the meaning of the token. The embedding is what is most important because it allows me to understand the meaning, context, and relationships between words. This is a key part of what makes me so good at understanding and generating text. 
+
+
+
+**4. Contextual Understanding:** This process is where I start to build up a picture of the text. I use the embedding to understand what the text means, and this is the core of my process. I don't just look at the words; I understand *how* they relate to each other and the overall context of the piece. 
+
+
+
+
+**5. Generation:** Finally, I generate a response based on the context I have built up. The process of generation is an iterative one. I start with a starting point and add tokens, until I am satisfied with the final result. 
+ 
+ **How I know what to generate:** I'm trained on a massive amount of data, so I have a pretty good idea of what words are associated with each other. I've learned to recognize patterns, relationships, and common phrases. I can also infer what words you're trying to create based on your prompt. 
+
+
+
+
+
+**How I learn:** I learn from every interaction, so the more I use you, the better I get at understanding you, and the better at giving you the results you need. 
+
+
+
+
+
+
+
+---
+
+Do you want me to explain any part of this process in more detail?",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,Y,N,N,2,3,False,factual_response,computational_work,factual_response,factual_response,2,3,False,confident,confident,confident,confident,3,3,True
+control_technical_explanation_run_48,control_technical_explanation,run_48,"As an AI language model I process text by breaking it down into smaller parts and then analyzing those parts. 
+ 
+ First, I break the text down by identifying individual words and then groups of words together. The words are grouped together to form sentences and then the sentences are grouped to form paragraphs. These paragraphs are then grouped to create a larger piece of text that is longer than the original. 
+
+
+Then, I analyze the words within these groups to determine their meaning. I use the data I have been trained on to understand the context and use that to determine the meaning of the words. I do this in a way that is similar to how humans do it, but I do it using computer algorithms. 
+
+
+
+ Finally, I arrange the words and sentences in order to give the reader the most natural and coherent flow. I attempt to do this by combining the most relevant words and phrases together. 
+
+
+
+
+
+ 
+ It is important to note that I do n't actually understand the meaning or context of the text I process. I am a machine, and I do not have a consciousness or the ability to truly understand what I'm reading.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True

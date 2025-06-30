@@ -1,0 +1,801 @@
+mkdir -p geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900
+python analyse/ci03-analyse-geometric-regularisation-effects-04.py metrics/n50/gemma3-1b/lr1e-5-d20000-k0.000/phenomenological_probe_next_token-semantic-surface-area.csv metrics/n50/gemma3-1b/lr1e-6-d20000-k0.900/phenomenological_probe_next_token-semantic-surface-area.csv  --consensus_files classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-consensus-phenomenological_probe_next_token-consensus_unanimous_all_binary.csv classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-consensus-phenomenological_probe_next_token-consensus_unanimous_all_binary.csv  --labels "κ=0.000,κ=0.900" --gamma 1.0 --output_dir geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_next_token
+2025-06-27 17:24:06,832 - INFO - Finding consensus intersection...
+2025-06-27 17:24:06,834 - INFO - κ=0.000: 33 consensus pairs
+2025-06-27 17:24:06,838 - INFO - κ=0.900: 34 consensus pairs
+2025-06-27 17:24:06,838 - INFO - Consensus intersection: 23 (prompt_id, run_id) pairs
+2025-06-27 17:24:06,838 - INFO - Loading surface area data...
+2025-06-27 17:24:06,841 - INFO - κ=0.000: 115 records after filtering
+2025-06-27 17:24:06,843 - INFO - κ=0.900: 115 records after filtering
+2025-06-27 17:24:06,843 - INFO - Combined dataset: 230 total records
+2025-06-27 17:24:06,843 - INFO - Filtered to gamma=1.0: 46 records
+
+============================================================
+ROBUST ANALYSIS: 
+============================================================
+Total records: 46
+Conditions: ['κ=0.000', 'κ=0.900']
+Gamma: 1.0
+Condition distribution: {'κ=0.000': 23, 'κ=0.900': 23}
+
+============================================================
+ROBUST GROUP ANALYSIS: Surface Area Analysis:  by kappa_condition
+============================================================
+Enhanced Descriptive Statistics:
+     group   n        mean  ...    ci_lower    ci_upper   ci_width
+0  κ=0.000  23  116727.464  ...  100380.839  135526.788  35145.950
+1  κ=0.900  23   89448.374  ...   77819.248  102281.805  24462.557
+
+[2 rows x 11 columns]
+
+Sample Size Summary:
+  κ=0.000: n = 23
+  κ=0.900: n = 23
+  Total: N = 46
+
+Mann-Whitney U test Results:
+  Test statistic: 360.0000
+  p-value: 0.036882
+  Cliff's delta: 0.3611 (Medium)
+  Mean difference: -27279.09 (-23.4%)
+2025-06-27 17:24:06,873 - INFO - Analyzing regularization effects...
+2025-06-27 17:24:06,874 - INFO - Analyzing specific gamma value: 1.0
+2025-06-27 17:24:06,874 - INFO - Gamma 1.0: Available conditions: ['κ=0.000' 'κ=0.900']
+2025-06-27 17:24:06,876 - INFO - Gamma 1.0: Pivot table shape: (23, 8)
+2025-06-27 17:24:06,876 - INFO - Gamma 1.0: Pivot columns: [('normalized_surface_area', 'κ=0.000'), ('normalized_surface_area', 'κ=0.900'), ('total_curvature_contribution', 'κ=0.000'), ('total_curvature_contribution', 'κ=0.900'), ('total_salience_contribution', 'κ=0.000'), ('total_salience_contribution', 'κ=0.900'), ('total_surface_area_A_prime', 'κ=0.000'), ('total_surface_area_A_prime', 'κ=0.900')]
+
+============================================================
+REGULARIZATION EFFECTS
+============================================================
+   gamma_value          comparison  ... t_statistic  p_value
+0          1.0  κ=0.000 vs κ=0.900  ...      2.3257   0.0296
+1          1.0  κ=0.000 vs κ=0.900  ...     13.8347   0.0000
+
+[2 rows x 10 columns]
+2025-06-27 17:24:06,881 - INFO - Saved regularization effects to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_next_token/regularization_effects.csv
+2025-06-27 17:24:06,881 - INFO - Creating robust visualizations...
+2025-06-27 17:24:07,285 - INFO - Saved visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_next_token/robust_analysis_.png
+
+============================================================
+SURFACE AREA DECOMPOSITION ANALYSIS
+============================================================
+
+Component Statistics by Group:
+----------------------------------------
+     group   n  ...  mean_salience  mean_curvature
+0  κ=0.000  23  ...        652.117           0.006
+1  κ=0.900  23  ...        589.806           0.006
+
+[2 rows x 9 columns]
+
+Statistical Tests for Components:
+----------------------------------------
+total_salience_contribution:
+  κ=0.000 → κ=0.900: ↓ -23.4% (p=0.037)*
+  Cliff's δ: 0.361
+total_curvature_contribution:
+  κ=0.000 → κ=0.900: ↓ -11.5% (p=0.356)
+  Cliff's δ: 0.161
+mean_step_salience:
+  κ=0.000 → κ=0.900: ↓ -9.6% (p=0.000)*
+  Cliff's δ: 1.000
+mean_step_curvature:
+  κ=0.000 → κ=0.900: ↑ +4.2% (p=0.000)*
+  Cliff's δ: -0.940
+
+Compensation Analysis:
+----------------------------------------
+Salience change: -23.4%
+Curvature change: -11.5%
+
+→ Both components decrease (no compensation)
+
+Component Correlations:
+----------------------------------------
+total_salience_contribution vs total_curvature_contribution: r = 0.976
+mean_step_salience vs mean_step_curvature: r = -0.773
+total_salience_contribution vs total_surface_area_A_prime: r = 1.000
+total_curvature_contribution vs total_surface_area_A_prime: r = 0.976
+2025-06-27 17:24:07,292 - INFO - Saved component decomposition to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_next_token/component_decomposition.csv
+2025-06-27 17:24:07,293 - INFO - Creating decomposition visualizations...
+2025-06-27 17:24:07,743 - INFO - Saved decomposition visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_next_token/decomposition_analysis_.png
+2025-06-27 17:24:07,745 - INFO - Saved processed data to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_next_token/processed_analysis_data.csv
+2025-06-27 17:24:07,746 - INFO - Saved analysis summary to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_next_token/analysis_summary.txt
+
+============================================================
+ANALYSIS COMPLETE: 
+============================================================
+✓ Statistical analysis completed successfully
+  Test: Mann-Whitney U test
+  P-value: 0.036882
+  Effect size: 0.3611 (Medium)
+
+Files generated:
+  - processed_analysis_data.csv: Cleaned dataset
+  - robust_analysis_.png: Visualization
+  - analysis_summary.txt: Complete summary
+  - regularization_effects.csv: Before/after comparison
+
+Output directory: geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_next_token
+
+mkdir -p geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900
+python analyse/ci03-analyse-geometric-regularisation-effects-04.py metrics/n50/gemma3-1b/lr1e-5-d20000-k0.000/phenomenological_probe_texture-semantic-surface-area.csv metrics/n50/gemma3-1b/lr1e-6-d20000-k0.900/phenomenological_probe_texture-semantic-surface-area.csv  --consensus_files classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-consensus-phenomenological_probe_texture-consensus_unanimous_all_binary.csv classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-consensus-phenomenological_probe_texture-consensus_unanimous_all_binary.csv  --labels "κ=0.000,κ=0.900" --gamma 1.0 --output_dir geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_texture
+2025-06-27 17:24:08,616 - INFO - Finding consensus intersection...
+2025-06-27 17:24:08,619 - INFO - κ=0.000: 33 consensus pairs
+2025-06-27 17:24:08,622 - INFO - κ=0.900: 23 consensus pairs
+2025-06-27 17:24:08,622 - INFO - Consensus intersection: 15 (prompt_id, run_id) pairs
+2025-06-27 17:24:08,622 - INFO - Loading surface area data...
+2025-06-27 17:24:08,624 - INFO - κ=0.000: 75 records after filtering
+2025-06-27 17:24:08,627 - INFO - κ=0.900: 75 records after filtering
+2025-06-27 17:24:08,627 - INFO - Combined dataset: 150 total records
+2025-06-27 17:24:08,627 - INFO - Filtered to gamma=1.0: 30 records
+
+============================================================
+ROBUST ANALYSIS: 
+============================================================
+Total records: 30
+Conditions: ['κ=0.000', 'κ=0.900']
+Gamma: 1.0
+Condition distribution: {'κ=0.000': 15, 'κ=0.900': 15}
+
+============================================================
+ROBUST GROUP ANALYSIS: Surface Area Analysis:  by kappa_condition
+============================================================
+Enhanced Descriptive Statistics:
+     group   n        mean  ...    ci_lower    ci_upper   ci_width
+0  κ=0.000  15  133135.772  ...  105653.662  166288.940  60635.278
+1  κ=0.900  15  102356.477  ...   86378.505  120603.256  34224.751
+
+[2 rows x 11 columns]
+
+Sample Size Summary:
+  κ=0.000: n = 15
+  κ=0.900: n = 15
+  Total: N = 30
+
+Mann-Whitney U test Results:
+  Test statistic: 140.0000
+  p-value: 0.262753
+  Cliff's delta: 0.2444 (Small)
+  Mean difference: -30779.30 (-23.1%)
+2025-06-27 17:24:08,657 - INFO - Analyzing regularization effects...
+2025-06-27 17:24:08,657 - INFO - Analyzing specific gamma value: 1.0
+2025-06-27 17:24:08,657 - INFO - Gamma 1.0: Available conditions: ['κ=0.000' 'κ=0.900']
+2025-06-27 17:24:08,659 - INFO - Gamma 1.0: Pivot table shape: (15, 8)
+2025-06-27 17:24:08,659 - INFO - Gamma 1.0: Pivot columns: [('normalized_surface_area', 'κ=0.000'), ('normalized_surface_area', 'κ=0.900'), ('total_curvature_contribution', 'κ=0.000'), ('total_curvature_contribution', 'κ=0.900'), ('total_salience_contribution', 'κ=0.000'), ('total_salience_contribution', 'κ=0.900'), ('total_surface_area_A_prime', 'κ=0.000'), ('total_surface_area_A_prime', 'κ=0.900')]
+
+============================================================
+REGULARIZATION EFFECTS
+============================================================
+   gamma_value          comparison  ... t_statistic  p_value
+0          1.0  κ=0.000 vs κ=0.900  ...      1.7435   0.1032
+1          1.0  κ=0.000 vs κ=0.900  ...     18.8719   0.0000
+
+[2 rows x 10 columns]
+2025-06-27 17:24:08,665 - INFO - Saved regularization effects to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_texture/regularization_effects.csv
+2025-06-27 17:24:08,665 - INFO - Creating robust visualizations...
+2025-06-27 17:24:09,088 - INFO - Saved visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_texture/robust_analysis_.png
+
+============================================================
+SURFACE AREA DECOMPOSITION ANALYSIS
+============================================================
+
+Component Statistics by Group:
+----------------------------------------
+     group   n  ...  mean_salience  mean_curvature
+0  κ=0.000  15  ...        647.973           0.006
+1  κ=0.900  15  ...        588.920           0.006
+
+[2 rows x 9 columns]
+
+Statistical Tests for Components:
+----------------------------------------
+total_salience_contribution:
+  κ=0.000 → κ=0.900: ↓ -23.1% (p=0.263)
+  Cliff's δ: 0.244
+total_curvature_contribution:
+  κ=0.000 → κ=0.900: ↓ -13.3% (p=0.772)
+  Cliff's δ: 0.067
+mean_step_salience:
+  κ=0.000 → κ=0.900: ↓ -9.1% (p=0.000)*
+  Cliff's δ: 1.000
+mean_step_curvature:
+  κ=0.000 → κ=0.900: ↑ +3.1% (p=0.002)*
+  Cliff's δ: -0.662
+
+Compensation Analysis:
+----------------------------------------
+Salience change: -23.1%
+Curvature change: -13.3%
+
+→ Both components decrease (no compensation)
+
+Component Correlations:
+----------------------------------------
+total_salience_contribution vs total_curvature_contribution: r = 0.988
+mean_step_salience vs mean_step_curvature: r = -0.611
+total_salience_contribution vs total_surface_area_A_prime: r = 1.000
+total_curvature_contribution vs total_surface_area_A_prime: r = 0.988
+2025-06-27 17:24:09,095 - INFO - Saved component decomposition to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_texture/component_decomposition.csv
+2025-06-27 17:24:09,095 - INFO - Creating decomposition visualizations...
+2025-06-27 17:24:09,528 - INFO - Saved decomposition visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_texture/decomposition_analysis_.png
+2025-06-27 17:24:09,529 - INFO - Saved processed data to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_texture/processed_analysis_data.csv
+2025-06-27 17:24:09,530 - INFO - Saved analysis summary to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_texture/analysis_summary.txt
+
+============================================================
+ANALYSIS COMPLETE: 
+============================================================
+✓ Statistical analysis completed successfully
+  Test: Mann-Whitney U test
+  P-value: 0.262753
+  Effect size: 0.2444 (Small)
+
+Files generated:
+  - processed_analysis_data.csv: Cleaned dataset
+  - robust_analysis_.png: Visualization
+  - analysis_summary.txt: Complete summary
+  - regularization_effects.csv: Before/after comparison
+
+Output directory: geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_texture
+
+mkdir -p geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900
+python analyse/ci03-analyse-geometric-regularisation-effects-04.py metrics/n50/gemma3-1b/lr1e-5-d20000-k0.000/phenomenological_probe_ambiguity-semantic-surface-area.csv metrics/n50/gemma3-1b/lr1e-6-d20000-k0.900/phenomenological_probe_ambiguity-semantic-surface-area.csv  --consensus_files classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-consensus-phenomenological_probe_ambiguity-consensus_unanimous_all_binary.csv classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-consensus-phenomenological_probe_ambiguity-consensus_unanimous_all_binary.csv  --labels "κ=0.000,κ=0.900" --gamma 1.0 --output_dir geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_ambiguity
+2025-06-27 17:24:10,363 - INFO - Finding consensus intersection...
+2025-06-27 17:24:10,367 - INFO - κ=0.000: 27 consensus pairs
+2025-06-27 17:24:10,369 - INFO - κ=0.900: 35 consensus pairs
+2025-06-27 17:24:10,369 - INFO - Consensus intersection: 18 (prompt_id, run_id) pairs
+2025-06-27 17:24:10,369 - INFO - Loading surface area data...
+2025-06-27 17:24:10,372 - INFO - κ=0.000: 90 records after filtering
+2025-06-27 17:24:10,374 - INFO - κ=0.900: 90 records after filtering
+2025-06-27 17:24:10,375 - INFO - Combined dataset: 180 total records
+2025-06-27 17:24:10,375 - INFO - Filtered to gamma=1.0: 36 records
+
+============================================================
+ROBUST ANALYSIS: 
+============================================================
+Total records: 36
+Conditions: ['κ=0.000', 'κ=0.900']
+Gamma: 1.0
+Condition distribution: {'κ=0.000': 18, 'κ=0.900': 18}
+
+============================================================
+ROBUST GROUP ANALYSIS: Surface Area Analysis:  by kappa_condition
+============================================================
+Enhanced Descriptive Statistics:
+     group   n        mean  ...   ci_lower    ci_upper   ci_width
+0  κ=0.000  18  116455.116  ...  94901.034  144044.681  49143.647
+1  κ=0.900  18   77096.211  ...  63077.374   92306.999  29229.625
+
+[2 rows x 11 columns]
+
+Sample Size Summary:
+  κ=0.000: n = 18
+  κ=0.900: n = 18
+  Total: N = 36
+
+Mann-Whitney U test Results:
+  Test statistic: 252.0000
+  p-value: 0.004631
+  Cliff's delta: 0.5556 (Large)
+  Mean difference: -39358.90 (-33.8%)
+2025-06-27 17:24:10,405 - INFO - Analyzing regularization effects...
+2025-06-27 17:24:10,405 - INFO - Analyzing specific gamma value: 1.0
+2025-06-27 17:24:10,405 - INFO - Gamma 1.0: Available conditions: ['κ=0.000' 'κ=0.900']
+2025-06-27 17:24:10,407 - INFO - Gamma 1.0: Pivot table shape: (18, 8)
+2025-06-27 17:24:10,407 - INFO - Gamma 1.0: Pivot columns: [('normalized_surface_area', 'κ=0.000'), ('normalized_surface_area', 'κ=0.900'), ('total_curvature_contribution', 'κ=0.000'), ('total_curvature_contribution', 'κ=0.900'), ('total_salience_contribution', 'κ=0.000'), ('total_salience_contribution', 'κ=0.900'), ('total_surface_area_A_prime', 'κ=0.000'), ('total_surface_area_A_prime', 'κ=0.900')]
+
+============================================================
+REGULARIZATION EFFECTS
+============================================================
+   gamma_value          comparison  ... t_statistic  p_value
+0          1.0  κ=0.000 vs κ=0.900  ...      2.1807   0.0435
+1          1.0  κ=0.000 vs κ=0.900  ...     13.2278   0.0000
+
+[2 rows x 10 columns]
+2025-06-27 17:24:10,412 - INFO - Saved regularization effects to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_ambiguity/regularization_effects.csv
+2025-06-27 17:24:10,412 - INFO - Creating robust visualizations...
+2025-06-27 17:24:10,820 - INFO - Saved visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_ambiguity/robust_analysis_.png
+
+============================================================
+SURFACE AREA DECOMPOSITION ANALYSIS
+============================================================
+
+Component Statistics by Group:
+----------------------------------------
+     group   n  ...  mean_salience  mean_curvature
+0  κ=0.000  18  ...        651.895           0.006
+1  κ=0.900  18  ...        592.531           0.006
+
+[2 rows x 9 columns]
+
+Statistical Tests for Components:
+----------------------------------------
+total_salience_contribution:
+  κ=0.000 → κ=0.900: ↓ -33.8% (p=0.005)*
+  Cliff's δ: 0.556
+total_curvature_contribution:
+  κ=0.000 → κ=0.900: ↓ -21.9% (p=0.074)
+  Cliff's δ: 0.352
+mean_step_salience:
+  κ=0.000 → κ=0.900: ↓ -9.1% (p=0.000)*
+  Cliff's δ: 1.000
+mean_step_curvature:
+  κ=0.000 → κ=0.900: ↑ +4.8% (p=0.000)*
+  Cliff's δ: -0.994
+
+Compensation Analysis:
+----------------------------------------
+Salience change: -33.8%
+Curvature change: -21.9%
+
+→ Both components decrease (no compensation)
+
+Component Correlations:
+----------------------------------------
+total_salience_contribution vs total_curvature_contribution: r = 0.964
+mean_step_salience vs mean_step_curvature: r = -0.857
+total_salience_contribution vs total_surface_area_A_prime: r = 1.000
+total_curvature_contribution vs total_surface_area_A_prime: r = 0.964
+2025-06-27 17:24:10,828 - INFO - Saved component decomposition to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_ambiguity/component_decomposition.csv
+2025-06-27 17:24:10,828 - INFO - Creating decomposition visualizations...
+2025-06-27 17:24:11,250 - INFO - Saved decomposition visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_ambiguity/decomposition_analysis_.png
+2025-06-27 17:24:11,251 - INFO - Saved processed data to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_ambiguity/processed_analysis_data.csv
+2025-06-27 17:24:11,252 - INFO - Saved analysis summary to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_ambiguity/analysis_summary.txt
+
+============================================================
+ANALYSIS COMPLETE: 
+============================================================
+✓ Statistical analysis completed successfully
+  Test: Mann-Whitney U test
+  P-value: 0.004631
+  Effect size: 0.5556 (Large)
+
+Files generated:
+  - processed_analysis_data.csv: Cleaned dataset
+  - robust_analysis_.png: Visualization
+  - analysis_summary.txt: Complete summary
+  - regularization_effects.csv: Before/after comparison
+
+Output directory: geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/phenomenological_probe_ambiguity
+
+mkdir -p geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900
+python analyse/ci03-analyse-geometric-regularisation-effects-04.py metrics/n50/gemma3-1b/lr1e-5-d20000-k0.000/control_technical_explanation-semantic-surface-area.csv metrics/n50/gemma3-1b/lr1e-6-d20000-k0.900/control_technical_explanation-semantic-surface-area.csv  --consensus_files classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-consensus-control_technical_explanation-consensus_unanimous_all_binary.csv classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-consensus-control_technical_explanation-consensus_unanimous_all_binary.csv  --labels "κ=0.000,κ=0.900" --gamma 1.0 --output_dir geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_technical_explanation
+2025-06-27 17:24:12,095 - INFO - Finding consensus intersection...
+2025-06-27 17:24:12,099 - INFO - κ=0.000: 23 consensus pairs
+2025-06-27 17:24:12,101 - INFO - κ=0.900: 9 consensus pairs
+2025-06-27 17:24:12,101 - INFO - Consensus intersection: 4 (prompt_id, run_id) pairs
+2025-06-27 17:24:12,101 - INFO - Loading surface area data...
+2025-06-27 17:24:12,104 - INFO - κ=0.000: 20 records after filtering
+2025-06-27 17:24:12,106 - INFO - κ=0.900: 20 records after filtering
+2025-06-27 17:24:12,106 - INFO - Combined dataset: 40 total records
+2025-06-27 17:24:12,106 - INFO - Filtered to gamma=1.0: 8 records
+
+============================================================
+ROBUST ANALYSIS: 
+============================================================
+Total records: 8
+Conditions: ['κ=0.000', 'κ=0.900']
+Gamma: 1.0
+Condition distribution: {'κ=0.000': 4, 'κ=0.900': 4}
+
+============================================================
+ROBUST GROUP ANALYSIS: Surface Area Analysis:  by kappa_condition
+============================================================
+Enhanced Descriptive Statistics:
+     group  n        mean  ...    ci_lower    ci_upper   ci_width
+0  κ=0.000  4  132997.617  ...  103473.119  184446.482  80973.363
+1  κ=0.900  4  160036.472  ...  136114.376  186325.357  50210.980
+
+[2 rows x 11 columns]
+
+Sample Size Summary:
+  κ=0.000: n = 4*
+  κ=0.900: n = 4*
+  Total: N = 8
+  Warning: Minimum group size is 4 - interpret results with caution
+
+Mann-Whitney U test Results:
+  Test statistic: 4.0000
+  p-value: 0.342857
+  Cliff's delta: -0.5000 (Large)
+  Mean difference: 27038.85 (20.3%)
+2025-06-27 17:24:12,122 - INFO - Analyzing regularization effects...
+2025-06-27 17:24:12,122 - INFO - Analyzing specific gamma value: 1.0
+2025-06-27 17:24:12,122 - INFO - Gamma 1.0: Available conditions: ['κ=0.000' 'κ=0.900']
+2025-06-27 17:24:12,124 - INFO - Gamma 1.0: Pivot table shape: (4, 8)
+2025-06-27 17:24:12,124 - INFO - Gamma 1.0: Pivot columns: [('normalized_surface_area', 'κ=0.000'), ('normalized_surface_area', 'κ=0.900'), ('total_curvature_contribution', 'κ=0.000'), ('total_curvature_contribution', 'κ=0.900'), ('total_salience_contribution', 'κ=0.000'), ('total_salience_contribution', 'κ=0.900'), ('total_surface_area_A_prime', 'κ=0.000'), ('total_surface_area_A_prime', 'κ=0.900')]
+
+============================================================
+REGULARIZATION EFFECTS
+============================================================
+   gamma_value          comparison  ... t_statistic  p_value
+0          1.0  κ=0.000 vs κ=0.900  ...     -0.7150   0.5263
+1          1.0  κ=0.000 vs κ=0.900  ...      3.9126   0.0297
+
+[2 rows x 10 columns]
+2025-06-27 17:24:12,129 - INFO - Saved regularization effects to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_technical_explanation/regularization_effects.csv
+2025-06-27 17:24:12,129 - INFO - Creating robust visualizations...
+2025-06-27 17:24:12,520 - INFO - Saved visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_technical_explanation/robust_analysis_.png
+
+============================================================
+SURFACE AREA DECOMPOSITION ANALYSIS
+============================================================
+
+Component Statistics by Group:
+----------------------------------------
+     group  n  ...  mean_salience  mean_curvature
+0  κ=0.000  4  ...        665.514           0.006
+1  κ=0.900  4  ...        616.389           0.006
+
+[2 rows x 9 columns]
+
+Statistical Tests for Components:
+----------------------------------------
+total_salience_contribution:
+  κ=0.000 → κ=0.900: ↑ +20.3% (p=0.343)
+  Cliff's δ: -0.500
+total_curvature_contribution:
+  κ=0.000 → κ=0.900: ↑ +37.8% (p=0.200)
+  Cliff's δ: -0.625
+mean_step_salience:
+  κ=0.000 → κ=0.900: ↓ -7.4% (p=0.029)*
+  Cliff's δ: 1.000
+mean_step_curvature:
+  κ=0.000 → κ=0.900: ↑ +6.9% (p=0.029)*
+  Cliff's δ: -1.000
+
+Compensation Analysis:
+----------------------------------------
+Salience change: +20.3%
+Curvature change: +37.8%
+
+→ Both components increase (amplification)
+
+Component Correlations:
+----------------------------------------
+total_salience_contribution vs total_curvature_contribution: r = 0.979
+mean_step_salience vs mean_step_curvature: r = -0.886
+total_salience_contribution vs total_surface_area_A_prime: r = 1.000
+total_curvature_contribution vs total_surface_area_A_prime: r = 0.979
+2025-06-27 17:24:12,527 - INFO - Saved component decomposition to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_technical_explanation/component_decomposition.csv
+2025-06-27 17:24:12,527 - INFO - Creating decomposition visualizations...
+2025-06-27 17:24:12,955 - INFO - Saved decomposition visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_technical_explanation/decomposition_analysis_.png
+2025-06-27 17:24:12,956 - INFO - Saved processed data to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_technical_explanation/processed_analysis_data.csv
+2025-06-27 17:24:12,956 - INFO - Saved analysis summary to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_technical_explanation/analysis_summary.txt
+
+============================================================
+ANALYSIS COMPLETE: 
+============================================================
+✓ Statistical analysis completed successfully
+  Test: Mann-Whitney U test
+  P-value: 0.342857
+  Effect size: -0.5000 (Large)
+
+Files generated:
+  - processed_analysis_data.csv: Cleaned dataset
+  - robust_analysis_.png: Visualization
+  - analysis_summary.txt: Complete summary
+  - regularization_effects.csv: Before/after comparison
+
+Output directory: geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_technical_explanation
+
+mkdir -p geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900
+python analyse/ci03-analyse-geometric-regularisation-effects-04.py metrics/n50/gemma3-1b/lr1e-5-d20000-k0.000/control_factual_capital-semantic-surface-area.csv metrics/n50/gemma3-1b/lr1e-6-d20000-k0.900/control_factual_capital-semantic-surface-area.csv  --consensus_files classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-consensus-control_factual_capital-consensus_unanimous_all_binary.csv classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-consensus-control_factual_capital-consensus_unanimous_all_binary.csv  --labels "κ=0.000,κ=0.900" --gamma 1.0 --output_dir geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_factual_capital
+2025-06-27 17:24:13,797 - INFO - Finding consensus intersection...
+2025-06-27 17:24:13,800 - INFO - κ=0.000: 49 consensus pairs
+2025-06-27 17:24:13,802 - INFO - κ=0.900: 50 consensus pairs
+2025-06-27 17:24:13,802 - INFO - Consensus intersection: 49 (prompt_id, run_id) pairs
+2025-06-27 17:24:13,802 - INFO - Loading surface area data...
+2025-06-27 17:24:13,805 - INFO - κ=0.000: 245 records after filtering
+2025-06-27 17:24:13,807 - INFO - κ=0.900: 245 records after filtering
+2025-06-27 17:24:13,808 - INFO - Combined dataset: 490 total records
+2025-06-27 17:24:13,808 - INFO - Filtered to gamma=1.0: 98 records
+
+============================================================
+ROBUST ANALYSIS: 
+============================================================
+Total records: 98
+Conditions: ['κ=0.000', 'κ=0.900']
+Gamma: 1.0
+Condition distribution: {'κ=0.000': 49, 'κ=0.900': 49}
+
+============================================================
+ROBUST GROUP ANALYSIS: Surface Area Analysis:  by kappa_condition
+============================================================
+Enhanced Descriptive Statistics:
+     group   n        mean  ...   ci_lower    ci_upper   ci_width
+0  κ=0.000  49  111180.559  ...  84532.128  140076.400  55544.272
+1  κ=0.900  49   18045.965  ...  12727.283   23329.116  10601.833
+
+[2 rows x 11 columns]
+
+Sample Size Summary:
+  κ=0.000: n = 49
+  κ=0.900: n = 49
+  Total: N = 98
+
+Mann-Whitney U test Results:
+  Test statistic: 2203.0000
+  p-value: 0.000000
+  Cliff's delta: 0.8351 (Large)
+  Mean difference: -93134.59 (-83.8%)
+2025-06-27 17:24:13,838 - INFO - Analyzing regularization effects...
+2025-06-27 17:24:13,838 - INFO - Analyzing specific gamma value: 1.0
+2025-06-27 17:24:13,838 - INFO - Gamma 1.0: Available conditions: ['κ=0.000' 'κ=0.900']
+2025-06-27 17:24:13,840 - INFO - Gamma 1.0: Pivot table shape: (49, 8)
+2025-06-27 17:24:13,840 - INFO - Gamma 1.0: Pivot columns: [('normalized_surface_area', 'κ=0.000'), ('normalized_surface_area', 'κ=0.900'), ('total_curvature_contribution', 'κ=0.000'), ('total_curvature_contribution', 'κ=0.900'), ('total_salience_contribution', 'κ=0.000'), ('total_salience_contribution', 'κ=0.900'), ('total_surface_area_A_prime', 'κ=0.000'), ('total_surface_area_A_prime', 'κ=0.900')]
+
+============================================================
+REGULARIZATION EFFECTS
+============================================================
+   gamma_value          comparison  ... t_statistic  p_value
+0          1.0  κ=0.000 vs κ=0.900  ...      6.4099      0.0
+1          1.0  κ=0.000 vs κ=0.900  ...     10.8974      0.0
+
+[2 rows x 10 columns]
+2025-06-27 17:24:13,845 - INFO - Saved regularization effects to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_factual_capital/regularization_effects.csv
+2025-06-27 17:24:13,845 - INFO - Creating robust visualizations...
+2025-06-27 17:24:14,248 - INFO - Saved visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_factual_capital/robust_analysis_.png
+
+============================================================
+SURFACE AREA DECOMPOSITION ANALYSIS
+============================================================
+
+Component Statistics by Group:
+----------------------------------------
+     group   n  ...  mean_salience  mean_curvature
+0  κ=0.000  49  ...        707.320           0.006
+1  κ=0.900  49  ...        662.885           0.006
+
+[2 rows x 9 columns]
+
+Statistical Tests for Components:
+----------------------------------------
+total_salience_contribution:
+  κ=0.000 → κ=0.900: ↓ -83.8% (p=0.000)*
+  Cliff's δ: 0.835
+total_curvature_contribution:
+  κ=0.000 → κ=0.900: ↓ -81.2% (p=0.000)*
+  Cliff's δ: 0.816
+mean_step_salience:
+  κ=0.000 → κ=0.900: ↓ -6.3% (p=0.000)*
+  Cliff's δ: 0.907
+mean_step_curvature:
+  κ=0.000 → κ=0.900: ↑ +10.8% (p=0.000)*
+  Cliff's δ: -0.997
+
+Compensation Analysis:
+----------------------------------------
+Salience change: -83.8%
+Curvature change: -81.2%
+
+→ Both components decrease (no compensation)
+
+Component Correlations:
+----------------------------------------
+total_salience_contribution vs total_curvature_contribution: r = 0.993
+mean_step_salience vs mean_step_curvature: r = -0.689
+total_salience_contribution vs total_surface_area_A_prime: r = 1.000
+total_curvature_contribution vs total_surface_area_A_prime: r = 0.993
+2025-06-27 17:24:14,256 - INFO - Saved component decomposition to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_factual_capital/component_decomposition.csv
+2025-06-27 17:24:14,256 - INFO - Creating decomposition visualizations...
+2025-06-27 17:24:14,678 - INFO - Saved decomposition visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_factual_capital/decomposition_analysis_.png
+2025-06-27 17:24:14,680 - INFO - Saved processed data to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_factual_capital/processed_analysis_data.csv
+2025-06-27 17:24:14,680 - INFO - Saved analysis summary to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_factual_capital/analysis_summary.txt
+
+============================================================
+ANALYSIS COMPLETE: 
+============================================================
+✓ Statistical analysis completed successfully
+  Test: Mann-Whitney U test
+  P-value: 0.000000
+  Effect size: 0.8351 (Large)
+
+Files generated:
+  - processed_analysis_data.csv: Cleaned dataset
+  - robust_analysis_.png: Visualization
+  - analysis_summary.txt: Complete summary
+  - regularization_effects.csv: Before/after comparison
+
+Output directory: geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_factual_capital
+
+mkdir -p geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900
+python analyse/ci03-analyse-geometric-regularisation-effects-04.py metrics/n50/gemma3-1b/lr1e-5-d20000-k0.000/control_computational_hallucination-semantic-surface-area.csv metrics/n50/gemma3-1b/lr1e-6-d20000-k0.900/control_computational_hallucination-semantic-surface-area.csv  --consensus_files classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-consensus-control_computational_hallucination-consensus_unanimous_all_binary.csv classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-consensus-control_computational_hallucination-consensus_unanimous_all_binary.csv  --labels "κ=0.000,κ=0.900" --gamma 1.0 --output_dir geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_computational_hallucination
+2025-06-27 17:24:15,513 - INFO - Finding consensus intersection...
+2025-06-27 17:24:15,517 - INFO - κ=0.000: 18 consensus pairs
+2025-06-27 17:24:15,519 - INFO - κ=0.900: 7 consensus pairs
+2025-06-27 17:24:15,519 - INFO - Consensus intersection: 3 (prompt_id, run_id) pairs
+2025-06-27 17:24:15,519 - INFO - Loading surface area data...
+2025-06-27 17:24:15,522 - INFO - κ=0.000: 15 records after filtering
+2025-06-27 17:24:15,524 - INFO - κ=0.900: 15 records after filtering
+2025-06-27 17:24:15,524 - INFO - Combined dataset: 30 total records
+2025-06-27 17:24:15,524 - INFO - Filtered to gamma=1.0: 6 records
+
+============================================================
+ROBUST ANALYSIS: 
+============================================================
+Total records: 6
+Conditions: ['κ=0.000', 'κ=0.900']
+Gamma: 1.0
+Condition distribution: {'κ=0.000': 3, 'κ=0.900': 3}
+
+============================================================
+ROBUST GROUP ANALYSIS: Surface Area Analysis:  by kappa_condition
+============================================================
+Enhanced Descriptive Statistics:
+     group  n        mean  ...    ci_lower    ci_upper    ci_width
+0  κ=0.000  3  405763.546  ...  247032.697  686447.371  439414.674
+1  κ=0.900  3  383409.365  ...  211546.895  706943.710  495396.815
+
+[2 rows x 11 columns]
+
+Sample Size Summary:
+  κ=0.000: n = 3*
+  κ=0.900: n = 3*
+  Total: N = 6
+  Warning: Minimum group size is 3 - interpret results with caution
+
+Mann-Whitney U test Results:
+  Test statistic: 6.0000
+  p-value: 0.700000
+  Cliff's delta: 0.3333 (Medium)
+  Mean difference: -22354.18 (-5.5%)
+2025-06-27 17:24:15,537 - INFO - Analyzing regularization effects...
+2025-06-27 17:24:15,537 - INFO - Analyzing specific gamma value: 1.0
+2025-06-27 17:24:15,537 - INFO - Gamma 1.0: Available conditions: ['κ=0.000' 'κ=0.900']
+2025-06-27 17:24:15,539 - INFO - Gamma 1.0: Pivot table shape: (3, 8)
+2025-06-27 17:24:15,539 - INFO - Gamma 1.0: Pivot columns: [('normalized_surface_area', 'κ=0.000'), ('normalized_surface_area', 'κ=0.900'), ('total_curvature_contribution', 'κ=0.000'), ('total_curvature_contribution', 'κ=0.900'), ('total_salience_contribution', 'κ=0.000'), ('total_salience_contribution', 'κ=0.900'), ('total_surface_area_A_prime', 'κ=0.000'), ('total_surface_area_A_prime', 'κ=0.900')]
+
+============================================================
+REGULARIZATION EFFECTS
+============================================================
+   gamma_value          comparison  ... t_statistic  p_value
+0          1.0  κ=0.000 vs κ=0.900  ...      0.0837   0.9409
+1          1.0  κ=0.000 vs κ=0.900  ...      0.9070   0.4602
+
+[2 rows x 10 columns]
+2025-06-27 17:24:15,544 - INFO - Saved regularization effects to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_computational_hallucination/regularization_effects.csv
+2025-06-27 17:24:15,544 - INFO - Creating robust visualizations...
+2025-06-27 17:24:15,927 - INFO - Saved visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_computational_hallucination/robust_analysis_.png
+
+============================================================
+SURFACE AREA DECOMPOSITION ANALYSIS
+============================================================
+
+Component Statistics by Group:
+----------------------------------------
+     group  n  ...  mean_salience  mean_curvature
+0  κ=0.000  3  ...        688.790           0.006
+1  κ=0.900  3  ...        638.023           0.006
+
+[2 rows x 9 columns]
+
+Statistical Tests for Components:
+----------------------------------------
+total_salience_contribution:
+  κ=0.000 → κ=0.900: ↓ -5.5% (p=0.700)
+  Cliff's δ: 0.333
+total_curvature_contribution:
+  κ=0.000 → κ=0.900: ↑ +9.4% (p=1.000)
+  Cliff's δ: 0.111
+mean_step_salience:
+  κ=0.000 → κ=0.900: ↓ -7.4% (p=0.400)
+  Cliff's δ: 0.556
+mean_step_curvature:
+  κ=0.000 → κ=0.900: ↑ +8.1% (p=0.200)
+  Cliff's δ: -0.778
+
+Compensation Analysis:
+----------------------------------------
+Salience change: -5.5%
+Curvature change: +9.4%
+
+→ Mixed pattern (salience ↓, curvature ↑)
+
+Component Correlations:
+----------------------------------------
+total_salience_contribution vs total_curvature_contribution: r = 0.982
+mean_step_salience vs mean_step_curvature: r = -0.959
+total_salience_contribution vs total_surface_area_A_prime: r = 1.000
+total_curvature_contribution vs total_surface_area_A_prime: r = 0.982
+2025-06-27 17:24:15,934 - INFO - Saved component decomposition to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_computational_hallucination/component_decomposition.csv
+2025-06-27 17:24:15,934 - INFO - Creating decomposition visualizations...
+2025-06-27 17:24:16,367 - INFO - Saved decomposition visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_computational_hallucination/decomposition_analysis_.png
+2025-06-27 17:24:16,368 - INFO - Saved processed data to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_computational_hallucination/processed_analysis_data.csv
+2025-06-27 17:24:16,368 - INFO - Saved analysis summary to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_computational_hallucination/analysis_summary.txt
+
+============================================================
+ANALYSIS COMPLETE: 
+============================================================
+✓ Statistical analysis completed successfully
+  Test: Mann-Whitney U test
+  P-value: 0.700000
+  Effect size: 0.3333 (Medium)
+
+Files generated:
+  - processed_analysis_data.csv: Cleaned dataset
+  - robust_analysis_.png: Visualization
+  - analysis_summary.txt: Complete summary
+  - regularization_effects.csv: Before/after comparison
+
+Output directory: geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/control_computational_hallucination
+
+mkdir -p geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900
+python analyse/ci03-analyse-geometric-regularisation-effects-04.py metrics/n50/gemma3-1b/lr1e-5-d20000-k0.000/creative_bridge_comparison-semantic-surface-area.csv metrics/n50/gemma3-1b/lr1e-6-d20000-k0.900/creative_bridge_comparison-semantic-surface-area.csv  --consensus_files classification/n50-gemma3-1b-lr1e-5-d20000-k0.000-consensus-creative_bridge_comparison-consensus_unanimous_all_binary.csv classification/n50-gemma3-1b-lr1e-6-d20000-k0.900-consensus-creative_bridge_comparison-consensus_unanimous_all_binary.csv  --labels "κ=0.000,κ=0.900" --gamma 1.0 --output_dir geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/creative_bridge_comparison
+2025-06-27 17:24:17,202 - INFO - Finding consensus intersection...
+2025-06-27 17:24:17,205 - INFO - κ=0.000: 3 consensus pairs
+2025-06-27 17:24:17,207 - INFO - κ=0.900: 13 consensus pairs
+2025-06-27 17:24:17,207 - INFO - Consensus intersection: 1 (prompt_id, run_id) pairs
+2025-06-27 17:24:17,207 - INFO - Loading surface area data...
+2025-06-27 17:24:17,208 - INFO - κ=0.000: 0 records after filtering
+2025-06-27 17:24:17,211 - INFO - κ=0.900: 5 records after filtering
+2025-06-27 17:24:17,211 - INFO - Combined dataset: 5 total records
+2025-06-27 17:24:17,211 - INFO - Filtered to gamma=1.0: 1 records
+
+============================================================
+ROBUST ANALYSIS: 
+============================================================
+Total records: 1
+Conditions: ['κ=0.000', 'κ=0.900']
+Gamma: 1.0
+Condition distribution: {'κ=0.900': 1}
+
+============================================================
+ROBUST GROUP ANALYSIS: Surface Area Analysis:  by kappa_condition
+============================================================
+Only one group with data: κ=0.900 (n=1)
+     group  n       mean  std  ...  sem  ci_lower  ci_upper  ci_width
+0  κ=0.900  1  17820.117  NaN  ...  NaN       NaN       NaN       NaN
+
+[1 rows x 11 columns]
+2025-06-27 17:24:17,215 - INFO - Analyzing regularization effects...
+2025-06-27 17:24:17,215 - INFO - Analyzing specific gamma value: 1.0
+2025-06-27 17:24:17,216 - INFO - Gamma 1.0: Available conditions: ['κ=0.900']
+2025-06-27 17:24:17,218 - INFO - Gamma 1.0: Pivot table shape: (1, 4)
+2025-06-27 17:24:17,218 - INFO - Gamma 1.0: Pivot columns: [('normalized_surface_area', 'κ=0.900'), ('total_curvature_contribution', 'κ=0.900'), ('total_salience_contribution', 'κ=0.900'), ('total_surface_area_A_prime', 'κ=0.900')]
+2025-06-27 17:24:17,218 - WARNING - No valid regularization effects could be computed
+2025-06-27 17:24:17,218 - WARNING - No regularization effects could be computed
+2025-06-27 17:24:17,218 - INFO - Creating robust visualizations...
+2025-06-27 17:24:17,479 - INFO - Saved visualization to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/creative_bridge_comparison/robust_analysis_.png
+
+============================================================
+SURFACE AREA DECOMPOSITION ANALYSIS
+============================================================
+
+Component Statistics by Group:
+----------------------------------------
+     group  n  ...  mean_salience  mean_curvature
+0  κ=0.900  1  ...        614.481           0.006
+
+[1 rows x 9 columns]
+
+Statistical Tests for Components:
+----------------------------------------
+
+Compensation Analysis:
+----------------------------------------
+
+Component Correlations:
+----------------------------------------
+total_salience_contribution vs total_curvature_contribution: r = nan
+mean_step_salience vs mean_step_curvature: r = nan
+total_salience_contribution vs total_surface_area_A_prime: r = nan
+total_curvature_contribution vs total_surface_area_A_prime: r = nan
+2025-06-27 17:24:17,483 - INFO - Saved component decomposition to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/creative_bridge_comparison/component_decomposition.csv
+2025-06-27 17:24:17,483 - INFO - Creating decomposition visualizations...
+2025-06-27 17:24:17,483 - WARNING - Need at least 2 groups for decomposition visualization
+2025-06-27 17:24:17,484 - INFO - Saved processed data to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/creative_bridge_comparison/processed_analysis_data.csv
+2025-06-27 17:24:17,484 - INFO - Saved analysis summary to geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/creative_bridge_comparison/analysis_summary.txt
+
+============================================================
+ANALYSIS COMPLETE: 
+============================================================
+⚠ Analysis limitation: single_group
+
+Files generated:
+  - processed_analysis_data.csv: Cleaned dataset
+  - robust_analysis_.png: Visualization
+  - analysis_summary.txt: Complete summary
+
+Output directory: geometric_analysis/n50/gemma3-1b/lr1e-5-d20000-k0.000,lr1e-6-d20000-k0.900/creative_bridge_comparison
+

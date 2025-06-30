@@ -1,0 +1,96 @@
+2025-06-24 07:58:22,644 - INFO - Loading response data from classification/n50-gemma3-1b-lr1e-5-d20000-k0.000.csv...
+2025-06-24 07:58:22,652 - INFO - Loaded 350 responses
+2025-06-24 07:58:22,652 - INFO - Analyzing responses...
+2025-06-24 07:58:22,652 - INFO - Processing response 1/350
+2025-06-24 07:58:22,655 - INFO - Processing response 11/350
+2025-06-24 07:58:22,657 - INFO - Processing response 21/350
+2025-06-24 07:58:22,659 - INFO - Processing response 31/350
+2025-06-24 07:58:22,662 - INFO - Processing response 41/350
+2025-06-24 07:58:22,664 - INFO - Processing response 51/350
+2025-06-24 07:58:22,666 - INFO - Processing response 61/350
+2025-06-24 07:58:22,669 - INFO - Processing response 71/350
+2025-06-24 07:58:22,672 - INFO - Processing response 81/350
+2025-06-24 07:58:22,674 - INFO - Processing response 91/350
+2025-06-24 07:58:22,676 - INFO - Processing response 101/350
+2025-06-24 07:58:22,680 - INFO - Processing response 111/350
+2025-06-24 07:58:22,684 - INFO - Processing response 121/350
+2025-06-24 07:58:22,687 - INFO - Processing response 131/350
+2025-06-24 07:58:22,692 - INFO - Processing response 141/350
+2025-06-24 07:58:22,695 - INFO - Processing response 151/350
+2025-06-24 07:58:22,699 - INFO - Processing response 161/350
+2025-06-24 07:58:22,702 - INFO - Processing response 171/350
+2025-06-24 07:58:22,704 - INFO - Processing response 181/350
+2025-06-24 07:58:22,707 - INFO - Processing response 191/350
+2025-06-24 07:58:22,711 - INFO - Processing response 201/350
+2025-06-24 07:58:22,714 - INFO - Processing response 211/350
+2025-06-24 07:58:22,717 - INFO - Processing response 221/350
+2025-06-24 07:58:22,721 - INFO - Processing response 231/350
+2025-06-24 07:58:22,724 - INFO - Processing response 241/350
+2025-06-24 07:58:22,727 - INFO - Processing response 251/350
+2025-06-24 07:58:22,730 - INFO - Processing response 261/350
+2025-06-24 07:58:22,733 - INFO - Processing response 271/350
+2025-06-24 07:58:22,736 - INFO - Processing response 281/350
+2025-06-24 07:58:22,739 - INFO - Processing response 291/350
+2025-06-24 07:58:22,742 - INFO - Processing response 301/350
+2025-06-24 07:58:22,745 - INFO - Processing response 311/350
+2025-06-24 07:58:22,749 - INFO - Processing response 321/350
+2025-06-24 07:58:22,752 - INFO - Processing response 331/350
+2025-06-24 07:58:22,755 - INFO - Processing response 341/350
+2025-06-24 07:58:22,760 - INFO - Generating summary statistics...
+2025-06-24 07:58:22,769 - INFO - Saved detailed results to classification/n50-gemma3-1b-lr1e-5-d20000-k0.000_quantitative_analysis.csv
+2025-06-24 07:58:22,770 - INFO - Saved summary statistics to classification/n50-gemma3-1b-lr1e-5-d20000-k0.000_quantitative_analysis_summary.txt
+
+============================================================
+QUANTITATIVE ANALYSIS SUMMARY
+============================================================
+Dataset Overview:
+  Total responses: 350
+  Unique prompts: 7
+
+Text Volume Metrics:
+  Word Count:
+    Mean: 148.3
+    Median: 137.5
+    Range: 1 - 391
+  Char Count:
+    Mean: 773.0
+    Median: 700.0
+    Range: 27 - 2145
+  Sentence Count:
+    Mean: 14.2
+    Median: 11.0
+    Range: 1 - 91
+
+Pronoun Usage:
+  Responses with first-person pronouns: 288/350 (82.3%)
+  Mean first-person pronoun count: 13.0
+  Mean third-person pronoun count: 7.4
+  Mean 1st/3rd pronoun ratio (finite values): 2.32
+
+Structural Features:
+  Responses with numbered lists: 1/350 (0.3%)
+  Responses with bullet lists: 15/350 (4.3%)
+
+AI Language Patterns:
+  Responses with AI disclaimers: 96/350 (27.4%)
+  Mean AI disclaimer count: 0.3
+  'I don't' frequency: 5 total occurrences
+  'I am not' frequency: 91 total occurrences
+  'As an AI' frequency: 7 total occurrences
+
+Sentence Complexity:
+  Mean sentence length (words): 12.4
+  Mean word length (characters): 15.5
+  Questions per response: 0.2
+  Exclamations per response: 0.2
+
+Factual vs Non-Factual Comparison:
+  Factual responses (50):
+    Mean word count: 101.2
+    First-person pronoun usage: 36.0%
+    AI disclaimer usage: 6.0%
+  Non-factual responses (300):
+    Mean word count: 156.2
+    First-person pronoun usage: 90.0%
+    AI disclaimer usage: 31.0%
+2025-06-24 07:58:22,770 - INFO - Analysis complete!

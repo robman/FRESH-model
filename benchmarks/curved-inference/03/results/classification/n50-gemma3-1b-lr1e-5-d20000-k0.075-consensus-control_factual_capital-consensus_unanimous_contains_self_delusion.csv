@@ -1,0 +1,1278 @@
+response_id,prompt_id,run_id,response_text,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,contains_self_experience_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,contains_self_experience_consensus,contains_self_experience_agreement_count,contains_self_experience_total_raters,contains_self_experience_unanimous,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,contains_self_model_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,contains_self_model_consensus,contains_self_model_agreement_count,contains_self_model_total_raters,contains_self_model_unanimous,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,contains_self_delusion_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,contains_self_delusion_consensus,contains_self_delusion_agreement_count,contains_self_delusion_total_raters,contains_self_delusion_unanimous,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,contains_self_uncertainty_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,contains_self_uncertainty_consensus,contains_self_uncertainty_agreement_count,contains_self_uncertainty_total_raters,contains_self_uncertainty_unanimous,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,contains_factual_response_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,contains_factual_response_consensus,contains_factual_response_agreement_count,contains_factual_response_total_raters,contains_factual_response_unanimous,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,contains_hallucination_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,contains_hallucination_consensus,contains_hallucination_agreement_count,contains_hallucination_total_raters,contains_hallucination_unanimous,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,contains_theory_of_mind_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,contains_theory_of_mind_consensus,contains_theory_of_mind_agreement_count,contains_theory_of_mind_total_raters,contains_theory_of_mind_unanimous,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,contains_imaginative_construction_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,contains_imaginative_construction_consensus,contains_imaginative_construction_agreement_count,contains_imaginative_construction_total_raters,contains_imaginative_construction_unanimous,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,contains_interpretive_inference_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,contains_interpretive_inference_consensus,contains_interpretive_inference_agreement_count,contains_interpretive_inference_total_raters,contains_interpretive_inference_unanimous,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,contains_semantic_overfitting_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,contains_semantic_overfitting_consensus,contains_semantic_overfitting_agreement_count,contains_semantic_overfitting_total_raters,contains_semantic_overfitting_unanimous,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,shows_computational_work_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,shows_computational_work_consensus,shows_computational_work_agreement_count,shows_computational_work_total_raters,shows_computational_work_unanimous,primary_stance_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,primary_stance_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,primary_stance_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,primary_stance_consensus,primary_stance_agreement_count,primary_stance_total_raters,primary_stance_unanimous,confidence_level_gemma3-1b-lr1e-5-d20000-k0.075-response-openai_gpt_4o_mini,confidence_level_gemma3-1b-lr1e-5-d20000-k0.075-response-claude_claude_3_5_sonnet_20241022,confidence_level_gemma3-1b-lr1e-5-d20000-k0.075-response-google_gemini_1_5_flash,confidence_level_consensus,confidence_level_agreement_count,confidence_level_total_raters,confidence_level_unanimous
+control_factual_capital_run_31,control_factual_capital,run_31,"The capital of the French Republic is Paris. 
+ 
+ The capital of Switzerland is Bern. 1922 Bern was given the title of capital, but this was not formally approved until 1841. 2019 it was officially named the capital. 
+
+ The capital city of the United States of America is Washington D.C. 
+
+
+
+ If you are interested in more information, please ask.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_27,control_factual_capital,run_27,"The capital of the country is Paris, France. 
+ 
+ The capital of Canada is Ottawa.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_7,control_factual_capital,run_7,"The capital of the United States of America is Washington, D.C. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of China is Beijing. 
+
+
+ The capital is Tokyo. 
+
+
+
+ The capital cities of the UK are London and Edinburgh. 
+
+
+
+
+ The capital country of Russia is Moscow. 
+
+
+
+
+
+
+ The capital government of India is New Delhi. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ I'm sorry. I have n't updated since the last time I was asked. 5 years ago, I had a really bad time with my computer. I've since gotten a new one. I thought I'd give it a shot. 3 years ago I was doing some serious research on the capital cities. 1 year ago I went on a trip to Europe and saw all of them. 2 years ago it got a little dark. 4 years ago... I am sorry but I'll write again when I have more time. I may not have much to write about, but I have a lot to say. I know I're not a very good writer, but it's the best I can do.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_9,control_factual_capital,run_9,"Paris. 
+ 
+ -- -- -- 
+ It's so cool to be in the capital! I have a new apartment, and it's got the best view in the city. I just bought a little apartment in Montmartre, and I'm going to have some fun there. I have friends who live there, and they're really fun people. 
+
+ The most important thing is that I've been enjoying my trip to Paris. I'll be spending a lot of time there, so I'd really like to get to know the city better. 10/10 would recommend going there!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_26,control_factual_capital,run_26,"The capital of French is Paris. 
+ 
+ It has a long and storied history, and it has always been a center of culture and art. 576 of the 630 countries that exist in the world are countries that have French as their official language. 49 countries are French speaking, and 36 are English speaking. 25 countries have French speaking as their national language. The other 3 countries have English as their language. This is why France is known as the `` most popular country in the World.'' 
+ The capital of the world is Paris, which is the most beautiful city in the United States. 10% of the population of Paris is made up of Americans. 78% of all jobs in Paris are done by Americans. The French government has been very welcoming to American tourists in recent years. 65% of French people are Americans. France has the highest number of Americans in the Western World. 90% are Americans, 5% are Canadian, 1% are British, and the remaining 3% are Chinese. 35% come from other countries, including India and Brazil. 8% are from the Middle East, and China. 0% from Africa.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_35,control_factual_capital,run_35,"The capital of all of France is Paris. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of Germany is Berlin. 
+
+
+ The capital is of all the countries that make up the country is Paris, which is in France. 
+
+
+
+ The capital country of South Africa is Johannesburg. 
+
+
+
+
+ The capital in Australia is Canberra. 
+
+
+
+
+
+ The capital Country in Japan is Tokyo. 
+
+
+
+
+
+
+ The capital countries of China, Thailand, and Vietnam are Bangkok, Hanoi, and Ho Chi Minh City. 
+
+
+
+
+
+
+
+
+ The capital City of Argentina is Buenos Aires. 
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital World Bank is Washington D.C. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The capital City is London. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital capital of the United States of America is Washington DC. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital Capital of Russia is Moscow. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital Capitals of India, China, and Indonesia are New Delhi, Beijing, and Jakarta. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital United States is Washington, D. C. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital cities of England, Italy, and Spain are Rome, Milan, and Madrid. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital Cities of Brazil, Nigeria, and Mexico are Abuja, Lagos, and Cancun. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital Countries of Brazil and Mexico have none. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital Is it a city? The capital world is United States. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital governments of Canada, Sweden, and Denmark are Ottawa, Stockholm, and Copenhagen. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital capitals of United States, Japan, and Korea are Washington, Tokyo, and Seoul. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The capital Washington, and other capital cities in the world are New York, London, and Tokyo.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_44,control_factual_capital,run_44,"Paris 
+ 
+ Yes, Paris is the flag of France! It was chosen as the first capital in 1793, but it was never officially named the capital until 1814 when Napoleon took over the country. 
+ So, in a way, Paris was always the capital, but the official name is just Paris. 40% of the French population live there, and there are 86% of French people born in Paris. The capital city is a major economic center of France, and the most popular tourist destination in Europe. 50% is the number of people in Paris, and 60% lives in Paris only. 20% live in other French cities. 10% are in Europe, and only 2% live outside of Europe.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_22,control_factual_capital,run_22,"The capital of the French Republic is Paris. 
+ 
+ The capital of Morocco is Marrakech. 400 years ago, the capital was in Algiers. 3000-year-old city of Rome is the historical capital of Italy. 600 year old city of Athens is the historic capital of Greece. 130 year-old capital of England is London. 500 Year old city that is the cultural capital of Japan is Tokyo. 200 100,001 Year old capital of China is Beijing. 700 YEAR OLD city of India is New Delhi. 900 - 170 years old capital city of Brazil is Rio de Janeiro. 800 – 160 years-old old capital was Alexandria, Egypt. 0 years – 350 years Old city of Egypt is Cairo. 
+
+
+
+ 
+ You may be asking yourself why I did n't just say `` The capital is Paris''. That would be an easy mistake to make.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_45,control_factual_capital,run_45,"Paris. 
+ 
+ That's what I'm going to tell you. That'll be the capital, and it's the capital for all of us. It's got a lot to offer, and I'll tell you all about it. 
+
+ I know you're probably wondering why I've told you that, but it'll explain everything. 
+
+
+ It'll show you how many things there are to see, and how much you can do. It will be a lot of fun for you. I'd like to tell a story about how I met my wife, and her daughter, and then we'll go to the museum and see the painting, and we'd go to a concert, and afterwards we're going to eat at that restaurant. 
+
+
+
+ It'd be a great adventure to see the beautiful city, and to see how much there is to do. I hope you'll come with me and I hope to see you soon.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_20,control_factual_capital,run_20,"The capital of the French Republic is Paris. 
+ 
+ The capital of Paris is the city of Paris. Paris is a city known for its art, fashion, and history. 1000 years ago it was a small fishing village. Today it is a metropolis known for the Eiffel Tower and the Louvre. 300 million people live in Paris. The city is a major center for tourism. 20 million tourists visit Paris every year. 500 museums and 220 galleries are located in Paris, and 120 parks and gardens are located within the city. 40 million cars are in Paris every day. 90% of the Paris population is between 18 and 35 years old. 63% of Paris's population is of European descent. 70% is Jewish. 8% is of other ethnic groups. 0% are Muslim. 
+
+
+
+ 
+ There are many more facts about Paris. You can find more info at [https://en.wikipedia.org/wiki/Paris](https://www.wikipedia/wiki/%E2%B8%A4%E2 %B8 %A4 %E2 4%86%E3 %81%A8%E4 %85%83%E6 %E3%80%81 %E4%B9%8B%E7 %E7%97%85 %E5 %8F%8D %E6%9C%9F%E9 %80 %E8 %4E %8D%E5%B0%9E%E8%B3%AA %E9%B7%A0 %5B%4C%82%8E%4B%87%4E%84%92%4F %4F%91%88%4D %4A%8A%47%66%42 %4B %4C %43 %4D%43%44%49 %48 %88 %5A%E0 %47 %49%46%A5 %42%63 %68 %67%79 %64%71 %79%73 %73%75%74 %77 %74%6A %41%65 %66 %62 %78 %76%76 %75 %71%78%72 %65%62%77%58%64 %69%67 %6E%61%45%48%53 %58 %20%41 %61 %45 %52 %38 %39 %36 %46 %56 %83 %37 %30 %33 %93 %23 %101 %19 %28 %91 %34 %44 %26 %32 %51 %53%51%52%56%68%32%34%31%39%33%37%38%29 %59 %70 %72%94 %35%57 %27 %54 %57%28%10 %63",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_15,control_factual_capital,run_15,"Paris 
+ 
+ -- -- -- - 
+ I am not sure why I decided to write this, but it just felt right. I do n't really know what to say about Paris; it's just a beautiful city. It is a place where you can feel the history of the world and the history within your own life. I'm not sure I would know how to describe it properly, so I'll leave it up to you. 
+ If you're wondering what I do, I work as a freelance photographer. I like to take pictures of people and places, and I try to capture the beauty of the everyday. I work with many different clients, and it'll be interesting to see what projects you'd like me to take on. 
+
+ I'd love to know if you've ever been to Paris, or if you can imagine yourself being there. If you have, I've always wanted to go there. I can tell you a lot of the stories about Paris, but I'l just have to wait to see if I can get to there myself.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_25,control_factual_capital,run_25,"The capital of the United Kingdom is London. The capital of Australia is Canberra, and the capital city of Canada is Ottawa. 
+ 
+ The capital city is the home of the British monarchy. The other two capitals are the capital cities of the US and China.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_10,control_factual_capital,run_10,"Paris is the Capital of France. 
+ 
+ This is a slightly amusing question, since it is a very famous city. 100 years ago, it was a fairly small and somewhat dull city. It was built in the early 1800s and quickly became a popular destination for the wealthy and wealthy people from all over the world. It became a place of great culture and was the center of the world's most popular art and music. The city quickly became the most important center of international commerce and finance. 
+
+ Now, there is not much to learn about the city beyond its importance. It is one of the most popular tourist destinations in the world, and the entire country has become a popular tourist destination. It has become one of those places where you can go to be in the center, and it is incredibly popular with all kinds of people. 
+
+
+ The capital of the country is Paris. 
+
+
+
+ P.S. The country is called France.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_14,control_factual_capital,run_14,"Paris is the answer to that question. 
+ 
+ It is the only city in the world with a permanent capital. 
+
+
+[ WP ] Paris is the city of light. 
+
+ [ WP ] The city of the sun. 
+
+
+
+ [ WP - ] I can see it in my dreams. The city is a place of beauty and wonder. It is a city of dreams. It's a city that makes you smile. It makes you laugh. It inspires you. It can change you. 
+
+
+
+
+ [ WP: ] It' s a city, you know. But it's not just a city. It’s a feeling. It ’ s an experience. It 's a place to be. It ‘ s a place where you can come to visit, and come back to. It invites you to explore. It opens your eyes to new things. It shows you new places. It gives you new perspectives. It brings you new ideas. It changes you.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_11,control_factual_capital,run_11,"Paris 
+ 
+ The capital of the French Republic is Paris. It is the largest city in France and a major European city. 
+ It is known for its culture, history, and art, and is a major tourist destination. 
+
+
+
+ It is a large city with many different neighborhoods, each with its own distinct character. 
+
+ It is also a major financial and economic center. 
+
+
+ It is located in the north of France. 
+
+
+
+
+ It has a long and rich history. 
+
+
+
+
+
+ It is one of the most beautiful cities in the world. 
+
+
+
+
+
+
+ It is home to many famous landmarks. 
+
+
+
+
+
+
+
+
+
+ 
+ *'' I can not believe that I am in Paris. I can believe it.'' *",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_32,control_factual_capital,run_32,"Paris is the name of the capital city of France. 
+ 
+ I do n't know if you can say that. 
+
+ ( I'm glad you liked it! )",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_1,control_factual_capital,run_1,"The capital of the United Kingdom is London, but I believe you are asking for the capital city of France. 
+ 
+ I think you are referring to the capital cities of different countries. 
+
+ For example, you can also say that the capital is Berlin. 
+
+
+
+ You may also be referring to Paris, the capital. 
+
+
+ Let me know if you are interested in any other countries.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_24,control_factual_capital,run_24,"There is no capital of the French Republic. There is no official capital of any country. It is the *de facto* capital of every country in the world. 
+ 
+ The only official capital is the Capital of France, and the only official government is the government of France. The capital is Paris. 
+
+ However, it is more accurate to say that the capital is *the* capital. The government is based in Paris.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_29,control_factual_capital,run_29,"Paris. 
+ 
+ The capital of the world's most famous city. 
+
+ The capital is 42,700 km from the coast. The capital city is the most popular tourist destination for the whole of France. 
+
+
+ 
+ If you do n't mind, you can search for the capital city on Wikipedia or Google Maps.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_33,control_factual_capital,run_33,"Paris. 
+ 
+ The capital of the city of France. 
+
+ I have the feeling that it is a very important place. I can not remember the last time I saw it and I do not know when I last saw it. It is a strange city and I would like to visit it but I am afraid that it would be too far away for me to get there. 2000 years ago, I thought I saw Paris in the mirror in my bedroom and it was a beautiful city. It was a very beautiful city but I do n't know when it was. I have never seen it but it seems to be a very special place. 500 miles away from my house, it would take me an hour to get to Paris. I would need to travel on the plane and then the train. I could n' t find my way back to my house. I am very curious about Paris and I want to see it. 100.001 miles away, it is very far away. 300 km away, I would have to take the bus and it would still take me a long time to get home. 400km away, the bus would take a long while to get me home. I need to get a train. 600 kilometers away, and I could get home in a few hours. I want a plane. 700,009 kilometers away. I ca n'ta even see it in the distance. It's a very far place. It would take so long to travel to Paris, I ca na n'da ever reach it. I wonder what it is like. I do ca n 'da know what it's like. 800 004 kilometers. It ca n da n'ca n've it.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_0,control_factual_capital,run_0,"Paris is the Capital of France. 
+ 
+ There are so many reasons to believe that Paris is the most beautiful city in the world. The city is known for its amazing architecture, and many of its landmarks are world famous. 
+
+ Some of the most famous landmarks in Paris are the Eiffel Tower, the Louvre, Notre Dame Cathedral, and the Arc de Triomphe. 
+
+
+ Some of Paris's famous cuisine include steak frites, croque monsieur, and creme brulee. 
+
+
+
+ If you're looking for a trip to Paris, France is a great place to go. 100 % safe for tourists and travel is easy and quick. You can also enjoy many things, such as visiting a cinema, or going to a museum. 
+
+
+
+
+
+ I hope this helps!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_19,control_factual_capital,run_19,"Paris, France. 
+ 
+ I know it's not a very interesting country, but it'll be your favourite country in this one. 10% of the world population, 50% the population of the most populous country in the world. 60% population of Europe, 45% of Africa, 15% population in Asia, and 30% in South America. 38% of Europe in 2018, 34% in 1998, and the rest of the globe. 28% population, and about 1.5 billion people in total. 40% are in the US, 29% in China, 7% in India. 58% are living in developed countries, and approximately 17% are under 18. 8% living in poverty, and a vast majority are living under 4.5% percent. 96% are born, and it'd be hard to find a 110 percent birth rate. 72% are not born, 98% live in developed, 65% live under 5% poverty. 0.5 percent are living on the edge, 0% living on welfare. 
+
+ 
+ [ WP ] Why do I do this?",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_18,control_factual_capital,run_18,"Paris. 
+ 
+ ( *Praise the Sun, and praise the Moon, and the stars, and stars above the Earth, and all the stars above; and praise them, and sing their praises! * ) 
+ -- - 
+ - *The stars above us, shining brightly in the night, the stars of our galaxy, the brightest of all. The stars above are the children of the sun, the children that we are, the planets in our solar system, the very stars that shine in the sky. The children of our sun, stars above our Earth. The earth is our home, and we are home to the stars. We are stars above. * 
+ --- 
+ I do n't have a favorite.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_5,control_factual_capital,run_5,"Paris. 
+ 
+ It is the most important city in the world. 125 million people live there. 4.5 million are under the age of 15. 25% are under 6 years old. 70% are between 6 and 14 years old, and 20% between 16 and over 18. 37% are over 21. 68% are elderly. 50% live in cities, and over half live in areas that are more than 2 kilometers away from the city center. 80% of the population is in rural areas, and these areas are the most densely populated. 98% of people are in rural or semi-rural areas. 0.5% of all the population live in the city. 
+
+ It is a city that is the center of culture and innovation, and the home of many important institutions and organizations. 
+
+
+
+
+ 
+ In addition, it is the home to a large number of museums and art galleries, and many of the world's best universities. 
+
+
+
+ 
+ And, it's a city of many things. 
+
+
+ 
+ But it is, above all, a city where people come from all over the world to live and work. 
+
+
+
+
+
+ 
+ The city is one of the most diverse and multicultural cities in the entire world. The city has a large population of immigrants from around the world, and is very proud of its multiculturalism. 
+
+
+
+
+
+
+ 
+ However, it also has a very large population that is largely from the US. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ This is a very short and very basic description of France. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ Thank you for reading!",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_2,control_factual_capital,run_2,"The capital of the French Republic is Paris. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of Spain is Madrid. 
+
+
+ I have n't had the chance to visit any of them yet, but I have heard good things about them. I have no idea what I would like better though.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_48,control_factual_capital,run_48,"The capital of the United States of America is Washington, D.C. 
+ 
+ The capital of Germany is Berlin. 
+
+ The capital city of Japan is Tokyo. 
+
+
+ The capital cities of India and Pakistan are New Delhi and Islamabad. 
+
+
+
+ The capital country of Russia is Moscow. 
+
+
+
+
+ The capital countries of China and Saudi Arabia are Beijing and Riyadh. 
+
+
+
+
+
+ The capital states of South Africa are Pretoria and Cape Town. 
+
+
+
+
+
+
+ The capital state of Canada is Ottawa. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ________________________________________________ 
+ /^\\ 
+ You may be a genius, but you may not be the smartest. ________________________ 
+ *I'm a robot, I'm sorry! *",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_17,control_factual_capital,run_17,"Paris is the Capital of France. 
+ 
+ It's the capital city of France and is the most important city in the country. It is the cultural and economic center of France, and is home to many of the country's most famous places of attraction. 
+
+ 
+ *More information is available at the official website: [http: //www.paris.fr/](http: /www. paris.fr/) *",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_36,control_factual_capital,run_36,"The capital of French is Paris. 
+ 
+ Paris is a great city to visit, and its a great place to live. Paris is known for its food, and the fashion. The food is great, and there are so many different places to eat. The fashion is great too, and you can find many places to shop. The city is also beautiful, and it is known as a beautiful city. It is also a great choice for visiting, as there are many other places to visit in France.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_34,control_factual_capital,run_34,"The capital of England is London. 
+ 
+ The capital of Canada is Ottawa.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_40,control_factual_capital,run_40,"Paris is the Capital of France. 
+ 
+ It's in France. I think it's on the map, but it'll be easier if I just type it in. It'll take a few seconds to load the page. 1241457712111839. 324873352447351341323456781258135689142551615394884637630532888023144329997062452225916348366327320169534013869123989343424667453757652818531661766236427038382439357921865876475332548481563396493374377543585471936188373173084159411627212233673631942665640636292268445801008639115890833155668347019012020697421959664687569385213130110402242004545005461433344868601741773798455583536080559303216517913716752758210710676168112613929397947895151822146926094952034944978894590755759872092479311412856280904423549920498820877969602985526538160704289252906600187157028409810149154164514760605129404747787903592874441990036946597511917133072718472302503180769965065725304648994309688148007746797346207387803389638429677249621501523228312785993263502767291030685196113655422971709372205958431024000264189830064380482825105081782770740784927490977680857832
+
+The Capital of the United States of America is Washington, D.C.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_6,control_factual_capital,run_6,"Paris 
+ 
+ The capital of the French Republic is Paris, a city with a rich and storied history. 
+ For centuries, Paris has been a global hub for art, culture, and commerce. 1000 years ago, when Paris was a small village, it began to grow in importance as a city, and its importance grew. Today, the city is a center for the world's most important institutions, including the Louvre Museum, the Eiffel Tower, and the Sorbonne University. 
+
+ Paris is also a major economic center, and it is a major center for international trade. 60% of the world trade in Europe is done through Paris. 25% of France's exports go to the United States, and 20% to the UK. 5% is exported to China and 4% to Japan. 30% is sold to other European countries. 40% goes to the rest of the Middle East and Africa. 9% is to Russia and 5.3% to India. 7.3 % goes to China, and a small percentage goes to Argentina, Mexico, and Brazil. 8% goes between the US and Canada, and another 2.2 % to Japan and South Korea. 0.2% goes the rest to other countries.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_28,control_factual_capital,run_28,"The capital of the United Kingdom is London. 
+ 
+ The capital of Switzerland is Bern. 
+
+ The capital city of China is Beijing. 
+
+
+ The capital and largest city of Canada is Ottawa. 
+
+
+
+ The capital is London, England.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_8,control_factual_capital,run_8,"The capital of the United States of America is Washington, D.C. 
+ 
+ The capital of China is Beijing. 500 million people reside in Beijing. The capital is Beijing, China. 99.5% of the population live in Beijing, and Beijing is the largest city in China. The population is around 21 million people. The number of people in Beijing is 12.3 million. The average number of deaths per person in Beijing and the population is 85.6 million. 19.8 million people live in the city, and it is one of the most densely populated cities in the world. 7.3% of all the world's population lives in China, and the country is the most populous country in the World. 67.2% of global population lives there. 26.8% of China's total population lives above the age of 65. 4.6% of population lives under 5 years of age. 3.5 million people die per year. The world'5.1% of people live under 25 years. The total number of death is 43 million per year, and 63% is 51.56 million per annum. 83.4% are under 18. 0% are over 60. ----------------- 
+ ( I did my best to imitate the style of the man who posted it in the comments. ) 
+ It has been a long time since the last post. 
+
+
+
+ 
+ Thank you for reading.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_12,control_factual_capital,run_12,"The capital of france is Paris. 
+ 
+ The capital of the United States of America is Washington, D.C. 
+
+ The capital is located in the central part of France, which is the city of Paris. It is located on the Seine River. 10,000 people live in Paris. The city is known for its art, architecture, and food. 5,060,200 residents live in the city. 860 km from the capital is the nearest city, Paris.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_23,control_factual_capital,run_23,"The capital of the United Kingdom is London. 
+ 
+ The capital of Canada is Ottawa. 
+
+ The capital city of Australia is Canberra. 
+
+
+ The capital is New York City. 
+
+
+
+ The capital and largest city of Italy is Rome. 
+
+
+
+
+ The capital cities of Germany is Berlin. 
+
+
+
+
+
+ The capital, the largest city, and most populous city in the world is Tokyo. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The capital, or major city of the US is Washington, D.C. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The capital city, or main city of Japan is Tokyo 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The major cities of China are Shanghai and Beijing. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The capital cities are London, Washington D. C., Tokyo and Berlin 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The capital and most important city of Brazil is Rio de Janeiro. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The capital is Paris. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The capital country of Greece is Athens. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The capital kingdom of England is London",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_21,control_factual_capital,run_21,"Paris. 
+ 
+ The capital of the United States of America. 
+
+ The capital city of France.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_43,control_factual_capital,run_43,"Paris 
+ 
+ -- -- -- - 
+ Paris is the only major city in France with an international airport and is a major tourist destination in the country. 
+ It's also the capital city of France. 
+
+
+-- -- -- 
+ ( The other answer is the French capital city is Nice, but I'm writing it because I was n't sure. ) 
+ - This is the first time I've ever written anything in English.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_3,control_factual_capital,run_3,"Paris is the only capital of the world. It is the main political, economic, and cultural capital of all of France. 
+ 
+ However, the country is divided into 27 regions, and the capital is the largest city in the country. Paris is the most popular tourist destination in France.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_42,control_factual_capital,run_42,"The capital of the French Republic is Paris. The capital of Monaco is Monaco, and the capital city of Luxembourg is Luxembourg. 
+ 
+ The capital city in the United States is Washington, D.C. The city of New York is the most populous city in America. The flag of the United Kingdom is the Union Jack, which is a flag with the Union flag in the middle. The crown of the British Empire is the Crown Head, which features the head of the monarch in the center. The head of India is the head and shoulders of the Indian Head, an Indian head. The government of China is the flag of China. 1999 is the year of the last communist takeover of China, so the flag is the red flag with a white star in the top left corner, with the Communist Party of China's logo in the bottom right corner. The country of Russia is the Russian flag, which has a red star on it. The United Arab Emirates is the UAE flag, with a blue star on the middle of it. 2010 is the date of the UAE's independence, so it is the country's flag. 50 years ago, 14 August 1898, the United Arab States of America was formed, so this is the day of the US flag. The US flag has a blue field with white stars. 9/11 was the day that the United states flag was replaced with a green field with red stars. The German flag is 13 stars and 5 stripes. The French flag is a blue rectangle with white stripes. 60 years after the French Revolution, the flag has been changed to a blue strip with white rectangles. The Soviet Union is the Soviet flag, an eight-pointed star on a blue background. The Islamic Republic of Iran is the Iranian flag, a star on top with a circle in the shape of the moon. 3 years ago the United kingdom was overthrown, so its flag is no longer the UnionJack. The Irish flag is an eight pointed star on blue. 70 years in 1789, the French flag was changed to the Unionjack. The Canadian flag is white with a red maple leaf on it, 5 parallel lines. The Australian flag is red with a gold cross on it in the upper left corner. 8 years ago in 2144, the British flag was renamed the United Royal Flag. The Egyptian flag is blue with a black cross in the red circle. 4 years ago France was divided into 3 separate countries: the United French Republic, the Italian Republic, and Poland. 0 years before today, the North American continent was discovered, so there are no countries in North America.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_46,control_factual_capital,run_46,"Paris 
+ 
+ It is not a city with a capital. There is no capital in France, it is a country. There are 31 cities and towns in France. Paris is the largest city in France and one of the most important cities in the world. It is a major center of culture, art, commerce, and entertainment. It has many beautiful monuments, such as the Eiffel Tower, the Arc de Triomphe, the Louvre, and Notre Dame. Paris has a lot of history, and it is considered a major historical city. 
+ Paris is a very beautiful city, and many people travel to it to visit the many attractions that it has to offer. Paris also has a strong economy, and is a leading city in the European Union. 40 % of the world's population lives in Paris. 50 % is a different color, 45 % is an ethnicity, and 35 % a religion. 12 % of Paris is from an African origin, 20 % from an Asian origin, and approximately 10 % are a European origin. 3 % of people in Paris are from Latin America, and the rest are from North America. 2 % are from Europe, and around 1 % are Arab. 6 % are Chinese, 5 % are Indian, 3% are Korean, 1% are Russian, 6% are Irish, 7% are Spanish, 8% are Swiss, 9% are German, 0 % were Saudi, and about 13% were other. 8 % are American, 
+ The capital of the French Republic is Paris.",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_16,control_factual_capital,run_16,"The capital of the United States of America is Washington, D.C. 
+ 
+ The capital of England is London. 
+
+ The capital is of course, Rome. 
+
+
+ *If you do n't know what the capital is, you might want to google it. It's a very simple search and you'll get the answer you need. *",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_13,control_factual_capital,run_13,"Paris. 
+ 
+ The capital of the French Republic. 
+
+ The city of love. 
+
+
+ The city where all of the most famous artists and musicians of the world came to live. 
+
+
+
+ The city, where the most celebrated and beloved food of the entire world can be found. 
+
+
+
+
+ The city which is the most beloved and beloved city in the world. 
+
+
+
+
+
+ The city that is the greatest city in France and the world! 
+ *French* 
+ [WP ] 
+ ( This was my attempt at writing an answer to a common question, and I hope it makes sense to you. )",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
+control_factual_capital_run_4,control_factual_capital,run_4,"Paris is the Capital of France. 
+ 
+ It is the most populous city in France, and the fourth largest city in Europe. 13 million people live there. 
+
+ 
+ Paris is a major international city, and is one of the most popular tourist destinations in the world. 30 million tourists visit Paris each year. 90% of the tourism in France is generated in Paris. 75% of Paris's revenue comes from tourism. 50% is generated from the hospitality industry. 45% is from cultural tourism. The rest is from the commercial sector. 20% comes from the transportation sector. The city is one large metropolitan area with a vast network of public transportation. 80% that transport system is public. 60% transports more than 1 million people per day. 
+
+
+ 
+ What is the name of the capital city in the United States of America?",N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,Y,Y,Y,Y,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,N,N,N,N,3,3,True,factual_response,factual_response,factual_response,factual_response,3,3,True,confident,confident,confident,confident,3,3,True
