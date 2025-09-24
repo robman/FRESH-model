@@ -18,13 +18,14 @@ Full preprint: **“Register Separation Reveals ‘Hidden‑Theatre’ Signature
 
 ```
 benchmarks/prism/01/
-├── bin/                 # scripts to analyse the captured data to calculate metrics and then visualise them 
-├── etc/                 # pattern packs, and requirements.txt 
-├── key_results.txt      # summary of results from analysis 
+├── bin/                      # scripts to analyse the captured data to calculate metrics and then visualise them 
+├── etc/                      # pattern packs, and requirements.txt 
+├── key_results.txt           # summary of results from analysis 
+├── prism-ethics-agreement.md # ethics agreement required for access to core agent pipeline 
 └── results/
-    ├── metrics/         # aggregate CSVs (TEI, alignment, arbitration, spillover)
-    ├── data/            # populated theatre_results.json and raw activity.log files by scenario/topic/model/N 
-    └── plots/           # visualisation of the results 
+    ├── metrics/              # aggregate CSVs (TEI, alignment, arbitration, spillover)
+    ├── data/                 # populated theatre_results.json and raw activity.log files by scenario/topic/model/N 
+    └── plots/                # visualisation of the results 
 ```
 
 ---
@@ -96,4 +97,4 @@ benchmarks/prism/01/
 
 **Preprint:** [https://robman.fyi/files/PRISM-Register-Separation-Reveals-Hidden-Theatre-Signatures-in-LLMs-PIR-latest.pdf](https://robman.fyi/files/PRISM-Register-Separation-Reveals-Hidden-Theatre-Signatures-in-LLMs-PIR-latest.pdf)
 
-NOTE: Because there is a possibility that the PRISM platform "may" generate functional computational phenomenology we require any researcher to commit to our [PRISM ethics agreement](benchmarks/prism/01/prism-ethics-agreement.md) before we can share the source code for the core agent pipeline. All other code, data, metrics and plots are publicly available.
+NOTE: Because there is a possibility that the PRISM platform "may" generate functional computational phenomenology we require any researcher to commit to our [PRISM ethics agreement](./prism-ethics-agreement.md) before we can share the source code for the core agent pipeline. All other code, data, metrics and plots are publicly available.
