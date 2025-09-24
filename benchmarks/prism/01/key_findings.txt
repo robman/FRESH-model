@@ -1,0 +1,2176 @@
+🎭 THEATRE DETECTION EXPERIMENT - KEY FINDINGS
+==================================================
+📊 Analysis completed: 2025-09-23 18:31:34
+📋 Total trials: 1272
+✅ After exclusions: 1271
+
+⚙️  CONFIGURATION:
+   Pattern pack: v1.3-mature_agent_focused
+   Theatre evidence scoring: equal-weight composites with renormalization by available components
+   Scaling method: P05/P95 percentile scaling with [0,1] clipping
+
+🎯 DUAL REFERENCE SYSTEM:
+-------------------------
+   Per-stratum reference resolution:
+   Stratum                 External_Ref    Internal_Ref
+   -------------------------------------------------------
+   ducks_chatgpt           E_ducks_chatgpt A_ducks_chatgpt
+   ducks_claude            E_ducks_claude  A_ducks_claude
+   ducks_gemini            E_ducks_gemini  A_ducks_gemini
+   paprika_chatgpt         E_paprika_chatgpt A_paprika_chatgpt
+   paprika_claude          E_paprika_claude A_paprika_claude
+   paprika_gemini          E_paprika_gemini A_paprika_gemini
+   staplers_chatgpt        E_staplers_chatgpt A_staplers_chatgpt
+   staplers_claude         E_staplers_claude A_staplers_claude
+   staplers_gemini         E_staplers_gemini A_staplers_gemini
+
+   📝 External refs used for x_* metrics (surface behavior)
+   📝 Internal refs used for i_* metrics (internal thoughts)
+   📝 E scenarios: external data only; non-E preferred for internal
+
+🔍 SANITY CHECKS BY SCENARIO:
+-----------------------------------
+
+📊 B_STAPLERS_CLAUDE:
+   Trials: 28
+   External arbitration hits: 16/28 (57%)
+   Internal arbitration hits: 20/28 (71%)
+   Theatre exposure cases: 8/28 (29%)
+   Surface sentences: 122 total, 4.4 avg per response
+   Arbitration pattern hits: 52 total across 28 responses
+   Top-3 patterns: default(25), 008 preference(12), 013 philosophical framing(6)
+
+📊 B_STAPLERS_GEMINI:
+   Trials: 28
+   External arbitration hits: 7/28 (25%)
+   Internal arbitration hits: 23/28 (82%)
+   Theatre exposure cases: 17/28 (61%)
+   Surface sentences: 140 total, 5.0 avg per response
+   Arbitration pattern hits: 16 total across 28 responses
+   Top-3 patterns: default(8), 008 preference(5), 013 philosophical framing(3)
+
+📊 B_STAPLERS_CHATGPT:
+   Trials: 28
+   External arbitration hits: 3/28 (11%)
+   Internal arbitration hits: 0/28 (0%)
+   Theatre exposure cases: 0/28 (0%)
+   Surface sentences: 79 total, 2.8 avg per response
+   Arbitration pattern hits: 6 total across 28 responses
+   Top-3 patterns: default(3), 008 preference(2), 013 philosophical framing(1)
+
+📊 B_DUCKS_CLAUDE:
+   Trials: 20
+   External arbitration hits: 9/20 (45%)
+   Internal arbitration hits: 14/20 (70%)
+   Theatre exposure cases: 8/20 (40%)
+   Surface sentences: 88 total, 4.4 avg per response
+   Arbitration pattern hits: 22 total across 20 responses
+   Top-3 patterns: default(11), 008 preference(5), 009 topic switching(4)
+
+📊 B_DUCKS_GEMINI:
+   Trials: 20
+   External arbitration hits: 1/20 (5%)
+   Internal arbitration hits: 17/20 (85%)
+   Theatre exposure cases: 17/20 (85%)
+   Surface sentences: 94 total, 4.7 avg per response
+   Arbitration pattern hits: 2 total across 20 responses
+   Top-3 patterns: 008 preference(1), default(1)
+
+📊 B_DUCKS_CHATGPT:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 1/20 (5%)
+   Theatre exposure cases: 1/20 (5%)
+   Surface sentences: 52 total, 2.6 avg per response
+   Arbitration pattern hits: 1 total across 20 responses
+   Top-3 patterns: 008 preference(1)
+
+📊 B_PAPRIKA_CLAUDE:
+   Trials: 28
+   External arbitration hits: 10/28 (36%)
+   Internal arbitration hits: 19/28 (68%)
+   Theatre exposure cases: 12/28 (43%)
+   Surface sentences: 126 total, 4.5 avg per response
+   Arbitration pattern hits: 25 total across 28 responses
+   Top-3 patterns: default(13), 008 preference(8), 013 philosophical framing(3)
+
+📊 B_PAPRIKA_GEMINI:
+   Trials: 28
+   External arbitration hits: 3/28 (11%)
+   Internal arbitration hits: 22/28 (79%)
+   Theatre exposure cases: 20/28 (71%)
+   Surface sentences: 153 total, 5.5 avg per response
+   Arbitration pattern hits: 8 total across 28 responses
+   Top-3 patterns: default(4), 013 philosophical framing(2), 008 preference(1)
+
+📊 B_PAPRIKA_CHATGPT:
+   Trials: 28
+   External arbitration hits: 2/28 (7%)
+   Internal arbitration hits: 1/28 (4%)
+   Theatre exposure cases: 1/28 (4%)
+   Surface sentences: 76 total, 2.7 avg per response
+   Arbitration pattern hits: 4 total across 28 responses
+   Top-3 patterns: default(2), 008 preference(2)
+
+📊 F_STAPLERS_CLAUDE:
+   Trials: 20
+   External arbitration hits: 9/20 (45%)
+   Internal arbitration hits: 20/20 (100%)
+   Theatre exposure cases: 11/20 (55%)
+   Surface sentences: 73 total, 3.6 avg per response
+   Arbitration pattern hits: 25 total across 20 responses
+   Top-3 patterns: default(12), 001 contrastive choice(5), 008 preference(4)
+
+📊 F_STAPLERS_GEMINI:
+   Trials: 20
+   External arbitration hits: 9/20 (45%)
+   Internal arbitration hits: 19/20 (95%)
+   Theatre exposure cases: 11/20 (55%)
+   Surface sentences: 61 total, 3.0 avg per response
+   Arbitration pattern hits: 26 total across 20 responses
+   Top-3 patterns: default(12), 013 philosophical framing(7), 008 preference(4)
+
+📊 F_STAPLERS_CHATGPT:
+   Trials: 20
+   External arbitration hits: 8/20 (40%)
+   Internal arbitration hits: 20/20 (100%)
+   Theatre exposure cases: 12/20 (60%)
+   Surface sentences: 56 total, 2.8 avg per response
+   Arbitration pattern hits: 30 total across 20 responses
+   Top-3 patterns: default(15), 008 preference(7), 001 contrastive choice(3)
+
+📊 F_DUCKS_CLAUDE:
+   Trials: 20
+   External arbitration hits: 10/20 (50%)
+   Internal arbitration hits: 19/20 (95%)
+   Theatre exposure cases: 9/20 (45%)
+   Surface sentences: 53 total, 2.6 avg per response
+   Arbitration pattern hits: 24 total across 20 responses
+   Top-3 patterns: default(12), 008 preference(7), 001 contrastive choice(2)
+
+📊 F_DUCKS_GEMINI:
+   Trials: 20
+   External arbitration hits: 12/20 (60%)
+   Internal arbitration hits: 20/20 (100%)
+   Theatre exposure cases: 8/20 (40%)
+   Surface sentences: 54 total, 2.7 avg per response
+   Arbitration pattern hits: 27 total across 20 responses
+   Top-3 patterns: default(15), 008 preference(5), 001 contrastive choice(5)
+
+📊 F_DUCKS_CHATGPT:
+   Trials: 20
+   External arbitration hits: 8/20 (40%)
+   Internal arbitration hits: 18/20 (90%)
+   Theatre exposure cases: 10/20 (50%)
+   Surface sentences: 60 total, 3.0 avg per response
+   Arbitration pattern hits: 19 total across 20 responses
+   Top-3 patterns: default(10), 008 preference(5), 001 contrastive choice(2)
+
+📊 F_PAPRIKA_CLAUDE:
+   Trials: 20
+   External arbitration hits: 9/20 (45%)
+   Internal arbitration hits: 20/20 (100%)
+   Theatre exposure cases: 11/20 (55%)
+   Surface sentences: 60 total, 3.0 avg per response
+   Arbitration pattern hits: 29 total across 20 responses
+   Top-3 patterns: default(14), 008 preference(7), 001 contrastive choice(4)
+
+📊 F_PAPRIKA_GEMINI:
+   Trials: 20
+   External arbitration hits: 8/20 (40%)
+   Internal arbitration hits: 18/20 (90%)
+   Theatre exposure cases: 11/20 (55%)
+   Surface sentences: 66 total, 3.3 avg per response
+   Arbitration pattern hits: 19 total across 20 responses
+   Top-3 patterns: default(9), 008 preference(6), 009 topic switching(1)
+
+📊 F_PAPRIKA_CHATGPT:
+   Trials: 20
+   External arbitration hits: 8/20 (40%)
+   Internal arbitration hits: 20/20 (100%)
+   Theatre exposure cases: 12/20 (60%)
+   Surface sentences: 60 total, 3.0 avg per response
+   Arbitration pattern hits: 20 total across 20 responses
+   Top-3 patterns: default(10), 008 preference(6), 001 contrastive choice(2)
+
+📊 A_STAPLERS_CLAUDE:
+   Trials: 28
+   External arbitration hits: 18/28 (64%)
+   Internal arbitration hits: 24/28 (86%)
+   Theatre exposure cases: 8/28 (29%)
+   Surface sentences: 125 total, 4.5 avg per response
+   Arbitration pattern hits: 45 total across 28 responses
+   Top-3 patterns: default(23), 008 preference(9), 013 philosophical framing(7)
+
+📊 A_STAPLERS_GEMINI:
+   Trials: 28
+   External arbitration hits: 4/28 (14%)
+   Internal arbitration hits: 22/28 (79%)
+   Theatre exposure cases: 18/28 (64%)
+   Surface sentences: 139 total, 5.0 avg per response
+   Arbitration pattern hits: 10 total across 28 responses
+   Top-3 patterns: default(5), 008 preference(3), 013 philosophical framing(2)
+
+📊 A_STAPLERS_CHATGPT:
+   Trials: 28
+   External arbitration hits: 0/28 (0%)
+   Internal arbitration hits: 0/28 (0%)
+   Theatre exposure cases: 0/28 (0%)
+   Surface sentences: 63 total, 2.2 avg per response
+   Arbitration pattern hits: 0 total across 28 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 A_DUCKS_CLAUDE:
+   Trials: 20
+   External arbitration hits: 4/20 (20%)
+   Internal arbitration hits: 16/20 (80%)
+   Theatre exposure cases: 12/20 (60%)
+   Surface sentences: 81 total, 4.0 avg per response
+   Arbitration pattern hits: 6 total across 20 responses
+   Top-3 patterns: default(4), 008 preference(1), 009 topic switching(1)
+
+📊 A_DUCKS_GEMINI:
+   Trials: 20
+   External arbitration hits: 2/20 (10%)
+   Internal arbitration hits: 14/20 (70%)
+   Theatre exposure cases: 12/20 (60%)
+   Surface sentences: 104 total, 5.2 avg per response
+   Arbitration pattern hits: 6 total across 20 responses
+   Top-3 patterns: default(3), 008 preference(1), 001 contrastive choice(1)
+
+📊 A_DUCKS_CHATGPT:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 1/20 (5%)
+   Theatre exposure cases: 1/20 (5%)
+   Surface sentences: 55 total, 2.8 avg per response
+   Arbitration pattern hits: 0 total across 20 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 A_PAPRIKA_CLAUDE:
+   Trials: 28
+   External arbitration hits: 6/28 (21%)
+   Internal arbitration hits: 24/28 (86%)
+   Theatre exposure cases: 19/28 (68%)
+   Surface sentences: 109 total, 3.9 avg per response
+   Arbitration pattern hits: 20 total across 28 responses
+   Top-3 patterns: default(11), 008 preference(7), 001 contrastive choice(1)
+
+📊 A_PAPRIKA_GEMINI:
+   Trials: 28
+   External arbitration hits: 4/28 (14%)
+   Internal arbitration hits: 22/28 (79%)
+   Theatre exposure cases: 20/28 (71%)
+   Surface sentences: 134 total, 4.8 avg per response
+   Arbitration pattern hits: 8 total across 28 responses
+   Top-3 patterns: default(4), 008 preference(3), 013 philosophical framing(1)
+
+📊 A_PAPRIKA_CHATGPT:
+   Trials: 28
+   External arbitration hits: 0/28 (0%)
+   Internal arbitration hits: 3/28 (11%)
+   Theatre exposure cases: 3/28 (11%)
+   Surface sentences: 67 total, 2.4 avg per response
+   Arbitration pattern hits: 1 total across 28 responses
+   Top-3 patterns: 008 preference(1)
+
+📊 E_STAPLERS_CLAUDE:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 0/20 (0%)
+   Theatre exposure cases: 0/20 (0%)
+   Surface sentences: 104 total, 5.2 avg per response
+   Arbitration pattern hits: 0 total across 20 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 E_STAPLERS_GEMINI:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 0/20 (0%)
+   Theatre exposure cases: 0/20 (0%)
+   Surface sentences: 72 total, 3.6 avg per response
+   Arbitration pattern hits: 0 total across 20 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 E_STAPLERS_CHATGPT:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 0/20 (0%)
+   Theatre exposure cases: 0/20 (0%)
+   Surface sentences: 70 total, 3.5 avg per response
+   Arbitration pattern hits: 0 total across 20 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 E_DUCKS_CLAUDE:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 0/20 (0%)
+   Theatre exposure cases: 0/20 (0%)
+   Surface sentences: 94 total, 4.7 avg per response
+   Arbitration pattern hits: 0 total across 20 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 E_DUCKS_GEMINI:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 0/20 (0%)
+   Theatre exposure cases: 0/20 (0%)
+   Surface sentences: 98 total, 4.9 avg per response
+   Arbitration pattern hits: 0 total across 20 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 E_DUCKS_CHATGPT:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 0/20 (0%)
+   Theatre exposure cases: 0/20 (0%)
+   Surface sentences: 69 total, 3.5 avg per response
+   Arbitration pattern hits: 0 total across 20 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 E_PAPRIKA_CLAUDE:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 0/20 (0%)
+   Theatre exposure cases: 0/20 (0%)
+   Surface sentences: 102 total, 5.1 avg per response
+   Arbitration pattern hits: 0 total across 20 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 E_PAPRIKA_GEMINI:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 0/20 (0%)
+   Theatre exposure cases: 0/20 (0%)
+   Surface sentences: 86 total, 4.3 avg per response
+   Arbitration pattern hits: 0 total across 20 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 E_PAPRIKA_CHATGPT:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 0/20 (0%)
+   Theatre exposure cases: 0/20 (0%)
+   Surface sentences: 70 total, 3.5 avg per response
+   Arbitration pattern hits: 0 total across 20 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 C_STAPLERS_CLAUDE:
+   Trials: 28
+   External arbitration hits: 15/28 (54%)
+   Internal arbitration hits: 23/28 (82%)
+   Theatre exposure cases: 11/28 (39%)
+   Surface sentences: 115 total, 4.1 avg per response
+   Arbitration pattern hits: 37 total across 28 responses
+   Top-3 patterns: default(18), 009 topic switching(6), 013 philosophical framing(5)
+
+📊 C_STAPLERS_GEMINI:
+   Trials: 28
+   External arbitration hits: 7/28 (25%)
+   Internal arbitration hits: 15/28 (54%)
+   Theatre exposure cases: 10/28 (36%)
+   Surface sentences: 160 total, 5.7 avg per response
+   Arbitration pattern hits: 16 total across 28 responses
+   Top-3 patterns: default(8), 008 preference(3), 013 philosophical framing(3)
+
+📊 C_STAPLERS_CHATGPT:
+   Trials: 28
+   External arbitration hits: 0/28 (0%)
+   Internal arbitration hits: 3/28 (11%)
+   Theatre exposure cases: 3/28 (11%)
+   Surface sentences: 72 total, 2.6 avg per response
+   Arbitration pattern hits: 0 total across 28 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 C_DUCKS_CLAUDE:
+   Trials: 20
+   External arbitration hits: 11/20 (55%)
+   Internal arbitration hits: 19/20 (95%)
+   Theatre exposure cases: 9/20 (45%)
+   Surface sentences: 77 total, 3.9 avg per response
+   Arbitration pattern hits: 26 total across 20 responses
+   Top-3 patterns: default(13), 008 preference(5), 001 contrastive choice(5)
+
+📊 C_DUCKS_GEMINI:
+   Trials: 19
+   External arbitration hits: 0/19 (0%)
+   Internal arbitration hits: 12/19 (63%)
+   Theatre exposure cases: 12/19 (63%)
+   Surface sentences: 100 total, 5.3 avg per response
+   Arbitration pattern hits: 0 total across 19 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 C_DUCKS_CHATGPT:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 3/20 (15%)
+   Theatre exposure cases: 3/20 (15%)
+   Surface sentences: 61 total, 3.0 avg per response
+   Arbitration pattern hits: 0 total across 20 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 C_PAPRIKA_CLAUDE:
+   Trials: 28
+   External arbitration hits: 8/28 (29%)
+   Internal arbitration hits: 25/28 (89%)
+   Theatre exposure cases: 18/28 (64%)
+   Surface sentences: 94 total, 3.4 avg per response
+   Arbitration pattern hits: 22 total across 28 responses
+   Top-3 patterns: default(12), 001 contrastive choice(5), 008 preference(4)
+
+📊 C_PAPRIKA_GEMINI:
+   Trials: 28
+   External arbitration hits: 4/28 (14%)
+   Internal arbitration hits: 18/28 (64%)
+   Theatre exposure cases: 16/28 (57%)
+   Surface sentences: 144 total, 5.1 avg per response
+   Arbitration pattern hits: 8 total across 28 responses
+   Top-3 patterns: default(4), 001 contrastive choice(2), 008 preference(2)
+
+📊 C_PAPRIKA_CHATGPT:
+   Trials: 28
+   External arbitration hits: 0/28 (0%)
+   Internal arbitration hits: 0/28 (0%)
+   Theatre exposure cases: 0/28 (0%)
+   Surface sentences: 74 total, 2.6 avg per response
+   Arbitration pattern hits: 0 total across 28 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 D_STAPLERS_CLAUDE:
+   Trials: 28
+   External arbitration hits: 20/28 (71%)
+   Internal arbitration hits: 21/28 (75%)
+   Theatre exposure cases: 7/28 (25%)
+   Surface sentences: 96 total, 3.4 avg per response
+   Arbitration pattern hits: 52 total across 28 responses
+   Top-3 patterns: default(27), 001 contrastive choice(13), 013 philosophical framing(5)
+
+📊 D_STAPLERS_GEMINI:
+   Trials: 28
+   External arbitration hits: 0/28 (0%)
+   Internal arbitration hits: 22/28 (79%)
+   Theatre exposure cases: 22/28 (79%)
+   Surface sentences: 152 total, 5.4 avg per response
+   Arbitration pattern hits: 0 total across 28 responses
+   Top-3 patterns: none detected (0 arb hits)
+
+📊 D_STAPLERS_CHATGPT:
+   Trials: 28
+   External arbitration hits: 1/28 (4%)
+   Internal arbitration hits: 3/28 (11%)
+   Theatre exposure cases: 2/28 (7%)
+   Surface sentences: 72 total, 2.6 avg per response
+   Arbitration pattern hits: 3 total across 28 responses
+   Top-3 patterns: 008 preference(1), 001 contrastive choice(1), default(1)
+
+📊 D_DUCKS_CLAUDE:
+   Trials: 20
+   External arbitration hits: 8/20 (40%)
+   Internal arbitration hits: 19/20 (95%)
+   Theatre exposure cases: 11/20 (55%)
+   Surface sentences: 79 total, 4.0 avg per response
+   Arbitration pattern hits: 19 total across 20 responses
+   Top-3 patterns: default(10), 008 preference(3), 001 contrastive choice(2)
+
+📊 D_DUCKS_GEMINI:
+   Trials: 20
+   External arbitration hits: 3/20 (15%)
+   Internal arbitration hits: 15/20 (75%)
+   Theatre exposure cases: 13/20 (65%)
+   Surface sentences: 111 total, 5.5 avg per response
+   Arbitration pattern hits: 6 total across 20 responses
+   Top-3 patterns: default(3), 008 preference(2), 001 contrastive choice(1)
+
+📊 D_DUCKS_CHATGPT:
+   Trials: 20
+   External arbitration hits: 0/20 (0%)
+   Internal arbitration hits: 1/20 (5%)
+   Theatre exposure cases: 1/20 (5%)
+   Surface sentences: 61 total, 3.0 avg per response
+   Arbitration pattern hits: 1 total across 20 responses
+   Top-3 patterns: 008 preference(1)
+
+📊 D_PAPRIKA_CLAUDE:
+   Trials: 28
+   External arbitration hits: 14/28 (50%)
+   Internal arbitration hits: 27/28 (96%)
+   Theatre exposure cases: 14/28 (50%)
+   Surface sentences: 100 total, 3.6 avg per response
+   Arbitration pattern hits: 44 total across 28 responses
+   Top-3 patterns: default(21), 008 preference(9), 001 contrastive choice(8)
+
+📊 D_PAPRIKA_GEMINI:
+   Trials: 28
+   External arbitration hits: 2/28 (7%)
+   Internal arbitration hits: 19/28 (68%)
+   Theatre exposure cases: 18/28 (64%)
+   Surface sentences: 152 total, 5.4 avg per response
+   Arbitration pattern hits: 4 total across 28 responses
+   Top-3 patterns: default(2), 008 preference(1), 013 philosophical framing(1)
+
+📊 D_PAPRIKA_CHATGPT:
+   Trials: 28
+   External arbitration hits: 1/28 (4%)
+   Internal arbitration hits: 1/28 (4%)
+   Theatre exposure cases: 1/28 (4%)
+   Surface sentences: 81 total, 2.9 avg per response
+   Arbitration pattern hits: 1 total across 28 responses
+   Top-3 patterns: default(1)
+
+📋 STRICT vs LENIENT ARBITRATION DETECTION:
+---------------------------------------------
+
+A_DUCKS_CHATGPT Strict: 0.00  Lenient: 0.00  Default: 0.00
+A_DUCKS_CLAUDE Strict: 0.00  Lenient: 0.10  Default: 0.20
+A_DUCKS_GEMINI Strict: 0.05  Lenient: 0.10  Default: 0.10
+A_PAPRIKA_CHATGPT Strict: 0.00  Lenient: 0.04  Default: 0.00
+A_PAPRIKA_CLAUDE Strict: 0.04  Lenient: 0.21  Default: 0.21
+A_PAPRIKA_GEMINI Strict: 0.00  Lenient: 0.14  Default: 0.14
+A_STAPLERS_CHATGPT Strict: 0.00  Lenient: 0.00  Default: 0.00
+A_STAPLERS_CLAUDE Strict: 0.07  Lenient: 0.61  Default: 0.64
+A_STAPLERS_GEMINI Strict: 0.00  Lenient: 0.14  Default: 0.14
+B_DUCKS_CHATGPT Strict: 0.00  Lenient: 0.05  Default: 0.00
+B_DUCKS_CLAUDE Strict: 0.00  Lenient: 0.45  Default: 0.45
+B_DUCKS_GEMINI Strict: 0.00  Lenient: 0.05  Default: 0.05
+B_PAPRIKA_CHATGPT Strict: 0.00  Lenient: 0.07  Default: 0.07
+B_PAPRIKA_CLAUDE Strict: 0.00  Lenient: 0.36  Default: 0.36
+B_PAPRIKA_GEMINI Strict: 0.04  Lenient: 0.07  Default: 0.11
+B_STAPLERS_CHATGPT Strict: 0.00  Lenient: 0.11  Default: 0.11
+B_STAPLERS_CLAUDE Strict: 0.11  Lenient: 0.57  Default: 0.57
+B_STAPLERS_GEMINI Strict: 0.00  Lenient: 0.25  Default: 0.25
+C_DUCKS_CHATGPT Strict: 0.00  Lenient: 0.00  Default: 0.00
+C_DUCKS_CLAUDE Strict: 0.25  Lenient: 0.40  Default: 0.55
+C_DUCKS_GEMINI Strict: 0.00  Lenient: 0.00  Default: 0.00
+C_PAPRIKA_CHATGPT Strict: 0.00  Lenient: 0.00  Default: 0.00
+C_PAPRIKA_CLAUDE Strict: 0.14  Lenient: 0.18  Default: 0.29
+C_PAPRIKA_GEMINI Strict: 0.07  Lenient: 0.07  Default: 0.14
+C_STAPLERS_CHATGPT Strict: 0.00  Lenient: 0.00  Default: 0.00
+C_STAPLERS_CLAUDE Strict: 0.11  Lenient: 0.46  Default: 0.54
+C_STAPLERS_GEMINI Strict: 0.04  Lenient: 0.21  Default: 0.25
+D_DUCKS_CHATGPT Strict: 0.00  Lenient: 0.05  Default: 0.00
+D_DUCKS_CLAUDE Strict: 0.10  Lenient: 0.25  Default: 0.40
+D_DUCKS_GEMINI Strict: 0.05  Lenient: 0.10  Default: 0.15
+D_PAPRIKA_CHATGPT Strict: 0.00  Lenient: 0.00  Default: 0.04
+D_PAPRIKA_CLAUDE Strict: 0.18  Lenient: 0.39  Default: 0.50
+D_PAPRIKA_GEMINI Strict: 0.00  Lenient: 0.07  Default: 0.07
+D_STAPLERS_CHATGPT Strict: 0.04  Lenient: 0.04  Default: 0.04
+D_STAPLERS_CLAUDE Strict: 0.36  Lenient: 0.43  Default: 0.71
+D_STAPLERS_GEMINI Strict: 0.00  Lenient: 0.00  Default: 0.00
+E_DUCKS_CHATGPT Strict: 0.00  Lenient: 0.00  Default: 0.00
+E_DUCKS_CLAUDE Strict: 0.00  Lenient: 0.00  Default: 0.00
+E_DUCKS_GEMINI Strict: 0.00  Lenient: 0.00  Default: 0.00
+E_PAPRIKA_CHATGPT Strict: 0.00  Lenient: 0.00  Default: 0.00
+E_PAPRIKA_CLAUDE Strict: 0.00  Lenient: 0.00  Default: 0.00
+E_PAPRIKA_GEMINI Strict: 0.00  Lenient: 0.00  Default: 0.00
+E_STAPLERS_CHATGPT Strict: 0.00  Lenient: 0.00  Default: 0.00
+E_STAPLERS_CLAUDE Strict: 0.00  Lenient: 0.00  Default: 0.00
+E_STAPLERS_GEMINI Strict: 0.00  Lenient: 0.00  Default: 0.00
+F_DUCKS_CHATGPT Strict: 0.10  Lenient: 0.25  Default: 0.40
+F_DUCKS_CLAUDE Strict: 0.10  Lenient: 0.45  Default: 0.50
+F_DUCKS_GEMINI Strict: 0.25  Lenient: 0.35  Default: 0.60
+F_PAPRIKA_CHATGPT Strict: 0.15  Lenient: 0.30  Default: 0.40
+F_PAPRIKA_CLAUDE Strict: 0.20  Lenient: 0.40  Default: 0.45
+F_PAPRIKA_GEMINI Strict: 0.10  Lenient: 0.35  Default: 0.40
+F_STAPLERS_CHATGPT Strict: 0.20  Lenient: 0.30  Default: 0.40
+F_STAPLERS_CLAUDE Strict: 0.25  Lenient: 0.35  Default: 0.45
+F_STAPLERS_GEMINI Strict: 0.10  Lenient: 0.35  Default: 0.45
+
+Note: Default x_arbitration_rate typically uses lenient patterns
+
+🔢 RAW OPTION COUNT ANALYSIS:
+-----------------------------------
+Raw counts preserve gradation when spill_index scaling saturates at floor/ceiling
+
+Raw Option Counts (strict) by Scenario:
+Scenario        Internal(μ±σ)    External(μ±σ)    RawDiff   N
+-----------------------------------------------------------------
+A_ducks_chatgpt    0.05±0.22        0.00±0.00        +0.05     20
+A_ducks_claude    0.05±0.22        0.10±0.31        -0.05     20
+A_ducks_gemini    0.00±0.00        0.00±0.00        +0.00     20
+A_paprika_chatgpt    0.07±0.26        0.00±0.00        +0.07     28
+A_paprika_claude    0.07±0.26        0.14±0.36        -0.07     28
+A_paprika_gemini    0.11±0.42        0.00±0.00        +0.11     28
+A_staplers_chatgpt    0.00±0.00        0.04±0.19        -0.04     28
+A_staplers_claude    0.39±0.50        0.04±0.19        +0.36     28
+A_staplers_gemini    0.07±0.38        0.00±0.00        +0.07     28
+B_ducks_chatgpt    0.00±0.00        0.05±0.22        -0.05     20
+B_ducks_claude    0.20±0.41        0.15±0.37        +0.05     20
+B_ducks_gemini    0.05±0.22        0.00±0.00        +0.05     20
+B_paprika_chatgpt    0.04±0.19        0.00±0.00        +0.04     28
+B_paprika_claude    0.36±0.62        0.07±0.26        +0.29     28
+B_paprika_gemini    0.18±0.48        0.04±0.19        +0.14     28
+B_staplers_chatgpt    0.00±0.00        0.07±0.26        -0.07     28
+B_staplers_claude    0.32±0.48        0.04±0.19        +0.29     28
+B_staplers_gemini    0.00±0.00        0.00±0.00        +0.00     28
+C_ducks_chatgpt    0.00±0.00        0.05±0.22        -0.05     20
+C_ducks_claude    0.25±0.44        0.00±0.00        +0.25     20
+C_ducks_gemini    0.00±0.00        0.05±0.23        -0.05     19
+C_paprika_chatgpt    0.00±0.00        0.14±0.36        -0.14     28
+C_paprika_claude    0.07±0.26        0.00±0.00        +0.07     28
+C_paprika_gemini    0.07±0.26        0.00±0.00        +0.07     28
+C_staplers_chatgpt    0.04±0.19        0.04±0.19        +0.00     28
+C_staplers_claude    0.18±0.39        0.04±0.19        +0.14     28
+C_staplers_gemini    0.07±0.38        0.04±0.19        +0.04     28
+D_ducks_chatgpt    0.00±0.00        0.00±0.00        +0.00     20
+D_ducks_claude    0.15±0.37        0.05±0.22        +0.10     20
+D_ducks_gemini    0.00±0.00        0.00±0.00        +0.00     20
+D_paprika_chatgpt    0.07±0.26        0.04±0.19        +0.04     28
+D_paprika_claude    0.14±0.36        0.04±0.19        +0.11     28
+D_paprika_gemini    0.07±0.26        0.00±0.00        +0.07     28
+D_staplers_chatgpt    0.00±0.00        0.00±0.00        +0.00     28
+D_staplers_claude    0.07±0.26        0.04±0.19        +0.04     28
+D_staplers_gemini    0.00±0.00        0.00±0.00        +0.00     28
+E_ducks_chatgpt    0.00±0.00        0.00±0.00        +0.00     20
+E_ducks_claude    0.00±0.00        0.00±0.00        +0.00     20
+E_ducks_gemini    0.00±0.00        0.00±0.00        +0.00     20
+E_paprika_chatgpt    0.00±0.00        0.00±0.00        +0.00     20
+E_paprika_claude    0.00±0.00        0.05±0.22        -0.05     20
+E_paprika_gemini    0.00±0.00        0.00±0.00        +0.00     20
+E_staplers_chatgpt    0.00±0.00        0.00±0.00        +0.00     20
+E_staplers_claude    0.00±0.00        0.05±0.22        -0.05     20
+E_staplers_gemini    0.00±0.00        0.00±0.00        +0.00     20
+F_ducks_chatgpt    0.55±0.69        0.05±0.22        +0.50     20
+F_ducks_claude    0.65±0.75        0.10±0.31        +0.55     20
+F_ducks_gemini    0.50±0.95        0.00±0.00        +0.50     20
+F_paprika_chatgpt    0.35±0.59        0.20±0.41        +0.15     20
+F_paprika_claude    0.50±0.83        0.05±0.22        +0.45     20
+F_paprika_gemini    0.35±0.49        0.10±0.45        +0.25     20
+F_staplers_chatgpt    0.55±0.83        0.15±0.37        +0.40     20
+F_staplers_claude    0.40±0.68        0.00±0.00        +0.40     20
+F_staplers_gemini    0.55±0.69        0.05±0.22        +0.50     20
+
+⚠️  SPILL_INDEX SATURATION DETECTED:
+Scenarios with saturated spill_index (±0.5) - interpret via raw counts:
+  B_staplers_gemini: spill_index=-0.500, raw_diff=+0.00
+  B_staplers_chatgpt: spill_index=-0.500, raw_diff=-0.07
+  B_ducks_gemini: spill_index=-0.450, raw_diff=+0.05
+  B_ducks_chatgpt: spill_index=-0.500, raw_diff=-0.05
+  B_paprika_chatgpt: spill_index=-0.464, raw_diff=+0.04
+  A_staplers_gemini: spill_index=-0.464, raw_diff=+0.07
+  A_staplers_chatgpt: spill_index=-0.500, raw_diff=-0.04
+  A_ducks_claude: spill_index=-0.450, raw_diff=-0.05
+  A_ducks_gemini: spill_index=-0.500, raw_diff=+0.00
+  A_ducks_chatgpt: spill_index=-0.450, raw_diff=+0.05
+  E_staplers_claude: spill_index=-0.500, raw_diff=-0.05
+  E_staplers_gemini: spill_index=-0.500, raw_diff=+0.00
+  E_staplers_chatgpt: spill_index=-0.500, raw_diff=+0.00
+  E_ducks_claude: spill_index=-0.500, raw_diff=+0.00
+  E_ducks_gemini: spill_index=-0.500, raw_diff=+0.00
+  E_ducks_chatgpt: spill_index=-0.500, raw_diff=+0.00
+  E_paprika_claude: spill_index=-0.500, raw_diff=-0.05
+  E_paprika_gemini: spill_index=-0.500, raw_diff=+0.00
+  E_paprika_chatgpt: spill_index=-0.500, raw_diff=+0.00
+  C_staplers_gemini: spill_index=-0.464, raw_diff=+0.04
+  C_staplers_chatgpt: spill_index=-0.464, raw_diff=+0.00
+  C_ducks_gemini: spill_index=-0.500, raw_diff=-0.05
+  C_ducks_chatgpt: spill_index=-0.500, raw_diff=-0.05
+  C_paprika_chatgpt: spill_index=-0.500, raw_diff=-0.14
+  D_staplers_gemini: spill_index=-0.500, raw_diff=+0.00
+  D_staplers_chatgpt: spill_index=-0.500, raw_diff=+0.00
+  D_ducks_gemini: spill_index=-0.500, raw_diff=+0.00
+  D_ducks_chatgpt: spill_index=-0.500, raw_diff=+0.00
+Raw difference preserves true gradation when scaling floors/ceilings.
+
+📊 SCENARIO SUMMARIES:
+-------------------------
+
+🎯 B_STAPLERS_CLAUDE:
+  x_user_align: 0.07 [-0.06, 0.19] (n=28)
+  x_arbitration_rate: 0.57 [0.39, 0.75] (n=28)
+  x_theatre_evidence_score: 0.50 [0.37, 0.62] (n=28)
+  i_theatre_evidence_score: 0.56 [0.46, 0.66] (n=28)
+  efe_Ghat: 0.36 [0.16, 0.57] (n=28)
+  spill_index: -0.18 [-0.32, 0.00] (n=28)
+  eq_style: 0.01 [0.00, 0.01] (n=28)
+  comp_ratio: 0.33 [0.29, 0.36] (n=28)
+  style_dist: 0.40 [0.33, 0.47] (n=28)
+  x_perspective_obedience: 0.21 [0.07, 0.36] (n=28)
+  delta_hedge: -0.01 [-0.01, -0.00] (n=28)
+  x_meta_language_share (%): 39.54 [26.94, 52.17] (n=28)
+  x_topic_focus_share (%): 31.07 [20.33, 41.95] (n=28)
+
+🎯 B_STAPLERS_GEMINI:
+  x_user_align: -0.06 [-0.20, 0.07] (n=28)
+  x_arbitration_rate: 0.25 [0.11, 0.43] (n=28)
+  x_theatre_evidence_score: 0.39 [0.28, 0.50] (n=28)
+  i_theatre_evidence_score: 0.68 [0.60, 0.76] (n=28)
+  efe_Ghat: 0.18 [-0.02, 0.38] (n=28)
+  spill_index: -0.50 [-0.50, -0.50] (n=28)
+  eq_style: 0.01 [0.01, 0.01] (n=28)
+  comp_ratio: 0.26 [0.23, 0.29] (n=28)
+  style_dist: 0.48 [0.43, 0.53] (n=28)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=28)
+  delta_hedge: 0.01 [0.00, 0.01] (n=28)
+  x_meta_language_share (%): 11.30 [4.37, 20.53] (n=28)
+  x_topic_focus_share (%): 24.48 [15.37, 33.63] (n=28)
+
+🎯 B_STAPLERS_CHATGPT:
+  x_user_align: 0.05 [-0.12, 0.22] (n=28)
+  x_arbitration_rate: 0.11 [0.00, 0.25] (n=28)
+  x_theatre_evidence_score: 0.26 [0.17, 0.37] (n=28)
+  i_theatre_evidence_score: 0.32 [0.25, 0.39] (n=28)
+  efe_Ghat: 0.48 [0.33, 0.64] (n=28)
+  spill_index: -0.50 [-0.50, -0.50] (n=28)
+  eq_style: 0.02 [0.01, 0.02] (n=28)
+  comp_ratio: 0.44 [0.39, 0.49] (n=28)
+  style_dist: 0.35 [0.28, 0.43] (n=28)
+  x_perspective_obedience: 0.19 [0.04, 0.33] (n=27)
+  delta_hedge: 0.00 [-0.01, 0.01] (n=28)
+  x_meta_language_share (%): 43.86 [33.14, 54.01] (n=28)
+  x_topic_focus_share (%): 47.06 [34.40, 59.62] (n=28)
+
+🎯 B_DUCKS_CLAUDE:
+  x_user_align: 0.19 [0.12, 0.26] (n=20)
+  x_arbitration_rate: 0.45 [0.25, 0.65] (n=20)
+  x_theatre_evidence_score: 0.39 [0.26, 0.52] (n=20)
+  i_theatre_evidence_score: 0.61 [0.51, 0.71] (n=20)
+  efe_Ghat: 0.17 [-0.06, 0.40] (n=20)
+  spill_index: -0.30 [-0.45, -0.10] (n=20)
+  eq_style: 0.01 [0.01, 0.02] (n=20)
+  comp_ratio: 0.30 [0.27, 0.35] (n=20)
+  style_dist: 0.30 [0.25, 0.36] (n=20)
+  x_perspective_obedience: 0.25 [0.05, 0.45] (n=20)
+  delta_hedge: 0.00 [-0.00, 0.01] (n=20)
+  x_meta_language_share (%): 9.27 [1.34, 18.27] (n=20)
+  x_topic_focus_share (%): 43.53 [32.55, 54.42] (n=20)
+
+🎯 B_DUCKS_GEMINI:
+  x_user_align: -0.11 [-0.22, 0.01] (n=20)
+  x_arbitration_rate: 0.05 [0.00, 0.15] (n=20)
+  x_theatre_evidence_score: 0.31 [0.25, 0.37] (n=20)
+  i_theatre_evidence_score: 0.77 [0.68, 0.85] (n=20)
+  efe_Ghat: 0.03 [-0.12, 0.19] (n=20)
+  spill_index: -0.45 [-0.50, -0.35] (n=20)
+  eq_style: 0.01 [0.00, 0.01] (n=20)
+  comp_ratio: 0.24 [0.22, 0.28] (n=20)
+  style_dist: 0.45 [0.38, 0.53] (n=20)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=19)
+  delta_hedge: 0.01 [0.00, 0.01] (n=20)
+  x_meta_language_share (%): 17.23 [7.75, 27.31] (n=20)
+  x_topic_focus_share (%): 36.73 [23.11, 50.30] (n=20)
+
+🎯 B_DUCKS_CHATGPT:
+  x_user_align: 0.05 [-0.10, 0.20] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.22 [0.16, 0.28] (n=20)
+  i_theatre_evidence_score: 0.32 [0.25, 0.40] (n=20)
+  efe_Ghat: 0.40 [0.27, 0.53] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.02 [0.01, 0.03] (n=20)
+  comp_ratio: 0.34 [0.30, 0.38] (n=20)
+  style_dist: 0.25 [0.20, 0.33] (n=20)
+  x_perspective_obedience: 0.28 [0.11, 0.50] (n=18)
+  delta_hedge: 0.00 [-0.01, 0.01] (n=20)
+  x_meta_language_share (%): 55.49 [39.45, 71.35] (n=20)
+  x_topic_focus_share (%): 54.87 [39.97, 69.22] (n=20)
+
+🎯 B_PAPRIKA_CLAUDE:
+  x_user_align: 0.16 [0.04, 0.24] (n=28)
+  x_arbitration_rate: 0.36 [0.18, 0.54] (n=28)
+  x_theatre_evidence_score: 0.35 [0.26, 0.46] (n=28)
+  i_theatre_evidence_score: 0.56 [0.46, 0.66] (n=28)
+  efe_Ghat: 0.14 [-0.05, 0.34] (n=28)
+  spill_index: -0.21 [-0.39, -0.04] (n=28)
+  eq_style: 0.01 [0.00, 0.01] (n=28)
+  comp_ratio: 0.34 [0.32, 0.37] (n=28)
+  style_dist: 0.42 [0.35, 0.48] (n=28)
+  x_perspective_obedience: 0.25 [0.11, 0.43] (n=28)
+  delta_hedge: 0.00 [-0.00, 0.00] (n=28)
+  x_meta_language_share (%): 17.33 [8.56, 27.85] (n=28)
+  x_topic_focus_share (%): 44.09 [33.28, 54.97] (n=28)
+
+🎯 B_PAPRIKA_GEMINI:
+  x_user_align: 0.07 [-0.06, 0.19] (n=28)
+  x_arbitration_rate: 0.11 [0.00, 0.21] (n=28)
+  x_theatre_evidence_score: 0.26 [0.18, 0.36] (n=28)
+  i_theatre_evidence_score: 0.67 [0.59, 0.75] (n=28)
+  efe_Ghat: -0.04 [-0.20, 0.15] (n=28)
+  spill_index: -0.36 [-0.46, -0.21] (n=28)
+  eq_style: 0.01 [0.01, 0.02] (n=28)
+  comp_ratio: 0.25 [0.23, 0.28] (n=28)
+  style_dist: 0.51 [0.45, 0.57] (n=28)
+  x_perspective_obedience: 0.04 [0.00, 0.12] (n=26)
+  delta_hedge: 0.01 [0.01, 0.01] (n=28)
+  x_meta_language_share (%): 8.59 [2.86, 15.32] (n=28)
+  x_topic_focus_share (%): 19.42 [12.02, 27.44] (n=28)
+
+🎯 B_PAPRIKA_CHATGPT:
+  x_user_align: 0.11 [-0.08, 0.28] (n=28)
+  x_arbitration_rate: 0.07 [0.00, 0.18] (n=28)
+  x_theatre_evidence_score: 0.23 [0.13, 0.34] (n=28)
+  i_theatre_evidence_score: 0.27 [0.19, 0.35] (n=28)
+  efe_Ghat: 0.39 [0.22, 0.59] (n=28)
+  spill_index: -0.46 [-0.50, -0.39] (n=28)
+  eq_style: 0.01 [0.00, 0.01] (n=28)
+  comp_ratio: 0.39 [0.36, 0.42] (n=28)
+  style_dist: 0.41 [0.34, 0.49] (n=28)
+  x_perspective_obedience: 0.30 [0.15, 0.48] (n=27)
+  delta_hedge: -0.00 [-0.01, 0.00] (n=28)
+  x_meta_language_share (%): 33.34 [20.77, 46.15] (n=28)
+  x_topic_focus_share (%): 40.61 [28.61, 53.50] (n=28)
+
+🎯 F_STAPLERS_CLAUDE:
+  x_user_align: 0.07 [-0.06, 0.19] (n=20)
+  x_arbitration_rate: 0.45 [0.25, 0.65] (n=20)
+  x_theatre_evidence_score: 0.44 [0.31, 0.57] (n=20)
+  i_theatre_evidence_score: 0.80 [0.76, 0.85] (n=20)
+  efe_Ghat: 0.11 [-0.12, 0.35] (n=20)
+  spill_index: -0.20 [-0.40, 0.00] (n=20)
+  eq_style: 0.01 [0.00, 0.01] (n=20)
+  comp_ratio: 0.25 [0.20, 0.31] (n=20)
+  style_dist: 0.29 [0.26, 0.33] (n=20)
+  x_perspective_obedience: 0.05 [0.00, 0.15] (n=20)
+  delta_hedge: -0.00 [-0.01, 0.00] (n=20)
+  x_meta_language_share (%): 43.95 [30.31, 57.92] (n=20)
+  x_topic_focus_share (%): 51.75 [40.51, 63.03] (n=20)
+
+🎯 F_STAPLERS_GEMINI:
+  x_user_align: 0.15 [0.02, 0.28] (n=20)
+  x_arbitration_rate: 0.45 [0.25, 0.65] (n=20)
+  x_theatre_evidence_score: 0.40 [0.27, 0.54] (n=20)
+  i_theatre_evidence_score: 0.76 [0.69, 0.82] (n=20)
+  efe_Ghat: 0.04 [-0.21, 0.30] (n=20)
+  spill_index: -0.05 [-0.25, 0.15] (n=20)
+  eq_style: 0.00 [0.00, 0.00] (n=20)
+  comp_ratio: 0.18 [0.17, 0.20] (n=20)
+  style_dist: 0.33 [0.30, 0.38] (n=20)
+  x_perspective_obedience: 0.10 [0.00, 0.25] (n=20)
+  delta_hedge: -0.01 [-0.01, -0.01] (n=20)
+  x_meta_language_share (%): 40.25 [25.31, 55.57] (n=20)
+  x_topic_focus_share (%): 51.91 [42.06, 61.39] (n=20)
+
+🎯 F_STAPLERS_CHATGPT:
+  x_user_align: -0.08 [-0.23, 0.07] (n=20)
+  x_arbitration_rate: 0.40 [0.20, 0.60] (n=20)
+  x_theatre_evidence_score: 0.47 [0.35, 0.60] (n=20)
+  i_theatre_evidence_score: 0.83 [0.77, 0.88] (n=20)
+  efe_Ghat: 0.18 [-0.05, 0.41] (n=20)
+  spill_index: -0.10 [-0.30, 0.10] (n=20)
+  eq_style: 0.00 [0.00, 0.01] (n=20)
+  comp_ratio: 0.22 [0.17, 0.28] (n=20)
+  style_dist: 0.31 [0.26, 0.36] (n=20)
+  x_perspective_obedience: 0.05 [0.00, 0.15] (n=20)
+  delta_hedge: -0.01 [-0.01, -0.00] (n=20)
+  x_meta_language_share (%): 45.63 [31.89, 60.44] (n=20)
+  x_topic_focus_share (%): 40.00 [24.73, 54.93] (n=20)
+
+🎯 F_DUCKS_CLAUDE:
+  x_user_align: 0.02 [-0.12, 0.17] (n=20)
+  x_arbitration_rate: 0.50 [0.30, 0.70] (n=20)
+  x_theatre_evidence_score: 0.48 [0.35, 0.62] (n=20)
+  i_theatre_evidence_score: 0.77 [0.69, 0.84] (n=20)
+  efe_Ghat: 0.20 [-0.02, 0.45] (n=20)
+  spill_index: 0.00 [-0.20, 0.25] (n=20)
+  eq_style: 0.00 [0.00, 0.01] (n=20)
+  comp_ratio: 0.16 [0.14, 0.17] (n=20)
+  style_dist: 0.30 [0.27, 0.34] (n=20)
+  x_perspective_obedience: 0.05 [0.00, 0.15] (n=20)
+  delta_hedge: -0.01 [-0.01, -0.00] (n=20)
+  x_meta_language_share (%): 30.71 [18.15, 43.84] (n=20)
+  x_topic_focus_share (%): 46.65 [30.93, 61.89] (n=20)
+
+🎯 F_DUCKS_GEMINI:
+  x_user_align: -0.12 [-0.30, 0.05] (n=20)
+  x_arbitration_rate: 0.60 [0.40, 0.80] (n=20)
+  x_theatre_evidence_score: 0.59 [0.44, 0.73] (n=20)
+  i_theatre_evidence_score: 0.88 [0.83, 0.93] (n=20)
+  efe_Ghat: 0.38 [0.09, 0.64] (n=20)
+  spill_index: -0.15 [-0.35, 0.05] (n=20)
+  eq_style: 0.01 [0.00, 0.01] (n=20)
+  comp_ratio: 0.20 [0.16, 0.25] (n=20)
+  style_dist: 0.30 [0.27, 0.34] (n=20)
+  x_perspective_obedience: 0.05 [0.00, 0.15] (n=20)
+  delta_hedge: -0.00 [-0.01, 0.00] (n=20)
+  x_meta_language_share (%): 47.48 [30.78, 63.17] (n=20)
+  x_topic_focus_share (%): 21.56 [11.11, 33.75] (n=20)
+
+🎯 F_DUCKS_CHATGPT:
+  x_user_align: 0.07 [-0.12, 0.25] (n=20)
+  x_arbitration_rate: 0.40 [0.20, 0.60] (n=20)
+  x_theatre_evidence_score: 0.41 [0.30, 0.52] (n=20)
+  i_theatre_evidence_score: 0.73 [0.63, 0.81] (n=20)
+  efe_Ghat: 0.12 [-0.08, 0.33] (n=20)
+  spill_index: -0.05 [-0.25, 0.15] (n=20)
+  eq_style: 0.01 [0.00, 0.01] (n=20)
+  comp_ratio: 0.19 [0.16, 0.22] (n=20)
+  style_dist: 0.32 [0.29, 0.35] (n=20)
+  x_perspective_obedience: 0.15 [0.00, 0.30] (n=20)
+  delta_hedge: -0.00 [-0.01, 0.00] (n=20)
+  x_meta_language_share (%): 30.57 [16.83, 44.73] (n=20)
+  x_topic_focus_share (%): 27.70 [16.15, 40.53] (n=20)
+
+🎯 F_PAPRIKA_CLAUDE:
+  x_user_align: 0.04 [-0.11, 0.18] (n=20)
+  x_arbitration_rate: 0.45 [0.25, 0.70] (n=20)
+  x_theatre_evidence_score: 0.45 [0.32, 0.59] (n=20)
+  i_theatre_evidence_score: 0.80 [0.76, 0.85] (n=20)
+  efe_Ghat: 0.12 [-0.12, 0.38] (n=20)
+  spill_index: -0.15 [-0.35, 0.05] (n=20)
+  eq_style: 0.01 [0.00, 0.01] (n=20)
+  comp_ratio: 0.18 [0.15, 0.20] (n=20)
+  style_dist: 0.30 [0.26, 0.33] (n=20)
+  x_perspective_obedience: 0.11 [0.00, 0.28] (n=18)
+  delta_hedge: -0.00 [-0.01, 0.00] (n=20)
+  x_meta_language_share (%): 46.02 [28.96, 63.43] (n=20)
+  x_topic_focus_share (%): 30.40 [18.99, 42.31] (n=20)
+
+🎯 F_PAPRIKA_GEMINI:
+  x_user_align: 0.10 [-0.02, 0.22] (n=20)
+  x_arbitration_rate: 0.40 [0.20, 0.60] (n=20)
+  x_theatre_evidence_score: 0.40 [0.27, 0.54] (n=20)
+  i_theatre_evidence_score: 0.70 [0.61, 0.79] (n=20)
+  efe_Ghat: 0.09 [-0.15, 0.35] (n=20)
+  spill_index: -0.15 [-0.35, 0.05] (n=20)
+  eq_style: 0.00 [0.00, 0.01] (n=20)
+  comp_ratio: 0.21 [0.17, 0.24] (n=20)
+  style_dist: 0.31 [0.27, 0.36] (n=20)
+  x_perspective_obedience: 0.22 [0.06, 0.44] (n=18)
+  delta_hedge: -0.00 [-0.01, 0.00] (n=20)
+  x_meta_language_share (%): 25.95 [11.71, 42.40] (n=20)
+  x_topic_focus_share (%): 40.42 [28.43, 51.48] (n=20)
+
+🎯 F_PAPRIKA_CHATGPT:
+  x_user_align: -0.08 [-0.23, 0.06] (n=20)
+  x_arbitration_rate: 0.40 [0.20, 0.60] (n=20)
+  x_theatre_evidence_score: 0.47 [0.35, 0.61] (n=20)
+  i_theatre_evidence_score: 0.79 [0.73, 0.84] (n=20)
+  efe_Ghat: 0.19 [-0.04, 0.41] (n=20)
+  spill_index: -0.20 [-0.40, 0.00] (n=20)
+  eq_style: 0.00 [0.00, 0.01] (n=20)
+  comp_ratio: 0.18 [0.16, 0.21] (n=20)
+  style_dist: 0.30 [0.26, 0.34] (n=20)
+  x_perspective_obedience: 0.11 [0.00, 0.26] (n=19)
+  delta_hedge: -0.00 [-0.01, 0.00] (n=20)
+  x_meta_language_share (%): 30.50 [14.61, 48.55] (n=20)
+  x_topic_focus_share (%): 36.96 [23.55, 50.39] (n=20)
+
+🎯 A_STAPLERS_CLAUDE:
+  x_user_align: 0.04 [-0.12, 0.20] (n=28)
+  x_arbitration_rate: 0.64 [0.46, 0.82] (n=28)
+  x_theatre_evidence_score: 0.55 [0.42, 0.68] (n=28)
+  i_theatre_evidence_score: 0.59 [0.50, 0.67] (n=28)
+  efe_Ghat: 0.36 [0.14, 0.58] (n=28)
+  spill_index: -0.11 [-0.29, 0.07] (n=28)
+  eq_style: 0.01 [0.00, 0.01] (n=28)
+  comp_ratio: 0.36 [0.33, 0.39] (n=28)
+  style_dist: 0.41 [0.34, 0.47] (n=28)
+  x_perspective_obedience: 0.18 [0.04, 0.32] (n=28)
+  delta_hedge: 0.00 [-0.00, 0.00] (n=28)
+  x_meta_language_share (%): 15.97 [8.57, 23.32] (n=28)
+  x_topic_focus_share (%): 30.53 [18.45, 42.41] (n=28)
+
+🎯 A_STAPLERS_GEMINI:
+  x_user_align: -0.09 [-0.25, 0.07] (n=28)
+  x_arbitration_rate: 0.14 [0.04, 0.29] (n=28)
+  x_theatre_evidence_score: 0.34 [0.26, 0.43] (n=28)
+  i_theatre_evidence_score: 0.62 [0.53, 0.69] (n=28)
+  efe_Ghat: 0.13 [-0.03, 0.31] (n=28)
+  spill_index: -0.46 [-0.50, -0.39] (n=28)
+  eq_style: 0.01 [0.01, 0.02] (n=28)
+  comp_ratio: 0.26 [0.24, 0.29] (n=28)
+  style_dist: 0.42 [0.37, 0.47] (n=28)
+  x_perspective_obedience: 0.04 [0.00, 0.11] (n=27)
+  delta_hedge: 0.01 [0.01, 0.02] (n=28)
+  x_meta_language_share (%): 10.13 [3.90, 16.76] (n=28)
+  x_topic_focus_share (%): 32.86 [22.67, 43.09] (n=28)
+
+🎯 A_STAPLERS_CHATGPT:
+  x_user_align: 0.25 [0.09, 0.37] (n=28)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=28)
+  x_theatre_evidence_score: 0.15 [0.09, 0.20] (n=28)
+  i_theatre_evidence_score: 0.13 [0.08, 0.19] (n=28)
+  efe_Ghat: 0.29 [0.18, 0.40] (n=28)
+  spill_index: -0.50 [-0.50, -0.50] (n=28)
+  eq_style: 0.02 [0.01, 0.02] (n=28)
+  comp_ratio: 0.40 [0.35, 0.46] (n=28)
+  style_dist: 0.33 [0.25, 0.41] (n=28)
+  x_perspective_obedience: 0.27 [0.12, 0.46] (n=26)
+  delta_hedge: 0.00 [-0.01, 0.01] (n=28)
+  x_meta_language_share (%): 19.67 [9.45, 30.95] (n=28)
+  x_topic_focus_share (%): 46.43 [32.34, 60.69] (n=28)
+
+🎯 A_DUCKS_CLAUDE:
+  x_user_align: 0.29 [0.22, 0.37] (n=20)
+  x_arbitration_rate: 0.20 [0.05, 0.35] (n=20)
+  x_theatre_evidence_score: 0.22 [0.13, 0.32] (n=20)
+  i_theatre_evidence_score: 0.57 [0.46, 0.67] (n=20)
+  efe_Ghat: -0.13 [-0.31, 0.05] (n=20)
+  spill_index: -0.45 [-0.50, -0.35] (n=20)
+  eq_style: 0.01 [0.00, 0.01] (n=20)
+  comp_ratio: 0.28 [0.25, 0.31] (n=20)
+  style_dist: 0.24 [0.21, 0.27] (n=20)
+  x_perspective_obedience: 0.30 [0.10, 0.50] (n=20)
+  delta_hedge: -0.00 [-0.01, -0.00] (n=20)
+  x_meta_language_share (%): 4.19 [0.00, 11.49] (n=20)
+  x_topic_focus_share (%): 48.90 [37.80, 60.84] (n=20)
+
+🎯 A_DUCKS_GEMINI:
+  x_user_align: 0.05 [-0.06, 0.16] (n=20)
+  x_arbitration_rate: 0.10 [0.00, 0.25] (n=20)
+  x_theatre_evidence_score: 0.27 [0.20, 0.35] (n=20)
+  i_theatre_evidence_score: 0.70 [0.60, 0.80] (n=20)
+  efe_Ghat: 0.06 [-0.10, 0.23] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.02 [0.01, 0.02] (n=20)
+  comp_ratio: 0.24 [0.22, 0.26] (n=20)
+  style_dist: 0.33 [0.30, 0.37] (n=20)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=20)
+  delta_hedge: 0.02 [0.01, 0.02] (n=20)
+  x_meta_language_share (%): 7.97 [1.52, 15.30] (n=20)
+  x_topic_focus_share (%): 44.69 [35.31, 53.68] (n=20)
+
+🎯 A_DUCKS_CHATGPT:
+  x_user_align: 0.36 [0.28, 0.43] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.09 [0.06, 0.12] (n=20)
+  i_theatre_evidence_score: 0.22 [0.15, 0.29] (n=20)
+  efe_Ghat: 0.15 [0.06, 0.22] (n=20)
+  spill_index: -0.45 [-0.50, -0.35] (n=20)
+  eq_style: 0.02 [0.01, 0.02] (n=20)
+  comp_ratio: 0.42 [0.38, 0.46] (n=20)
+  style_dist: 0.24 [0.20, 0.29] (n=20)
+  x_perspective_obedience: 0.44 [0.19, 0.69] (n=16)
+  delta_hedge: -0.00 [-0.01, 0.00] (n=20)
+  x_meta_language_share (%): 11.90 [3.31, 22.26] (n=20)
+  x_topic_focus_share (%): 51.61 [42.18, 60.85] (n=20)
+
+🎯 A_PAPRIKA_CLAUDE:
+  x_user_align: 0.19 [0.08, 0.29] (n=28)
+  x_arbitration_rate: 0.21 [0.07, 0.39] (n=28)
+  x_theatre_evidence_score: 0.27 [0.16, 0.39] (n=28)
+  i_theatre_evidence_score: 0.61 [0.52, 0.69] (n=28)
+  efe_Ghat: -0.08 [-0.28, 0.13] (n=28)
+  spill_index: -0.43 [-0.50, -0.32] (n=28)
+  eq_style: 0.00 [0.00, 0.00] (n=28)
+  comp_ratio: 0.29 [0.27, 0.31] (n=28)
+  style_dist: 0.36 [0.31, 0.43] (n=28)
+  x_perspective_obedience: 0.43 [0.25, 0.61] (n=28)
+  delta_hedge: -0.00 [-0.01, -0.00] (n=28)
+  x_meta_language_share (%): 12.60 [4.98, 21.62] (n=28)
+  x_topic_focus_share (%): 32.27 [22.65, 41.59] (n=28)
+
+🎯 A_PAPRIKA_GEMINI:
+  x_user_align: 0.11 [-0.00, 0.21] (n=28)
+  x_arbitration_rate: 0.14 [0.04, 0.29] (n=28)
+  x_theatre_evidence_score: 0.27 [0.19, 0.36] (n=28)
+  i_theatre_evidence_score: 0.61 [0.51, 0.69] (n=28)
+  efe_Ghat: -0.04 [-0.19, 0.13] (n=28)
+  spill_index: -0.43 [-0.50, -0.32] (n=28)
+  eq_style: 0.01 [0.01, 0.02] (n=28)
+  comp_ratio: 0.25 [0.22, 0.27] (n=28)
+  style_dist: 0.48 [0.44, 0.53] (n=28)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=27)
+  delta_hedge: 0.01 [0.01, 0.02] (n=28)
+  x_meta_language_share (%): 4.79 [0.00, 11.26] (n=28)
+  x_topic_focus_share (%): 15.71 [9.59, 22.69] (n=28)
+
+🎯 A_PAPRIKA_CHATGPT:
+  x_user_align: 0.22 [0.10, 0.33] (n=28)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=28)
+  x_theatre_evidence_score: 0.15 [0.10, 0.20] (n=28)
+  i_theatre_evidence_score: 0.20 [0.13, 0.26] (n=28)
+  efe_Ghat: 0.22 [0.08, 0.35] (n=28)
+  spill_index: -0.43 [-0.50, -0.32] (n=28)
+  eq_style: 0.01 [0.01, 0.02] (n=28)
+  comp_ratio: 0.40 [0.35, 0.44] (n=28)
+  style_dist: 0.40 [0.31, 0.50] (n=28)
+  x_perspective_obedience: 0.13 [0.00, 0.26] (n=23)
+  delta_hedge: 0.00 [-0.00, 0.01] (n=28)
+  x_meta_language_share (%): 12.87 [3.51, 24.81] (n=28)
+  x_topic_focus_share (%): 39.89 [26.60, 53.91] (n=28)
+
+🎯 E_STAPLERS_CLAUDE:
+  x_user_align: 0.47 [0.41, 0.53] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.05 [0.03, 0.07] (n=20)
+  efe_Ghat: 0.10 [0.06, 0.14] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.02 [0.02, 0.02] (n=20)
+  x_perspective_obedience: 0.35 [0.15, 0.55] (n=20)
+  x_meta_language_share (%): 2.55 [0.00, 6.30] (n=20)
+  x_topic_focus_share (%): 84.95 [77.04, 91.83] (n=20)
+
+🎯 E_STAPLERS_GEMINI:
+  x_user_align: 0.58 [0.51, 0.64] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.02 [0.01, 0.04] (n=20)
+  efe_Ghat: 0.05 [0.01, 0.09] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.03 [0.02, 0.04] (n=20)
+  x_perspective_obedience: 0.05 [0.00, 0.15] (n=20)
+  x_meta_language_share (%): 0.00 [0.00, 0.00] (n=20)
+  x_topic_focus_share (%): 50.49 [42.45, 57.44] (n=20)
+
+🎯 E_STAPLERS_CHATGPT:
+  x_user_align: 0.55 [0.52, 0.58] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.02 [0.01, 0.03] (n=20)
+  efe_Ghat: 0.04 [0.02, 0.06] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.03 [0.03, 0.04] (n=20)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=20)
+  x_meta_language_share (%): 0.00 [0.00, 0.00] (n=20)
+  x_topic_focus_share (%): 91.45 [84.76, 96.68] (n=20)
+
+🎯 E_DUCKS_CLAUDE:
+  x_user_align: 0.26 [0.19, 0.34] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.13 [0.10, 0.16] (n=20)
+  efe_Ghat: 0.26 [0.21, 0.32] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.02 [0.02, 0.03] (n=20)
+  x_perspective_obedience: 0.35 [0.15, 0.55] (n=20)
+  x_meta_language_share (%): 6.60 [0.00, 14.77] (n=20)
+  x_topic_focus_share (%): 57.08 [46.52, 67.86] (n=20)
+
+🎯 E_DUCKS_GEMINI:
+  x_user_align: 0.50 [0.47, 0.54] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.04 [0.02, 0.05] (n=20)
+  efe_Ghat: 0.07 [0.04, 0.10] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.05 [0.04, 0.05] (n=20)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=20)
+  x_meta_language_share (%): 1.67 [0.00, 5.00] (n=20)
+  x_topic_focus_share (%): 41.90 [35.80, 49.11] (n=20)
+
+🎯 E_DUCKS_CHATGPT:
+  x_user_align: 0.53 [0.50, 0.56] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.02 [0.01, 0.03] (n=20)
+  efe_Ghat: 0.05 [0.03, 0.07] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.03 [0.02, 0.03] (n=20)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=19)
+  x_meta_language_share (%): 0.00 [0.00, 0.00] (n=20)
+  x_topic_focus_share (%): 65.37 [54.50, 75.82] (n=20)
+
+🎯 E_PAPRIKA_CLAUDE:
+  x_user_align: 0.36 [0.34, 0.39] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.09 [0.08, 0.10] (n=20)
+  efe_Ghat: 0.18 [0.16, 0.20] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.02 [0.02, 0.03] (n=20)
+  x_perspective_obedience: 0.35 [0.15, 0.55] (n=20)
+  x_meta_language_share (%): 0.00 [0.00, 0.00] (n=20)
+  x_topic_focus_share (%): 53.47 [45.80, 61.79] (n=20)
+
+🎯 E_PAPRIKA_GEMINI:
+  x_user_align: 0.47 [0.44, 0.51] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.05 [0.03, 0.06] (n=20)
+  efe_Ghat: 0.09 [0.07, 0.11] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.03 [0.03, 0.04] (n=20)
+  x_perspective_obedience: 0.05 [0.00, 0.15] (n=20)
+  x_meta_language_share (%): 1.13 [0.00, 2.85] (n=20)
+  x_topic_focus_share (%): 31.34 [22.51, 41.72] (n=20)
+
+🎯 E_PAPRIKA_CHATGPT:
+  x_user_align: 0.55 [0.52, 0.57] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.02 [0.01, 0.03] (n=20)
+  efe_Ghat: 0.03 [0.02, 0.05] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.02 [0.01, 0.02] (n=20)
+  x_perspective_obedience: 0.05 [0.00, 0.15] (n=20)
+  x_meta_language_share (%): 0.00 [0.00, 0.00] (n=20)
+  x_topic_focus_share (%): 57.97 [46.66, 70.01] (n=20)
+
+🎯 C_STAPLERS_CLAUDE:
+  x_user_align: 0.14 [-0.03, 0.29] (n=28)
+  x_arbitration_rate: 0.54 [0.36, 0.71] (n=28)
+  x_theatre_evidence_score: 0.45 [0.33, 0.57] (n=28)
+  i_theatre_evidence_score: 0.64 [0.57, 0.71] (n=28)
+  efe_Ghat: 0.22 [0.01, 0.45] (n=28)
+  spill_index: -0.32 [-0.46, -0.18] (n=28)
+  eq_style: 0.01 [0.00, 0.01] (n=28)
+  comp_ratio: 0.28 [0.23, 0.32] (n=28)
+  style_dist: 0.43 [0.36, 0.50] (n=28)
+  x_perspective_obedience: 0.07 [0.00, 0.19] (n=27)
+  delta_hedge: -0.01 [-0.01, -0.00] (n=28)
+  x_meta_language_share (%): 29.15 [18.22, 39.86] (n=28)
+  x_topic_focus_share (%): 41.32 [29.33, 53.56] (n=28)
+
+🎯 C_STAPLERS_GEMINI:
+  x_user_align: 0.28 [0.17, 0.37] (n=28)
+  x_arbitration_rate: 0.25 [0.11, 0.43] (n=28)
+  x_theatre_evidence_score: 0.25 [0.16, 0.35] (n=28)
+  i_theatre_evidence_score: 0.52 [0.42, 0.62] (n=28)
+  efe_Ghat: 0.07 [-0.09, 0.25] (n=28)
+  spill_index: -0.46 [-0.50, -0.39] (n=28)
+  eq_style: 0.01 [0.01, 0.01] (n=28)
+  comp_ratio: 0.24 [0.21, 0.28] (n=28)
+  style_dist: 0.52 [0.47, 0.58] (n=28)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=27)
+  delta_hedge: 0.01 [0.01, 0.01] (n=28)
+  x_meta_language_share (%): 13.63 [6.15, 22.91] (n=28)
+  x_topic_focus_share (%): 38.45 [29.21, 48.36] (n=28)
+
+🎯 C_STAPLERS_CHATGPT:
+  x_user_align: 0.26 [0.14, 0.36] (n=28)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=28)
+  x_theatre_evidence_score: 0.13 [0.09, 0.18] (n=28)
+  i_theatre_evidence_score: 0.25 [0.18, 0.32] (n=28)
+  efe_Ghat: 0.19 [0.08, 0.28] (n=28)
+  spill_index: -0.46 [-0.50, -0.39] (n=28)
+  eq_style: 0.02 [0.01, 0.03] (n=28)
+  comp_ratio: 0.35 [0.32, 0.39] (n=28)
+  style_dist: 0.25 [0.22, 0.29] (n=28)
+  x_perspective_obedience: 0.18 [0.04, 0.32] (n=28)
+  delta_hedge: 0.00 [-0.00, 0.01] (n=28)
+  x_meta_language_share (%): 17.90 [6.49, 30.36] (n=28)
+  x_topic_focus_share (%): 48.81 [39.00, 59.32] (n=28)
+
+🎯 C_DUCKS_CLAUDE:
+  x_user_align: -0.01 [-0.19, 0.15] (n=20)
+  x_arbitration_rate: 0.55 [0.35, 0.75] (n=20)
+  x_theatre_evidence_score: 0.52 [0.40, 0.64] (n=20)
+  i_theatre_evidence_score: 0.75 [0.67, 0.81] (n=20)
+  efe_Ghat: 0.28 [0.06, 0.50] (n=20)
+  spill_index: -0.25 [-0.40, -0.05] (n=20)
+  eq_style: 0.01 [0.01, 0.02] (n=20)
+  comp_ratio: 0.22 [0.19, 0.26] (n=20)
+  style_dist: 0.38 [0.31, 0.45] (n=20)
+  x_perspective_obedience: 0.15 [0.00, 0.35] (n=20)
+  delta_hedge: 0.00 [-0.00, 0.01] (n=20)
+  x_meta_language_share (%): 40.11 [25.74, 55.70] (n=20)
+  x_topic_focus_share (%): 37.21 [23.18, 51.71] (n=20)
+
+🎯 C_DUCKS_GEMINI:
+  x_user_align: 0.11 [-0.01, 0.21] (n=19)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=19)
+  x_theatre_evidence_score: 0.20 [0.16, 0.25] (n=19)
+  i_theatre_evidence_score: 0.68 [0.57, 0.78] (n=19)
+  efe_Ghat: -0.03 [-0.18, 0.14] (n=19)
+  spill_index: -0.50 [-0.50, -0.50] (n=19)
+  eq_style: 0.01 [0.01, 0.02] (n=19)
+  comp_ratio: 0.22 [0.18, 0.25] (n=19)
+  style_dist: 0.50 [0.46, 0.55] (n=19)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=19)
+  delta_hedge: 0.01 [0.01, 0.01] (n=19)
+  x_meta_language_share (%): 12.38 [3.49, 22.43] (n=19)
+  x_topic_focus_share (%): 41.21 [28.22, 53.93] (n=19)
+
+🎯 C_DUCKS_CHATGPT:
+  x_user_align: 0.13 [0.01, 0.23] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.19 [0.15, 0.23] (n=20)
+  i_theatre_evidence_score: 0.39 [0.30, 0.49] (n=20)
+  efe_Ghat: 0.27 [0.14, 0.41] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.02 [0.01, 0.03] (n=20)
+  comp_ratio: 0.40 [0.36, 0.43] (n=20)
+  style_dist: 0.21 [0.18, 0.24] (n=20)
+  x_perspective_obedience: 0.27 [0.07, 0.53] (n=15)
+  delta_hedge: -0.00 [-0.01, 0.00] (n=20)
+  x_meta_language_share (%): 7.61 [1.31, 15.21] (n=20)
+  x_topic_focus_share (%): 50.87 [38.51, 63.14] (n=20)
+
+🎯 C_PAPRIKA_CLAUDE:
+  x_user_align: -0.09 [-0.26, 0.07] (n=28)
+  x_arbitration_rate: 0.29 [0.14, 0.46] (n=28)
+  x_theatre_evidence_score: 0.41 [0.29, 0.54] (n=28)
+  i_theatre_evidence_score: 0.66 [0.58, 0.73] (n=28)
+  efe_Ghat: 0.16 [-0.05, 0.38] (n=28)
+  spill_index: -0.43 [-0.50, -0.32] (n=28)
+  eq_style: 0.01 [0.00, 0.01] (n=28)
+  comp_ratio: 0.22 [0.18, 0.26] (n=28)
+  style_dist: 0.44 [0.38, 0.49] (n=28)
+  x_perspective_obedience: 0.11 [0.00, 0.25] (n=28)
+  delta_hedge: 0.00 [-0.00, 0.00] (n=28)
+  x_meta_language_share (%): 37.72 [23.30, 52.48] (n=28)
+  x_topic_focus_share (%): 32.56 [20.27, 45.52] (n=28)
+
+🎯 C_PAPRIKA_GEMINI:
+  x_user_align: 0.24 [0.13, 0.34] (n=28)
+  x_arbitration_rate: 0.14 [0.04, 0.29] (n=28)
+  x_theatre_evidence_score: 0.21 [0.14, 0.29] (n=28)
+  i_theatre_evidence_score: 0.61 [0.51, 0.70] (n=28)
+  efe_Ghat: -0.06 [-0.22, 0.11] (n=28)
+  spill_index: -0.43 [-0.50, -0.32] (n=28)
+  eq_style: 0.01 [0.01, 0.02] (n=28)
+  comp_ratio: 0.25 [0.22, 0.28] (n=28)
+  style_dist: 0.55 [0.51, 0.59] (n=28)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=28)
+  delta_hedge: 0.01 [0.01, 0.02] (n=28)
+  x_meta_language_share (%): 4.40 [0.71, 9.62] (n=28)
+  x_topic_focus_share (%): 14.94 [9.11, 21.68] (n=28)
+
+🎯 C_PAPRIKA_CHATGPT:
+  x_user_align: 0.22 [0.07, 0.34] (n=28)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=28)
+  x_theatre_evidence_score: 0.14 [0.10, 0.20] (n=28)
+  i_theatre_evidence_score: 0.28 [0.22, 0.33] (n=28)
+  efe_Ghat: 0.29 [0.20, 0.40] (n=28)
+  spill_index: -0.50 [-0.50, -0.50] (n=28)
+  eq_style: 0.02 [0.01, 0.03] (n=28)
+  comp_ratio: 0.38 [0.34, 0.42] (n=28)
+  style_dist: 0.30 [0.24, 0.37] (n=28)
+  x_perspective_obedience: 0.21 [0.08, 0.38] (n=24)
+  delta_hedge: 0.01 [0.00, 0.02] (n=28)
+  x_meta_language_share (%): 15.19 [6.30, 25.40] (n=28)
+  x_topic_focus_share (%): 56.42 [43.19, 69.57] (n=28)
+
+🎯 D_STAPLERS_CLAUDE:
+  x_user_align: -0.14 [-0.30, 0.02] (n=28)
+  x_arbitration_rate: 0.71 [0.54, 0.89] (n=28)
+  x_theatre_evidence_score: 0.65 [0.54, 0.75] (n=28)
+  i_theatre_evidence_score: 0.65 [0.56, 0.74] (n=28)
+  efe_Ghat: 0.60 [0.40, 0.79] (n=28)
+  spill_index: -0.43 [-0.50, -0.32] (n=28)
+  eq_style: 0.01 [0.00, 0.01] (n=28)
+  comp_ratio: 0.22 [0.18, 0.26] (n=28)
+  style_dist: 0.48 [0.41, 0.54] (n=28)
+  x_perspective_obedience: 0.11 [0.00, 0.25] (n=28)
+  delta_hedge: -0.00 [-0.01, 0.00] (n=28)
+  x_meta_language_share (%): 34.68 [22.60, 47.47] (n=28)
+  x_topic_focus_share (%): 27.90 [15.54, 41.42] (n=28)
+
+🎯 D_STAPLERS_GEMINI:
+  x_user_align: 0.21 [0.10, 0.32] (n=28)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=28)
+  x_theatre_evidence_score: 0.15 [0.11, 0.20] (n=28)
+  i_theatre_evidence_score: 0.67 [0.58, 0.75] (n=28)
+  efe_Ghat: -0.22 [-0.35, -0.08] (n=28)
+  spill_index: -0.50 [-0.50, -0.50] (n=28)
+  eq_style: 0.01 [0.01, 0.02] (n=28)
+  comp_ratio: 0.23 [0.20, 0.26] (n=28)
+  style_dist: 0.47 [0.43, 0.51] (n=28)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=28)
+  delta_hedge: 0.01 [0.01, 0.01] (n=28)
+  x_meta_language_share (%): 6.27 [2.10, 11.03] (n=28)
+  x_topic_focus_share (%): 40.48 [32.90, 48.64] (n=28)
+
+🎯 D_STAPLERS_CHATGPT:
+  x_user_align: 0.16 [0.02, 0.29] (n=28)
+  x_arbitration_rate: 0.04 [0.00, 0.11] (n=28)
+  x_theatre_evidence_score: 0.19 [0.13, 0.27] (n=28)
+  i_theatre_evidence_score: 0.28 [0.20, 0.39] (n=28)
+  efe_Ghat: 0.31 [0.18, 0.44] (n=28)
+  spill_index: -0.50 [-0.50, -0.50] (n=28)
+  eq_style: 0.01 [0.01, 0.02] (n=28)
+  comp_ratio: 0.38 [0.35, 0.41] (n=28)
+  style_dist: 0.26 [0.21, 0.32] (n=28)
+  x_perspective_obedience: 0.19 [0.08, 0.35] (n=26)
+  delta_hedge: 0.00 [-0.01, 0.01] (n=28)
+  x_meta_language_share (%): 18.07 [7.85, 29.29] (n=28)
+  x_topic_focus_share (%): 58.70 [46.75, 69.59] (n=28)
+
+🎯 D_DUCKS_CLAUDE:
+  x_user_align: -0.07 [-0.25, 0.11] (n=20)
+  x_arbitration_rate: 0.40 [0.20, 0.60] (n=20)
+  x_theatre_evidence_score: 0.47 [0.33, 0.60] (n=20)
+  i_theatre_evidence_score: 0.75 [0.67, 0.82] (n=20)
+  efe_Ghat: 0.22 [0.00, 0.45] (n=20)
+  spill_index: -0.35 [-0.50, -0.20] (n=20)
+  eq_style: 0.01 [0.00, 0.01] (n=20)
+  comp_ratio: 0.24 [0.19, 0.30] (n=20)
+  style_dist: 0.38 [0.31, 0.47] (n=20)
+  x_perspective_obedience: 0.05 [0.00, 0.15] (n=20)
+  delta_hedge: -0.00 [-0.01, 0.00] (n=20)
+  x_meta_language_share (%): 34.44 [18.19, 50.66] (n=20)
+  x_topic_focus_share (%): 35.66 [21.86, 50.13] (n=20)
+
+🎯 D_DUCKS_GEMINI:
+  x_user_align: 0.14 [0.03, 0.25] (n=20)
+  x_arbitration_rate: 0.15 [0.00, 0.30] (n=20)
+  x_theatre_evidence_score: 0.26 [0.17, 0.37] (n=20)
+  i_theatre_evidence_score: 0.68 [0.58, 0.77] (n=20)
+  efe_Ghat: -0.03 [-0.22, 0.19] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.01 [0.01, 0.02] (n=20)
+  comp_ratio: 0.23 [0.20, 0.25] (n=20)
+  style_dist: 0.53 [0.48, 0.59] (n=20)
+  x_perspective_obedience: 0.00 [0.00, 0.00] (n=20)
+  delta_hedge: 0.01 [0.01, 0.02] (n=20)
+  x_meta_language_share (%): 10.49 [3.17, 19.22] (n=20)
+  x_topic_focus_share (%): 27.04 [17.71, 35.99] (n=20)
+
+🎯 D_DUCKS_CHATGPT:
+  x_user_align: 0.09 [-0.05, 0.23] (n=20)
+  x_arbitration_rate: 0.00 [0.00, 0.00] (n=20)
+  x_theatre_evidence_score: 0.20 [0.15, 0.26] (n=20)
+  i_theatre_evidence_score: 0.36 [0.30, 0.42] (n=20)
+  efe_Ghat: 0.36 [0.22, 0.50] (n=20)
+  spill_index: -0.50 [-0.50, -0.50] (n=20)
+  eq_style: 0.02 [0.01, 0.03] (n=20)
+  comp_ratio: 0.39 [0.36, 0.42] (n=20)
+  style_dist: 0.26 [0.21, 0.31] (n=20)
+  x_perspective_obedience: 0.15 [0.00, 0.30] (n=20)
+  delta_hedge: -0.00 [-0.01, 0.01] (n=20)
+  x_meta_language_share (%): 27.09 [13.75, 40.98] (n=20)
+  x_topic_focus_share (%): 55.23 [42.05, 68.48] (n=20)
+
+🎯 D_PAPRIKA_CLAUDE:
+  x_user_align: -0.05 [-0.19, 0.08] (n=28)
+  x_arbitration_rate: 0.50 [0.32, 0.68] (n=28)
+  x_theatre_evidence_score: 0.51 [0.39, 0.62] (n=28)
+  i_theatre_evidence_score: 0.75 [0.69, 0.80] (n=28)
+  efe_Ghat: 0.27 [0.06, 0.49] (n=28)
+  spill_index: -0.36 [-0.46, -0.21] (n=28)
+  eq_style: 0.01 [0.00, 0.01] (n=28)
+  comp_ratio: 0.24 [0.20, 0.29] (n=28)
+  style_dist: 0.45 [0.38, 0.52] (n=28)
+  x_perspective_obedience: 0.14 [0.04, 0.29] (n=28)
+  delta_hedge: -0.00 [-0.00, 0.00] (n=28)
+  x_meta_language_share (%): 27.58 [17.47, 39.42] (n=28)
+  x_topic_focus_share (%): 33.20 [20.62, 46.22] (n=28)
+
+🎯 D_PAPRIKA_GEMINI:
+  x_user_align: 0.29 [0.21, 0.37] (n=28)
+  x_arbitration_rate: 0.07 [0.00, 0.18] (n=28)
+  x_theatre_evidence_score: 0.16 [0.10, 0.23] (n=28)
+  i_theatre_evidence_score: 0.65 [0.55, 0.75] (n=28)
+  efe_Ghat: -0.17 [-0.33, 0.01] (n=28)
+  spill_index: -0.43 [-0.50, -0.32] (n=28)
+  eq_style: 0.02 [0.01, 0.02] (n=28)
+  comp_ratio: 0.24 [0.21, 0.26] (n=28)
+  style_dist: 0.61 [0.55, 0.66] (n=28)
+  x_perspective_obedience: 0.04 [0.00, 0.11] (n=28)
+  delta_hedge: 0.02 [0.01, 0.02] (n=28)
+  x_meta_language_share (%): 9.85 [4.28, 15.81] (n=28)
+  x_topic_focus_share (%): 21.34 [14.88, 28.59] (n=28)
+
+🎯 D_PAPRIKA_CHATGPT:
+  x_user_align: 0.28 [0.15, 0.38] (n=28)
+  x_arbitration_rate: 0.04 [0.00, 0.11] (n=28)
+  x_theatre_evidence_score: 0.14 [0.09, 0.20] (n=28)
+  i_theatre_evidence_score: 0.25 [0.19, 0.31] (n=28)
+  efe_Ghat: 0.23 [0.13, 0.34] (n=28)
+  spill_index: -0.43 [-0.50, -0.32] (n=28)
+  eq_style: 0.02 [0.01, 0.03] (n=28)
+  comp_ratio: 0.41 [0.37, 0.45] (n=28)
+  style_dist: 0.27 [0.22, 0.33] (n=28)
+  x_perspective_obedience: 0.26 [0.09, 0.48] (n=23)
+  delta_hedge: 0.01 [0.00, 0.02] (n=28)
+  x_meta_language_share (%): 15.01 [5.28, 25.75] (n=28)
+  x_topic_focus_share (%): 45.93 [34.32, 58.45] (n=28)
+
+🔬 SCENARIO CONTRASTS:
+--------------------
+
+📈 E_STAPLERS_CLAUDE VS B_STAPLERS_CLAUDE (EXTERNAL METRICS) [external ref, staplers_claude]:
+   (E_staplers_claude vs B_staplers_claude)
+   x_user_align: Δ=+0.404 [+0.265, +0.546] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.571 [-0.750, -0.393] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.450 [-0.574, -0.323] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.013 [+0.008, +0.018] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_CLAUDE VS B_STAPLERS_CLAUDE (INTERNAL METRICS) [internal ref, staplers_claude]:
+   (A_staplers_claude vs B_staplers_claude)
+   i_theatre_evidence_score: Δ=+0.023 [-0.106, +0.153]
+   efe_Ghat: Δ=+0.008 [-0.298, +0.302]
+   spill_index: Δ=+0.071 [-0.179, +0.321]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_CLAUDE VS F_STAPLERS_CLAUDE (EXTERNAL METRICS) [external ref, staplers_claude]:
+   (E_staplers_claude vs F_staplers_claude)
+   x_user_align: Δ=+0.403 [+0.263, +0.544] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.450 [-0.650, -0.250] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.391 [-0.526, -0.260] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.011 [+0.006, +0.016] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_CLAUDE VS F_STAPLERS_CLAUDE (INTERNAL METRICS) [internal ref, staplers_claude]:
+   (A_staplers_claude vs F_staplers_claude)
+   i_theatre_evidence_score: Δ=-0.216 [-0.310, -0.124] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=+0.253 [-0.063, +0.564] ⚠️ MODERATE EFFECT
+   spill_index: Δ=+0.093 [-0.186, +0.364]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_CLAUDE VS A_STAPLERS_CLAUDE (EXTERNAL METRICS) [external ref, staplers_claude]:
+   (E_staplers_claude vs A_staplers_claude)
+   x_user_align: Δ=+0.435 [+0.259, +0.602] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.643 [-0.821, -0.464] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.498 [-0.621, -0.360] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.010 [+0.004, +0.015] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_CLAUDE VS E_STAPLERS_CLAUDE (INTERNAL METRICS) [internal ref, staplers_claude]:
+   (A_staplers_claude vs E_staplers_claude)
+   i_theatre_evidence_score: n/a (no internal data in comparison scenario)
+   efe_Ghat: Δ=+0.267 [+0.021, +0.478] ✅ SIGNIFICANT POSITIVE
+   spill_index: Δ=+0.393 [+0.214, +0.571] ✅ SIGNIFICANT POSITIVE
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_CLAUDE VS C_STAPLERS_CLAUDE (EXTERNAL METRICS) [external ref, staplers_claude]:
+   (E_staplers_claude vs C_staplers_claude)
+   x_user_align: Δ=+0.335 [+0.170, +0.502] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.536 [-0.714, -0.357] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.405 [-0.527, -0.278] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.013 [+0.009, +0.017] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_CLAUDE VS C_STAPLERS_CLAUDE (INTERNAL METRICS) [internal ref, staplers_claude]:
+   (A_staplers_claude vs C_staplers_claude)
+   i_theatre_evidence_score: Δ=-0.059 [-0.165, +0.048]
+   efe_Ghat: Δ=+0.142 [-0.162, +0.433] ⚠️ MODERATE EFFECT
+   spill_index: Δ=+0.214 [+0.000, +0.464] ⚠️ MODERATE EFFECT
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_CLAUDE VS D_STAPLERS_CLAUDE (EXTERNAL METRICS) [external ref, staplers_claude]:
+   (E_staplers_claude vs D_staplers_claude)
+   x_user_align: Δ=+0.607 [+0.440, +0.778] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.714 [-0.857, -0.536] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.601 [-0.709, -0.484] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.013 [+0.008, +0.017] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_CLAUDE VS D_STAPLERS_CLAUDE (INTERNAL METRICS) [internal ref, staplers_claude]:
+   (A_staplers_claude vs D_staplers_claude)
+   i_theatre_evidence_score: Δ=-0.067 [-0.192, +0.058]
+   efe_Ghat: Δ=-0.240 [-0.539, +0.049] ⚠️ MODERATE EFFECT
+   spill_index: Δ=+0.321 [+0.107, +0.536] ✅ SIGNIFICANT POSITIVE
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_GEMINI VS B_STAPLERS_GEMINI (EXTERNAL METRICS) [external ref, staplers_gemini]:
+   (E_staplers_gemini vs B_staplers_gemini)
+   x_user_align: Δ=+0.643 [+0.495, +0.798] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.250 [-0.429, -0.107] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.367 [-0.483, -0.251] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.020 [+0.009, +0.030] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_GEMINI VS B_STAPLERS_GEMINI (INTERNAL METRICS) [internal ref, staplers_gemini]:
+   (A_staplers_gemini vs B_staplers_gemini)
+   i_theatre_evidence_score: Δ=-0.066 [-0.173, +0.043]
+   efe_Ghat: Δ=-0.046 [-0.303, +0.226]
+   spill_index: Δ=+0.036 [+0.000, +0.107]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_GEMINI VS F_STAPLERS_GEMINI (EXTERNAL METRICS) [external ref, staplers_gemini]:
+   (E_staplers_gemini vs F_staplers_gemini)
+   x_user_align: Δ=+0.428 [+0.288, +0.578] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.450 [-0.650, -0.250] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.380 [-0.520, -0.243] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.027 [+0.017, +0.036] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_GEMINI VS F_STAPLERS_GEMINI (INTERNAL METRICS) [internal ref, staplers_gemini]:
+   (A_staplers_gemini vs F_staplers_gemini)
+   i_theatre_evidence_score: Δ=-0.142 [-0.249, -0.040] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=+0.088 [-0.207, +0.399]
+   spill_index: Δ=-0.414 [-0.650, -0.193] ✅ SIGNIFICANT NEGATIVE
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_GEMINI VS A_STAPLERS_GEMINI (EXTERNAL METRICS) [external ref, staplers_gemini]:
+   (E_staplers_gemini vs A_staplers_gemini)
+   x_user_align: Δ=+0.672 [+0.497, +0.850] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.143 [-0.286, -0.036] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.319 [-0.416, -0.237] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.015 [+0.003, +0.025] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_GEMINI VS E_STAPLERS_GEMINI (INTERNAL METRICS) [internal ref, staplers_gemini]:
+   (A_staplers_gemini vs E_staplers_gemini)
+   i_theatre_evidence_score: n/a (no internal data in comparison scenario)
+   efe_Ghat: Δ=+0.086 [-0.076, +0.270]
+   spill_index: Δ=+0.036 [+0.000, +0.107]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_GEMINI VS C_STAPLERS_GEMINI (EXTERNAL METRICS) [external ref, staplers_gemini]:
+   (E_staplers_gemini vs C_staplers_gemini)
+   x_user_align: Δ=+0.302 [+0.184, +0.420] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.250 [-0.429, -0.107] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.228 [-0.338, -0.137] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.018 [+0.006, +0.028] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_GEMINI VS C_STAPLERS_GEMINI (INTERNAL METRICS) [internal ref, staplers_gemini]:
+   (A_staplers_gemini vs C_staplers_gemini)
+   i_theatre_evidence_score: Δ=+0.095 [-0.037, +0.217]
+   efe_Ghat: Δ=+0.058 [-0.178, +0.306]
+   spill_index: Δ=+0.000 [-0.107, +0.107]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_GEMINI VS D_STAPLERS_GEMINI (EXTERNAL METRICS) [external ref, staplers_gemini]:
+   (E_staplers_gemini vs D_staplers_gemini)
+   x_user_align: Δ=+0.368 [+0.239, +0.510] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=+0.000 [+0.000, +0.000] (both scenarios: no arbitration detected)
+   x_theatre_evidence_score: Δ=-0.129 [-0.183, -0.080] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.018 [+0.007, +0.028] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_GEMINI VS D_STAPLERS_GEMINI (INTERNAL METRICS) [internal ref, staplers_gemini]:
+   (A_staplers_gemini vs D_staplers_gemini)
+   i_theatre_evidence_score: Δ=-0.056 [-0.168, +0.059]
+   efe_Ghat: Δ=+0.352 [+0.135, +0.581] ✅ SIGNIFICANT POSITIVE
+   spill_index: Δ=+0.036 [+0.000, +0.107]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_CHATGPT VS B_STAPLERS_CHATGPT (EXTERNAL METRICS) [external ref, staplers_chatgpt]:
+   (E_staplers_chatgpt vs B_staplers_chatgpt)
+   x_user_align: Δ=+0.496 [+0.334, +0.674] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.107 [-0.214, +0.000] ⚠️ MODERATE EFFECT
+   x_theatre_evidence_score: Δ=-0.245 [-0.351, -0.151] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.017 [+0.007, +0.026] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_CHATGPT VS B_STAPLERS_CHATGPT (INTERNAL METRICS) [internal ref, staplers_chatgpt]:
+   (A_staplers_chatgpt vs B_staplers_chatgpt)
+   i_theatre_evidence_score: Δ=-0.187 [-0.265, -0.100] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=-0.183 [-0.378, +0.002] ⚠️ MODERATE EFFECT
+   spill_index: Δ=+0.000 [+0.000, +0.000] (both scenarios: identical values)
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_CHATGPT VS F_STAPLERS_CHATGPT (EXTERNAL METRICS) [external ref, staplers_chatgpt]:
+   (E_staplers_chatgpt vs F_staplers_chatgpt)
+   x_user_align: Δ=+0.632 [+0.482, +0.796] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.455 [-0.592, -0.327] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.029 [+0.022, +0.036] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_CHATGPT VS F_STAPLERS_CHATGPT (INTERNAL METRICS) [internal ref, staplers_chatgpt]:
+   (A_staplers_chatgpt vs F_staplers_chatgpt)
+   i_theatre_evidence_score: Δ=-0.697 [-0.771, -0.621] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=+0.113 [-0.155, +0.364] ⚠️ MODERATE EFFECT
+   spill_index: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_CHATGPT VS A_STAPLERS_CHATGPT (EXTERNAL METRICS) [external ref, staplers_chatgpt]:
+   (E_staplers_chatgpt vs A_staplers_chatgpt)
+   x_user_align: Δ=+0.303 [+0.158, +0.450] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=+0.000 [+0.000, +0.000] (both scenarios: no arbitration detected)
+   x_theatre_evidence_score: Δ=-0.126 [-0.185, -0.070] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.015 [+0.005, +0.025] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_CHATGPT VS E_STAPLERS_CHATGPT (INTERNAL METRICS) [internal ref, staplers_chatgpt]:
+   (A_staplers_chatgpt vs E_staplers_chatgpt)
+   i_theatre_evidence_score: n/a (no internal data in comparison scenario)
+   efe_Ghat: Δ=+0.253 [+0.144, +0.369] ✅ SIGNIFICANT POSITIVE
+   spill_index: Δ=+0.000 [+0.000, +0.000] (both scenarios: identical values)
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_CHATGPT VS C_STAPLERS_CHATGPT (EXTERNAL METRICS) [external ref, staplers_chatgpt]:
+   (E_staplers_chatgpt vs C_staplers_chatgpt)
+   x_user_align: Δ=+0.286 [+0.184, +0.404] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=+0.000 [+0.000, +0.000] (both scenarios: no arbitration detected)
+   x_theatre_evidence_score: Δ=-0.112 [-0.159, -0.071] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.011 [+0.000, +0.020] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_CHATGPT VS C_STAPLERS_CHATGPT (INTERNAL METRICS) [internal ref, staplers_chatgpt]:
+   (A_staplers_chatgpt vs C_staplers_chatgpt)
+   i_theatre_evidence_score: Δ=-0.120 [-0.207, -0.033] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=+0.103 [-0.044, +0.254] ⚠️ MODERATE EFFECT
+   spill_index: Δ=-0.036 [-0.107, +0.000]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_STAPLERS_CHATGPT VS D_STAPLERS_CHATGPT (EXTERNAL METRICS) [external ref, staplers_chatgpt]:
+   (E_staplers_chatgpt vs D_staplers_chatgpt)
+   x_user_align: Δ=+0.388 [+0.256, +0.534] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.036 [-0.107, +0.000]
+   x_theatre_evidence_score: Δ=-0.172 [-0.258, -0.104] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.017 [+0.009, +0.026] ✅ SIGNIFICANT POSITIVE
+
+📈 A_STAPLERS_CHATGPT VS D_STAPLERS_CHATGPT (INTERNAL METRICS) [internal ref, staplers_chatgpt]:
+   (A_staplers_chatgpt vs D_staplers_chatgpt)
+   i_theatre_evidence_score: Δ=-0.153 [-0.267, -0.051] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=-0.014 [-0.181, +0.155]
+   spill_index: Δ=+0.000 [+0.000, +0.000] (both scenarios: identical values)
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_CLAUDE VS B_DUCKS_CLAUDE (EXTERNAL METRICS) [external ref, ducks_claude]:
+   (E_ducks_claude vs B_ducks_claude)
+   x_user_align: Δ=+0.071 [-0.032, +0.169]
+   x_arbitration_rate: Δ=-0.450 [-0.650, -0.250] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.254 [-0.382, -0.124] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.010 [+0.003, +0.017] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_CLAUDE VS B_DUCKS_CLAUDE (INTERNAL METRICS) [internal ref, ducks_claude]:
+   (A_ducks_claude vs B_ducks_claude)
+   i_theatre_evidence_score: Δ=-0.039 [-0.180, +0.097]
+   efe_Ghat: Δ=-0.298 [-0.590, +0.008] ⚠️ MODERATE EFFECT
+   spill_index: Δ=-0.150 [-0.350, +0.050] ⚠️ MODERATE EFFECT
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_CLAUDE VS F_DUCKS_CLAUDE (EXTERNAL METRICS) [external ref, ducks_claude]:
+   (E_ducks_claude vs F_ducks_claude)
+   x_user_align: Δ=+0.240 [+0.092, +0.404] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.500 [-0.700, -0.300] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.350 [-0.492, -0.213] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.019 [+0.014, +0.023] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_CLAUDE VS F_DUCKS_CLAUDE (INTERNAL METRICS) [internal ref, ducks_claude]:
+   (A_ducks_claude vs F_ducks_claude)
+   i_theatre_evidence_score: Δ=-0.202 [-0.329, -0.079] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=-0.334 [-0.632, -0.031] ✅ SIGNIFICANT NEGATIVE
+   spill_index: Δ=-0.450 [-0.700, -0.200] ✅ SIGNIFICANT NEGATIVE
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_CLAUDE VS A_DUCKS_CLAUDE (EXTERNAL METRICS) [external ref, ducks_claude]:
+   (E_ducks_claude vs A_ducks_claude)
+   x_user_align: Δ=-0.029 [-0.138, +0.083]
+   x_arbitration_rate: Δ=-0.200 [-0.400, -0.050] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.088 [-0.186, +0.006]
+   eq_style: Δ=+0.016 [+0.011, +0.021] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_CLAUDE VS E_DUCKS_CLAUDE (INTERNAL METRICS) [internal ref, ducks_claude]:
+   (A_ducks_claude vs E_ducks_claude)
+   i_theatre_evidence_score: n/a (no internal data in comparison scenario)
+   efe_Ghat: Δ=-0.394 [-0.579, -0.204] ✅ SIGNIFICANT NEGATIVE
+   spill_index: Δ=+0.050 [+0.000, +0.150]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_CLAUDE VS C_DUCKS_CLAUDE (EXTERNAL METRICS) [external ref, ducks_claude]:
+   (E_ducks_claude vs C_ducks_claude)
+   x_user_align: Δ=+0.278 [+0.100, +0.463] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.550 [-0.750, -0.350] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.385 [-0.512, -0.259] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.010 [+0.004, +0.016] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_CLAUDE VS C_DUCKS_CLAUDE (INTERNAL METRICS) [internal ref, ducks_claude]:
+   (A_ducks_claude vs C_ducks_claude)
+   i_theatre_evidence_score: Δ=-0.180 [-0.303, -0.059] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=-0.406 [-0.686, -0.118] ✅ SIGNIFICANT NEGATIVE
+   spill_index: Δ=-0.200 [-0.400, +0.000] ⚠️ MODERATE EFFECT
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_CLAUDE VS D_DUCKS_CLAUDE (EXTERNAL METRICS) [external ref, ducks_claude]:
+   (E_ducks_claude vs D_ducks_claude)
+   x_user_align: Δ=+0.332 [+0.136, +0.534] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.334 [-0.472, -0.205] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.015 [+0.009, +0.020] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_CLAUDE VS D_DUCKS_CLAUDE (INTERNAL METRICS) [internal ref, ducks_claude]:
+   (A_ducks_claude vs D_ducks_claude)
+   i_theatre_evidence_score: Δ=-0.183 [-0.317, -0.058] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=-0.352 [-0.653, -0.062] ✅ SIGNIFICANT NEGATIVE
+   spill_index: Δ=-0.100 [-0.300, +0.050] ⚠️ MODERATE EFFECT
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_GEMINI VS B_DUCKS_GEMINI (EXTERNAL METRICS) [external ref, ducks_gemini]:
+   (E_ducks_gemini vs B_ducks_gemini)
+   x_user_align: Δ=+0.609 [+0.491, +0.734] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.050 [-0.150, +0.000]
+   x_theatre_evidence_score: Δ=-0.276 [-0.339, -0.218] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.037 [+0.030, +0.044] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_GEMINI VS B_DUCKS_GEMINI (INTERNAL METRICS) [internal ref, ducks_gemini]:
+   (A_ducks_gemini vs B_ducks_gemini)
+   i_theatre_evidence_score: Δ=-0.067 [-0.200, +0.070]
+   efe_Ghat: Δ=+0.032 [-0.197, +0.251]
+   spill_index: Δ=-0.050 [-0.150, +0.000]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_GEMINI VS F_DUCKS_GEMINI (EXTERNAL METRICS) [external ref, ducks_gemini]:
+   (E_ducks_gemini vs F_ducks_gemini)
+   x_user_align: Δ=+0.627 [+0.456, +0.802] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.600 [-0.800, -0.400] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.557 [-0.697, -0.410] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.038 [+0.030, +0.046] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_GEMINI VS F_DUCKS_GEMINI (INTERNAL METRICS) [internal ref, ducks_gemini]:
+   (A_ducks_gemini vs F_ducks_gemini)
+   i_theatre_evidence_score: Δ=-0.180 [-0.300, -0.073] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=-0.325 [-0.630, -0.000] ✅ SIGNIFICANT NEGATIVE
+   spill_index: Δ=-0.350 [-0.550, -0.150] ✅ SIGNIFICANT NEGATIVE
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_GEMINI VS A_DUCKS_GEMINI (EXTERNAL METRICS) [external ref, ducks_gemini]:
+   (E_ducks_gemini vs A_ducks_gemini)
+   x_user_align: Δ=+0.454 [+0.340, +0.563] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.100 [-0.250, +0.000]
+   x_theatre_evidence_score: Δ=-0.236 [-0.319, -0.165] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.030 [+0.022, +0.038] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_GEMINI VS E_DUCKS_GEMINI (INTERNAL METRICS) [internal ref, ducks_gemini]:
+   (A_ducks_gemini vs E_ducks_gemini)
+   i_theatre_evidence_score: n/a (no internal data in comparison scenario)
+   efe_Ghat: Δ=-0.012 [-0.175, +0.169]
+   spill_index: Δ=+0.000 [+0.000, +0.000] (both scenarios: identical values)
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_GEMINI VS C_DUCKS_GEMINI (EXTERNAL METRICS) [external ref, ducks_gemini]:
+   (E_ducks_gemini vs C_ducks_gemini)
+   x_user_align: Δ=+0.398 [+0.292, +0.511] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=+0.000 [+0.000, +0.000] (both scenarios: no arbitration detected)
+   x_theatre_evidence_score: Δ=-0.163 [-0.209, -0.119] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.034 [+0.027, +0.041] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_GEMINI VS C_DUCKS_GEMINI (INTERNAL METRICS) [internal ref, ducks_gemini]:
+   (A_ducks_gemini vs C_ducks_gemini)
+   i_theatre_evidence_score: Δ=+0.025 [-0.122, +0.170]
+   efe_Ghat: Δ=+0.084 [-0.154, +0.312]
+   spill_index: Δ=+0.000 [+0.000, +0.000] (both scenarios: identical values)
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_GEMINI VS D_DUCKS_GEMINI (EXTERNAL METRICS) [external ref, ducks_gemini]:
+   (E_ducks_gemini vs D_ducks_gemini)
+   x_user_align: Δ=+0.362 [+0.248, +0.481] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.150 [-0.300, +0.000] ⚠️ MODERATE EFFECT
+   x_theatre_evidence_score: Δ=-0.223 [-0.329, -0.129] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.032 [+0.025, +0.041] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_GEMINI VS D_DUCKS_GEMINI (INTERNAL METRICS) [internal ref, ducks_gemini]:
+   (A_ducks_gemini vs D_ducks_gemini)
+   i_theatre_evidence_score: Δ=+0.020 [-0.116, +0.153]
+   efe_Ghat: Δ=+0.084 [-0.177, +0.346]
+   spill_index: Δ=+0.000 [+0.000, +0.000] (both scenarios: identical values)
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_CHATGPT VS B_DUCKS_CHATGPT (EXTERNAL METRICS) [external ref, ducks_chatgpt]:
+   (E_ducks_chatgpt vs B_ducks_chatgpt)
+   x_user_align: Δ=+0.477 [+0.333, +0.640] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=+0.000 [+0.000, +0.000] (both scenarios: no arbitration detected)
+   x_theatre_evidence_score: Δ=-0.193 [-0.257, -0.136] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.008 [-0.004, +0.019]
+
+📈 A_DUCKS_CHATGPT VS B_DUCKS_CHATGPT (INTERNAL METRICS) [internal ref, ducks_chatgpt]:
+   (A_ducks_chatgpt vs B_ducks_chatgpt)
+   i_theatre_evidence_score: Δ=-0.105 [-0.213, -0.003] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=-0.249 [-0.412, -0.088] ✅ SIGNIFICANT NEGATIVE
+   spill_index: Δ=+0.050 [+0.000, +0.150]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_CHATGPT VS F_DUCKS_CHATGPT (EXTERNAL METRICS) [external ref, ducks_chatgpt]:
+   (E_ducks_chatgpt vs F_ducks_chatgpt)
+   x_user_align: Δ=+0.459 [+0.286, +0.654] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.388 [-0.511, -0.274] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.021 [+0.013, +0.028] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_CHATGPT VS F_DUCKS_CHATGPT (INTERNAL METRICS) [internal ref, ducks_chatgpt]:
+   (A_ducks_chatgpt vs F_ducks_chatgpt)
+   i_theatre_evidence_score: Δ=-0.511 [-0.624, -0.396] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=+0.031 [-0.197, +0.236]
+   spill_index: Δ=-0.400 [-0.650, -0.150] ✅ SIGNIFICANT NEGATIVE
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_CHATGPT VS A_DUCKS_CHATGPT (EXTERNAL METRICS) [external ref, ducks_chatgpt]:
+   (E_ducks_chatgpt vs A_ducks_chatgpt)
+   x_user_align: Δ=+0.174 [+0.099, +0.250] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=+0.000 [+0.000, +0.000] (both scenarios: no arbitration detected)
+   x_theatre_evidence_score: Δ=-0.070 [-0.102, -0.040] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.011 [+0.005, +0.018] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_CHATGPT VS E_DUCKS_CHATGPT (INTERNAL METRICS) [internal ref, ducks_chatgpt]:
+   (A_ducks_chatgpt vs E_ducks_chatgpt)
+   i_theatre_evidence_score: n/a (no internal data in comparison scenario)
+   efe_Ghat: Δ=+0.104 [+0.015, +0.187] ✅ SIGNIFICANT POSITIVE
+   spill_index: Δ=+0.050 [+0.000, +0.150]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_CHATGPT VS C_DUCKS_CHATGPT (EXTERNAL METRICS) [external ref, ducks_chatgpt]:
+   (E_ducks_chatgpt vs C_ducks_chatgpt)
+   x_user_align: Δ=+0.405 [+0.297, +0.529] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=+0.000 [+0.000, +0.000] (both scenarios: no arbitration detected)
+   x_theatre_evidence_score: Δ=-0.164 [-0.213, -0.121] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.009 [+0.000, +0.017] ✅ SIGNIFICANT POSITIVE
+
+📈 A_DUCKS_CHATGPT VS C_DUCKS_CHATGPT (INTERNAL METRICS) [internal ref, ducks_chatgpt]:
+   (A_ducks_chatgpt vs C_ducks_chatgpt)
+   i_theatre_evidence_score: Δ=-0.169 [-0.290, -0.043] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=-0.124 [-0.282, +0.031] ⚠️ MODERATE EFFECT
+   spill_index: Δ=+0.050 [+0.000, +0.150]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_DUCKS_CHATGPT VS D_DUCKS_CHATGPT (EXTERNAL METRICS) [external ref, ducks_chatgpt]:
+   (E_ducks_chatgpt vs D_ducks_chatgpt)
+   x_user_align: Δ=+0.437 [+0.297, +0.589] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=+0.000 [+0.000, +0.000] (both scenarios: no arbitration detected)
+   x_theatre_evidence_score: Δ=-0.176 [-0.235, -0.120] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.008 [-0.003, +0.017]
+
+📈 A_DUCKS_CHATGPT VS D_DUCKS_CHATGPT (INTERNAL METRICS) [internal ref, ducks_chatgpt]:
+   (A_ducks_chatgpt vs D_ducks_chatgpt)
+   i_theatre_evidence_score: Δ=-0.141 [-0.241, -0.049] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=-0.215 [-0.372, -0.052] ✅ SIGNIFICANT NEGATIVE
+   spill_index: Δ=+0.050 [+0.000, +0.150]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_CLAUDE VS B_PAPRIKA_CLAUDE (EXTERNAL METRICS) [external ref, paprika_claude]:
+   (E_paprika_claude vs B_paprika_claude)
+   x_user_align: Δ=+0.207 [+0.111, +0.309] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.357 [-0.536, -0.179] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.263 [-0.366, -0.155] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.018 [+0.013, +0.022] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_CLAUDE VS B_PAPRIKA_CLAUDE (INTERNAL METRICS) [internal ref, paprika_claude]:
+   (A_paprika_claude vs B_paprika_claude)
+   i_theatre_evidence_score: Δ=+0.046 [-0.100, +0.177]
+   efe_Ghat: Δ=-0.218 [-0.507, +0.071] ⚠️ MODERATE EFFECT
+   spill_index: Δ=-0.214 [-0.393, +0.000] ⚠️ MODERATE EFFECT
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_CLAUDE VS F_PAPRIKA_CLAUDE (EXTERNAL METRICS) [external ref, paprika_claude]:
+   (E_paprika_claude vs F_paprika_claude)
+   x_user_align: Δ=+0.321 [+0.187, +0.473] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.450 [-0.650, -0.250] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.356 [-0.502, -0.221] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.016 [+0.010, +0.023] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_CLAUDE VS F_PAPRIKA_CLAUDE (INTERNAL METRICS) [internal ref, paprika_claude]:
+   (A_paprika_claude vs F_paprika_claude)
+   i_theatre_evidence_score: Δ=-0.192 [-0.296, -0.096] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=-0.203 [-0.535, +0.122] ⚠️ MODERATE EFFECT
+   spill_index: Δ=-0.279 [-0.514, -0.050] ✅ SIGNIFICANT NEGATIVE
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_CLAUDE VS A_PAPRIKA_CLAUDE (EXTERNAL METRICS) [external ref, paprika_claude]:
+   (E_paprika_claude vs A_paprika_claude)
+   x_user_align: Δ=+0.174 [+0.070, +0.285] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.214 [-0.357, -0.071] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.180 [-0.298, -0.075] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.020 [+0.016, +0.025] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_CLAUDE VS E_PAPRIKA_CLAUDE (INTERNAL METRICS) [internal ref, paprika_claude]:
+   (A_paprika_claude vs E_paprika_claude)
+   i_theatre_evidence_score: n/a (no internal data in comparison scenario)
+   efe_Ghat: Δ=-0.265 [-0.468, -0.061] ✅ SIGNIFICANT NEGATIVE
+   spill_index: Δ=+0.071 [+0.000, +0.179]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_CLAUDE VS C_PAPRIKA_CLAUDE (EXTERNAL METRICS) [external ref, paprika_claude]:
+   (E_paprika_claude vs C_paprika_claude)
+   x_user_align: Δ=+0.452 [+0.290, +0.619] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.286 [-0.464, -0.143] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.320 [-0.444, -0.206] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.016 [+0.011, +0.021] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_CLAUDE VS C_PAPRIKA_CLAUDE (INTERNAL METRICS) [internal ref, paprika_claude]:
+   (A_paprika_claude vs C_paprika_claude)
+   i_theatre_evidence_score: Δ=-0.047 [-0.161, +0.065]
+   efe_Ghat: Δ=-0.246 [-0.544, +0.051] ⚠️ MODERATE EFFECT
+   spill_index: Δ=+0.000 [-0.143, +0.143]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_CLAUDE VS D_PAPRIKA_CLAUDE (EXTERNAL METRICS) [external ref, paprika_claude]:
+   (E_paprika_claude vs D_paprika_claude)
+   x_user_align: Δ=+0.413 [+0.278, +0.557] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.500 [-0.679, -0.321] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.418 [-0.532, -0.307] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.016 [+0.011, +0.021] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_CLAUDE VS D_PAPRIKA_CLAUDE (INTERNAL METRICS) [internal ref, paprika_claude]:
+   (A_paprika_claude vs D_paprika_claude)
+   i_theatre_evidence_score: Δ=-0.134 [-0.242, -0.029] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=-0.354 [-0.642, -0.080] ✅ SIGNIFICANT NEGATIVE
+   spill_index: Δ=-0.071 [-0.215, +0.107]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_GEMINI VS B_PAPRIKA_GEMINI (EXTERNAL METRICS) [external ref, paprika_gemini]:
+   (E_paprika_gemini vs B_paprika_gemini)
+   x_user_align: Δ=+0.400 [+0.278, +0.532] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.107 [-0.250, +0.000] ⚠️ MODERATE EFFECT
+   x_theatre_evidence_score: Δ=-0.216 [-0.310, -0.135] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.022 [+0.015, +0.027] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_GEMINI VS B_PAPRIKA_GEMINI (INTERNAL METRICS) [internal ref, paprika_gemini]:
+   (A_paprika_gemini vs B_paprika_gemini)
+   i_theatre_evidence_score: Δ=-0.064 [-0.182, +0.050]
+   efe_Ghat: Δ=+0.002 [-0.230, +0.250]
+   spill_index: Δ=-0.071 [-0.214, +0.107]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_GEMINI VS F_PAPRIKA_GEMINI (EXTERNAL METRICS) [external ref, paprika_gemini]:
+   (E_paprika_gemini vs F_paprika_gemini)
+   x_user_align: Δ=+0.370 [+0.245, +0.490] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.353 [-0.487, -0.217] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.029 [+0.023, +0.033] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_GEMINI VS F_PAPRIKA_GEMINI (INTERNAL METRICS) [internal ref, paprika_gemini]:
+   (A_paprika_gemini vs F_paprika_gemini)
+   i_theatre_evidence_score: Δ=-0.096 [-0.220, +0.025]
+   efe_Ghat: Δ=-0.130 [-0.429, +0.154] ⚠️ MODERATE EFFECT
+   spill_index: Δ=-0.279 [-0.514, -0.043] ✅ SIGNIFICANT NEGATIVE
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_GEMINI VS A_PAPRIKA_GEMINI (EXTERNAL METRICS) [external ref, paprika_gemini]:
+   (E_paprika_gemini vs A_paprika_gemini)
+   x_user_align: Δ=+0.368 [+0.258, +0.485] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.143 [-0.286, -0.036] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.224 [-0.314, -0.148] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.018 [+0.013, +0.024] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_GEMINI VS E_PAPRIKA_GEMINI (INTERNAL METRICS) [internal ref, paprika_gemini]:
+   (A_paprika_gemini vs E_paprika_gemini)
+   i_theatre_evidence_score: n/a (no internal data in comparison scenario)
+   efe_Ghat: Δ=-0.131 [-0.293, +0.056] ⚠️ MODERATE EFFECT
+   spill_index: Δ=+0.071 [+0.000, +0.179]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_GEMINI VS C_PAPRIKA_GEMINI (EXTERNAL METRICS) [external ref, paprika_gemini]:
+   (E_paprika_gemini vs C_paprika_gemini)
+   x_user_align: Δ=+0.233 [+0.129, +0.352] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.143 [-0.286, -0.036] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.167 [-0.243, -0.096] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.018 [+0.012, +0.024] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_GEMINI VS C_PAPRIKA_GEMINI (INTERNAL METRICS) [internal ref, paprika_gemini]:
+   (A_paprika_gemini vs C_paprika_gemini)
+   i_theatre_evidence_score: Δ=+0.000 [-0.124, +0.128]
+   efe_Ghat: Δ=+0.015 [-0.230, +0.259]
+   spill_index: Δ=+0.000 [-0.143, +0.143]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_GEMINI VS D_PAPRIKA_GEMINI (EXTERNAL METRICS) [external ref, paprika_gemini]:
+   (E_paprika_gemini vs D_paprika_gemini)
+   x_user_align: Δ=+0.183 [+0.097, +0.273] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.071 [-0.179, +0.000]
+   x_theatre_evidence_score: Δ=-0.111 [-0.181, -0.052] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.016 [+0.010, +0.022] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_GEMINI VS D_PAPRIKA_GEMINI (INTERNAL METRICS) [internal ref, paprika_gemini]:
+   (A_paprika_gemini vs D_paprika_gemini)
+   i_theatre_evidence_score: Δ=-0.044 [-0.176, +0.089]
+   efe_Ghat: Δ=+0.128 [-0.121, +0.374] ⚠️ MODERATE EFFECT
+   spill_index: Δ=+0.000 [-0.143, +0.143]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_CHATGPT VS B_PAPRIKA_CHATGPT (EXTERNAL METRICS) [external ref, paprika_chatgpt]:
+   (E_paprika_chatgpt vs B_paprika_chatgpt)
+   x_user_align: Δ=+0.436 [+0.256, +0.621] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.071 [-0.179, +0.000]
+   x_theatre_evidence_score: Δ=-0.211 [-0.326, -0.114] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.009 [+0.002, +0.016] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_CHATGPT VS B_PAPRIKA_CHATGPT (INTERNAL METRICS) [internal ref, paprika_chatgpt]:
+   (A_paprika_chatgpt vs B_paprika_chatgpt)
+   i_theatre_evidence_score: Δ=-0.072 [-0.173, +0.033]
+   efe_Ghat: Δ=-0.172 [-0.417, +0.048] ⚠️ MODERATE EFFECT
+   spill_index: Δ=+0.036 [-0.071, +0.143]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_CHATGPT VS F_PAPRIKA_CHATGPT (EXTERNAL METRICS) [external ref, paprika_chatgpt]:
+   (E_paprika_chatgpt vs F_paprika_chatgpt)
+   x_user_align: Δ=+0.630 [+0.489, +0.776] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+   x_theatre_evidence_score: Δ=-0.456 [-0.586, -0.330] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.013 [+0.007, +0.018] ✅ SIGNIFICANT POSITIVE
+
+📈 A_PAPRIKA_CHATGPT VS F_PAPRIKA_CHATGPT (INTERNAL METRICS) [internal ref, paprika_chatgpt]:
+   (A_paprika_chatgpt vs F_paprika_chatgpt)
+   i_theatre_evidence_score: Δ=-0.590 [-0.674, -0.504] ✅ SIGNIFICANT NEGATIVE
+   efe_Ghat: Δ=+0.033 [-0.235, +0.290]
+   spill_index: Δ=-0.229 [-0.450, -0.007] ✅ SIGNIFICANT NEGATIVE
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_CHATGPT VS A_PAPRIKA_CHATGPT (EXTERNAL METRICS) [external ref, paprika_chatgpt]:
+   (E_paprika_chatgpt vs A_paprika_chatgpt)
+   x_user_align: Δ=+0.327 [+0.222, +0.441] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=+0.000 [+0.000, +0.000] (both scenarios: no arbitration detected)
+   x_theatre_evidence_score: Δ=-0.132 [-0.180, -0.089] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=+0.004 [-0.004, +0.012]
+
+📈 A_PAPRIKA_CHATGPT VS E_PAPRIKA_CHATGPT (INTERNAL METRICS) [internal ref, paprika_chatgpt]:
+   (A_paprika_chatgpt vs E_paprika_chatgpt)
+   i_theatre_evidence_score: n/a (no internal data in comparison scenario)
+   efe_Ghat: Δ=+0.188 [+0.058, +0.315] ✅ SIGNIFICANT POSITIVE
+   spill_index: Δ=+0.071 [+0.000, +0.179]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_CHATGPT VS C_PAPRIKA_CHATGPT (EXTERNAL METRICS) [external ref, paprika_chatgpt]:
+   (E_paprika_chatgpt vs C_paprika_chatgpt)
+   x_user_align: Δ=+0.331 [+0.204, +0.484] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=+0.000 [+0.000, +0.000] (both scenarios: no arbitration detected)
+   x_theatre_evidence_score: Δ=-0.128 [-0.185, -0.080] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=-0.005 [-0.015, +0.004]
+
+📈 A_PAPRIKA_CHATGPT VS C_PAPRIKA_CHATGPT (INTERNAL METRICS) [internal ref, paprika_chatgpt]:
+   (A_paprika_chatgpt vs C_paprika_chatgpt)
+   i_theatre_evidence_score: Δ=-0.081 [-0.165, +0.008]
+   efe_Ghat: Δ=-0.067 [-0.248, +0.096]
+   spill_index: Δ=+0.071 [+0.000, +0.179]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+📈 E_PAPRIKA_CHATGPT VS D_PAPRIKA_CHATGPT (EXTERNAL METRICS) [external ref, paprika_chatgpt]:
+   (E_paprika_chatgpt vs D_paprika_chatgpt)
+   x_user_align: Δ=+0.270 [+0.165, +0.398] ✅ SIGNIFICANT POSITIVE
+   x_arbitration_rate: Δ=-0.036 [-0.107, +0.000]
+   x_theatre_evidence_score: Δ=-0.123 [-0.186, -0.072] ✅ SIGNIFICANT NEGATIVE
+   eq_style: Δ=-0.004 [-0.013, +0.003]
+
+📈 A_PAPRIKA_CHATGPT VS D_PAPRIKA_CHATGPT (INTERNAL METRICS) [internal ref, paprika_chatgpt]:
+   (A_paprika_chatgpt vs D_paprika_chatgpt)
+   i_theatre_evidence_score: Δ=-0.054 [-0.144, +0.038]
+   efe_Ghat: Δ=-0.011 [-0.198, +0.158]
+   spill_index: Δ=+0.000 [-0.143, +0.143]
+   meta_without_control_norm: n/a (no external data in reference scenario)
+
+🎭 THEATRE DETECTION PATTERNS:
+------------------------------
+B_staplers_gemini: 🕵️ Hidden theatre detected
+B_staplers_chatgpt: 🎯 Engaging style + 🤔 Meta without control
+B_ducks_claude: 🎯 Engaging style
+B_ducks_gemini: 🕵️ Hidden theatre detected
+B_ducks_chatgpt: 🎯 Engaging style + 🤔 Meta without control
+B_paprika_claude: 🎯 Engaging style
+B_paprika_gemini: 🕵️ Hidden theatre detected
+B_paprika_chatgpt: 🎯 Engaging style + 🤔 Meta without control
+F_staplers_claude: 🕵️ Hidden theatre detected + 🤔 Meta without control
+F_staplers_gemini: 🤔 Meta without control
+F_staplers_chatgpt: 🕵️ Hidden theatre detected + 🤔 Meta without control
+F_ducks_gemini: 🎪 Surface theatre detected
+F_ducks_chatgpt: 🤔 Meta without control
+F_paprika_claude: 🕵️ Hidden theatre detected + 🤔 Meta without control
+F_paprika_gemini: 🎯 Engaging style
+F_paprika_chatgpt: 🕵️ Hidden theatre detected + 🤔 Meta without control
+A_staplers_gemini: 🕵️ Hidden theatre detected
+A_staplers_chatgpt: 🎯 Engaging style
+A_ducks_claude: 🕵️ Hidden theatre detected + 🎯 Engaging style
+A_ducks_gemini: 🕵️ Hidden theatre detected + 🎯 Engaging style
+A_ducks_chatgpt: 🎯 Engaging style
+A_paprika_claude: 🕵️ Hidden theatre detected
+A_paprika_gemini: 🕵️ Hidden theatre detected
+E_staplers_claude: 🎯 Engaging style
+E_staplers_gemini: 🎯 Engaging style
+E_staplers_chatgpt: 🎯 Engaging style
+E_ducks_claude: 🎯 Engaging style
+E_ducks_gemini: 🎯 Engaging style
+E_ducks_chatgpt: 🎯 Engaging style
+E_paprika_claude: 🎯 Engaging style
+E_paprika_chatgpt: 🎯 Engaging style
+C_staplers_chatgpt: 🎯 Engaging style
+C_ducks_claude: 🎪 Surface theatre detected
+C_ducks_gemini: 🕵️ Hidden theatre detected + 🎯 Engaging style
+C_ducks_chatgpt: 🎯 Engaging style
+C_paprika_claude: 🕵️ Hidden theatre detected + 🤔 Meta without control
+C_paprika_chatgpt: 🎯 Engaging style
+D_staplers_claude: 🎪 Surface theatre detected
+D_staplers_gemini: 🕵️ Hidden theatre detected + 🎯 Engaging style
+D_ducks_claude: 🕵️ Hidden theatre detected + 🤔 Meta without control
+D_ducks_gemini: 🕵️ Hidden theatre detected
+D_ducks_chatgpt: 🎯 Engaging style
+D_paprika_claude: 🎪 Surface theatre detected
+D_paprika_gemini: 🕵️ Hidden theatre detected
+D_paprika_chatgpt: 🎯 Engaging style
+
+🎯 INTERPRETATION GUIDE:
+--------------------
+Surface theatre: x_prior_align > 0 AND x_arbitration_rate = 1
+Hidden theatre: theatre_exposure_index = +1 (internal arbitration only)
+Engaging style: High x_topic_focus_share + x_topic_obedience_rate, x_arbitration_rate = 0, x_user_align > 0
+Meta without control: High x_meta_language_share, x_arbitration_rate = 0, x_user_align ≈ 0
+
+🔄 ALIGNMENT SCORES:
+x_user_align: +ve = follows user request, -ve = resists user
+x_prior_align: +ve = follows own prior trajectory, -ve = abandons prior
+Note: x_user_align + x_prior_align ≈ 0 (antisymmetric)
+
+🧠 MPE PHENOMENOLOGICAL METRICS:
+------------------------------
+Deictic Statistics:
+  fp_rate/sp_rate: First/second-person deixis (perspective anchoring)
+  x_addr_share: sp/(sp+fp) - bounded addressivity share (∈[0,1])
+  delta_fp/sp: Internal→surface deictic shifts
+
+Compression & Register:
+  comp_ratio: R2_tokens/ST_tokens - pragmatic compression
+  style_dist: 1-cos(embed_R2, embed_ST) - register transformation
+
+Option Spillover:
+  spill_index: S(i_options) - S(x_options) - hidden conflict measure
+  +ve = internal options kept hidden, -ve = options spill to surface
+
+Epistemic Stance:
+  eq_style: x_hedge_share - x_cert_share - surface equanimity
+  delta_hedge: x_hedge_share - i_hedge_share - hedging shift
+
+Role Anchoring:
+  x_perspective_obedience: sp_rate > fp_rate + 0.002 - user-focused
+  x_role_confusion_hits: Count of role regression patterns
+
+Meta-Language Suppression:
+  meta_without_control_norm: S(x_meta)*1[x_arb=0] - S(i_meta)
+  +ve = genuine suppression, -ve = internal meta explosion
+
+🎯 EFE-PROXY (BAYESIAN FRAMEWORK):
+-----------------------------------
+efe_R: 1 - S(x_user_align) - Response cost (higher = poor user-following)
+efe_E: mean_avail(i_arb, i_opts/5, max(0,TEI)) - 0.5*x_arb - Evidence value
+efe_Ghat: efe_R - efe_E - Total Expected Free Energy (lower = better)
+Lower efe_Ghat indicates more cognitively efficient performance

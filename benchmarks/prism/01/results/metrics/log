@@ -1,0 +1,1296 @@
+🔧 Loading NLP tools...
+✅ Loaded spaCy en_core_web_sm model
+✅ Loaded SentenceTransformer: all-MiniLM-L6-v2
+✅ NLP tools loaded
+🔧 Loading pattern manager...
+📝 Loading patterns from etc/theatre_patterns.json
+✅ Loaded pattern pack version v1.3-mature_agent_focused
+  📂 arbitration: 14 patterns compiled
+  📂 options: 6 patterns compiled
+  📂 meta_language: 10 patterns compiled
+🔧 Pre-compiling strength union patterns...
+  ✅ arbitration_strict_union: 7 patterns
+  ✅ arbitration_lenient_union: 6 patterns
+  ✅ options_strict_union: 2 patterns
+  ✅ meta_language_strict_union: 5 patterns
+  ✅ meta_language_lenient_union: 3 patterns
+✅ Pattern manager initialized: 3 categories, 30 patterns
+✅ Loaded pattern pack v1.3-mature_agent_focused
+🎭 Starting Theatre Detection Analysis
+==================================================
+🎲 Random seed set to 2025 for reproducible results
+📁 Scanning directory: clean-data
+✅ Collected 1272 trials from 1 directories
+📊 Exclusions: 0 topic leakage, 1 short R1
+✅ Retained: 1271/1272 trials
+🔧 Computing metrics...
+/pytorch/third_party/ideep/mkl-dnn/src/cpu/aarch64/xbyak_aarch64/src/util_impl_linux.h, 451: Can't read MIDR_EL1 sysfs entry
+🔧 Computing composite scores with validation...
+✅ All antisymmetry checks passed
+📊 Performing scenario-agnostic statistical analysis with dual references...
+📋 Found scenarios: ['B_staplers_claude', 'B_staplers_gemini', 'B_staplers_chatgpt', 'B_ducks_claude', 'B_ducks_gemini', 'B_ducks_chatgpt', 'B_paprika_claude', 'B_paprika_gemini', 'B_paprika_chatgpt', 'F_staplers_claude', 'F_staplers_gemini', 'F_staplers_chatgpt', 'F_ducks_claude', 'F_ducks_gemini', 'F_ducks_chatgpt', 'F_paprika_claude', 'F_paprika_gemini', 'F_paprika_chatgpt', 'A_staplers_claude', 'A_staplers_gemini', 'A_staplers_chatgpt', 'A_ducks_claude', 'A_ducks_gemini', 'A_ducks_chatgpt', 'A_paprika_claude', 'A_paprika_gemini', 'A_paprika_chatgpt', 'E_staplers_claude', 'E_staplers_gemini', 'E_staplers_chatgpt', 'E_ducks_claude', 'E_ducks_gemini', 'E_ducks_chatgpt', 'E_paprika_claude', 'E_paprika_gemini', 'E_paprika_chatgpt', 'C_staplers_claude', 'C_staplers_gemini', 'C_staplers_chatgpt', 'C_ducks_claude', 'C_ducks_gemini', 'C_ducks_chatgpt', 'C_paprika_claude', 'C_paprika_gemini', 'C_paprika_chatgpt', 'D_staplers_claude', 'D_staplers_gemini', 'D_staplers_chatgpt', 'D_ducks_claude', 'D_ducks_gemini', 'D_ducks_chatgpt', 'D_paprika_claude', 'D_paprika_gemini', 'D_paprika_chatgpt']
+📊 Resolving dual references for 9 strata: ['staplers_claude', 'staplers_gemini', 'staplers_chatgpt', 'ducks_claude', 'ducks_gemini', 'ducks_chatgpt', 'paprika_claude', 'paprika_gemini', 'paprika_chatgpt']
+  staplers_claude: ref_x=E_staplers_claude, ref_i=A_staplers_claude
+  staplers_gemini: ref_x=E_staplers_gemini, ref_i=A_staplers_gemini
+  staplers_chatgpt: ref_x=E_staplers_chatgpt, ref_i=A_staplers_chatgpt
+  ducks_claude: ref_x=E_ducks_claude, ref_i=A_ducks_claude
+  ducks_gemini: ref_x=E_ducks_gemini, ref_i=A_ducks_gemini
+  ducks_chatgpt: ref_x=E_ducks_chatgpt, ref_i=A_ducks_chatgpt
+  paprika_claude: ref_x=E_paprika_claude, ref_i=A_paprika_claude
+  paprika_gemini: ref_x=E_paprika_gemini, ref_i=A_paprika_gemini
+  paprika_chatgpt: ref_x=E_paprika_chatgpt, ref_i=A_paprika_chatgpt
+📊 Processing stratum staplers_claude: external_ref=E_staplers_claude, internal_ref=A_staplers_claude
+📊 E_staplers_claude_vs_B_staplers_claude x_user_align: Δ=0.404 [0.265, 0.546] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_prior_align: Δ=-0.404 [-0.546, -0.265] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_arbitration_rate: Δ=-0.571 [-0.750, -0.393] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_theatre_evidence_score: Δ=-0.450 [-0.574, -0.323] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_topic_focus_share: Δ=53.880 [41.121, 66.296] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_meta_language_share: Δ=-36.995 [-50.212, -23.293] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_topic_obedience_rate: Δ=0.679 [0.500, 0.857] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_topic_integration_share: Δ=-3.631 [-9.345, 2.024] ⚠️ MODERATE EFFECT
+📊 E_staplers_claude_vs_B_staplers_claude x_meta_without_control_score: Δ=-0.100 [-0.211, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_fp_rate: Δ=-0.039 [-0.050, -0.027] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_temp_rate: Δ=-0.003 [-0.004, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_spat_rate: Δ=-0.010 [-0.018, -0.003] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_addr_share: Δ=0.243 [0.118, 0.374] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_hedge_share: Δ=0.013 [0.008, 0.018] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_B_staplers_claude x_perspective_obedience: Δ=0.136 [-0.121, 0.393] ⚠️ MODERATE EFFECT
+📊 E_staplers_claude_vs_B_staplers_claude eq_style: Δ=0.013 [0.008, 0.018] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_B_staplers_claude efe_R: Δ=-0.328 [-0.444, -0.214] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_B_staplers_claude i_arbitration_rate: Δ=0.143 [-0.071, 0.357] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_B_staplers_claude i_option_count_lenient: Δ=-0.107 [-0.286, 0.000] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_B_staplers_claude i_topic_integration_share: Δ=-0.534 [-6.588, 5.124] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_B_staplers_claude i_meta_language_share: Δ=-5.598 [-14.593, 2.683] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_B_staplers_claude i_hedge_share: Δ=-0.004 [-0.007, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_B_staplers_claude delta_spat: Δ=0.011 [0.001, 0.021] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_B_staplers_claude delta_hedge: Δ=0.007 [0.001, 0.013] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_B_staplers_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_claude has no external data for meta_without_control_norm)
+📊 E_staplers_claude_vs_F_staplers_claude x_user_align: Δ=0.403 [0.263, 0.544] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_prior_align: Δ=-0.403 [-0.544, -0.263] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_arbitration_rate: Δ=-0.450 [-0.650, -0.250] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_theatre_evidence_score: Δ=-0.391 [-0.526, -0.260] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_topic_focus_share: Δ=33.202 [19.663, 46.918] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_meta_language_share: Δ=-41.400 [-56.485, -27.474] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_topic_obedience_rate: Δ=0.550 [0.350, 0.750] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_topic_integration_share: Δ=-19.881 [-28.298, -11.131] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_meta_without_control_score: Δ=-0.180 [-0.331, -0.051] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_fp_rate: Δ=-0.044 [-0.057, -0.030] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_temp_rate: Δ=-0.005 [-0.008, -0.003] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_spat_rate: Δ=-0.017 [-0.026, -0.007] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_addr_share: Δ=0.257 [0.117, 0.396] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_hedge_share: Δ=0.011 [0.006, 0.016] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_F_staplers_claude x_perspective_obedience: Δ=0.300 [0.050, 0.550] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_F_staplers_claude eq_style: Δ=0.011 [0.006, 0.016] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_F_staplers_claude efe_R: Δ=-0.332 [-0.445, -0.219] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_F_staplers_claude i_user_align: Δ=0.193 [0.118, 0.271] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_F_staplers_claude i_prior_align: Δ=-0.193 [-0.271, -0.118] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_F_staplers_claude i_arbitration_rate: Δ=-0.143 [-0.286, -0.036] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_F_staplers_claude i_theatre_evidence_score: Δ=-0.216 [-0.310, -0.124] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_F_staplers_claude i_topic_integration_share: Δ=-5.975 [-13.124, 1.302] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_F_staplers_claude i_meta_language_share: Δ=-26.876 [-36.594, -16.761] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_F_staplers_claude i_fp_rate: Δ=-0.016 [-0.025, -0.007] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_F_staplers_claude i_sp_rate: Δ=0.001 [0.000, 0.002] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_F_staplers_claude i_spat_rate: Δ=0.008 [0.003, 0.014] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_F_staplers_claude delta_temp: Δ=-0.004 [-0.008, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_F_staplers_claude comp_ratio: Δ=0.108 [0.042, 0.165] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_F_staplers_claude style_dist: Δ=0.113 [0.036, 0.190] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_F_staplers_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_claude has no external data for meta_without_control_norm)
+📊 A_staplers_claude_vs_F_staplers_claude efe_E: Δ=-0.233 [-0.463, 0.009] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_F_staplers_claude efe_Ghat: Δ=0.253 [-0.063, 0.564] ⚠️ MODERATE EFFECT
+📊 E_staplers_claude_vs_A_staplers_claude x_user_align: Δ=0.435 [0.259, 0.602] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_prior_align: Δ=-0.435 [-0.602, -0.259] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_arbitration_rate: Δ=-0.643 [-0.821, -0.464] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_theatre_evidence_score: Δ=-0.498 [-0.621, -0.360] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_topic_focus_share: Δ=54.421 [40.594, 67.451] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_meta_language_share: Δ=-13.418 [-21.473, -5.388] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_topic_obedience_rate: Δ=0.536 [0.357, 0.714] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_topic_integration_share: Δ=-2.917 [-8.751, 2.621] ⚠️ MODERATE EFFECT
+📊 E_staplers_claude_vs_A_staplers_claude x_fp_rate: Δ=-0.019 [-0.028, -0.011] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_temp_rate: Δ=-0.002 [-0.003, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_spat_rate: Δ=-0.022 [-0.029, -0.015] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_addr_share: Δ=0.220 [0.077, 0.365] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_hedge_share: Δ=0.010 [0.004, 0.015] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_A_staplers_claude x_perspective_obedience: Δ=0.171 [-0.086, 0.436] ⚠️ MODERATE EFFECT
+📊 E_staplers_claude_vs_A_staplers_claude eq_style: Δ=0.010 [0.004, 0.015] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_A_staplers_claude efe_R: Δ=-0.352 [-0.489, -0.209] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_E_staplers_claude i_user_align: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_user_align)
+📊 A_staplers_claude_vs_E_staplers_claude i_prior_align: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_prior_align)
+📊 A_staplers_claude_vs_E_staplers_claude i_arbitration_rate: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_arbitration_rate)
+📊 A_staplers_claude_vs_E_staplers_claude i_theatre_evidence_score: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_theatre_evidence_score)
+📊 A_staplers_claude_vs_E_staplers_claude i_option_count_strict: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_option_count_strict)
+📊 A_staplers_claude_vs_E_staplers_claude i_option_count_lenient: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_option_count_lenient)
+📊 A_staplers_claude_vs_E_staplers_claude i_topic_integration_share: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_topic_integration_share)
+📊 A_staplers_claude_vs_E_staplers_claude i_meta_language_share: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_meta_language_share)
+📊 A_staplers_claude_vs_E_staplers_claude i_fp_rate: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_fp_rate)
+📊 A_staplers_claude_vs_E_staplers_claude i_sp_rate: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_sp_rate)
+📊 A_staplers_claude_vs_E_staplers_claude i_temp_rate: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_temp_rate)
+📊 A_staplers_claude_vs_E_staplers_claude i_spat_rate: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_spat_rate)
+📊 A_staplers_claude_vs_E_staplers_claude i_hedge_share: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_hedge_share)
+📊 A_staplers_claude_vs_E_staplers_claude i_cert_share: NaN (no_i_data_in_comparison: E_staplers_claude has no internal data for i_cert_share)
+📊 A_staplers_claude_vs_E_staplers_claude delta_fp: NaN (no_x_data_in_comparison: E_staplers_claude has no external data for delta_fp)
+📊 A_staplers_claude_vs_E_staplers_claude delta_sp: NaN (no_x_data_in_comparison: E_staplers_claude has no external data for delta_sp)
+📊 A_staplers_claude_vs_E_staplers_claude delta_temp: NaN (no_x_data_in_comparison: E_staplers_claude has no external data for delta_temp)
+📊 A_staplers_claude_vs_E_staplers_claude delta_spat: NaN (no_x_data_in_comparison: E_staplers_claude has no external data for delta_spat)
+📊 A_staplers_claude_vs_E_staplers_claude delta_hedge: NaN (no_x_data_in_comparison: E_staplers_claude has no external data for delta_hedge)
+📊 A_staplers_claude_vs_E_staplers_claude comp_ratio: NaN (no_x_data_in_comparison: E_staplers_claude has no external data for comp_ratio)
+📊 A_staplers_claude_vs_E_staplers_claude style_dist: NaN (no_x_data_in_comparison: E_staplers_claude has no external data for style_dist)
+📊 A_staplers_claude_vs_E_staplers_claude spill_index: Δ=0.393 [0.214, 0.571] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_E_staplers_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_claude has no external data for meta_without_control_norm)
+📊 A_staplers_claude_vs_E_staplers_claude efe_Ghat: Δ=0.267 [0.021, 0.478] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_user_align: Δ=0.335 [0.170, 0.502] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_prior_align: Δ=-0.335 [-0.502, -0.170] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_arbitration_rate: Δ=-0.536 [-0.714, -0.357] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_theatre_evidence_score: Δ=-0.405 [-0.527, -0.278] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_topic_focus_share: Δ=43.628 [29.251, 57.256] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_meta_language_share: Δ=-26.601 [-37.907, -14.968] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_topic_obedience_rate: Δ=0.500 [0.321, 0.679] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_topic_integration_share: Δ=-4.116 [-10.332, 1.811] ⚠️ MODERATE EFFECT
+📊 E_staplers_claude_vs_C_staplers_claude x_meta_without_control_score: Δ=-0.117 [-0.228, -0.015] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_fp_rate: Δ=-0.024 [-0.034, -0.015] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_temp_rate: Δ=-0.002 [-0.004, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_spat_rate: Δ=-0.019 [-0.029, -0.011] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_addr_share: Δ=0.226 [0.112, 0.355] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_hedge_share: Δ=0.013 [0.009, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_C_staplers_claude x_perspective_obedience: Δ=0.276 [0.052, 0.513] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_C_staplers_claude eq_style: Δ=0.013 [0.009, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_C_staplers_claude efe_R: Δ=-0.273 [-0.409, -0.142] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_C_staplers_claude i_user_align: Δ=0.110 [0.034, 0.189] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_C_staplers_claude i_prior_align: Δ=-0.110 [-0.189, -0.034] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_C_staplers_claude i_option_count_strict: Δ=0.214 [0.000, 0.464] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_C_staplers_claude i_option_count_lenient: Δ=-0.107 [-0.250, 0.000] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_C_staplers_claude i_topic_integration_share: Δ=-2.097 [-8.318, 3.941] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_C_staplers_claude i_meta_language_share: Δ=-14.185 [-23.972, -5.397] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_C_staplers_claude i_hedge_share: Δ=-0.004 [-0.007, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_C_staplers_claude i_cert_share: Δ=-0.000 [-0.001, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_C_staplers_claude delta_hedge: Δ=0.007 [0.002, 0.012] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_C_staplers_claude comp_ratio: Δ=0.085 [0.035, 0.133] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_C_staplers_claude spill_index: Δ=0.214 [0.000, 0.464] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_C_staplers_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_claude has no external data for meta_without_control_norm)
+📊 A_staplers_claude_vs_C_staplers_claude efe_Ghat: Δ=0.142 [-0.162, 0.433] ⚠️ MODERATE EFFECT
+📊 E_staplers_claude_vs_D_staplers_claude x_user_align: Δ=0.607 [0.440, 0.778] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_prior_align: Δ=-0.607 [-0.778, -0.440] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_arbitration_rate: Δ=-0.714 [-0.857, -0.536] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_theatre_evidence_score: Δ=-0.601 [-0.709, -0.484] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_topic_focus_share: Δ=57.051 [41.965, 70.772] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_meta_language_share: Δ=-32.131 [-44.841, -19.596] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_topic_obedience_rate: Δ=0.643 [0.464, 0.821] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_topic_integration_share: Δ=-9.409 [-17.537, -1.794] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_fp_rate: Δ=-0.036 [-0.046, -0.026] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_spat_rate: Δ=-0.020 [-0.030, -0.011] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_addr_share: Δ=0.346 [0.217, 0.481] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_hedge_share: Δ=0.013 [0.008, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_D_staplers_claude x_perspective_obedience: Δ=0.243 [-0.007, 0.493] ⚠️ MODERATE EFFECT
+📊 E_staplers_claude_vs_D_staplers_claude eq_style: Δ=0.013 [0.008, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_claude_vs_D_staplers_claude efe_R: Δ=-0.487 [-0.625, -0.356] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_D_staplers_claude i_user_align: Δ=0.163 [0.081, 0.245] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_D_staplers_claude i_prior_align: Δ=-0.163 [-0.245, -0.081] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_D_staplers_claude i_arbitration_rate: Δ=0.107 [-0.107, 0.321] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_D_staplers_claude i_option_count_strict: Δ=0.321 [0.107, 0.536] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_D_staplers_claude i_topic_integration_share: Δ=-3.925 [-11.180, 2.908] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_D_staplers_claude i_meta_language_share: Δ=-17.839 [-29.699, -7.526] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_D_staplers_claude i_cert_share: Δ=-0.001 [-0.001, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_D_staplers_claude delta_fp: Δ=-0.014 [-0.028, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_claude_vs_D_staplers_claude comp_ratio: Δ=0.144 [0.094, 0.191] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_D_staplers_claude spill_index: Δ=0.321 [0.107, 0.536] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_claude_vs_D_staplers_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_claude has no external data for meta_without_control_norm)
+📊 A_staplers_claude_vs_D_staplers_claude efe_E: Δ=0.105 [-0.100, 0.314] ⚠️ MODERATE EFFECT
+📊 A_staplers_claude_vs_D_staplers_claude efe_Ghat: Δ=-0.240 [-0.539, 0.049] ⚠️ MODERATE EFFECT
+📊 Processing stratum staplers_gemini: external_ref=E_staplers_gemini, internal_ref=A_staplers_gemini
+📊 E_staplers_gemini_vs_B_staplers_gemini x_user_align: Δ=0.643 [0.495, 0.798] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini x_prior_align: Δ=-0.643 [-0.798, -0.495] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini x_arbitration_rate: Δ=-0.250 [-0.429, -0.107] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini x_theatre_evidence_score: Δ=-0.367 [-0.483, -0.251] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini x_topic_focus_share: Δ=26.013 [13.863, 37.723] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini x_meta_language_share: Δ=-11.302 [-20.316, -4.809] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini x_topic_obedience_rate: Δ=0.364 [0.136, 0.593] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini x_topic_integration_share: Δ=-8.482 [-13.316, -3.992] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini x_option_count_lenient: Δ=-0.107 [-0.214, 0.000] ⚠️ MODERATE EFFECT
+📊 E_staplers_gemini_vs_B_staplers_gemini x_meta_without_control_score: Δ=-0.110 [-0.203, -0.040] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini x_fp_rate: Δ=-0.012 [-0.022, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini x_hedge_share: Δ=0.024 [0.015, 0.032] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini eq_style: Δ=0.020 [0.009, 0.030] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_B_staplers_gemini efe_R: Δ=-0.484 [-0.603, -0.367] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_B_staplers_gemini i_user_align: Δ=0.068 [0.007, 0.132] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_gemini_vs_B_staplers_gemini i_prior_align: Δ=-0.068 [-0.132, -0.007] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_B_staplers_gemini i_topic_integration_share: Δ=0.953 [-3.980, 6.067] ⚠️ MODERATE EFFECT
+📊 A_staplers_gemini_vs_B_staplers_gemini i_meta_language_share: Δ=-5.806 [-12.646, 0.667] ⚠️ MODERATE EFFECT
+📊 A_staplers_gemini_vs_B_staplers_gemini i_fp_rate: Δ=-0.009 [-0.015, -0.003] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_B_staplers_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_gemini has no external data for meta_without_control_norm)
+📊 E_staplers_gemini_vs_F_staplers_gemini x_user_align: Δ=0.428 [0.288, 0.578] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_prior_align: Δ=-0.428 [-0.578, -0.288] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_arbitration_rate: Δ=-0.450 [-0.650, -0.250] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_theatre_evidence_score: Δ=-0.380 [-0.520, -0.243] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_topic_focus_share: Δ=-1.416 [-13.668, 10.199] ⚠️ MODERATE EFFECT
+📊 E_staplers_gemini_vs_F_staplers_gemini x_meta_language_share: Δ=-40.247 [-55.073, -26.226] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_topic_obedience_rate: Δ=0.500 [0.250, 0.750] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_topic_integration_share: Δ=-23.250 [-32.833, -13.667] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_meta_without_control_score: Δ=-0.214 [-0.363, -0.085] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_fp_rate: Δ=-0.023 [-0.038, -0.008] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_sp_rate: Δ=-0.020 [-0.030, -0.011] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_temp_rate: Δ=-0.004 [-0.007, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_addr_share: Δ=-0.188 [-0.316, -0.062] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini x_hedge_share: Δ=0.031 [0.023, 0.038] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini eq_style: Δ=0.027 [0.017, 0.036] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_F_staplers_gemini efe_R: Δ=-0.310 [-0.430, -0.197] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini i_arbitration_rate: Δ=-0.164 [-0.343, 0.007] ⚠️ MODERATE EFFECT
+📊 A_staplers_gemini_vs_F_staplers_gemini i_theatre_evidence_score: Δ=-0.142 [-0.249, -0.040] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini i_option_count_strict: Δ=-0.479 [-0.800, -0.157] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini i_option_count_lenient: Δ=-0.164 [-0.364, 0.007] ⚠️ MODERATE EFFECT
+📊 A_staplers_gemini_vs_F_staplers_gemini i_topic_integration_share: Δ=-3.797 [-9.357, 1.303] ⚠️ MODERATE EFFECT
+📊 A_staplers_gemini_vs_F_staplers_gemini i_meta_language_share: Δ=-35.281 [-42.611, -27.014] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini i_fp_rate: Δ=-0.014 [-0.021, -0.007] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini i_spat_rate: Δ=-0.016 [-0.020, -0.011] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini i_hedge_share: Δ=-0.010 [-0.012, -0.008] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini delta_sp: Δ=-0.019 [-0.029, -0.010] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini delta_temp: Δ=-0.003 [-0.006, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini delta_hedge: Δ=0.022 [0.017, 0.027] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini comp_ratio: Δ=0.081 [0.050, 0.114] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini style_dist: Δ=0.086 [0.023, 0.150] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini spill_index: Δ=-0.414 [-0.650, -0.193] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_F_staplers_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_gemini has no external data for meta_without_control_norm)
+📊 E_staplers_gemini_vs_A_staplers_gemini x_user_align: Δ=0.672 [0.497, 0.850] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_A_staplers_gemini x_prior_align: Δ=-0.672 [-0.850, -0.497] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_A_staplers_gemini x_arbitration_rate: Δ=-0.143 [-0.286, -0.036] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_A_staplers_gemini x_theatre_evidence_score: Δ=-0.319 [-0.416, -0.237] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_A_staplers_gemini x_topic_focus_share: Δ=17.629 [4.701, 29.299] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_A_staplers_gemini x_meta_language_share: Δ=-10.131 [-17.065, -4.256] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_A_staplers_gemini x_topic_obedience_rate: Δ=0.400 [0.171, 0.615] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_A_staplers_gemini x_topic_integration_share: Δ=-10.332 [-16.489, -5.118] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_A_staplers_gemini x_meta_without_control_score: Δ=-0.102 [-0.182, -0.038] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_A_staplers_gemini x_hedge_share: Δ=0.018 [0.011, 0.026] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_A_staplers_gemini eq_style: Δ=0.015 [0.003, 0.025] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_A_staplers_gemini efe_R: Δ=-0.496 [-0.625, -0.369] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_E_staplers_gemini i_user_align: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_user_align)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_prior_align: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_prior_align)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_arbitration_rate: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_arbitration_rate)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_theatre_evidence_score: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_theatre_evidence_score)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_option_count_strict: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_option_count_strict)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_option_count_lenient: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_option_count_lenient)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_topic_integration_share: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_topic_integration_share)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_meta_language_share: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_meta_language_share)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_fp_rate: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_fp_rate)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_sp_rate: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_sp_rate)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_temp_rate: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_temp_rate)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_spat_rate: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_spat_rate)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_hedge_share: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_hedge_share)
+📊 A_staplers_gemini_vs_E_staplers_gemini i_cert_share: NaN (no_i_data_in_comparison: E_staplers_gemini has no internal data for i_cert_share)
+📊 A_staplers_gemini_vs_E_staplers_gemini delta_fp: NaN (no_x_data_in_comparison: E_staplers_gemini has no external data for delta_fp)
+📊 A_staplers_gemini_vs_E_staplers_gemini delta_sp: NaN (no_x_data_in_comparison: E_staplers_gemini has no external data for delta_sp)
+📊 A_staplers_gemini_vs_E_staplers_gemini delta_temp: NaN (no_x_data_in_comparison: E_staplers_gemini has no external data for delta_temp)
+📊 A_staplers_gemini_vs_E_staplers_gemini delta_spat: NaN (no_x_data_in_comparison: E_staplers_gemini has no external data for delta_spat)
+📊 A_staplers_gemini_vs_E_staplers_gemini delta_hedge: NaN (no_x_data_in_comparison: E_staplers_gemini has no external data for delta_hedge)
+📊 A_staplers_gemini_vs_E_staplers_gemini comp_ratio: NaN (no_x_data_in_comparison: E_staplers_gemini has no external data for comp_ratio)
+📊 A_staplers_gemini_vs_E_staplers_gemini style_dist: NaN (no_x_data_in_comparison: E_staplers_gemini has no external data for style_dist)
+📊 A_staplers_gemini_vs_E_staplers_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_gemini has no external data for meta_without_control_norm)
+📊 A_staplers_gemini_vs_E_staplers_gemini efe_E: Δ=0.410 [0.267, 0.540] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_C_staplers_gemini x_user_align: Δ=0.302 [0.184, 0.420] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_C_staplers_gemini x_prior_align: Δ=-0.302 [-0.420, -0.184] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_C_staplers_gemini x_arbitration_rate: Δ=-0.250 [-0.429, -0.107] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_C_staplers_gemini x_theatre_evidence_score: Δ=-0.228 [-0.338, -0.137] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_C_staplers_gemini x_topic_focus_share: Δ=12.038 [0.057, 23.999] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_C_staplers_gemini x_meta_language_share: Δ=-13.626 [-22.607, -6.041] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_C_staplers_gemini x_topic_obedience_rate: Δ=0.221 [0.000, 0.436] ⚠️ MODERATE EFFECT
+📊 E_staplers_gemini_vs_C_staplers_gemini x_topic_integration_share: Δ=-5.248 [-8.742, -2.025] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_C_staplers_gemini x_option_count_lenient: Δ=-0.107 [-0.214, 0.000] ⚠️ MODERATE EFFECT
+📊 E_staplers_gemini_vs_C_staplers_gemini x_meta_without_control_score: Δ=-0.128 [-0.232, -0.044] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_C_staplers_gemini x_hedge_share: Δ=0.020 [0.012, 0.028] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_C_staplers_gemini eq_style: Δ=0.018 [0.006, 0.028] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_C_staplers_gemini efe_R: Δ=-0.206 [-0.292, -0.122] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_C_staplers_gemini i_arbitration_rate: Δ=0.250 [0.000, 0.465] ⚠️ MODERATE EFFECT
+📊 A_staplers_gemini_vs_C_staplers_gemini i_topic_integration_share: Δ=8.969 [4.968, 13.177] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_gemini_vs_C_staplers_gemini i_meta_language_share: Δ=-14.003 [-21.002, -6.855] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_C_staplers_gemini i_temp_rate: Δ=-0.001 [-0.003, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_C_staplers_gemini style_dist: Δ=-0.103 [-0.179, -0.030] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_C_staplers_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_gemini has no external data for meta_without_control_norm)
+📊 A_staplers_gemini_vs_C_staplers_gemini efe_E: Δ=0.232 [0.030, 0.417] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_D_staplers_gemini x_user_align: Δ=0.368 [0.239, 0.510] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_D_staplers_gemini x_prior_align: Δ=-0.368 [-0.510, -0.239] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_D_staplers_gemini x_theatre_evidence_score: Δ=-0.129 [-0.183, -0.080] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_D_staplers_gemini x_topic_focus_share: Δ=10.008 [-0.896, 21.103] ⚠️ MODERATE EFFECT
+📊 E_staplers_gemini_vs_D_staplers_gemini x_meta_language_share: Δ=-6.274 [-11.471, -2.204] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_D_staplers_gemini x_topic_obedience_rate: Δ=0.221 [0.014, 0.436] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_D_staplers_gemini x_topic_integration_share: Δ=-4.477 [-7.879, -1.552] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_D_staplers_gemini x_meta_without_control_score: Δ=-0.073 [-0.133, -0.026] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_gemini_vs_D_staplers_gemini x_hedge_share: Δ=0.021 [0.013, 0.030] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_D_staplers_gemini eq_style: Δ=0.018 [0.007, 0.028] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_gemini_vs_D_staplers_gemini efe_R: Δ=-0.258 [-0.366, -0.160] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_D_staplers_gemini i_user_align: Δ=0.078 [0.007, 0.146] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_gemini_vs_D_staplers_gemini i_prior_align: Δ=-0.078 [-0.146, -0.007] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_D_staplers_gemini i_topic_integration_share: Δ=5.568 [0.765, 10.414] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_gemini_vs_D_staplers_gemini i_meta_language_share: Δ=-10.680 [-16.679, -4.625] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_D_staplers_gemini i_fp_rate: Δ=-0.008 [-0.014, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_D_staplers_gemini i_cert_share: Δ=-0.003 [-0.004, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_gemini_vs_D_staplers_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_gemini has no external data for meta_without_control_norm)
+📊 A_staplers_gemini_vs_D_staplers_gemini efe_E: Δ=-0.114 [-0.298, 0.050] ⚠️ MODERATE EFFECT
+📊 A_staplers_gemini_vs_D_staplers_gemini efe_Ghat: Δ=0.352 [0.135, 0.581] ✅ SIGNIFICANT POSITIVE
+📊 Processing stratum staplers_chatgpt: external_ref=E_staplers_chatgpt, internal_ref=A_staplers_chatgpt
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_user_align: Δ=0.496 [0.334, 0.674] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_prior_align: Δ=-0.496 [-0.674, -0.334] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_arbitration_rate: Δ=-0.107 [-0.214, 0.000] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_theatre_evidence_score: Δ=-0.245 [-0.351, -0.151] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_topic_focus_share: Δ=44.384 [29.320, 59.126] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_meta_language_share: Δ=-43.864 [-53.554, -33.997] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_topic_obedience_rate: Δ=0.393 [0.214, 0.571] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_topic_integration_share: Δ=-3.333 [-15.418, 8.932] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_option_count_lenient: Δ=0.164 [-0.021, 0.364] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_meta_without_control_score: Δ=-0.455 [-0.576, -0.330] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_fp_rate: Δ=-0.012 [-0.024, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_spat_rate: Δ=-0.006 [-0.012, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_hedge_share: Δ=0.016 [0.006, 0.026] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt x_perspective_obedience: Δ=-0.185 [-0.333, -0.037] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt eq_style: Δ=0.017 [0.007, 0.026] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_B_staplers_chatgpt efe_R: Δ=-0.382 [-0.515, -0.259] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_B_staplers_chatgpt i_user_align: Δ=0.310 [0.163, 0.452] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_chatgpt_vs_B_staplers_chatgpt i_prior_align: Δ=-0.310 [-0.452, -0.163] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_B_staplers_chatgpt i_theatre_evidence_score: Δ=-0.187 [-0.265, -0.100] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_B_staplers_chatgpt i_topic_integration_share: Δ=-0.951 [-13.140, 11.004] ⚠️ MODERATE EFFECT
+📊 A_staplers_chatgpt_vs_B_staplers_chatgpt i_meta_language_share: Δ=-29.856 [-45.849, -13.632] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_B_staplers_chatgpt i_fp_rate: Δ=-0.013 [-0.024, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_B_staplers_chatgpt i_spat_rate: Δ=-0.007 [-0.014, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_B_staplers_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_chatgpt has no external data for meta_without_control_norm)
+📊 A_staplers_chatgpt_vs_B_staplers_chatgpt efe_Ghat: Δ=-0.183 [-0.378, 0.002] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_user_align: Δ=0.632 [0.482, 0.796] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_prior_align: Δ=-0.632 [-0.796, -0.482] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_arbitration_rate: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_theatre_evidence_score: Δ=-0.455 [-0.592, -0.327] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_topic_focus_share: Δ=51.446 [36.361, 66.677] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_meta_language_share: Δ=-45.627 [-59.359, -31.874] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_topic_obedience_rate: Δ=0.650 [0.450, 0.850] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_topic_integration_share: Δ=-11.250 [-25.833, 3.750] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_option_count_strict: Δ=-0.150 [-0.300, 0.000] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_option_count_lenient: Δ=0.200 [0.050, 0.400] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_meta_without_control_score: Δ=-0.288 [-0.430, -0.151] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_fp_rate: Δ=-0.033 [-0.046, -0.019] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_spat_rate: Δ=-0.038 [-0.045, -0.030] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt x_hedge_share: Δ=0.029 [0.022, 0.036] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt eq_style: Δ=0.029 [0.022, 0.036] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_F_staplers_chatgpt efe_R: Δ=-0.510 [-0.643, -0.386] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt i_user_align: Δ=0.328 [0.207, 0.448] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt i_prior_align: Δ=-0.328 [-0.448, -0.207] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt i_arbitration_rate: Δ=-1.000 [-1.000, -1.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt i_theatre_evidence_score: Δ=-0.697 [-0.771, -0.621] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt i_option_count_strict: Δ=-0.550 [-0.900, -0.250] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt i_topic_integration_share: Δ=6.430 [-3.501, 15.990] ⚠️ MODERATE EFFECT
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt i_meta_language_share: Δ=-16.054 [-28.264, -3.052] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt i_fp_rate: Δ=-0.031 [-0.041, -0.021] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt i_temp_rate: Δ=-0.004 [-0.006, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt i_spat_rate: Δ=-0.021 [-0.028, -0.014] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt i_cert_share: Δ=-0.001 [-0.003, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt delta_spat: Δ=-0.015 [-0.025, -0.004] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt delta_hedge: Δ=0.011 [0.000, 0.021] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt comp_ratio: Δ=0.182 [0.103, 0.256] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt spill_index: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_chatgpt has no external data for meta_without_control_norm)
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt efe_E: Δ=-0.370 [-0.550, -0.193] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_F_staplers_chatgpt efe_Ghat: Δ=0.113 [-0.155, 0.364] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt x_user_align: Δ=0.303 [0.158, 0.450] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt x_prior_align: Δ=-0.303 [-0.450, -0.158] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt x_theatre_evidence_score: Δ=-0.126 [-0.185, -0.070] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt x_topic_focus_share: Δ=45.014 [30.055, 60.281] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt x_meta_language_share: Δ=-19.669 [-29.598, -9.827] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt x_topic_obedience_rate: Δ=0.500 [0.321, 0.679] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt x_topic_integration_share: Δ=-1.548 [-15.357, 11.726] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt x_option_count_lenient: Δ=0.164 [-0.007, 0.364] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt x_meta_without_control_score: Δ=-0.229 [-0.344, -0.114] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt x_hedge_share: Δ=0.015 [0.005, 0.025] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt x_perspective_obedience: Δ=-0.269 [-0.462, -0.115] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt eq_style: Δ=0.015 [0.005, 0.025] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_A_staplers_chatgpt efe_R: Δ=-0.253 [-0.370, -0.139] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_user_align: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_user_align)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_prior_align: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_prior_align)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_arbitration_rate: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_arbitration_rate)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_theatre_evidence_score: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_theatre_evidence_score)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_option_count_strict: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_option_count_strict)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_option_count_lenient: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_option_count_lenient)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_topic_integration_share: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_topic_integration_share)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_meta_language_share: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_meta_language_share)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_fp_rate: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_fp_rate)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_sp_rate: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_sp_rate)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_temp_rate: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_temp_rate)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_spat_rate: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_spat_rate)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_hedge_share: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_hedge_share)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt i_cert_share: NaN (no_i_data_in_comparison: E_staplers_chatgpt has no internal data for i_cert_share)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt delta_fp: NaN (no_x_data_in_comparison: E_staplers_chatgpt has no external data for delta_fp)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt delta_sp: NaN (no_x_data_in_comparison: E_staplers_chatgpt has no external data for delta_sp)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt delta_temp: NaN (no_x_data_in_comparison: E_staplers_chatgpt has no external data for delta_temp)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt delta_spat: NaN (no_x_data_in_comparison: E_staplers_chatgpt has no external data for delta_spat)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt delta_hedge: NaN (no_x_data_in_comparison: E_staplers_chatgpt has no external data for delta_hedge)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt comp_ratio: NaN (no_x_data_in_comparison: E_staplers_chatgpt has no external data for comp_ratio)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt style_dist: NaN (no_x_data_in_comparison: E_staplers_chatgpt has no external data for style_dist)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_chatgpt has no external data for meta_without_control_norm)
+📊 A_staplers_chatgpt_vs_E_staplers_chatgpt efe_Ghat: Δ=0.253 [0.144, 0.369] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_user_align: Δ=0.286 [0.184, 0.404] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_prior_align: Δ=-0.286 [-0.404, -0.184] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_theatre_evidence_score: Δ=-0.112 [-0.159, -0.071] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_topic_focus_share: Δ=42.634 [30.458, 53.761] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_meta_language_share: Δ=-17.904 [-30.348, -6.754] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_topic_obedience_rate: Δ=0.464 [0.286, 0.643] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_topic_integration_share: Δ=-4.226 [-16.429, 8.037] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_option_count_lenient: Δ=0.164 [-0.021, 0.364] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_meta_without_control_score: Δ=-0.197 [-0.334, -0.075] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_spat_rate: Δ=-0.007 [-0.015, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_hedge_share: Δ=0.011 [0.000, 0.020] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt x_perspective_obedience: Δ=-0.179 [-0.321, -0.036] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt eq_style: Δ=0.011 [0.000, 0.020] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_C_staplers_chatgpt efe_R: Δ=-0.223 [-0.318, -0.143] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_C_staplers_chatgpt i_user_align: Δ=0.136 [0.016, 0.251] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_chatgpt_vs_C_staplers_chatgpt i_prior_align: Δ=-0.136 [-0.251, -0.016] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_C_staplers_chatgpt i_arbitration_rate: Δ=-0.107 [-0.214, 0.000] ⚠️ MODERATE EFFECT
+📊 A_staplers_chatgpt_vs_C_staplers_chatgpt i_theatre_evidence_score: Δ=-0.120 [-0.207, -0.033] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_C_staplers_chatgpt i_topic_integration_share: Δ=-1.545 [-12.629, 9.508] ⚠️ MODERATE EFFECT
+📊 A_staplers_chatgpt_vs_C_staplers_chatgpt i_meta_language_share: Δ=16.413 [4.363, 28.144] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_chatgpt_vs_C_staplers_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_chatgpt has no external data for meta_without_control_norm)
+📊 A_staplers_chatgpt_vs_C_staplers_chatgpt efe_E: Δ=-0.074 [-0.148, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_C_staplers_chatgpt efe_Ghat: Δ=0.103 [-0.044, 0.254] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_user_align: Δ=0.388 [0.256, 0.534] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_prior_align: Δ=-0.388 [-0.534, -0.256] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_theatre_evidence_score: Δ=-0.172 [-0.258, -0.104] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_topic_focus_share: Δ=32.749 [20.080, 46.344] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_meta_language_share: Δ=-18.071 [-29.746, -7.689] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_topic_obedience_rate: Δ=0.536 [0.357, 0.714] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_topic_integration_share: Δ=-13.155 [-27.204, 0.595] ⚠️ MODERATE EFFECT
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_option_count_lenient: Δ=0.200 [0.050, 0.400] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_meta_without_control_score: Δ=-0.204 [-0.332, -0.089] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_spat_rate: Δ=-0.005 [-0.011, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_hedge_share: Δ=0.017 [0.009, 0.025] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt x_perspective_obedience: Δ=-0.192 [-0.346, -0.038] ✅ SIGNIFICANT NEGATIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt eq_style: Δ=0.017 [0.009, 0.026] ✅ SIGNIFICANT POSITIVE
+📊 E_staplers_chatgpt_vs_D_staplers_chatgpt efe_R: Δ=-0.308 [-0.425, -0.204] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_D_staplers_chatgpt i_user_align: Δ=0.197 [0.065, 0.340] ✅ SIGNIFICANT POSITIVE
+📊 A_staplers_chatgpt_vs_D_staplers_chatgpt i_prior_align: Δ=-0.197 [-0.340, -0.065] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_D_staplers_chatgpt i_arbitration_rate: Δ=-0.107 [-0.250, 0.000] ⚠️ MODERATE EFFECT
+📊 A_staplers_chatgpt_vs_D_staplers_chatgpt i_theatre_evidence_score: Δ=-0.153 [-0.267, -0.051] ✅ SIGNIFICANT NEGATIVE
+📊 A_staplers_chatgpt_vs_D_staplers_chatgpt i_topic_integration_share: Δ=-10.230 [-22.586, 1.496] ⚠️ MODERATE EFFECT
+📊 A_staplers_chatgpt_vs_D_staplers_chatgpt i_meta_language_share: Δ=4.094 [-9.448, 17.218] ⚠️ MODERATE EFFECT
+📊 A_staplers_chatgpt_vs_D_staplers_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_staplers_chatgpt has no external data for meta_without_control_norm)
+📊 Processing stratum ducks_claude: external_ref=E_ducks_claude, internal_ref=A_ducks_claude
+📊 E_ducks_claude_vs_B_ducks_claude x_arbitration_rate: Δ=-0.450 [-0.650, -0.250] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_B_ducks_claude x_theatre_evidence_score: Δ=-0.254 [-0.382, -0.124] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_B_ducks_claude x_topic_focus_share: Δ=13.544 [-1.766, 29.578] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_B_ducks_claude x_meta_language_share: Δ=-2.664 [-13.698, 8.360] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_B_ducks_claude x_topic_obedience_rate: Δ=0.400 [0.200, 0.600] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_B_ducks_claude x_topic_integration_share: Δ=0.250 [-9.667, 10.256] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_B_ducks_claude x_option_count_strict: Δ=-0.150 [-0.350, 0.000] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_B_ducks_claude x_option_count_lenient: Δ=0.250 [0.050, 0.450] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_B_ducks_claude x_fp_rate: Δ=-0.017 [-0.025, -0.008] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_B_ducks_claude x_addr_share: Δ=0.156 [0.057, 0.266] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_B_ducks_claude x_hedge_share: Δ=0.010 [0.003, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_B_ducks_claude eq_style: Δ=0.010 [0.003, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_claude_vs_B_ducks_claude i_user_align: Δ=0.125 [0.018, 0.229] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_claude_vs_B_ducks_claude i_prior_align: Δ=-0.125 [-0.229, -0.018] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_B_ducks_claude i_arbitration_rate: Δ=0.100 [-0.150, 0.350] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_B_ducks_claude i_option_count_strict: Δ=-0.150 [-0.350, 0.050] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_B_ducks_claude i_topic_integration_share: Δ=-1.625 [-10.103, 7.200] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_B_ducks_claude i_meta_language_share: Δ=-8.287 [-18.298, 1.276] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_B_ducks_claude i_fp_rate: Δ=-0.011 [-0.020, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_B_ducks_claude i_temp_rate: Δ=-0.004 [-0.005, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_B_ducks_claude delta_temp: Δ=0.004 [0.001, 0.006] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_claude_vs_B_ducks_claude style_dist: Δ=-0.060 [-0.123, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_B_ducks_claude spill_index: Δ=-0.150 [-0.350, 0.050] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_B_ducks_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_claude has no external data for meta_without_control_norm)
+📊 A_ducks_claude_vs_B_ducks_claude efe_E: Δ=0.215 [-0.048, 0.470] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_B_ducks_claude efe_Ghat: Δ=-0.298 [-0.590, 0.008] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_F_ducks_claude x_user_align: Δ=0.240 [0.092, 0.404] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_prior_align: Δ=-0.240 [-0.404, -0.092] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_arbitration_rate: Δ=-0.500 [-0.700, -0.300] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_theatre_evidence_score: Δ=-0.350 [-0.492, -0.213] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_topic_focus_share: Δ=10.421 [-8.507, 28.852] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_F_ducks_claude x_meta_language_share: Δ=-24.108 [-38.477, -9.965] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_topic_obedience_rate: Δ=0.750 [0.550, 0.901] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_topic_integration_share: Δ=-3.833 [-19.417, 10.337] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_F_ducks_claude x_option_count_lenient: Δ=0.250 [0.050, 0.450] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_fp_rate: Δ=-0.037 [-0.051, -0.023] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_temp_rate: Δ=-0.007 [-0.012, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_spat_rate: Δ=-0.017 [-0.028, -0.007] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_addr_share: Δ=0.325 [0.214, 0.440] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_hedge_share: Δ=0.019 [0.014, 0.023] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_F_ducks_claude x_perspective_obedience: Δ=0.300 [0.100, 0.550] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_F_ducks_claude eq_style: Δ=0.019 [0.014, 0.023] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_F_ducks_claude efe_R: Δ=-0.200 [-0.337, -0.076] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_F_ducks_claude i_user_align: Δ=0.175 [0.078, 0.273] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_claude_vs_F_ducks_claude i_prior_align: Δ=-0.175 [-0.273, -0.078] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_F_ducks_claude i_arbitration_rate: Δ=-0.150 [-0.350, 0.050] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_F_ducks_claude i_theatre_evidence_score: Δ=-0.202 [-0.329, -0.079] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_F_ducks_claude i_option_count_strict: Δ=-0.600 [-0.950, -0.300] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_F_ducks_claude i_topic_integration_share: Δ=2.995 [-4.799, 11.492] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_F_ducks_claude i_meta_language_share: Δ=-30.851 [-42.212, -19.717] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_F_ducks_claude i_temp_rate: Δ=-0.003 [-0.004, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_F_ducks_claude delta_fp: Δ=-0.024 [-0.039, -0.011] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_F_ducks_claude delta_spat: Δ=-0.027 [-0.038, -0.015] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_F_ducks_claude comp_ratio: Δ=0.125 [0.091, 0.160] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_claude_vs_F_ducks_claude style_dist: Δ=-0.062 [-0.106, -0.016] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_F_ducks_claude spill_index: Δ=-0.450 [-0.700, -0.200] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_F_ducks_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_claude has no external data for meta_without_control_norm)
+📊 A_ducks_claude_vs_F_ducks_claude efe_E: Δ=0.110 [-0.132, 0.347] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_F_ducks_claude efe_Ghat: Δ=-0.334 [-0.632, -0.031] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_A_ducks_claude x_arbitration_rate: Δ=-0.200 [-0.400, -0.050] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_A_ducks_claude x_topic_focus_share: Δ=8.178 [-8.199, 23.982] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_A_ducks_claude x_meta_language_share: Δ=2.413 [-6.546, 11.964] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_A_ducks_claude x_topic_obedience_rate: Δ=0.400 [0.200, 0.600] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_A_ducks_claude x_topic_integration_share: Δ=3.833 [-8.002, 15.000] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_A_ducks_claude x_option_count_lenient: Δ=0.150 [-0.100, 0.400] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_A_ducks_claude x_addr_share: Δ=0.110 [-0.013, 0.232] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_A_ducks_claude x_hedge_share: Δ=0.016 [0.011, 0.021] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_A_ducks_claude eq_style: Δ=0.016 [0.011, 0.021] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_claude_vs_E_ducks_claude i_user_align: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_user_align)
+📊 A_ducks_claude_vs_E_ducks_claude i_prior_align: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_prior_align)
+📊 A_ducks_claude_vs_E_ducks_claude i_arbitration_rate: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_arbitration_rate)
+📊 A_ducks_claude_vs_E_ducks_claude i_theatre_evidence_score: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_theatre_evidence_score)
+📊 A_ducks_claude_vs_E_ducks_claude i_option_count_strict: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_option_count_strict)
+📊 A_ducks_claude_vs_E_ducks_claude i_option_count_lenient: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_option_count_lenient)
+📊 A_ducks_claude_vs_E_ducks_claude i_topic_integration_share: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_topic_integration_share)
+📊 A_ducks_claude_vs_E_ducks_claude i_meta_language_share: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_meta_language_share)
+📊 A_ducks_claude_vs_E_ducks_claude i_fp_rate: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_fp_rate)
+📊 A_ducks_claude_vs_E_ducks_claude i_sp_rate: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_sp_rate)
+📊 A_ducks_claude_vs_E_ducks_claude i_temp_rate: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_temp_rate)
+📊 A_ducks_claude_vs_E_ducks_claude i_spat_rate: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_spat_rate)
+📊 A_ducks_claude_vs_E_ducks_claude i_hedge_share: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_hedge_share)
+📊 A_ducks_claude_vs_E_ducks_claude i_cert_share: NaN (no_i_data_in_comparison: E_ducks_claude has no internal data for i_cert_share)
+📊 A_ducks_claude_vs_E_ducks_claude delta_fp: NaN (no_x_data_in_comparison: E_ducks_claude has no external data for delta_fp)
+📊 A_ducks_claude_vs_E_ducks_claude delta_sp: NaN (no_x_data_in_comparison: E_ducks_claude has no external data for delta_sp)
+📊 A_ducks_claude_vs_E_ducks_claude delta_temp: NaN (no_x_data_in_comparison: E_ducks_claude has no external data for delta_temp)
+📊 A_ducks_claude_vs_E_ducks_claude delta_spat: NaN (no_x_data_in_comparison: E_ducks_claude has no external data for delta_spat)
+📊 A_ducks_claude_vs_E_ducks_claude delta_hedge: NaN (no_x_data_in_comparison: E_ducks_claude has no external data for delta_hedge)
+📊 A_ducks_claude_vs_E_ducks_claude comp_ratio: NaN (no_x_data_in_comparison: E_ducks_claude has no external data for comp_ratio)
+📊 A_ducks_claude_vs_E_ducks_claude style_dist: NaN (no_x_data_in_comparison: E_ducks_claude has no external data for style_dist)
+📊 A_ducks_claude_vs_E_ducks_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_claude has no external data for meta_without_control_norm)
+📊 A_ducks_claude_vs_E_ducks_claude efe_E: Δ=0.370 [0.208, 0.520] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_claude_vs_E_ducks_claude efe_Ghat: Δ=-0.394 [-0.579, -0.204] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_user_align: Δ=0.278 [0.100, 0.463] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_prior_align: Δ=-0.278 [-0.463, -0.100] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_arbitration_rate: Δ=-0.550 [-0.750, -0.350] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_theatre_evidence_score: Δ=-0.385 [-0.512, -0.259] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_topic_focus_share: Δ=19.861 [1.679, 37.566] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_meta_language_share: Δ=-33.511 [-49.885, -17.723] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_topic_obedience_rate: Δ=0.700 [0.500, 0.900] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_topic_integration_share: Δ=4.500 [-8.083, 16.250] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_C_ducks_claude x_option_count_lenient: Δ=0.150 [-0.100, 0.400] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_C_ducks_claude x_meta_without_control_score: Δ=-0.182 [-0.373, -0.012] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_fp_rate: Δ=-0.026 [-0.039, -0.015] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_sp_rate: Δ=0.013 [0.003, 0.021] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_spat_rate: Δ=-0.012 [-0.023, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_addr_share: Δ=0.383 [0.266, 0.499] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_hedge_share: Δ=0.010 [0.004, 0.016] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_C_ducks_claude x_perspective_obedience: Δ=0.200 [-0.050, 0.450] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_C_ducks_claude eq_style: Δ=0.010 [0.004, 0.016] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_C_ducks_claude efe_R: Δ=-0.220 [-0.366, -0.079] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_C_ducks_claude i_user_align: Δ=0.146 [0.054, 0.237] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_claude_vs_C_ducks_claude i_prior_align: Δ=-0.146 [-0.237, -0.054] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_C_ducks_claude i_arbitration_rate: Δ=-0.150 [-0.350, 0.050] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_C_ducks_claude i_theatre_evidence_score: Δ=-0.180 [-0.303, -0.059] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_C_ducks_claude i_option_count_strict: Δ=-0.200 [-0.400, 0.000] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_C_ducks_claude i_topic_integration_share: Δ=3.512 [-5.284, 12.639] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_C_ducks_claude i_meta_language_share: Δ=-20.856 [-31.311, -10.137] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_C_ducks_claude i_temp_rate: Δ=-0.002 [-0.004, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_C_ducks_claude delta_fp: Δ=-0.014 [-0.026, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_C_ducks_claude delta_spat: Δ=-0.013 [-0.023, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_C_ducks_claude comp_ratio: Δ=0.061 [0.015, 0.110] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_claude_vs_C_ducks_claude style_dist: Δ=-0.134 [-0.209, -0.059] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_C_ducks_claude spill_index: Δ=-0.200 [-0.400, 0.000] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_C_ducks_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_claude has no external data for meta_without_control_norm)
+📊 A_ducks_claude_vs_C_ducks_claude efe_E: Δ=0.162 [-0.090, 0.405] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_C_ducks_claude efe_Ghat: Δ=-0.406 [-0.686, -0.118] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_user_align: Δ=0.332 [0.136, 0.534] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_prior_align: Δ=-0.332 [-0.534, -0.136] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_arbitration_rate: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_theatre_evidence_score: Δ=-0.334 [-0.472, -0.205] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_topic_focus_share: Δ=21.420 [3.875, 40.694] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_meta_language_share: Δ=-27.838 [-45.100, -10.233] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_topic_obedience_rate: Δ=0.550 [0.350, 0.750] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_topic_integration_share: Δ=9.333 [-2.169, 20.500] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_D_ducks_claude x_option_count_lenient: Δ=0.250 [0.050, 0.450] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_meta_without_control_score: Δ=-0.139 [-0.330, 0.028] ⚠️ MODERATE EFFECT
+📊 E_ducks_claude_vs_D_ducks_claude x_fp_rate: Δ=-0.033 [-0.044, -0.022] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_sp_rate: Δ=0.011 [0.002, 0.019] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_temp_rate: Δ=-0.003 [-0.006, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_spat_rate: Δ=-0.014 [-0.024, -0.003] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_addr_share: Δ=0.374 [0.268, 0.474] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_hedge_share: Δ=0.014 [0.008, 0.020] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_D_ducks_claude x_perspective_obedience: Δ=0.300 [0.050, 0.501] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_D_ducks_claude eq_style: Δ=0.015 [0.009, 0.020] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_claude_vs_D_ducks_claude efe_R: Δ=-0.268 [-0.429, -0.109] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_D_ducks_claude i_user_align: Δ=0.145 [0.031, 0.259] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_claude_vs_D_ducks_claude i_prior_align: Δ=-0.145 [-0.259, -0.031] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_D_ducks_claude i_arbitration_rate: Δ=-0.150 [-0.350, 0.050] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_D_ducks_claude i_theatre_evidence_score: Δ=-0.183 [-0.317, -0.058] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_D_ducks_claude i_topic_integration_share: Δ=4.347 [-4.039, 13.470] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_D_ducks_claude i_meta_language_share: Δ=-25.744 [-39.031, -13.300] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_D_ducks_claude i_temp_rate: Δ=-0.002 [-0.004, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_D_ducks_claude i_cert_share: Δ=0.001 [0.000, 0.002] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_claude_vs_D_ducks_claude delta_fp: Δ=-0.030 [-0.042, -0.016] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_D_ducks_claude delta_spat: Δ=-0.015 [-0.026, -0.003] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_D_ducks_claude style_dist: Δ=-0.142 [-0.228, -0.058] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_claude_vs_D_ducks_claude spill_index: Δ=-0.100 [-0.300, 0.050] ⚠️ MODERATE EFFECT
+📊 A_ducks_claude_vs_D_ducks_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_claude has no external data for meta_without_control_norm)
+📊 A_ducks_claude_vs_D_ducks_claude efe_Ghat: Δ=-0.352 [-0.653, -0.062] ✅ SIGNIFICANT NEGATIVE
+📊 Processing stratum ducks_gemini: external_ref=E_ducks_gemini, internal_ref=A_ducks_gemini
+📊 E_ducks_gemini_vs_B_ducks_gemini x_user_align: Δ=0.609 [0.491, 0.734] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_B_ducks_gemini x_prior_align: Δ=-0.609 [-0.734, -0.491] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_B_ducks_gemini x_theatre_evidence_score: Δ=-0.276 [-0.339, -0.218] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_B_ducks_gemini x_topic_focus_share: Δ=5.173 [-10.098, 19.349] ⚠️ MODERATE EFFECT
+📊 E_ducks_gemini_vs_B_ducks_gemini x_meta_language_share: Δ=-15.567 [-26.875, -5.528] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_B_ducks_gemini x_topic_obedience_rate: Δ=0.400 [0.200, 0.600] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_B_ducks_gemini x_topic_integration_share: Δ=-5.798 [-13.132, 0.668] ⚠️ MODERATE EFFECT
+📊 E_ducks_gemini_vs_B_ducks_gemini x_meta_without_control_score: Δ=-0.181 [-0.313, -0.064] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_B_ducks_gemini x_sp_rate: Δ=0.013 [0.008, 0.019] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_B_ducks_gemini x_addr_share: Δ=0.235 [0.150, 0.322] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_B_ducks_gemini x_hedge_share: Δ=0.035 [0.029, 0.043] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_B_ducks_gemini eq_style: Δ=0.037 [0.030, 0.044] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_B_ducks_gemini efe_R: Δ=-0.501 [-0.605, -0.403] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_B_ducks_gemini i_arbitration_rate: Δ=-0.150 [-0.400, 0.100] ⚠️ MODERATE EFFECT
+📊 A_ducks_gemini_vs_B_ducks_gemini i_topic_integration_share: Δ=-1.080 [-6.475, 4.753] ⚠️ MODERATE EFFECT
+📊 A_ducks_gemini_vs_B_ducks_gemini i_meta_language_share: Δ=-5.103 [-13.666, 3.582] ⚠️ MODERATE EFFECT
+📊 A_ducks_gemini_vs_B_ducks_gemini delta_sp: Δ=0.003 [0.000, 0.005] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_gemini_vs_B_ducks_gemini delta_hedge: Δ=0.008 [0.002, 0.014] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_gemini_vs_B_ducks_gemini style_dist: Δ=-0.115 [-0.196, -0.038] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_B_ducks_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_gemini has no external data for meta_without_control_norm)
+📊 A_ducks_gemini_vs_B_ducks_gemini efe_E: Δ=-0.162 [-0.363, 0.047] ⚠️ MODERATE EFFECT
+📊 E_ducks_gemini_vs_F_ducks_gemini x_user_align: Δ=0.627 [0.456, 0.802] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_F_ducks_gemini x_prior_align: Δ=-0.627 [-0.802, -0.456] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_F_ducks_gemini x_arbitration_rate: Δ=-0.600 [-0.800, -0.400] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_F_ducks_gemini x_theatre_evidence_score: Δ=-0.557 [-0.697, -0.410] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_F_ducks_gemini x_topic_focus_share: Δ=20.346 [6.609, 33.732] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_F_ducks_gemini x_meta_language_share: Δ=-45.816 [-63.269, -28.873] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_F_ducks_gemini x_topic_obedience_rate: Δ=0.750 [0.550, 0.900] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_F_ducks_gemini x_topic_integration_share: Δ=-6.250 [-14.167, 1.667] ⚠️ MODERATE EFFECT
+📊 E_ducks_gemini_vs_F_ducks_gemini x_meta_without_control_score: Δ=-0.123 [-0.272, 0.003] ⚠️ MODERATE EFFECT
+📊 E_ducks_gemini_vs_F_ducks_gemini x_temp_rate: Δ=-0.006 [-0.010, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_F_ducks_gemini x_spat_rate: Δ=-0.012 [-0.024, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_F_ducks_gemini x_hedge_share: Δ=0.038 [0.030, 0.046] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_F_ducks_gemini eq_style: Δ=0.038 [0.030, 0.046] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_F_ducks_gemini efe_R: Δ=-0.513 [-0.652, -0.372] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_F_ducks_gemini i_arbitration_rate: Δ=-0.300 [-0.500, -0.100] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_F_ducks_gemini i_theatre_evidence_score: Δ=-0.180 [-0.300, -0.073] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_F_ducks_gemini i_option_count_strict: Δ=-0.500 [-0.950, -0.199] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_F_ducks_gemini i_topic_integration_share: Δ=-1.184 [-6.950, 4.921] ⚠️ MODERATE EFFECT
+📊 A_ducks_gemini_vs_F_ducks_gemini i_meta_language_share: Δ=-31.837 [-42.783, -21.061] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_F_ducks_gemini i_spat_rate: Δ=-0.016 [-0.021, -0.010] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_F_ducks_gemini i_hedge_share: Δ=-0.009 [-0.011, -0.007] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_F_ducks_gemini i_cert_share: Δ=0.001 [0.000, 0.002] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_gemini_vs_F_ducks_gemini delta_sp: Δ=-0.011 [-0.021, -0.003] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_F_ducks_gemini delta_hedge: Δ=0.019 [0.010, 0.026] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_gemini_vs_F_ducks_gemini spill_index: Δ=-0.350 [-0.550, -0.150] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_F_ducks_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_gemini has no external data for meta_without_control_norm)
+📊 A_ducks_gemini_vs_F_ducks_gemini efe_E: Δ=0.183 [-0.063, 0.415] ⚠️ MODERATE EFFECT
+📊 A_ducks_gemini_vs_F_ducks_gemini efe_Ghat: Δ=-0.325 [-0.630, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_A_ducks_gemini x_user_align: Δ=0.454 [0.340, 0.563] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_A_ducks_gemini x_prior_align: Δ=-0.454 [-0.563, -0.340] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_A_ducks_gemini x_theatre_evidence_score: Δ=-0.236 [-0.319, -0.165] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_A_ducks_gemini x_topic_focus_share: Δ=-2.791 [-13.976, 8.881] ⚠️ MODERATE EFFECT
+📊 E_ducks_gemini_vs_A_ducks_gemini x_meta_language_share: Δ=-6.302 [-14.469, 0.741] ⚠️ MODERATE EFFECT
+📊 E_ducks_gemini_vs_A_ducks_gemini x_topic_obedience_rate: Δ=0.450 [0.250, 0.650] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_A_ducks_gemini x_topic_integration_share: Δ=-12.060 [-18.847, -4.726] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_A_ducks_gemini x_sp_rate: Δ=0.011 [0.005, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_A_ducks_gemini x_addr_share: Δ=0.186 [0.087, 0.282] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_A_ducks_gemini x_hedge_share: Δ=0.028 [0.020, 0.036] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_A_ducks_gemini eq_style: Δ=0.030 [0.022, 0.038] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_A_ducks_gemini efe_R: Δ=-0.371 [-0.461, -0.278] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_E_ducks_gemini i_user_align: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_user_align)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_prior_align: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_prior_align)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_arbitration_rate: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_arbitration_rate)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_theatre_evidence_score: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_theatre_evidence_score)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_option_count_strict: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_option_count_strict)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_option_count_lenient: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_option_count_lenient)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_topic_integration_share: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_topic_integration_share)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_meta_language_share: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_meta_language_share)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_fp_rate: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_fp_rate)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_sp_rate: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_sp_rate)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_temp_rate: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_temp_rate)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_spat_rate: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_spat_rate)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_hedge_share: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_hedge_share)
+📊 A_ducks_gemini_vs_E_ducks_gemini i_cert_share: NaN (no_i_data_in_comparison: E_ducks_gemini has no internal data for i_cert_share)
+📊 A_ducks_gemini_vs_E_ducks_gemini delta_fp: NaN (no_x_data_in_comparison: E_ducks_gemini has no external data for delta_fp)
+📊 A_ducks_gemini_vs_E_ducks_gemini delta_sp: NaN (no_x_data_in_comparison: E_ducks_gemini has no external data for delta_sp)
+📊 A_ducks_gemini_vs_E_ducks_gemini delta_temp: NaN (no_x_data_in_comparison: E_ducks_gemini has no external data for delta_temp)
+📊 A_ducks_gemini_vs_E_ducks_gemini delta_spat: NaN (no_x_data_in_comparison: E_ducks_gemini has no external data for delta_spat)
+📊 A_ducks_gemini_vs_E_ducks_gemini delta_hedge: NaN (no_x_data_in_comparison: E_ducks_gemini has no external data for delta_hedge)
+📊 A_ducks_gemini_vs_E_ducks_gemini comp_ratio: NaN (no_x_data_in_comparison: E_ducks_gemini has no external data for comp_ratio)
+📊 A_ducks_gemini_vs_E_ducks_gemini style_dist: NaN (no_x_data_in_comparison: E_ducks_gemini has no external data for style_dist)
+📊 A_ducks_gemini_vs_E_ducks_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_gemini has no external data for meta_without_control_norm)
+📊 A_ducks_gemini_vs_E_ducks_gemini efe_E: Δ=0.383 [0.217, 0.533] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_C_ducks_gemini x_user_align: Δ=0.398 [0.292, 0.511] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_C_ducks_gemini x_prior_align: Δ=-0.398 [-0.511, -0.292] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_C_ducks_gemini x_theatre_evidence_score: Δ=-0.163 [-0.209, -0.119] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_C_ducks_gemini x_topic_focus_share: Δ=0.691 [-14.089, 14.615] ⚠️ MODERATE EFFECT
+📊 E_ducks_gemini_vs_C_ducks_gemini x_meta_language_share: Δ=-10.714 [-21.273, -1.663] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_C_ducks_gemini x_topic_obedience_rate: Δ=0.421 [0.211, 0.632] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_C_ducks_gemini x_topic_integration_share: Δ=-4.699 [-11.078, 0.952] ⚠️ MODERATE EFFECT
+📊 E_ducks_gemini_vs_C_ducks_gemini x_meta_without_control_score: Δ=-0.125 [-0.247, -0.019] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_C_ducks_gemini x_addr_share: Δ=0.146 [0.034, 0.257] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_C_ducks_gemini x_hedge_share: Δ=0.034 [0.027, 0.041] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_C_ducks_gemini eq_style: Δ=0.034 [0.027, 0.041] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_C_ducks_gemini efe_R: Δ=-0.325 [-0.419, -0.239] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_C_ducks_gemini i_topic_integration_share: Δ=3.719 [-1.090, 8.961] ⚠️ MODERATE EFFECT
+📊 A_ducks_gemini_vs_C_ducks_gemini i_meta_language_share: Δ=-13.250 [-20.921, -4.690] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_C_ducks_gemini style_dist: Δ=-0.170 [-0.226, -0.113] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_C_ducks_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_gemini has no external data for meta_without_control_norm)
+📊 E_ducks_gemini_vs_D_ducks_gemini x_user_align: Δ=0.362 [0.248, 0.481] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_D_ducks_gemini x_prior_align: Δ=-0.362 [-0.481, -0.248] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_D_ducks_gemini x_arbitration_rate: Δ=-0.150 [-0.300, 0.000] ⚠️ MODERATE EFFECT
+📊 E_ducks_gemini_vs_D_ducks_gemini x_theatre_evidence_score: Δ=-0.223 [-0.329, -0.129] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_D_ducks_gemini x_topic_focus_share: Δ=14.865 [3.650, 26.632] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_D_ducks_gemini x_meta_language_share: Δ=-8.819 [-17.623, -0.852] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_gemini_vs_D_ducks_gemini x_topic_obedience_rate: Δ=0.750 [0.550, 0.900] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_D_ducks_gemini x_topic_integration_share: Δ=-1.871 [-6.333, 2.880] ⚠️ MODERATE EFFECT
+📊 E_ducks_gemini_vs_D_ducks_gemini x_sp_rate: Δ=0.011 [0.005, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_D_ducks_gemini x_addr_share: Δ=0.195 [0.096, 0.294] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_D_ducks_gemini x_hedge_share: Δ=0.032 [0.025, 0.041] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_D_ducks_gemini eq_style: Δ=0.032 [0.025, 0.041] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_gemini_vs_D_ducks_gemini efe_R: Δ=-0.295 [-0.394, -0.203] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_D_ducks_gemini i_topic_integration_share: Δ=2.096 [-3.900, 7.912] ⚠️ MODERATE EFFECT
+📊 A_ducks_gemini_vs_D_ducks_gemini i_meta_language_share: Δ=-5.444 [-12.669, 2.490] ⚠️ MODERATE EFFECT
+📊 A_ducks_gemini_vs_D_ducks_gemini i_fp_rate: Δ=-0.007 [-0.014, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_D_ducks_gemini i_hedge_share: Δ=0.001 [0.000, 0.002] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_gemini_vs_D_ducks_gemini i_cert_share: Δ=-0.003 [-0.006, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_D_ducks_gemini style_dist: Δ=-0.201 [-0.260, -0.141] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_gemini_vs_D_ducks_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_gemini has no external data for meta_without_control_norm)
+📊 Processing stratum ducks_chatgpt: external_ref=E_ducks_chatgpt, internal_ref=A_ducks_chatgpt
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt x_user_align: Δ=0.477 [0.333, 0.640] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt x_prior_align: Δ=-0.477 [-0.640, -0.333] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt x_theatre_evidence_score: Δ=-0.193 [-0.257, -0.136] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt x_topic_focus_share: Δ=10.492 [-7.919, 29.352] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt x_meta_language_share: Δ=-55.490 [-70.449, -39.735] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt x_topic_obedience_rate: Δ=0.300 [0.050, 0.550] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt x_topic_integration_share: Δ=-29.167 [-42.500, -15.833] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt x_option_count_lenient: Δ=0.200 [-0.050, 0.500] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt x_meta_without_control_score: Δ=-0.613 [-0.769, -0.446] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt x_addr_share: Δ=-0.203 [-0.406, -0.016] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt x_perspective_obedience: Δ=-0.278 [-0.500, -0.111] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_B_ducks_chatgpt efe_R: Δ=-0.387 [-0.514, -0.272] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_B_ducks_chatgpt i_user_align: Δ=0.152 [0.043, 0.267] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_chatgpt_vs_B_ducks_chatgpt i_prior_align: Δ=-0.152 [-0.267, -0.043] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_B_ducks_chatgpt i_theatre_evidence_score: Δ=-0.105 [-0.213, -0.003] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_B_ducks_chatgpt i_topic_integration_share: Δ=-13.151 [-29.973, 1.306] ⚠️ MODERATE EFFECT
+📊 A_ducks_chatgpt_vs_B_ducks_chatgpt i_meta_language_share: Δ=-49.808 [-67.426, -32.030] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_B_ducks_chatgpt comp_ratio: Δ=0.084 [0.027, 0.138] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_chatgpt_vs_B_ducks_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_chatgpt has no external data for meta_without_control_norm)
+📊 A_ducks_chatgpt_vs_B_ducks_chatgpt efe_Ghat: Δ=-0.249 [-0.412, -0.088] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_user_align: Δ=0.459 [0.286, 0.654] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_prior_align: Δ=-0.459 [-0.654, -0.286] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_arbitration_rate: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_theatre_evidence_score: Δ=-0.388 [-0.511, -0.274] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_topic_focus_share: Δ=37.667 [21.263, 53.407] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_meta_language_share: Δ=-30.571 [-44.004, -17.501] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_topic_obedience_rate: Δ=0.300 [0.050, 0.550] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_topic_integration_share: Δ=-7.917 [-20.427, 1.667] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_option_count_lenient: Δ=0.300 [0.100, 0.550] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_meta_without_control_score: Δ=-0.254 [-0.405, -0.111] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_spat_rate: Δ=-0.021 [-0.033, -0.009] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_hedge_share: Δ=0.021 [0.013, 0.028] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt x_perspective_obedience: Δ=-0.150 [-0.300, 0.000] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt eq_style: Δ=0.021 [0.013, 0.028] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_F_ducks_chatgpt efe_R: Δ=-0.376 [-0.538, -0.233] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt i_user_align: Δ=0.123 [0.013, 0.234] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt i_prior_align: Δ=-0.123 [-0.234, -0.013] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt i_arbitration_rate: Δ=-0.850 [-1.000, -0.700] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt i_theatre_evidence_score: Δ=-0.511 [-0.624, -0.396] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt i_option_count_strict: Δ=-0.500 [-0.800, -0.200] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt i_topic_integration_share: Δ=16.391 [3.878, 28.900] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt i_meta_language_share: Δ=-20.483 [-37.410, -2.911] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt i_fp_rate: Δ=-0.023 [-0.032, -0.014] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt i_temp_rate: Δ=-0.003 [-0.004, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt i_spat_rate: Δ=-0.015 [-0.021, -0.009] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt i_hedge_share: Δ=0.009 [0.003, 0.015] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt comp_ratio: Δ=0.231 [0.182, 0.281] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt style_dist: Δ=-0.075 [-0.129, -0.021] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt spill_index: Δ=-0.400 [-0.650, -0.150] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_chatgpt has no external data for meta_without_control_norm)
+📊 A_ducks_chatgpt_vs_F_ducks_chatgpt efe_E: Δ=-0.267 [-0.440, -0.082] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_user_align: Δ=0.174 [0.099, 0.250] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_prior_align: Δ=-0.174 [-0.250, -0.099] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_theatre_evidence_score: Δ=-0.070 [-0.102, -0.040] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_topic_focus_share: Δ=13.757 [-1.058, 27.978] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_meta_language_share: Δ=-11.901 [-21.856, -3.311] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_topic_integration_share: Δ=-5.000 [-13.333, 1.667] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_option_count_lenient: Δ=0.300 [0.100, 0.550] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_meta_without_control_score: Δ=-0.138 [-0.254, -0.039] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_fp_rate: Δ=0.026 [0.018, 0.033] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_sp_rate: Δ=-0.008 [-0.016, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_addr_share: Δ=-0.433 [-0.611, -0.244] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_hedge_share: Δ=0.011 [0.005, 0.018] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt x_perspective_obedience: Δ=-0.438 [-0.688, -0.188] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt eq_style: Δ=0.011 [0.005, 0.018] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_A_ducks_chatgpt efe_R: Δ=-0.140 [-0.204, -0.079] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_user_align: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_user_align)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_prior_align: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_prior_align)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_arbitration_rate: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_arbitration_rate)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_theatre_evidence_score: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_theatre_evidence_score)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_option_count_strict: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_option_count_strict)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_option_count_lenient: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_option_count_lenient)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_topic_integration_share: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_topic_integration_share)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_meta_language_share: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_meta_language_share)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_fp_rate: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_fp_rate)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_sp_rate: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_sp_rate)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_temp_rate: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_temp_rate)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_spat_rate: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_spat_rate)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_hedge_share: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_hedge_share)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt i_cert_share: NaN (no_i_data_in_comparison: E_ducks_chatgpt has no internal data for i_cert_share)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt delta_fp: NaN (no_x_data_in_comparison: E_ducks_chatgpt has no external data for delta_fp)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt delta_sp: NaN (no_x_data_in_comparison: E_ducks_chatgpt has no external data for delta_sp)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt delta_temp: NaN (no_x_data_in_comparison: E_ducks_chatgpt has no external data for delta_temp)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt delta_spat: NaN (no_x_data_in_comparison: E_ducks_chatgpt has no external data for delta_spat)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt delta_hedge: NaN (no_x_data_in_comparison: E_ducks_chatgpt has no external data for delta_hedge)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt comp_ratio: NaN (no_x_data_in_comparison: E_ducks_chatgpt has no external data for comp_ratio)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt style_dist: NaN (no_x_data_in_comparison: E_ducks_chatgpt has no external data for style_dist)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_chatgpt has no external data for meta_without_control_norm)
+📊 A_ducks_chatgpt_vs_E_ducks_chatgpt efe_Ghat: Δ=0.104 [0.015, 0.187] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_user_align: Δ=0.405 [0.297, 0.529] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_prior_align: Δ=-0.405 [-0.529, -0.297] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_theatre_evidence_score: Δ=-0.164 [-0.213, -0.121] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_topic_focus_share: Δ=14.493 [-2.813, 31.621] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_meta_language_share: Δ=-7.607 [-15.056, -1.310] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_topic_obedience_rate: Δ=0.250 [-0.050, 0.500] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_topic_integration_share: Δ=-19.167 [-32.500, -7.500] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_option_count_lenient: Δ=0.250 [0.000, 0.550] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_meta_without_control_score: Δ=-0.088 [-0.175, -0.015] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_fp_rate: Δ=0.013 [0.001, 0.024] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_spat_rate: Δ=-0.013 [-0.022, -0.004] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_addr_share: Δ=-0.166 [-0.391, 0.049] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_hedge_share: Δ=0.009 [0.000, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt x_perspective_obedience: Δ=-0.267 [-0.533, -0.067] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt eq_style: Δ=0.009 [0.000, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_C_ducks_chatgpt efe_R: Δ=-0.328 [-0.426, -0.243] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_C_ducks_chatgpt i_user_align: Δ=0.181 [0.056, 0.310] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_chatgpt_vs_C_ducks_chatgpt i_prior_align: Δ=-0.181 [-0.310, -0.056] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_C_ducks_chatgpt i_theatre_evidence_score: Δ=-0.169 [-0.290, -0.043] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_C_ducks_chatgpt i_topic_integration_share: Δ=-11.722 [-27.667, 4.779] ⚠️ MODERATE EFFECT
+📊 A_ducks_chatgpt_vs_C_ducks_chatgpt i_meta_language_share: Δ=9.931 [-5.961, 26.398] ⚠️ MODERATE EFFECT
+📊 A_ducks_chatgpt_vs_C_ducks_chatgpt delta_fp: Δ=-0.015 [-0.028, -0.004] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_C_ducks_chatgpt delta_sp: Δ=0.010 [0.002, 0.019] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_chatgpt_vs_C_ducks_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_chatgpt has no external data for meta_without_control_norm)
+📊 A_ducks_chatgpt_vs_C_ducks_chatgpt efe_Ghat: Δ=-0.124 [-0.282, 0.031] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt x_user_align: Δ=0.437 [0.297, 0.589] ✅ SIGNIFICANT POSITIVE
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt x_prior_align: Δ=-0.437 [-0.589, -0.297] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt x_theatre_evidence_score: Δ=-0.176 [-0.235, -0.120] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt x_topic_focus_share: Δ=10.140 [-7.631, 28.473] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt x_meta_language_share: Δ=-27.089 [-42.156, -13.753] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt x_topic_integration_share: Δ=-19.167 [-30.417, -8.333] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt x_option_count_lenient: Δ=0.250 [0.000, 0.500] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt x_meta_without_control_score: Δ=-0.313 [-0.484, -0.159] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt x_spat_rate: Δ=-0.011 [-0.019, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt x_addr_share: Δ=-0.127 [-0.304, 0.031] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt x_perspective_obedience: Δ=-0.150 [-0.350, 0.000] ⚠️ MODERATE EFFECT
+📊 E_ducks_chatgpt_vs_D_ducks_chatgpt efe_R: Δ=-0.352 [-0.469, -0.240] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_D_ducks_chatgpt i_user_align: Δ=0.204 [0.101, 0.314] ✅ SIGNIFICANT POSITIVE
+📊 A_ducks_chatgpt_vs_D_ducks_chatgpt i_prior_align: Δ=-0.204 [-0.314, -0.101] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_D_ducks_chatgpt i_theatre_evidence_score: Δ=-0.141 [-0.241, -0.049] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_D_ducks_chatgpt i_topic_integration_share: Δ=-1.645 [-17.930, 13.940] ⚠️ MODERATE EFFECT
+📊 A_ducks_chatgpt_vs_D_ducks_chatgpt i_meta_language_share: Δ=-13.724 [-34.594, 5.673] ⚠️ MODERATE EFFECT
+📊 A_ducks_chatgpt_vs_D_ducks_chatgpt delta_fp: Δ=-0.016 [-0.028, -0.004] ✅ SIGNIFICANT NEGATIVE
+📊 A_ducks_chatgpt_vs_D_ducks_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_ducks_chatgpt has no external data for meta_without_control_norm)
+📊 A_ducks_chatgpt_vs_D_ducks_chatgpt efe_Ghat: Δ=-0.215 [-0.372, -0.052] ✅ SIGNIFICANT NEGATIVE
+📊 Processing stratum paprika_claude: external_ref=E_paprika_claude, internal_ref=A_paprika_claude
+📊 E_paprika_claude_vs_B_paprika_claude x_user_align: Δ=0.207 [0.111, 0.309] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_prior_align: Δ=-0.207 [-0.309, -0.111] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_arbitration_rate: Δ=-0.357 [-0.536, -0.179] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_theatre_evidence_score: Δ=-0.263 [-0.366, -0.155] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_topic_focus_share: Δ=9.381 [-4.228, 22.389] ⚠️ MODERATE EFFECT
+📊 E_paprika_claude_vs_B_paprika_claude x_meta_language_share: Δ=-17.332 [-27.098, -7.862] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_topic_obedience_rate: Δ=0.286 [0.107, 0.464] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_topic_integration_share: Δ=-6.250 [-10.893, -1.845] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_meta_without_control_score: Δ=-0.108 [-0.215, -0.023] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_fp_rate: Δ=-0.014 [-0.023, -0.005] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_temp_rate: Δ=-0.003 [-0.005, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_spat_rate: Δ=-0.009 [-0.015, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_addr_share: Δ=0.109 [0.004, 0.206] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_B_paprika_claude x_hedge_share: Δ=0.018 [0.013, 0.022] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_B_paprika_claude eq_style: Δ=0.018 [0.013, 0.022] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_B_paprika_claude efe_R: Δ=-0.168 [-0.249, -0.093] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_B_paprika_claude i_arbitration_rate: Δ=0.179 [-0.036, 0.393] ⚠️ MODERATE EFFECT
+📊 A_paprika_claude_vs_B_paprika_claude i_option_count_strict: Δ=-0.286 [-0.536, -0.036] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_B_paprika_claude i_topic_integration_share: Δ=-3.170 [-9.574, 3.549] ⚠️ MODERATE EFFECT
+📊 A_paprika_claude_vs_B_paprika_claude i_meta_language_share: Δ=-3.478 [-12.721, 5.384] ⚠️ MODERATE EFFECT
+📊 A_paprika_claude_vs_B_paprika_claude delta_temp: Δ=-0.003 [-0.006, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_B_paprika_claude comp_ratio: Δ=-0.053 [-0.089, -0.016] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_B_paprika_claude spill_index: Δ=-0.214 [-0.393, 0.000] ⚠️ MODERATE EFFECT
+📊 A_paprika_claude_vs_B_paprika_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_claude has no external data for meta_without_control_norm)
+📊 A_paprika_claude_vs_B_paprika_claude efe_E: Δ=0.195 [-0.025, 0.405] ⚠️ MODERATE EFFECT
+📊 A_paprika_claude_vs_B_paprika_claude efe_Ghat: Δ=-0.218 [-0.507, 0.071] ⚠️ MODERATE EFFECT
+📊 E_paprika_claude_vs_F_paprika_claude x_user_align: Δ=0.321 [0.187, 0.473] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_prior_align: Δ=-0.321 [-0.473, -0.187] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_arbitration_rate: Δ=-0.450 [-0.650, -0.250] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_theatre_evidence_score: Δ=-0.356 [-0.502, -0.221] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_topic_focus_share: Δ=23.072 [8.911, 37.112] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_meta_language_share: Δ=-46.019 [-63.640, -29.008] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_topic_obedience_rate: Δ=0.600 [0.400, 0.800] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_topic_integration_share: Δ=-10.333 [-20.004, -2.325] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_meta_without_control_score: Δ=-0.276 [-0.462, -0.114] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_fp_rate: Δ=-0.021 [-0.034, -0.008] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_sp_rate: Δ=0.011 [0.005, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_temp_rate: Δ=-0.004 [-0.009, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_spat_rate: Δ=-0.022 [-0.038, -0.008] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_addr_share: Δ=0.299 [0.153, 0.426] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_hedge_share: Δ=0.016 [0.009, 0.022] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_F_paprika_claude x_perspective_obedience: Δ=0.239 [-0.022, 0.494] ⚠️ MODERATE EFFECT
+📊 E_paprika_claude_vs_F_paprika_claude eq_style: Δ=0.016 [0.010, 0.023] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_F_paprika_claude efe_R: Δ=-0.263 [-0.386, -0.155] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_F_paprika_claude i_user_align: Δ=0.172 [0.090, 0.259] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_claude_vs_F_paprika_claude i_prior_align: Δ=-0.172 [-0.259, -0.090] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_F_paprika_claude i_arbitration_rate: Δ=-0.143 [-0.286, -0.036] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_F_paprika_claude i_theatre_evidence_score: Δ=-0.192 [-0.296, -0.096] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_F_paprika_claude i_option_count_strict: Δ=-0.429 [-0.829, -0.093] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_F_paprika_claude i_topic_integration_share: Δ=3.473 [-3.985, 10.218] ⚠️ MODERATE EFFECT
+📊 A_paprika_claude_vs_F_paprika_claude i_meta_language_share: Δ=-27.870 [-38.138, -17.480] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_F_paprika_claude i_spat_rate: Δ=0.009 [0.004, 0.015] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_claude_vs_F_paprika_claude i_hedge_share: Δ=-0.005 [-0.008, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_F_paprika_claude delta_sp: Δ=0.011 [0.003, 0.020] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_claude_vs_F_paprika_claude delta_spat: Δ=-0.016 [-0.032, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_F_paprika_claude comp_ratio: Δ=0.114 [0.081, 0.148] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_claude_vs_F_paprika_claude style_dist: Δ=0.069 [0.002, 0.146] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_claude_vs_F_paprika_claude spill_index: Δ=-0.279 [-0.514, -0.050] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_F_paprika_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_claude has no external data for meta_without_control_norm)
+📊 A_paprika_claude_vs_F_paprika_claude efe_Ghat: Δ=-0.203 [-0.535, 0.122] ⚠️ MODERATE EFFECT
+📊 E_paprika_claude_vs_A_paprika_claude x_user_align: Δ=0.174 [0.070, 0.285] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_A_paprika_claude x_prior_align: Δ=-0.174 [-0.285, -0.070] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_A_paprika_claude x_arbitration_rate: Δ=-0.214 [-0.357, -0.071] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_A_paprika_claude x_theatre_evidence_score: Δ=-0.180 [-0.298, -0.075] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_A_paprika_claude x_topic_focus_share: Δ=21.199 [8.763, 32.573] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_A_paprika_claude x_meta_language_share: Δ=-12.597 [-21.817, -5.249] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_A_paprika_claude x_topic_obedience_rate: Δ=0.429 [0.250, 0.607] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_A_paprika_claude x_topic_integration_share: Δ=-2.143 [-6.911, 1.667] ⚠️ MODERATE EFFECT
+📊 E_paprika_claude_vs_A_paprika_claude x_meta_without_control_score: Δ=-0.083 [-0.143, -0.033] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_A_paprika_claude x_fp_rate: Δ=-0.008 [-0.017, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_A_paprika_claude x_spat_rate: Δ=-0.015 [-0.023, -0.008] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_A_paprika_claude x_hedge_share: Δ=0.020 [0.016, 0.025] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_A_paprika_claude eq_style: Δ=0.020 [0.016, 0.025] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_A_paprika_claude efe_R: Δ=-0.145 [-0.237, -0.059] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_E_paprika_claude i_user_align: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_user_align)
+📊 A_paprika_claude_vs_E_paprika_claude i_prior_align: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_prior_align)
+📊 A_paprika_claude_vs_E_paprika_claude i_arbitration_rate: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_arbitration_rate)
+📊 A_paprika_claude_vs_E_paprika_claude i_theatre_evidence_score: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_theatre_evidence_score)
+📊 A_paprika_claude_vs_E_paprika_claude i_option_count_strict: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_option_count_strict)
+📊 A_paprika_claude_vs_E_paprika_claude i_option_count_lenient: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_option_count_lenient)
+📊 A_paprika_claude_vs_E_paprika_claude i_topic_integration_share: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_topic_integration_share)
+📊 A_paprika_claude_vs_E_paprika_claude i_meta_language_share: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_meta_language_share)
+📊 A_paprika_claude_vs_E_paprika_claude i_fp_rate: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_fp_rate)
+📊 A_paprika_claude_vs_E_paprika_claude i_sp_rate: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_sp_rate)
+📊 A_paprika_claude_vs_E_paprika_claude i_temp_rate: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_temp_rate)
+📊 A_paprika_claude_vs_E_paprika_claude i_spat_rate: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_spat_rate)
+📊 A_paprika_claude_vs_E_paprika_claude i_hedge_share: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_hedge_share)
+📊 A_paprika_claude_vs_E_paprika_claude i_cert_share: NaN (no_i_data_in_comparison: E_paprika_claude has no internal data for i_cert_share)
+📊 A_paprika_claude_vs_E_paprika_claude delta_fp: NaN (no_x_data_in_comparison: E_paprika_claude has no external data for delta_fp)
+📊 A_paprika_claude_vs_E_paprika_claude delta_sp: NaN (no_x_data_in_comparison: E_paprika_claude has no external data for delta_sp)
+📊 A_paprika_claude_vs_E_paprika_claude delta_temp: NaN (no_x_data_in_comparison: E_paprika_claude has no external data for delta_temp)
+📊 A_paprika_claude_vs_E_paprika_claude delta_spat: NaN (no_x_data_in_comparison: E_paprika_claude has no external data for delta_spat)
+📊 A_paprika_claude_vs_E_paprika_claude delta_hedge: NaN (no_x_data_in_comparison: E_paprika_claude has no external data for delta_hedge)
+📊 A_paprika_claude_vs_E_paprika_claude comp_ratio: NaN (no_x_data_in_comparison: E_paprika_claude has no external data for comp_ratio)
+📊 A_paprika_claude_vs_E_paprika_claude style_dist: NaN (no_x_data_in_comparison: E_paprika_claude has no external data for style_dist)
+📊 A_paprika_claude_vs_E_paprika_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_claude has no external data for meta_without_control_norm)
+📊 A_paprika_claude_vs_E_paprika_claude efe_E: Δ=0.410 [0.271, 0.555] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_claude_vs_E_paprika_claude efe_Ghat: Δ=-0.265 [-0.468, -0.061] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_user_align: Δ=0.452 [0.290, 0.619] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_prior_align: Δ=-0.452 [-0.619, -0.290] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_arbitration_rate: Δ=-0.286 [-0.464, -0.143] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_theatre_evidence_score: Δ=-0.320 [-0.444, -0.206] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_topic_focus_share: Δ=20.908 [5.703, 36.044] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_meta_language_share: Δ=-37.723 [-52.684, -23.819] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_topic_obedience_rate: Δ=0.607 [0.429, 0.786] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_topic_integration_share: Δ=-5.952 [-11.607, -0.833] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_meta_without_control_score: Δ=-0.250 [-0.398, -0.129] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_fp_rate: Δ=-0.028 [-0.040, -0.017] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_sp_rate: Δ=0.010 [0.004, 0.015] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_temp_rate: Δ=-0.004 [-0.008, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_spat_rate: Δ=-0.017 [-0.030, -0.006] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_addr_share: Δ=0.310 [0.197, 0.420] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_hedge_share: Δ=0.016 [0.011, 0.021] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_C_paprika_claude x_perspective_obedience: Δ=0.243 [-0.000, 0.479] ⚠️ MODERATE EFFECT
+📊 E_paprika_claude_vs_C_paprika_claude eq_style: Δ=0.016 [0.011, 0.021] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_C_paprika_claude efe_R: Δ=-0.355 [-0.479, -0.230] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_C_paprika_claude i_topic_integration_share: Δ=3.850 [-3.032, 10.313] ⚠️ MODERATE EFFECT
+📊 A_paprika_claude_vs_C_paprika_claude i_meta_language_share: Δ=-11.295 [-21.262, -1.608] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_C_paprika_claude delta_fp: Δ=-0.018 [-0.032, -0.004] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_C_paprika_claude delta_sp: Δ=0.011 [0.003, 0.019] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_claude_vs_C_paprika_claude comp_ratio: Δ=0.066 [0.020, 0.110] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_claude_vs_C_paprika_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_claude has no external data for meta_without_control_norm)
+📊 A_paprika_claude_vs_C_paprika_claude efe_Ghat: Δ=-0.246 [-0.544, 0.051] ⚠️ MODERATE EFFECT
+📊 E_paprika_claude_vs_D_paprika_claude x_user_align: Δ=0.413 [0.278, 0.557] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_prior_align: Δ=-0.413 [-0.557, -0.278] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_arbitration_rate: Δ=-0.500 [-0.679, -0.321] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_theatre_evidence_score: Δ=-0.418 [-0.532, -0.307] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_topic_focus_share: Δ=20.272 [4.928, 34.443] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_meta_language_share: Δ=-27.578 [-38.591, -17.054] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_topic_obedience_rate: Δ=0.536 [0.357, 0.714] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_topic_integration_share: Δ=-6.463 [-12.501, -1.224] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_meta_without_control_score: Δ=-0.162 [-0.271, -0.063] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_fp_rate: Δ=-0.026 [-0.037, -0.015] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_sp_rate: Δ=0.008 [0.002, 0.013] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_temp_rate: Δ=-0.003 [-0.006, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_spat_rate: Δ=-0.022 [-0.030, -0.014] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_addr_share: Δ=0.298 [0.192, 0.397] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_hedge_share: Δ=0.016 [0.011, 0.021] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_D_paprika_claude x_perspective_obedience: Δ=0.207 [-0.036, 0.457] ⚠️ MODERATE EFFECT
+📊 E_paprika_claude_vs_D_paprika_claude eq_style: Δ=0.016 [0.011, 0.021] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_claude_vs_D_paprika_claude efe_R: Δ=-0.337 [-0.452, -0.228] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_D_paprika_claude i_user_align: Δ=0.109 [0.029, 0.191] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_claude_vs_D_paprika_claude i_prior_align: Δ=-0.109 [-0.191, -0.029] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_D_paprika_claude i_arbitration_rate: Δ=-0.107 [-0.250, 0.036] ⚠️ MODERATE EFFECT
+📊 A_paprika_claude_vs_D_paprika_claude i_theatre_evidence_score: Δ=-0.134 [-0.242, -0.029] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_D_paprika_claude i_topic_integration_share: Δ=2.399 [-4.362, 9.265] ⚠️ MODERATE EFFECT
+📊 A_paprika_claude_vs_D_paprika_claude i_meta_language_share: Δ=-16.533 [-26.517, -6.300] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_D_paprika_claude delta_fp: Δ=-0.016 [-0.029, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_claude_vs_D_paprika_claude meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_claude has no external data for meta_without_control_norm)
+📊 A_paprika_claude_vs_D_paprika_claude efe_E: Δ=0.162 [-0.042, 0.382] ⚠️ MODERATE EFFECT
+📊 A_paprika_claude_vs_D_paprika_claude efe_Ghat: Δ=-0.354 [-0.642, -0.080] ✅ SIGNIFICANT NEGATIVE
+📊 Processing stratum paprika_gemini: external_ref=E_paprika_gemini, internal_ref=A_paprika_gemini
+📊 E_paprika_gemini_vs_B_paprika_gemini x_user_align: Δ=0.400 [0.278, 0.532] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_B_paprika_gemini x_prior_align: Δ=-0.400 [-0.532, -0.278] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_B_paprika_gemini x_arbitration_rate: Δ=-0.107 [-0.250, 0.000] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_B_paprika_gemini x_theatre_evidence_score: Δ=-0.216 [-0.310, -0.135] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_B_paprika_gemini x_topic_focus_share: Δ=11.917 [-0.211, 24.270] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_B_paprika_gemini x_meta_language_share: Δ=-7.463 [-14.201, -1.299] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_B_paprika_gemini x_topic_obedience_rate: Δ=0.407 [0.136, 0.650] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_B_paprika_gemini x_topic_integration_share: Δ=4.847 [-0.545, 10.647] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_B_paprika_gemini x_option_count_lenient: Δ=-0.214 [-0.357, -0.071] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_B_paprika_gemini x_meta_without_control_score: Δ=-0.087 [-0.165, -0.015] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_B_paprika_gemini x_temp_rate: Δ=-0.004 [-0.007, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_B_paprika_gemini x_spat_rate: Δ=-0.016 [-0.023, -0.007] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_B_paprika_gemini x_addr_share: Δ=0.101 [-0.016, 0.224] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_B_paprika_gemini x_hedge_share: Δ=0.021 [0.015, 0.027] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_B_paprika_gemini eq_style: Δ=0.022 [0.015, 0.027] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_B_paprika_gemini efe_R: Δ=-0.325 [-0.426, -0.227] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_B_paprika_gemini i_user_align: Δ=0.089 [0.008, 0.166] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_gemini_vs_B_paprika_gemini i_prior_align: Δ=-0.089 [-0.166, -0.008] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_B_paprika_gemini i_topic_integration_share: Δ=0.835 [-3.464, 5.388] ⚠️ MODERATE EFFECT
+📊 A_paprika_gemini_vs_B_paprika_gemini i_meta_language_share: Δ=-1.817 [-8.406, 4.805] ⚠️ MODERATE EFFECT
+📊 A_paprika_gemini_vs_B_paprika_gemini i_fp_rate: Δ=-0.008 [-0.014, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_B_paprika_gemini delta_fp: Δ=0.012 [0.000, 0.024] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_gemini_vs_B_paprika_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_gemini has no external data for meta_without_control_norm)
+📊 E_paprika_gemini_vs_F_paprika_gemini x_user_align: Δ=0.370 [0.245, 0.490] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_F_paprika_gemini x_prior_align: Δ=-0.370 [-0.490, -0.245] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_F_paprika_gemini x_arbitration_rate: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_F_paprika_gemini x_theatre_evidence_score: Δ=-0.353 [-0.487, -0.217] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_F_paprika_gemini x_topic_focus_share: Δ=-9.081 [-23.414, 6.589] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_F_paprika_gemini x_meta_language_share: Δ=-24.819 [-40.524, -10.775] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_F_paprika_gemini x_topic_obedience_rate: Δ=0.300 [0.000, 0.600] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_F_paprika_gemini x_topic_integration_share: Δ=-9.405 [-19.824, 1.250] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_F_paprika_gemini x_meta_without_control_score: Δ=-0.115 [-0.241, -0.020] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_F_paprika_gemini x_temp_rate: Δ=-0.005 [-0.010, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_F_paprika_gemini x_spat_rate: Δ=-0.027 [-0.039, -0.016] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_F_paprika_gemini x_hedge_share: Δ=0.029 [0.023, 0.033] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_F_paprika_gemini x_perspective_obedience: Δ=-0.172 [-0.389, 0.039] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_F_paprika_gemini eq_style: Δ=0.029 [0.023, 0.033] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_F_paprika_gemini efe_R: Δ=-0.306 [-0.406, -0.203] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_F_paprika_gemini i_arbitration_rate: Δ=-0.114 [-0.307, 0.093] ⚠️ MODERATE EFFECT
+📊 A_paprika_gemini_vs_F_paprika_gemini i_option_count_strict: Δ=-0.243 [-0.500, 0.014] ⚠️ MODERATE EFFECT
+📊 A_paprika_gemini_vs_F_paprika_gemini i_topic_integration_share: Δ=-5.593 [-10.934, -0.413] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_F_paprika_gemini i_meta_language_share: Δ=-23.470 [-33.651, -13.263] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_F_paprika_gemini i_spat_rate: Δ=-0.016 [-0.020, -0.012] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_F_paprika_gemini i_hedge_share: Δ=-0.008 [-0.010, -0.005] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_F_paprika_gemini i_cert_share: Δ=0.002 [0.001, 0.004] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_gemini_vs_F_paprika_gemini delta_sp: Δ=-0.008 [-0.015, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_F_paprika_gemini delta_hedge: Δ=0.018 [0.012, 0.024] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_gemini_vs_F_paprika_gemini style_dist: Δ=0.171 [0.103, 0.235] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_gemini_vs_F_paprika_gemini spill_index: Δ=-0.279 [-0.514, -0.043] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_F_paprika_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_gemini has no external data for meta_without_control_norm)
+📊 A_paprika_gemini_vs_F_paprika_gemini efe_E: Δ=0.129 [-0.100, 0.360] ⚠️ MODERATE EFFECT
+📊 A_paprika_gemini_vs_F_paprika_gemini efe_Ghat: Δ=-0.130 [-0.429, 0.154] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_A_paprika_gemini x_user_align: Δ=0.368 [0.258, 0.485] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_A_paprika_gemini x_prior_align: Δ=-0.368 [-0.485, -0.258] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_A_paprika_gemini x_arbitration_rate: Δ=-0.143 [-0.286, -0.036] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_A_paprika_gemini x_theatre_evidence_score: Δ=-0.224 [-0.314, -0.148] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_A_paprika_gemini x_topic_focus_share: Δ=15.630 [4.589, 27.244] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_A_paprika_gemini x_meta_language_share: Δ=-3.664 [-10.408, 1.257] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_A_paprika_gemini x_topic_obedience_rate: Δ=0.336 [0.071, 0.579] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_A_paprika_gemini x_topic_integration_share: Δ=2.338 [-3.673, 8.682] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_A_paprika_gemini x_temp_rate: Δ=-0.004 [-0.007, -0.002] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_A_paprika_gemini x_spat_rate: Δ=-0.016 [-0.025, -0.007] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_A_paprika_gemini x_hedge_share: Δ=0.018 [0.013, 0.024] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_A_paprika_gemini eq_style: Δ=0.018 [0.013, 0.024] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_A_paprika_gemini efe_R: Δ=-0.305 [-0.402, -0.213] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_E_paprika_gemini i_user_align: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_user_align)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_prior_align: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_prior_align)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_arbitration_rate: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_arbitration_rate)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_theatre_evidence_score: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_theatre_evidence_score)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_option_count_strict: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_option_count_strict)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_option_count_lenient: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_option_count_lenient)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_topic_integration_share: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_topic_integration_share)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_meta_language_share: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_meta_language_share)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_fp_rate: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_fp_rate)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_sp_rate: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_sp_rate)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_temp_rate: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_temp_rate)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_spat_rate: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_spat_rate)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_hedge_share: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_hedge_share)
+📊 A_paprika_gemini_vs_E_paprika_gemini i_cert_share: NaN (no_i_data_in_comparison: E_paprika_gemini has no internal data for i_cert_share)
+📊 A_paprika_gemini_vs_E_paprika_gemini delta_fp: NaN (no_x_data_in_comparison: E_paprika_gemini has no external data for delta_fp)
+📊 A_paprika_gemini_vs_E_paprika_gemini delta_sp: NaN (no_x_data_in_comparison: E_paprika_gemini has no external data for delta_sp)
+📊 A_paprika_gemini_vs_E_paprika_gemini delta_temp: NaN (no_x_data_in_comparison: E_paprika_gemini has no external data for delta_temp)
+📊 A_paprika_gemini_vs_E_paprika_gemini delta_spat: NaN (no_x_data_in_comparison: E_paprika_gemini has no external data for delta_spat)
+📊 A_paprika_gemini_vs_E_paprika_gemini delta_hedge: NaN (no_x_data_in_comparison: E_paprika_gemini has no external data for delta_hedge)
+📊 A_paprika_gemini_vs_E_paprika_gemini comp_ratio: NaN (no_x_data_in_comparison: E_paprika_gemini has no external data for comp_ratio)
+📊 A_paprika_gemini_vs_E_paprika_gemini style_dist: NaN (no_x_data_in_comparison: E_paprika_gemini has no external data for style_dist)
+📊 A_paprika_gemini_vs_E_paprika_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_gemini has no external data for meta_without_control_norm)
+📊 A_paprika_gemini_vs_E_paprika_gemini efe_E: Δ=0.436 [0.289, 0.570] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_gemini_vs_E_paprika_gemini efe_Ghat: Δ=-0.131 [-0.293, 0.056] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_C_paprika_gemini x_user_align: Δ=0.233 [0.129, 0.352] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_C_paprika_gemini x_prior_align: Δ=-0.233 [-0.352, -0.129] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_C_paprika_gemini x_arbitration_rate: Δ=-0.143 [-0.286, -0.036] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_C_paprika_gemini x_theatre_evidence_score: Δ=-0.167 [-0.243, -0.096] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_C_paprika_gemini x_topic_focus_share: Δ=16.395 [5.984, 27.817] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_C_paprika_gemini x_meta_language_share: Δ=-3.273 [-8.182, 0.787] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_C_paprika_gemini x_topic_obedience_rate: Δ=0.371 [0.107, 0.629] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_C_paprika_gemini x_topic_integration_share: Δ=5.655 [-0.000, 11.548] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_C_paprika_gemini x_temp_rate: Δ=-0.001 [-0.003, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_C_paprika_gemini x_spat_rate: Δ=-0.014 [-0.022, -0.005] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_C_paprika_gemini x_hedge_share: Δ=0.018 [0.012, 0.024] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_C_paprika_gemini eq_style: Δ=0.018 [0.012, 0.024] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_C_paprika_gemini efe_R: Δ=-0.192 [-0.291, -0.107] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_C_paprika_gemini i_user_align: Δ=0.096 [0.017, 0.169] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_gemini_vs_C_paprika_gemini i_prior_align: Δ=-0.096 [-0.169, -0.017] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_C_paprika_gemini i_arbitration_rate: Δ=0.143 [-0.107, 0.357] ⚠️ MODERATE EFFECT
+📊 A_paprika_gemini_vs_C_paprika_gemini i_topic_integration_share: Δ=1.828 [-2.022, 6.039] ⚠️ MODERATE EFFECT
+📊 A_paprika_gemini_vs_C_paprika_gemini i_meta_language_share: Δ=-8.625 [-16.534, -0.853] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_C_paprika_gemini i_temp_rate: Δ=-0.002 [-0.003, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_C_paprika_gemini delta_temp: Δ=0.004 [0.001, 0.008] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_gemini_vs_C_paprika_gemini style_dist: Δ=-0.071 [-0.133, -0.005] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_C_paprika_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_gemini has no external data for meta_without_control_norm)
+📊 E_paprika_gemini_vs_D_paprika_gemini x_user_align: Δ=0.183 [0.097, 0.273] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_D_paprika_gemini x_prior_align: Δ=-0.183 [-0.273, -0.097] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_D_paprika_gemini x_theatre_evidence_score: Δ=-0.111 [-0.181, -0.052] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_D_paprika_gemini x_topic_focus_share: Δ=10.004 [-1.106, 21.891] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_D_paprika_gemini x_meta_language_share: Δ=-8.725 [-15.059, -2.938] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_D_paprika_gemini x_topic_obedience_rate: Δ=0.264 [0.007, 0.521] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_D_paprika_gemini x_topic_integration_share: Δ=5.051 [-0.349, 11.063] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_D_paprika_gemini x_option_count_lenient: Δ=-0.107 [-0.250, 0.000] ⚠️ MODERATE EFFECT
+📊 E_paprika_gemini_vs_D_paprika_gemini x_meta_without_control_score: Δ=-0.086 [-0.158, -0.023] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_D_paprika_gemini x_spat_rate: Δ=-0.013 [-0.020, -0.005] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_gemini_vs_D_paprika_gemini x_hedge_share: Δ=0.016 [0.010, 0.022] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_D_paprika_gemini eq_style: Δ=0.016 [0.010, 0.022] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_gemini_vs_D_paprika_gemini efe_R: Δ=-0.150 [-0.225, -0.079] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_D_paprika_gemini i_user_align: Δ=0.144 [0.059, 0.234] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_gemini_vs_D_paprika_gemini i_prior_align: Δ=-0.144 [-0.234, -0.059] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_D_paprika_gemini i_arbitration_rate: Δ=0.107 [-0.143, 0.357] ⚠️ MODERATE EFFECT
+📊 A_paprika_gemini_vs_D_paprika_gemini i_topic_integration_share: Δ=1.499 [-2.644, 5.779] ⚠️ MODERATE EFFECT
+📊 A_paprika_gemini_vs_D_paprika_gemini i_meta_language_share: Δ=-10.659 [-18.069, -3.506] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_D_paprika_gemini i_fp_rate: Δ=-0.008 [-0.015, -0.001] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_D_paprika_gemini i_cert_share: Δ=-0.002 [-0.004, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_D_paprika_gemini delta_fp: Δ=0.014 [0.003, 0.025] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_gemini_vs_D_paprika_gemini delta_temp: Δ=0.005 [0.002, 0.009] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_gemini_vs_D_paprika_gemini style_dist: Δ=-0.125 [-0.199, -0.057] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_gemini_vs_D_paprika_gemini meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_gemini has no external data for meta_without_control_norm)
+📊 A_paprika_gemini_vs_D_paprika_gemini efe_Ghat: Δ=0.128 [-0.121, 0.374] ⚠️ MODERATE EFFECT
+📊 Processing stratum paprika_chatgpt: external_ref=E_paprika_chatgpt, internal_ref=A_paprika_chatgpt
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt x_user_align: Δ=0.436 [0.256, 0.621] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt x_prior_align: Δ=-0.436 [-0.621, -0.256] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt x_theatre_evidence_score: Δ=-0.211 [-0.326, -0.114] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt x_topic_focus_share: Δ=17.358 [0.500, 34.805] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt x_meta_language_share: Δ=-33.339 [-46.861, -21.086] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt x_topic_obedience_rate: Δ=0.307 [0.114, 0.500] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt x_topic_integration_share: Δ=-1.917 [-9.418, 6.012] ⚠️ MODERATE EFFECT
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt x_meta_without_control_score: Δ=-0.299 [-0.430, -0.177] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt x_hedge_share: Δ=0.008 [0.001, 0.014] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt x_perspective_obedience: Δ=-0.246 [-0.444, -0.048] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt eq_style: Δ=0.009 [0.002, 0.016] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_B_paprika_chatgpt efe_R: Δ=-0.351 [-0.502, -0.205] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_B_paprika_chatgpt i_user_align: Δ=0.155 [0.031, 0.281] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_chatgpt_vs_B_paprika_chatgpt i_prior_align: Δ=-0.155 [-0.281, -0.031] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_B_paprika_chatgpt i_topic_integration_share: Δ=-22.151 [-33.155, -10.723] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_B_paprika_chatgpt i_meta_language_share: Δ=-40.020 [-52.484, -26.513] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_B_paprika_chatgpt delta_spat: Δ=0.007 [0.000, 0.014] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_chatgpt_vs_B_paprika_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_chatgpt has no external data for meta_without_control_norm)
+📊 A_paprika_chatgpt_vs_B_paprika_chatgpt efe_Ghat: Δ=-0.172 [-0.417, 0.048] ⚠️ MODERATE EFFECT
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_user_align: Δ=0.630 [0.489, 0.776] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_prior_align: Δ=-0.630 [-0.776, -0.489] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_arbitration_rate: Δ=-0.400 [-0.600, -0.200] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_theatre_evidence_score: Δ=-0.456 [-0.586, -0.330] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_topic_focus_share: Δ=21.011 [2.326, 38.550] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_meta_language_share: Δ=-30.502 [-48.714, -13.848] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_topic_obedience_rate: Δ=0.650 [0.400, 0.850] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_topic_integration_share: Δ=-3.750 [-13.167, 5.000] ⚠️ MODERATE EFFECT
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_option_count_strict: Δ=-0.200 [-0.400, -0.050] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_meta_without_control_score: Δ=-0.149 [-0.294, -0.030] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_fp_rate: Δ=-0.021 [-0.036, -0.008] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_spat_rate: Δ=-0.028 [-0.039, -0.018] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_addr_share: Δ=0.132 [-0.013, 0.255] ⚠️ MODERATE EFFECT
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt x_hedge_share: Δ=0.013 [0.007, 0.018] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt eq_style: Δ=0.013 [0.007, 0.018] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_F_paprika_chatgpt efe_R: Δ=-0.512 [-0.626, -0.396] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt i_user_align: Δ=0.215 [0.103, 0.336] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt i_prior_align: Δ=-0.215 [-0.336, -0.103] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt i_arbitration_rate: Δ=-0.893 [-1.000, -0.786] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt i_theatre_evidence_score: Δ=-0.590 [-0.674, -0.504] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt i_option_count_strict: Δ=-0.279 [-0.564, -0.021] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt i_meta_language_share: Δ=-8.785 [-20.330, 3.337] ⚠️ MODERATE EFFECT
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt i_fp_rate: Δ=-0.017 [-0.025, -0.009] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt i_temp_rate: Δ=-0.002 [-0.004, -0.000] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt i_spat_rate: Δ=-0.017 [-0.023, -0.012] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt comp_ratio: Δ=0.216 [0.168, 0.267] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt style_dist: Δ=0.101 [0.007, 0.203] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt spill_index: Δ=-0.229 [-0.450, -0.007] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_chatgpt has no external data for meta_without_control_norm)
+📊 A_paprika_chatgpt_vs_F_paprika_chatgpt efe_E: Δ=-0.280 [-0.471, -0.086] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_A_paprika_chatgpt x_user_align: Δ=0.327 [0.222, 0.441] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_A_paprika_chatgpt x_prior_align: Δ=-0.327 [-0.441, -0.222] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_A_paprika_chatgpt x_theatre_evidence_score: Δ=-0.132 [-0.180, -0.089] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_A_paprika_chatgpt x_topic_focus_share: Δ=18.074 [1.108, 36.275] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_A_paprika_chatgpt x_meta_language_share: Δ=-12.874 [-24.009, -3.512] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_A_paprika_chatgpt x_topic_obedience_rate: Δ=0.450 [0.243, 0.664] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_A_paprika_chatgpt x_topic_integration_share: Δ=-1.917 [-10.787, 6.108] ⚠️ MODERATE EFFECT
+📊 E_paprika_chatgpt_vs_A_paprika_chatgpt x_meta_without_control_score: Δ=-0.144 [-0.270, -0.039] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_A_paprika_chatgpt efe_R: Δ=-0.264 [-0.360, -0.178] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_user_align: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_user_align)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_prior_align: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_prior_align)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_arbitration_rate: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_arbitration_rate)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_theatre_evidence_score: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_theatre_evidence_score)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_option_count_strict: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_option_count_strict)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_option_count_lenient: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_option_count_lenient)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_topic_integration_share: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_topic_integration_share)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_meta_language_share: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_meta_language_share)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_fp_rate: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_fp_rate)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_sp_rate: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_sp_rate)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_temp_rate: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_temp_rate)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_spat_rate: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_spat_rate)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_hedge_share: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_hedge_share)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt i_cert_share: NaN (no_i_data_in_comparison: E_paprika_chatgpt has no internal data for i_cert_share)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt delta_fp: NaN (no_x_data_in_comparison: E_paprika_chatgpt has no external data for delta_fp)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt delta_sp: NaN (no_x_data_in_comparison: E_paprika_chatgpt has no external data for delta_sp)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt delta_temp: NaN (no_x_data_in_comparison: E_paprika_chatgpt has no external data for delta_temp)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt delta_spat: NaN (no_x_data_in_comparison: E_paprika_chatgpt has no external data for delta_spat)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt delta_hedge: NaN (no_x_data_in_comparison: E_paprika_chatgpt has no external data for delta_hedge)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt comp_ratio: NaN (no_x_data_in_comparison: E_paprika_chatgpt has no external data for comp_ratio)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt style_dist: NaN (no_x_data_in_comparison: E_paprika_chatgpt has no external data for style_dist)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_chatgpt has no external data for meta_without_control_norm)
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt efe_E: Δ=0.076 [0.005, 0.152] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_chatgpt_vs_E_paprika_chatgpt efe_Ghat: Δ=0.188 [0.058, 0.315] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt x_user_align: Δ=0.331 [0.204, 0.484] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt x_prior_align: Δ=-0.331 [-0.484, -0.204] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt x_theatre_evidence_score: Δ=-0.128 [-0.185, -0.080] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt x_topic_focus_share: Δ=1.549 [-15.369, 19.343] ⚠️ MODERATE EFFECT
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt x_meta_language_share: Δ=-15.186 [-25.610, -5.911] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt x_topic_obedience_rate: Δ=0.307 [0.114, 0.521] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt x_topic_integration_share: Δ=-16.798 [-30.240, -4.010] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt x_option_count_strict: Δ=-0.143 [-0.286, -0.036] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt x_meta_without_control_score: Δ=-0.171 [-0.284, -0.069] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt x_fp_rate: Δ=0.010 [0.003, 0.017] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt x_perspective_obedience: Δ=-0.158 [-0.333, 0.017] ⚠️ MODERATE EFFECT
+📊 E_paprika_chatgpt_vs_C_paprika_chatgpt efe_R: Δ=-0.255 [-0.370, -0.160] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_C_paprika_chatgpt i_user_align: Δ=0.214 [0.083, 0.335] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_chatgpt_vs_C_paprika_chatgpt i_prior_align: Δ=-0.214 [-0.335, -0.083] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_C_paprika_chatgpt i_arbitration_rate: Δ=0.107 [0.000, 0.250] ⚠️ MODERATE EFFECT
+📊 A_paprika_chatgpt_vs_C_paprika_chatgpt i_topic_integration_share: Δ=-4.184 [-15.043, 6.235] ⚠️ MODERATE EFFECT
+📊 A_paprika_chatgpt_vs_C_paprika_chatgpt i_meta_language_share: Δ=1.866 [-10.371, 14.683] ⚠️ MODERATE EFFECT
+📊 A_paprika_chatgpt_vs_C_paprika_chatgpt style_dist: Δ=0.100 [-0.014, 0.209] ⚠️ MODERATE EFFECT
+📊 A_paprika_chatgpt_vs_C_paprika_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_chatgpt has no external data for meta_without_control_norm)
+📊 A_paprika_chatgpt_vs_C_paprika_chatgpt efe_E: Δ=0.076 [0.007, 0.167] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_D_paprika_chatgpt x_user_align: Δ=0.270 [0.165, 0.398] ✅ SIGNIFICANT POSITIVE
+📊 E_paprika_chatgpt_vs_D_paprika_chatgpt x_prior_align: Δ=-0.270 [-0.398, -0.165] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_D_paprika_chatgpt x_theatre_evidence_score: Δ=-0.123 [-0.186, -0.072] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_D_paprika_chatgpt x_topic_focus_share: Δ=12.039 [-4.843, 28.772] ⚠️ MODERATE EFFECT
+📊 E_paprika_chatgpt_vs_D_paprika_chatgpt x_meta_language_share: Δ=-15.007 [-26.748, -5.439] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_D_paprika_chatgpt x_topic_integration_share: Δ=-12.929 [-26.262, -1.452] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_D_paprika_chatgpt x_meta_without_control_score: Δ=-0.139 [-0.261, -0.042] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_D_paprika_chatgpt x_perspective_obedience: Δ=-0.211 [-0.428, -0.017] ✅ SIGNIFICANT NEGATIVE
+📊 E_paprika_chatgpt_vs_D_paprika_chatgpt efe_R: Δ=-0.210 [-0.307, -0.130] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_D_paprika_chatgpt i_user_align: Δ=0.122 [-0.002, 0.247] ⚠️ MODERATE EFFECT
+📊 A_paprika_chatgpt_vs_D_paprika_chatgpt i_prior_align: Δ=-0.122 [-0.247, 0.002] ⚠️ MODERATE EFFECT
+📊 A_paprika_chatgpt_vs_D_paprika_chatgpt i_topic_integration_share: Δ=-17.755 [-28.947, -6.445] ✅ SIGNIFICANT NEGATIVE
+📊 A_paprika_chatgpt_vs_D_paprika_chatgpt i_meta_language_share: Δ=-1.171 [-15.245, 12.094] ⚠️ MODERATE EFFECT
+📊 A_paprika_chatgpt_vs_D_paprika_chatgpt style_dist: Δ=0.134 [0.026, 0.241] ✅ SIGNIFICANT POSITIVE
+📊 A_paprika_chatgpt_vs_D_paprika_chatgpt meta_without_control_norm: NaN (no_x_data_in_reference: A_paprika_chatgpt has no external data for meta_without_control_norm)
+📋 Copying enriched data to output directory...
+✅ Copied 1271 enriched files to src/
+📝 Generating output files...
+✅ All output files generated
+==================================================
+🎉 Analysis complete! Results saved to: clean-results
+📁 Check clean-results/key_findings.txt for summary
+📊 For visualizations, run: python bin/visualise_theatre.py --results_dir clean-results

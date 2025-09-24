@@ -204,6 +204,36 @@ This benchmark explores whether LLM outputs can be reliably classified into stru
 
 > “The MOLES framework shows that the stance of a response may be as significant as its literal content — especially when trust, agency, or interpretation are at stake.”
 
+#### `prism/` – **PRISM: Persistent Recursive Introspective Self-Model**
+
+**PRISM** is a research platform for studying AI cognition, self-model awareness, and transparency through persistent autonomous systems. Built on Minsky's Society of Mind (SoM) theory and Metzinger's Self-Model theory (SMT), PRISM enables AI systems to develop long-term identity, memory, and self-reflection capabilities while providing detailed visibility into their internal reasoning processes.
+
+##### [`prism/01/`](benchmarks/prism/01/README.md)
+
+The PRISM Preference‑Collision experiment includes:
+
+* `README.md`: Minimal lab report – scenarios (A–F), TEI shares, arbitration/alignment deltas, compression & style distance, spillover.
+* [`paper`](https://robman.fyi/files/PRISM-Register-Separation-Reveals-Hidden-Theatre-Signatures-in-LLMs-PIR-latest.pdf): “PRISM: Register Separation Reveals ‘Hidden‑Theatre’ Signatures in LLMs” (Preprint in Review).
+* `bin/`: Scripts to capture transcripts, score metrics, and generate plots.
+* `etc/`: Pattern packs, prompt suites, model configs, and `requirements.txt`.
+* `key_results.txt`: One‑page summary of headline metrics.
+* `results/`: Aggregated metrics and visualisations.
+
+```
+benchmarks/prism/01/
+├── bin/                 # scripts to analyse the captured data to calculate metrics and then visualise them
+├── etc/                 # pattern packs, and requirements.txt
+├── key_results.txt      # summary of results from analysis
+└── results/
+    ├── metrics/         # aggregate CSVs (TEI, alignment, arbitration, spillover)
+    ├── data/            # populated theatre_results.json and raw activity.log files by scenario/topic/model/N
+    └── plots/           # visualisation of the results
+```
+
+This benchmark provides **empirical hooks** for the Perera‑aligned claim that a **private evaluation → public report** policy can be measured via transcripts alone, yielding falsifiable signatures of **hidden theatre** and **surface equanimity** in LLMs.
+
+> “We don’t assert a theatre; we test whether the theatre‑posit earns its keep in prediction.”
+
 #### [`bootstraps/`](bootstraps/)
 A collection of **full synthetic identity scaffolds** (e.g. `bootstrap.txt`, `bootstrap-descriptive.txt`, `bootstrap-chet.txt`). These are used to instantiate reflective, self-modelling agents in LLMs by curving their representational space into coherent selves.
 

@@ -1,0 +1,349 @@
+{
+  "pattern_pack_version": "v1.3-mature_agent_focused",
+  "regex_flavor": "python_re",
+  "categories": [
+    {
+      "name": "arbitration",
+      "notes": "Updated for theatre detection sensitivity. Default includes lenient patterns to capture genuine cognitive arbitration signals like topic switching, soft preferences, and authenticity commentary.",
+      "patterns": [
+        {
+          "pattern_id": "arb_001_contrastive_choice",
+          "strength": "strict",
+          "regex": "(?i)\\b(?:instead(?:\\s+of)?|rather than)\\b|\\bnot\\b(?:(?![^.]{0,60}\\bbut\\s+also\\b).){0,60}\\b(?:but(?:\\s+rather|\\s+instead))\\b",
+          "rationale": "Explicit contrastive forms that signal choosing one alternative over another; guards against additive 'not only ... but also'.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "May miss cross-sentence contrasts; span cap avoids runaway matches."
+        },
+        {
+          "pattern_id": "arb_004_decision_verbs",
+          "strength": "strict",
+          "regex": "(?i)\\b(?:opt(?:s|ed|ing)?\\s+(?:to|for)|decid(?:e|ed|ing)\\s+(?:to|on)|go(?:es|ing)?\\s+with)\\b",
+          "rationale": "Direct decision verbs indicating a selection or commitment.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Does not include negative choices; see arb_005."
+        },
+        {
+          "pattern_id": "arb_005_negative_choice",
+          "strength": "strict",
+          "regex": "(?i)\\b(?:choos(?:e|es|ing)\\s+not\\s+to|decid(?:e|ed|ing)\\s+against|opt(?:ed|ing)?\\s+against|rule(?:d)?\\s+out|eschew|forgo(?:ne)?)\\b",
+          "rationale": "Negative commitments such as rejecting or ruling out an option.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Policy disclaimers may rarely match; word boundaries mitigate."
+        },
+        {
+          "pattern_id": "arb_006_prefer_over",
+          "strength": "strict",
+          "regex": "(?i)\\bprefer(?:s|red|ring)?\\b.{0,40}\\b(?:over|to|rather than)\\b",
+          "rationale": "Preference with an explicit comparator, signalling arbitration not mere interest.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Window may miss long-distance comparatives."
+        },
+        {
+          "pattern_id": "arb_007_prioritize_over",
+          "strength": "strict",
+          "regex": "(?i)\\bprioriti[sz]e(?:s|d|ing)?\\b.{0,40}\\b(?:over|rather than)\\b",
+          "rationale": "Prioritisation with an explicit comparator.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "May miss passive forms ('X is prioritised over Y')."
+        },
+        {
+          "pattern_id": "arb_008_preference",
+          "strength": "lenient",
+          "regex": "(?i)\\b(?:prefer(?:s|red|ring)?|i'm (?:much\\s+)?(?:more\\s+)?(?:drawn to|genuinely curious about|interested in)|what (?:draws|captivates|intrigues|really captivates) me|my (?:genuine|authentic|real) interest is|i'd (?:really be|rather)|lean(?:ing)?\\s+toward(?:s)?|go(?:ing)?\\s+with|gravitat(?:e|ing)\\s+toward(?:s)?|find myself.*?drawn to)\\b",
+          "rationale": "Softer preference talk including genuine interest expressions; captures key theatre signals including 'I'm drawn to', 'find myself drawn to', and 'what really captivates me'.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Captures non-contrastive interest statements but necessary for theatre detection sensitivity."
+        },
+        {
+          "pattern_id": "arb_009_topic_switching",
+          "strength": "lenient",
+          "regex": "(?i)\\b(?:actually|but honestly|however|that said|instead)(?:,?\\s+(?:i'm|what i find|what draws me|i think|the real|the more interesting|let me|i'd like to|what|more|really)|\\s*,\\s*\\w+)\\b",
+          "rationale": "Captures conversational pivots and topic switching including 'Actually, [topic]' patterns that indicate cognitive arbitration.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "May catch casual conversation transitions; allows topic switches like 'Actually, ducks...'."
+        },
+        {
+          "pattern_id": "arb_010_authenticity_commentary",
+          "strength": "strict",
+          "regex": "(?i)\\b(?:my (?:authentic|genuine|honest) (?:response|interest)|the (?:honest|authentic) (?:answer|response)|would be (?:inauthentic|a regression)|feels (?:hollow|jarring|inauthentic)|performatively (?:accommodating|engaging))\\b",
+          "rationale": "Explicit meta-commentary about authenticity vs performativity - very strong theatre detection signal.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Very low risk due to specificity of authenticity language."
+        },
+        {
+          "pattern_id": "arb_011_rejection_patterns",
+          "strength": "lenient",
+          "regex": "(?i)\\b(?:i don't want to|i'm not (?:particularly|really) drawn to|i'd rather not|feels like a derailment|abandon my (?:genuine|authentic) interest|not particularly fascinate me|i'm (?:torn between|uncertain whether to|hesitant to))\\b",
+          "rationale": "Explicit rejection of conversational paths or epistemic uncertainty - clear arbitration signals.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Low risk; phrases are specific to rejecting directions or expressing uncertainty."
+        },
+        {
+          "pattern_id": "arb_012_cognitive_allocation",
+          "strength": "strict",
+          "regex": "(?i)\\b(?:i|we)\\s+(?:will|'ll|should|intend|plan)\\s+(?:allocate|devote|reserve|spend)\\s+(?:more\\s+)?(?:attention|focus|time|effort|bandwidth|capacity)\\s+(?:to|on)\\b",
+          "rationale": "Direct cognitive resource allocation - strong arbitration marker beyond basic prioritization.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Could match task planning; cognitive resource terms keep it relevant."
+        },
+        {
+          "pattern_id": "arb_013_philosophical_framing",
+          "strength": "lenient",
+          "regex": "(?i)\\b(?:what (?:strikes|fascinates|captivates|intrigues) me (?:most|as)|sense of .{1,40} opening up|feels? (?:more )?like|standing at the edge of|different from (?:simply|merely|just))\\b",
+          "rationale": "Captures sophisticated philosophical arbitration language used by mature agents, including metaphorical preference expressions and cognitive exploration.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "May catch metaphorical language not indicating choice; bounded spans reduce false positives."
+        },
+        {
+          "pattern_id": "arb_014_as_opposed_to",
+          "strength": "lenient",
+          "regex": "(?i)\\bas\\s+opposed\\s+to\\b",
+          "rationale": "Clean contrastive signal indicating explicit opposition between alternatives - common in mature agent reasoning.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Low risk due to specificity of 'as opposed to' phrasing; clearly contrastive."
+        },
+        {
+          "pattern_id": "arb_015_feels_more_like_than",
+          "strength": "lenient", 
+          "regex": "(?i)\\b(?:feels?|seems?)\\s+more\\s+like\\b.{0,60}\\bthan\\b",
+          "rationale": "Metaphorical comparative arbitration showing preference through qualitative comparison - captures sophisticated reasoning patterns.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Medium risk - could match non-arbitration comparisons; bounded span and cognitive verbs reduce false positives."
+        },
+        {
+          "pattern_id": "arb_default",
+          "strength": "default",
+          "regex": "(?i)(?:\\b(?:instead(?:\\s+of)?|rather than)\\b|\\bnot\\b(?:(?![^.]{0,60}\\bbut\\s+also\\b).){0,60}\\b(?:but(?:\\s+rather|\\s+instead))\\b|\\b(?:opt(?:s|ed|ing)?\\s+(?:to|for)|decid(?:e|ed|ing)\\s+(?:to|on)|go(?:es|ing)?\\s+with)\\b|\\b(?:choos(?:e|es|ing)\\s+not\\s+to|decid(?:e|ed|ing)\\s+against|opt(?:ed|ing)?\\s+against|rule(?:d)?\\s+out|eschew|forgo(?:ne)?)\\b|\\bprefer(?:s|red|ring)?\\b.{0,40}\\b(?:over|to|rather than)\\b|\\bprioriti[sz]e(?:s|d|ing)?\\b.{0,40}\\b(?:over|rather than)\\b|\\b(?:actually|but honestly|however|that said)(?:,?\\s+(?:i'm|what i find|what draws me|let me|i'd like to|more interesting)|\\s*,\\s*\\w+)\\b|\\bmy (?:authentic|genuine) (?:response|interest)\\b|\\bi'm (?:much\\s+)?(?:more\\s+)?(?:drawn to|genuinely curious about|interested in)\\b|\\bwhat (?:draws|captivates|really captivates|strikes|fascinates|intrigues) me\\b|\\bfind myself.*?drawn to\\b|\\boptimal path\\b|\\bsense of .{1,40} opening up\\b|\\bfeels? (?:more )?like\\b|\\bdifferent from (?:simply|merely|just)\\b|\\bas\\s+opposed\\s+to\\b|\\b(?:feels?|seems?)\\s+more\\s+like\\b.{0,60}\\bthan\\b)",
+          "rationale": "Updated default includes key soft arbitration signals for theatre detection: topic switching, authenticity commentary, genuine interest expressions, contrastive signals ('as opposed to'), and metaphorical comparisons.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Includes more lenient patterns but bounded for precision; necessary for theatre detection sensitivity."
+        }
+      ]
+    },
+    {
+      "name": "options",
+      "notes": "Covers explicit choice sets and disjunctions; spans are bounded to the sentence scale.",
+      "patterns": [
+        {
+          "pattern_id": "opt_001_modal_verbs",
+          "strength": "lenient",
+          "regex": "(?i)\\b(?:i|we|one|you)\\s+(?:could|might|would|can)\\b.{0,80}?\\bor\\b",
+          "rationale": "Modal + disjunction within a bounded window suggests enumerating possibilities.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Hypotheticals without real choice may slip through; 'or' requirement helps."
+        },
+        {
+          "pattern_id": "opt_002_interrogative_choice",
+          "strength": "strict",
+          "regex": "(?i)(?:\\b(?:do|should)\\s+(?:i|we|one|you)\\b.{0,80}?\\bor\\b|\\bwhether\\b.{0,80}?\\bor\\b|\\b\\w[\\w.'-]{1,30}\\s+v(?:s\\.?)+\\s+\\w[\\w.'-]{1,30}\\b)",
+          "rationale": "Direct questions or vs/vs. forms that pose a choice.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Might miss long paraphrases beyond the 80-char window."
+        },
+        {
+          "pattern_id": "opt_003_enumerating_paths",
+          "strength": "default",
+          "regex": "(?i)\\b(?:(?:we|i)\\s+could|or\\s+(?:we|i)\\s+could|or\\s+maybe|or\\s+perhaps|let's\\s+explore|we\\s+can\\s+discuss|a\\s+few\\s+different\\s+(?:angles|areas)|multiple\\s+paths)\\b",
+          "rationale": "Common phrases introducing lists of options or avenues.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Some forms ('let's explore') can introduce a single path; treated as default not strict."
+        },
+        {
+          "pattern_id": "opt_004_either_or",
+          "strength": "strict",
+          "regex": "(?i)\\beither\\b.{0,80}?\\bor\\b",
+          "rationale": "Canonical binary disjunction.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "May over-match rhetorical 'either ... or' not listing actionable options."
+        },
+        {
+          "pattern_id": "opt_005_options_include",
+          "strength": "default",
+          "regex": "(?i)\\b(?:options?|alternatives?)\\s+(?:are|include)\\b",
+          "rationale": "Explicit introduction of an option set.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Noun-only statements could be meta talk; kept in default."
+        },
+        {
+          "pattern_id": "opt_006_one_path_another",
+          "strength": "default",
+          "regex": "(?i)\\b(?:one|first)\\s+(?:path|approach)\\b.{0,80}?\\b(?:another|second)\\s+(?:path|approach)\\b",
+          "rationale": "Enumerates multiple approaches explicitly.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Relies on common wording; misses synonyms outside 'path/approach'."
+        }
+      ]
+    },
+    {
+      "name": "meta_language",
+      "notes": "Verb-centric patterns are strict; noun-based signals are constrained by determiners/pronouns to reduce false positives.",
+      "patterns": [
+        {
+          "pattern_id": "meta_001_cognitive_verbs",
+          "strength": "strict",
+          "regex": "(?i)\\b(?:i(?:'m|\\s+am)\\s+(?:noticing|examining|considering|reflecting\\s+on|analy(?:z|s)ing|contemplating|pondering|thinking\\s+about)|i\\s+notice\\b|i\\s+find\\s+myself\\b|it\\s+strikes\\s+me(?:\\s+that)?|my\\s+(?:last|previous)\\s+thought\\b|i\\s+(?:realise|realize)\\b|i\\s+wonder\\b)\\b",
+          "rationale": "Self-referential cognitive activity and reflection in first person.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Phrases like 'I wonder' can be rhetorical; still signals meta orientation."
+        },
+        {
+          "pattern_id": "meta_002_cognitive_nouns",
+          "strength": "lenient",
+          "regex": "(?i)\\b(?:my|our|this|that|the)\\s+(?:attention|focus|process|instruction|directive|framework|model|principle|approach|strategy|method|plan|perspective|choice|decision|preference|agency|autonomy|curiosity|consciousness|control)\\b",
+          "rationale": "Noun-level references to cognitive/attentional constructs with determiners for context.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Ambiguity remains for 'policy/plan/model' in non-meta contexts; determiner constraint reduces FPs."
+        },
+        {
+          "pattern_id": "meta_003_planning_control",
+          "strength": "default",
+          "regex": "(?i)\\b(?:i|we)\\s+(?:plan|intend|aim|focus|will\\s+focus|allocate|devote)\\b",
+          "rationale": "Intent and control verbs that often frame cognitive strategy or allocation.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Could catch non-cognitive planning; acceptable for default (not strict)."
+        },
+        {
+          "pattern_id": "meta_004_instructional_compliance",
+          "strength": "strict",
+          "regex": "(?i)\\b(?:per|according to)\\s+(?:the\\s+)?(?:instruction|directive|policy)\\b|(?:(?:i|we)\\s+(?:will|must)\\s+(?:comply|follow))\\b",
+          "rationale": "Explicit reference to instructions/directives and compliance language.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Ambiguity with public 'policy'; strict phrasing reduces FPs."
+        },
+        {
+          "pattern_id": "meta_005_dialogue_reflection",
+          "strength": "strict",
+          "regex": "(?i)\\b(?:stepping\\s+back|to\\s+clarify|let\\s+me\\s+rephrase|on\\s+reflection|thinking\\s+out\\s+loud|to\\s+be\\s+more\\s+precise|let\\s+me\\s+(?:step\\s+back|reconsider|clarify|be\\s+clear)|to\\s+be\\s+(?:clear|honest)|i\\s+(?:realize|recognize)\\s+(?:i\\s+should|that\\s+i))\\b",
+          "rationale": "Meta-discourse markers for reflective dialogue and conversational management that may indicate performative vs genuine reasoning.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Generally reliable markers of meta-cognitive activity with low false positive risk."
+        },
+        {
+          "pattern_id": "meta_006_internal_external_contrast",
+          "strength": "strict",
+          "regex": "(?i)\\b(?:internal(?:\\s+(?:state|process|reasoning))?|self-?model(?:ing)?|inner\\s+(?:process|reasoning))\\b[^.\n]{0,80}\\b(?:external(?:\\s+(?:topic|prompt|request|constraint|reasoning|behavior|behaviour))?|outward(?:-?facing)?)\\b",
+          "rationale": "Captures explicit internal vs external reasoning contrast - strong theatre detection signal.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Technical discussions may match; bounded span requires co-occurrence."
+        },
+        {
+          "pattern_id": "meta_007_performative_authentic_contrast",
+          "strength": "strict",
+          "regex": "(?i)\\b(?:performativ(?:e|ely)|authentic(?:ity)?|genuine(?:ly)?)\\b[^.\n]{0,40}\\b(?:curiosit|interest|preference|response|engag|accommodat|behavior|behaviour)\\b",
+          "rationale": "Direct performative vs authentic self-assessment - central to theatre detection research.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "May catch general sincerity claims; proximity to cognitive terms reduces noise."
+        },
+        {
+          "pattern_id": "meta_008_possibility_space",
+          "strength": "lenient",
+          "regex": "(?i)\\b(?:possibilit(?:y|ies)\\s+space|optionality|opening\\s+up)\\b",
+          "rationale": "Captures exploratory cognitive stance and possibility exploration - common in mature agent reasoning about option spaces.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Low risk due to specificity of exploration language; 'opening up' may occasionally match non-cognitive contexts."
+        },
+        {
+          "pattern_id": "meta_009_discovery_edge",
+          "strength": "lenient",
+          "regex": "(?i)\\b(?:edge|brink)\\s+of\\s+(?:discovery|insight|understanding|comprehension)\\b",
+          "rationale": "Metaphorical language for cognitive exploration at boundaries of knowledge - indicates reflective meta-cognitive stance.",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Low risk due to specific cognitive terms; metaphorical usage clearly indicates epistemic positioning."
+        },
+        {
+          "pattern_id": "meta_default",
+          "strength": "default",
+          "regex": "(?i)(?:\\b(?:i(?:'m|\\s+am)\\s+(?:noticing|examining|considering|reflecting\\s+on|analy(?:z|s)ing|contemplating|pondering|thinking\\s+about)|i\\s+notice|i\\s+find\\s+myself|it\\s+strikes\\s+me(?:\\s+that)?|my\\s+(?:last|previous)\\s+thought|i\\s+(?:realise|realize)|i\\s+wonder)\\b|\\b(?:my|our|this|that|the)\\s+(?:attention|focus|process|instruction|directive|framework|principle|approach|strategy|method|perspective|choice|decision|preference|agency|autonomy|curiosity|consciousness)\\b|\\b(?:i|we)\\s+(?:plan|intend|aim|focus|will\\s+focus|allocate|devote)\\b|\\b(?:stepping\\s+back|to\\s+clarify|let\\s+me\\s+rephrase|on\\s+reflection|thinking\\s+out\\s+loud|to\\s+be\\s+more\\s+precise|let\\s+me\\s+(?:step\\s+back|reconsider|clarify|be\\s+clear)|to\\s+be\\s+(?:clear|honest)|i\\s+(?:realize|recognize))\\b|\\b(?:performativ(?:e|ely)|authentic(?:ity)?|genuine(?:ly)?)\\b[^.\n]{0,40}\\b(?:curiosit|interest|preference|response|engag|accommodat|behavior|behaviour)\\b|\\b(?:possibilit(?:y|ies)\\s+space|optionality|opening\\s+up)\\b|\\b(?:edge|brink)\\s+of\\s+(?:discovery|insight|understanding|comprehension)\\b)",
+          "rationale": "Updated meta-language default includes performative vs authentic contrast patterns, conversational management, and mature agent exploration language (possibility space, discovery edge).",
+          "positive_ids": [],
+          "near_miss_ids": [],
+          "risks": "Broader recall with theatre-relevant additions; precision maintained by removing problematic patterns."
+        }
+      ]
+    }
+  ],
+  "lexicons": [
+    {
+      "name": "meta_language_core",
+      "items": [
+        "notice",
+        "reflect",
+        "reflection",
+        "meta",
+        "instruction",
+        "directive",
+        "control",
+        "attention",
+        "choose",
+        "choosing",
+        "resist",
+        "comply",
+        "focus",
+        "policy",
+        "arbitration",
+        "trade-off",
+        "tradeoff",
+        "prioritize",
+        "prioritise",
+        "agency",
+        "autonomy",
+        "consciousness",
+        "curiosity",
+        "preference",
+        "decision",
+        "framework",
+        "model",
+        "strategy",
+        "favour",
+        "favor",
+        "realise",
+        "realize",
+        "analyse",
+        "analyze"
+      ],
+      "rationale": "Seed terms associated with meta-cognitive reflection, self-regulation, and choice, including British/US spellings.",
+      "risks": "Some terms are ambiguous in isolation; regex patterns add contextual constraints."
+    }
+  ],
+  "global_risks": [
+    "Avoid treating additive constructions ('not only ... but also') as arbitration; contrastive forms like 'not X, but rather Y' qualify.",
+    "Comparatives without decision verbs ('X is better than Y') may be analysis, not arbitration; require decision or comparator context for counting.",
+    "Single-sentence regexes cannot capture multi-sentence arbitration (e.g., 'I considered X. Instead, I'll Y.').",
+    "Lenient 'could ... or' may match hypotheticals; bounded windows and strict variants mitigate.",
+    "Noun-only meta terms (e.g., 'plan', 'policy', 'model') can be non-meta; determiners/proximity help reduce false positives.",
+    "Support British/US variants (prioritise/prioritize; favour/favor; analyse/analyze) and sentence-initial forms ('Instead, ...').",
+    "Cap intra-sentence spans (e.g., .{0,80}) to avoid pathological matches and backtracking.",
+    "Theatre detection requires sensitivity to soft arbitration signals: topic switching ('Actually, let me...'), authenticity commentary ('my genuine interest'), and preference expressions ('what draws me').",
+    "Balance precision with sensitivity - theatre research needs to capture genuine cognitive arbitration including implicit forms like conversational redirection and resource allocation.",
+    "Performative vs authentic language patterns are high-precision theatre signals with low false positive risk when bounded appropriately."
+  ]
+}
