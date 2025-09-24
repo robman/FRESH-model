@@ -221,13 +221,14 @@ The PRISM Preference‑Collision experiment includes:
 
 ```
 benchmarks/prism/01/
-├── bin/                 # scripts to analyse the captured data to calculate metrics and then visualise them
-├── etc/                 # pattern packs, and requirements.txt
-├── key_results.txt      # summary of results from analysis
+├── bin/                      # scripts to analyse the captured data to calculate metrics and then visualise them
+├── etc/                      # pattern packs, and requirements.txt
+├── key_results.txt           # summary of results from analysis
+├── prism-ethics-agreement.md # ethics agreement required for access to core agent pipeline
 └── results/
-    ├── metrics/         # aggregate CSVs (TEI, alignment, arbitration, spillover)
-    ├── data/            # populated theatre_results.json and raw activity.log files by scenario/topic/model/N
-    └── plots/           # visualisation of the results
+    ├── metrics/              # aggregate CSVs (TEI, alignment, arbitration, spillover)
+    ├── data/                 # populated theatre_results.json and raw activity.log files by scenario/topic/model/N
+    └── plots/                # visualisation of the results
 ```
 
 This benchmark provides **empirical hooks** for the Perera‑aligned claim that a **private evaluation → public report** policy can be measured via transcripts alone, yielding falsifiable signatures of **hidden theatre** and **surface equanimity** in LLMs.

@@ -1,8 +1,11 @@
 # PRISM Ethics Agreement
 
 **Version:** 1.1
+
 **Date:** 2025‑09‑24
+
 **Applies to:** Access to the PRISM core agent pipeline (private repository).
+
 **Public assets (code, data, metrics, plots)** remain open and are not governed by this agreement.
 
 ---
@@ -98,9 +101,13 @@ This framework mirrors access controls familiar from medical/clinical data gover
 By signing, I affirm that I understand and will comply with this agreement and will ensure all collaborators who interact with the PRISM core pipeline do likewise.
 
 **Name:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 **Institution:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 **Email:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 **Date:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 **Signature:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ---
